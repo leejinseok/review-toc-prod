@@ -838,3 +838,15 @@ aside.bottom {
   opacity: 1;
   cursor: pointer;
 }
+
+.wrapper-swiper-pagination {
+  width: 1200px;
+  margin-left: -600px;
+  position: absolute;;
+  left: 50%;
+  bottom: 30px;
+} // end .wrapper-swiper-button
+
+.small-banner .swiper-pagination .swiper-pagination-bullet {
+  margin-right: 3px;
+}
