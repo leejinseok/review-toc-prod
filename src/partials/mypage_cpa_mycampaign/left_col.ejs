@@ -1,0 +1,27 @@
+<div class="col-3 left-col">
+  <div class="profile">
+    <div class="thumbnail" style="background-image:url('./static/images/mypage/dog.jpeg')"> </div>
+    <input type="file" id="thumbnailFile" accept="image/*" onchange="myPageThumbnailChange(this.files[0])">
+    <h3 class="nickname">bigcloud1990</h3>
+    <p class="current-point-title">ⓟ 포인트현황</p>
+    <p class="current-point-value">200,000P</p>
+    <button class="withdraw-request" type="button">출금신청</button>
+  </div>
+
+  <% include ./accordion.ejs %>
+
+  <div class="extension">
+    <a href="/service_guide.html" class="col">
+      <img src="./static/images/mypage/my_page_nav1.svg">
+      <span>이용가이드</span>
+    </a>
+    <a href="/customerCenter_manToMan.html" class="col">
+      <img src="./static/images/mypage/my_page_nav2.svg">
+      <span>문의하기</span>
+    </a>
+    <a href="/customerCenter_notice.html" class="col">
+      <img src="./static/images/mypage/my_page_nav3.svg">
+      <span>고객센터</span>
+    </a>
+  </div>
+</div>

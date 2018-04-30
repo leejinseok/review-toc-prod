@@ -1,0 +1,81 @@
+<% include ./variables/customerCenter_common.ejs %>
+<% include ./variables/customerCenter_manToMan.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="customerCenter manToMan">
+  <div class="container full-width clearfix">
+    <h2 class="main-h">고객센터</h2>
+
+    <% include ./partials/customerCenter/menu.ejs %>
+
+    <div class="col content">
+      <h2>1:1문의</h2>
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">검색유형</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">유형1</li>
+              <li class="list-item">유형2</li>
+              <li class="list-item">유형3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper-search-input">
+          <input type="text" class="search-input">
+          <img src="./static/images/search.svg" class="icon-search">
+        </div>
+        <button class="inquiry"> 검색 </button>
+        <button class="write"> 글쓰기 </button>
+      </div>
+
+      <div class="wrapper-table">
+        <table cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th width="80">NO</th>
+              <th>제목</th>
+              <th width="100">글쓴이</th>
+              <th width="135">조회수</th>
+              <th width="105">등록일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td><%= i + 1 %></td>
+                <td class="title">
+                  <% if (i % 2 === 0) { %>
+                    문의제목
+                  <% }
+                  else { %>
+                    ⌞문의답변
+                  <% } %>
+                </td>
+                <td>
+                  <% if (i % 2 === 0) { %>
+                    작성자
+                  <% }
+                  else { %>
+                    관리자
+                  <% } %>
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      <% include ./partials/customerCenter/pagination.ejs %>
+    </div>
+  </div>
+</section>
+
+<% include ./partials/footer.ejs %>

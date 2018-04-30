@@ -1,0 +1,62 @@
+@import './variables';
+@import './mypage_common';
+
+section.container {
+  .cols {
+    .right-col {
+      table {
+        width: 100%;
+        margin-top: 10px;
+        border-collapse: collapse;
+        thead {
+          tr {
+            th {
+              height: 42px;
+              box-sizing: border-box;
+            }
+          }
+        } // end thead
+
+        th, td {
+          vertical-align: middle;
+          color: #555555;
+          font-size: 12px;
+          font-weight: 400;
+          text-align: center;
+          height: 42px;
+          box-sizing: border-box;
+
+          &.campaign-name {
+            width: 165px;
+          }
+          &.db-price {
+            width: 140px;
+          }
+          &.promotion {
+            width: 148px;
+          }
+          &.status {
+            width: 149px;
+            span {
+              &.standby {
+                color: #339707;
+              }
+              &.defer {
+                color: #dab400;
+              }
+              &.deny {
+                color: #fe1e53;
+              }
+              &.approve {
+                color: #008fae;
+              }
+            }
+          }
+          &.benefit-total {
+            width: 120px;
+          }
+        }
+      } // end table
+    }
+  }
+}

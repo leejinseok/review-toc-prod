@@ -1,0 +1,181 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/signup.ejs %>
+<% include ./partials/header.ejs %>
+
+<section class="sign-up center">
+  <div class="logo">
+    <img src="./static/images/log-in/toc_logo.svg" alt="">
+  </div>
+  <nav class="sign-up-nav head clearfix">
+    <div class="btn-container">
+      <button type="button" name="button" class="selected" data-type='partner'>파트너 회원</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" name="button" data-type="advertiser">광고주 회원</button>
+    </div>
+  </nav>
+
+  <form action="/signup_partner.html" class="wrapper-partner-form">
+    <ul class="main-info">
+      <li>
+        <input type="text" name="" placeholder="아이디">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="닉네임">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="비밀번호(영문/숫자 조합 8~16자)">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="비밀번호 확인">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="이름">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="이메일">
+      </li>
+      <li class="clearfix">
+        <input type="text" name="" placeholder="휴대전화번호( “-”제외하고 숫자만 입력)" class="phone">
+        <button type="button" name="button" class="confirm-btn">인증번호전송</button>
+      </li>
+      <li>
+        <input type="text" name="" placeholder="인증번호">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="홈페이지URL(운영중인 홈페이지 및 카페,블로그 주소를 입력해주세요">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="유입경로">
+      </li>
+    </ul>
+    <div class="sub-info">
+      <h3>추가정보</h3>
+      <ul class="sub-info-wrap">
+        <li>
+          <input type="text" name="" placeholder="주소">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="나머지주소">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="생년월일(ex.19900101">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="성별">
+        </li>
+      </ul>
+    </div>
+    <div class="sign-up-btn">
+      <button type="submit" name="button">가입하기</button>
+    </div>
+  </form>
+
+  <form action="/signup_advertizer.html" class="wrapper-advertiser-form">
+    <ul class="main-info">
+      <li>
+        <input type="text" name="" placeholder="아이디">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="비밀번호(영문/숫자 조합 8~16자)">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="비밀번호 확인">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="업체명 (입점 예정인 브랜드명을 입력해주세요 ex. 리뷰톡)">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="담당자명">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="담당자 이메일">
+      </li>
+      <li class="clearfix">
+        <input type="text" name="" placeholder="담당자 연락처 ( “-”제외하고 숫자만 입력)" class="phone">
+        <button type="button" name="button" class="confirm-btn">인증번호전송</button>
+      </li>
+      <li>
+        <input type="text" name="" placeholder="인증번호">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="홈페이지URL(운영중인 홈페이지 및 카페,블로그 주소를 입력해주세요">
+      </li>
+      <li>
+        <input type="text" name="" placeholder="유입경로">
+      </li>
+    </ul>
+    <div class="sub-info">
+      <h3>추가정보</h3>
+      <nav class="sign-up-nav clearfix">
+        <div class="btn-container">
+          <button type="button" name="button" class="selected" class="signup-type" data-type="partner">
+            <span> <img src="/static/images/sign-up/cheked.png" alt=""> </span>CPA
+          </button>
+        </div>
+        <div class="btn-container">
+          <button type="button" name="button" class="signup-type" data-type="advertiser">
+            <span> <img src="/static/images/sign-up/uncheked.png" alt=""> </span>체험단
+          </button>
+        </div>
+      </nav>
+      <ul class="sub-info-wrap clearfix">
+        <li>
+          <input type="text" name="" placeholder="업체종류(CPA)">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="DB단가">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="유효 DB기준">
+        </li>
+        <li>
+          <input type="text" name="" placeholder="취소 DB기준">
+        </li>
+        <li class="inquiry">
+          <textarea name="name" placeholder="문의사항"></textarea>
+        </li>
+      </ul>
+    </div>
+    <div class="sign-up-btn">
+      <button type="submit" name="button">가입하기</button>
+    </div>
+  </form>
+
+
+
+
+  <nav class="bottom-menu clearfix">
+    <!-- <table>
+      <tr>
+        <td>
+          <p>리뷰톡 소개</p>
+        </td>
+        <td>
+          <p>광고문의</p>
+        </td>
+        <td>
+          <p>개인정보취급방침</p>
+        </td>
+        <td>
+          <p>이용약관</p>
+        </td>
+      </tr>
+    </table> -->
+    <div class="intro">
+      <p>리뷰톡 소개</p>
+    </div>
+    <div class="ad">
+      <p>광고문의</p>
+    </div>
+    <div class="privacy">
+      <p>개인정보취급방침</p>
+    </div>
+    <div class="term">
+      <p class="last">이용약관</p>
+    </div>
+  </nav>
+  <div class="bottom-text">
+    <p>D.02-523-7258  E. dream7336@nate.co.r</p>
+  </div>
+</section>

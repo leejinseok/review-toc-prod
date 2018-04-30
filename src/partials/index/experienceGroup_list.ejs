@@ -1,0 +1,116 @@
+<section class="section experienceGroup-list">
+  <div class="header">
+    <p class="text">
+      <b>체험단</b> LIST
+    </p>
+    <div class="line"> </div>
+  </div>
+
+  <div class="wrapper-sub-menu">
+    <ul>
+      <li class="select">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">추천캠페인</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">추천캠페인</li>
+              <li class="list-item">마감임박 캠페인</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="menus">
+        <span class="gradient left"></span>
+        <span class="gradient right"></span>
+        <div class="wrapper-items">
+          <ul>
+            <li class="active">
+              <a href="#">전체보기</a>
+            </li>
+            <li>
+              <a href="#">생활</a>
+            </li>
+            <li>
+              <a href="#">유아</a>
+            </li>
+            <li>
+              <a href="#">디지털</a>
+            </li>
+            <li>
+              <a href="#">뷰티</a>
+            </li>
+            <li>
+              <a href="#">패션</a>
+            </li>
+            <li>
+              <a href="#">맛집</a>
+            </li>
+            <li>
+              <a href="#">여행</a>
+            </li>
+            <li>
+              <a href="#">기타</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="arrows">
+        <ul>
+          <li>
+            <a href="#" data-direction="left">
+              <img src="./static/images/arrow-left-box.png">
+            </a>
+          </li>
+          <li>
+            <a href="#" data-direction="right">
+              <img src="./static/images/arrow-right-box.png">
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="wrapper-article clearfix">
+    <% for (i = 0; i < cardsExperienceGroup.length; i++) { %>
+      <div class="col-3">
+        <article>
+          <div class="header" style="background-image:url(<%= cardsExperienceGroup[i]['backgroundImg'] %>)">
+            <img src="<%= cardsExperienceGroup[i]['backgroundImg'] %>">
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <p class="title"><%= cardsExperienceGroup[i]['title'] %></p>
+            <p class="detail"><%= cardsExperienceGroup[i]['detail'] %></p>
+            <div class="bottom">
+              <span class="d-day">
+                <span class="d">D</span>
+                -
+                <%= cardsExperienceGroup[i]['dDay'] %>
+              </span>
+
+              <span class="apply-status">
+                <font class="yellow">61명 신청</font>
+                /
+                <%= cardsExperienceGroup[i]['applyStatus'] %>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="view-more">
+      더보기 +
+    </div>
+
+  </section>

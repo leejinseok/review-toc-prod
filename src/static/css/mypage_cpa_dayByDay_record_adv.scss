@@ -1,0 +1,46 @@
+@import '_variables';
+@import 'mypage_common';
+
+.caution {
+  border: 1px solid $borderColor;
+  background: #fafafa;
+  padding: 29px 33px;
+  h3 {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  p {
+    font-size: 12px;
+    color: #818181;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-weight: 200;
+  }
+} // end .caution
+
+section.mypage .cols .right-col .search .period,
+section.mypage .cols .right-col .search .inquiry {
+  background: #484848;
+}
+
+.wrapper-table table thead tr th:nth-child(1),
+.wrapper-table table thead tr th:nth-child(2),
+.wrapper-table table thead tr th:nth-child(3),
+.wrapper-table table thead tr th:nth-child(4),
+.wrapper-table table thead tr th:nth-child(5) {
+  width: initial;
+}
+
+.wrapper-table table tbody tr td.btn button {
+  width: 50px;
+  height: 20px;
+  background: #f6f6f6;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.wrapper-table table tbody tr td {
+  height: 42px;
+}

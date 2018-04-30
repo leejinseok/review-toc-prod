@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html ng-app="reviewTocApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>리뷰톡</title>
+  <link rel="stylesheet" href="./static/css/base.css">
+
+  <link rel="stylesheet" href=".//static/css/mypage_cpa_point_charge_adv.css">
+
+  <link rel="stylesheet" href="./static/css/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="./static/js/angular.min.js"></script>
+  <script src="./static/js/prefixfree.min.js"></script>
+  <script src="./static/js/common.js"></script>
+
+  <script src="./static/js/mypage_common.js"></script>
+
+  <script src="./static/js/mypage_cpa_point_charge_adv.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="main">
+    <div class="inner-wrapper">
+      <ul class="left">
+        <li>
+          <a href="./index.html">
+            <img src="./static/images/toc_logo.svg" class="logo">
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+          CPA
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">보험/상조</a>
+
+            <a href="#">대출/금융</a>
+
+            <a href="#">건강/다이어트</a>
+
+            <a href="#">병원</a>
+
+            <a href="#">법률/개인회생</a>
+
+            <a href="#">결혼</a>
+
+            <a href="#">여성/육아</a>
+
+            <a href="#">어린이/키성장</a>
+
+            <a href="#">광고/회원가입</a>
+
+            <a href="#">렌터/리스</a>
+
+            <a href="#">자격증/학원</a>
+
+            <a href="#">쇼핑몰</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+          체험단
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">생활</a>
+
+            <a href="#">유아</a>
+
+            <a href="#">디지털</a>
+
+            <a href="#">뷰티</a>
+
+            <a href="#">패션</a>
+
+            <a href="#">맛집</a>
+
+            <a href="#">여행</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="./mypage_cpa_mycampaign.html" class="dropbtn">
+          실적/수익확인
+        </a>
+          <div class="dropdown-content">
+
+            <a href="mypage_cpa_mycampaign.html">실적현황</a>
+
+            <a href="mypage_cpa_daily.html">데일리</a>
+
+            <a href="mypage_cpa_byCampaign.html">캠페인별</a>
+
+            <a href="mypage_cpa_accessRoute.html">접속경로</a>
+
+            <a href="mypage_cpa_withdrawRequest.html">출금신청</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="promotion_ongoing.html" class="dropbtn">
+          프로모션
+        </a>
+          <div class="dropdown-content">
+
+            <a href="promotion_ongoing.html">진행중인 프로모션</a>
+
+            <a href="promotion_prevParticipationRate.html">전월 신청률 순위</a>
+
+            <a href="promotion_prevMonthapprovalRate.html">전월 승인률 순위</a>
+
+            <a href="promotion_accumulatedProfit.html">누적 수익금</a>
+
+          </div>
+        </li>
+        <li>
+          <a href="/event.html">
+          이벤트
+        </a>
+        </li>
+      </ul>
+      <ul class="right">
+        <li>
+          <img src="./static/images/profile.svg" class="profile">
+          <a href="/login.html">
+          로그인
+        </a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="/signup.html">회원가입</a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="/customerCenter_notice.html">고객센터</a>
+        </li>
+        <li class="dot-divider"></li>
+        <li>
+          <div class="wrapper-search">
+            <input type="text" name="query" placeholder="검색하기">
+            <img src="./static/images/search.svg" class="icon-search">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container full-width clearfix mypage">
+    <div class="cols">
+      <div class="col-3 left-col">
+        <div class="profile">
+          <div class="thumbnail" style="background-image:url('./static/images/mypage/dog.jpeg')"></div>
+          <input type="file" id="thumbnailFile" accept="image/*" onchange="myPageThumbnailChange(this.files[0])">
+          <h3 class="nickname">bigcloud1990</h3>
+          <p class="current-point-title">ⓟ 포인트현황</p>
+          <p class="current-point-value">200,000P</p>
+          <a href="/mypage_cpa_point_charge_adv.html" class="withdraw-request">
+      포인트충전
+    </a>
+        </div>
+
+        <div class="wrapper-accordion">
+          <button class="accordion">
+            CPA
+            <img src="./static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="/mypage_cpa_dayByDay_record_adv.html" class="active">
+        일별실적
+      </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_resultDashBoard_adv.html" class="active">
+        일별 실적현황
+      </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_point_minus_history_adv.html">
+        포인트 차감내역
+      </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_point_charge_history_adv.html">
+        포인트 충전내역
+      </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_manage_ad_adv.html">
+        광고 관리
+      </a>
+            </p>
+          </div>
+          <button class="accordion">
+            체험단
+          </button>
+          <div class="panel">
+          </div>
+          <button class="accordion">
+            <a href="">1:1 문의내역</a>
+          </button>
+          <div class="panel">
+          </div>
+          <button class="accordion">
+            <a href="./mypage_updateProfile_partner.html">회원정보수정</a>
+          </button>
+          <div class="panel">
+          </div>
+          <button class="accordion">
+            <a href="">꿀tip</a>
+          </button>
+          <div class="panel">
+          </div>
+        </div>
+        <div class="extension">
+          <a href="/service_guide.html" class="col">
+            <img src="./static/images/mypage/my_page_nav1.svg">
+            <span>이용가이드</span>
+          </a>
+          <a href="/customerCenter_manToMan.html" class="col">
+            <img src="./static/images/mypage/my_page_nav2.svg">
+            <span>문의하기</span>
+          </a>
+          <a href="/customerCenter_notice.html" class="col">
+            <img src="./static/images/mypage/my_page_nav3.svg">
+            <span>고객센터</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-9 right-col point-charge">
+        <h1>포인트 충전</h1>
+
+        <div class="caution">
+          <h3>※ 세금계산서 관련 주의 사항</h3>
+          <p>- 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.</p>
+          <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+          <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+        </div>
+
+        <h2>결제금액</h2>
+        <div class="pay-price">
+          <ul class="select-price-wrapper center clearfix">
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span class="align">500,000원</span>
+            </li>
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span>1,000,000원</span>
+            </li>
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span>2,000,000원</span>
+            </li>
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span>3,000,000원</span>
+            </li>
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span>4,000,000원</span>
+            </li>
+            <li class="select-price-list">
+              <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+              </div>
+              <span>5,000,000원</span>
+            </li>
+            <li class="select-price-list direct-input">
+              <div class="wrapper">
+                <div class="select-circle-box">
+                  <div class="select-circle-inner"></div>
+                </div>
+                <div class="wrapper-input">
+                  직접입력
+                  <input type="number">
+                  <span>만원</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="black-btn payment" onclick="showModalChargePointSuccessfully()">결제하기</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal modal-charge-point-successfully" id="modal-charge-point-successfully">
+    <div class="modal-content">
+      <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EClose%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23707070' stroke-miterlimit='10' stroke-width='1' d='M41.999 20.002l-22 22m22 0L20 20' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+      alt="Close" class="close" onclick="hideModal()" />
+      <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMoney Bag%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M38 18s18 14 18 34a10 10 0 0 1-10 10H18A10 10 0 0 1 8 52c0-20 18-34 18-34S14 7.6 14 4s8 2 12 2c5.7 0 6.3-4 10-4s4.1 4.1 10 4.1c2.3 0-2 6-8 11.9z' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer2' d='M26 18h13a19.2 19.2 0 0 0 13-4m-2 8a6.5 6.5 0 0 1 6 3' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' d='M37.9 34a6 6 0 0 0-5.9-5c-3.3 0-6 2.2-6 5.5s3 4.8 6 5.5m-6 5a6 6 0 0 0 6 6c3.3 0 6-2.2 6-5.5s-3-4.8-6-5.5m0-11v-3m0 28v-3' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+      alt="Money Bag" class="center money-bag" />
+      <h3>충전신청완료</h3>
+
+      <p>예금주 : 드림인사이트</p>
+      <p>송금자 : 광고주이름</p>
+      <p>입금은행 : 우리은행</p>
+      <p>입금계좌번호 : 123-1234-12345</p>
+      <p>입금금액 : 50만원</p>
+
+      <span>
+      무통장 입금으로 결제신청후 7일간 미입금 처리시 <br> 자동 취소됩니다.
+    </span>
+    </div>
+  </div>
+  <footer class="content-width">
+    <div class="inner">
+      <ul class="bottom-menu clearfix">
+        <li><a href="/reviewtoc_intro.html">회사소개</a>
+        </li>
+        <li></li>
+        <li><a href="javascript:showTermOfUse()">이용약관</a>
+        </li>
+        <li></li>
+        <li><a href="javascript:showPrivatePolicy()">개인정보처리방침</a>
+        </li>
+        <li></li>
+        <li><a href="/ad_inquiry.html">광고문의</a>
+        </li>
+        <li></li>
+        <li><a href="/service_guide.html">이용가이드</a>
+        </li>
+        <li></li>
+        <li><a href="/customerCenter_notice.html">고객센터</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom-detail clearfix">
+      <div class="col logo">
+        <img src="./static/images/toc_logo.svg" class="logo">
+      </div>
+      <div class="col info">
+        <p>
+          드림인사이트 ㅣ 대표이사 김기철 ㅣ 서울특별시 구로구 디지털로33길 12 우림이비지센터 2차 401호 ㅣ 사업자번호 114-87-03025
+          <br>TEL 02-523-7258 ㅣ FAX 02-6280-7258 ㅣ E-MAIL dream7336@nate.com
+          <br>copyright 2016 (C) dreaminsight All rights reserved.
+        </p>
+      </div>
+      <div class="col etc">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">패밀리사이트</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">
+                <a href="#">드림인사이트</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="icons">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+

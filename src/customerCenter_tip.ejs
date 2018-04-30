@@ -1,0 +1,81 @@
+<% include ./variables/customerCenter_common.ejs %>
+<% include ./variables/customerCenter_tip.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="customerCenter notice">
+  <div class="container full-width clearfix">
+    <h2 class="main-h">고객센터</h2>
+
+    <% include ./partials/customerCenter/menu.ejs %>
+
+    <div class="col content">
+      <h2>꿀TIP</h2>
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">대분류</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">분류1</li>
+              <li class="list-item">분류2</li>
+              <li class="list-item">분류3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">분류없음</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">분류1</li>
+              <li class="list-item">분류2</li>
+              <li class="list-item">분류3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper-search-input">
+          <input type="text" class="search-input">
+        </div>
+        <button class="inquiry"> 검색 </button>
+      </div>
+
+      <div class="wrapper-table">
+        <table cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th width="80">번호</th>
+              <th>대분류</th>
+              <th width="100">소분류</th>
+              <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td><%= i + 1 %></td>
+                <td>CPA</td>
+                <td>프로모션</td>
+                <td>
+                  Q.제목이 출력이 안됩니다.
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      <% include ./partials/customerCenter/pagination.ejs %>
+    </div>
+  </div>
+</section>
+
+<% include ./partials/footer.ejs %>

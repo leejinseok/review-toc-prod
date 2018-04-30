@@ -1,0 +1,186 @@
+@import '_variables';
+
+* {
+  // box-shadow: 0 0 1px 0 red;
+}
+
+.wrapper-table {
+  background: #fff;
+}
+
+section.promotion {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9f8fa;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  h2.main-h {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 31px;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+
+    .col.menu {
+      width: 280px;
+      float: left;
+      ul.main {
+        border-top: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+        li {
+          width: 100%;
+          height: 54px;
+          padding-left: 20px;
+          background-color: #fff;
+          color: #555555;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          border-bottom: 1px solid #e0e0e0;
+          a {
+            font-size: 15px;
+            &.active,
+            &:hover {
+              color: #fe1e53;
+            }
+          }
+        }
+      } // end ul
+
+      ul.extension {
+        margin-top: 10px;
+        .col {
+          background: #fff;
+          float: left;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          border: 1px solid $borderColor;
+          box-sizing: border-box;
+          cursor: pointer;
+          padding-left: 0;
+          &:hover {
+            span {
+              color: #333;
+            }
+          }
+
+          span {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin-top: 15px;
+          }
+
+          &:nth-child(1) {
+            border-right: 0;
+            img {
+              width: 28px;
+              height: 36px;
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              width: 36px;
+              height: 30px;
+            }
+          }
+
+          &:nth-child(3) {
+            border-top: 0;
+            width: calc(50% + 1px);
+            img {
+              width: 30px;
+              height: 35px;
+            }
+          }
+        } // end .col
+      } // end .extension
+    } // end .menu
+
+    .col.content {
+      width: calc(100% - 280px);
+      float: left;
+      padding-left: 20px;
+      padding-top: 20px;
+      box-sizing: border-box;
+
+      .wrapper-table {
+        border: 1px solid #e0e0e0;
+        margin-top: 11px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        table {
+          margin-top: 20px;
+          background: #fff;
+          border-collapse: collapse;
+          width: calc(100% - 60px);
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+
+          th, td {
+            border-top: 1px solid $borderColor;
+            vertical-align: middle;
+            color: #555555;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          tr:first-child {
+            th {
+              border-top: 2px solid #333333;
+              background: #fbfbfb;
+            }
+          }
+
+          tr:last-child {
+            td {
+              border-bottom: 2px solid $borderColor;
+            }
+          }
+
+          thead {
+            tr {
+              th {
+                height: 42px;
+                vertical-align: middle;
+                font-size: 12px;
+                font-weight: 400;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                font-size: 12px;
+                height: 42px;
+                vertical-align: middle;
+                text-align: center;
+                &.term {
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        } // end table
+      } // end .wrapper-table
+
+      .pagination {
+        .col {
+          &:first-child {
+          }
+        }
+      }
+    } // end .col.content
+  } // end .container
+} // end section

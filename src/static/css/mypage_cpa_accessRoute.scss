@@ -1,0 +1,73 @@
+@import './variables';
+@import './mypage_common';
+
+section.container {
+  .cols {
+    .right-col {
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        thead {
+          tr {
+            th {
+              height: 42px;
+              box-sizing: border-box;
+            }
+          }
+        } // end thead
+
+        th, td {
+          vertical-align: middle;
+          color: #555555;
+          font-size: 12px;
+          font-weight: 400;
+          text-align: center;
+          height: 42px;
+          box-sizing: border-box;
+          &.campaign-name {
+            width: 140px;
+          }
+          &.remote-ip {
+            width: 130px;
+            color: #818181;
+          }
+          &.status {
+            width: 102px;
+            span {
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 42px;
+              height: 20px;
+              border-radius: 10px;
+              &.defer {
+                color: #ceaa01;
+                border:1px solid #ceaa01;
+              }
+              &.visited {
+                color: #339707;
+                border: 1px solid #339707;
+              }
+              &.approve {
+                color: #008fae;
+                border: 1px solid #008fae;
+              }
+              &.deny {
+                color: #fe1e53;
+                border: 1px solid #fe1e53;
+              }
+            }
+          } // end status
+          &.access-route {
+            width: 267px;
+          }
+          &.access-device {
+            width: 98px;
+          }
+        } // end th, td
+      } // end table
+    }
+  }
+}

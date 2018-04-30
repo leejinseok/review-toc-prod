@@ -1,0 +1,201 @@
+<%
+
+js = [
+    './static/js/index.js',
+    './static/swiper-4.2.0/dist/js/swiper.min.js'
+];
+
+css = [
+    './static/swiper-4.2.0/dist/css/swiper.min.css',
+    './static/css/index.css',
+];
+
+subMenu01 = [
+    '전체보기',
+    '보험/상조',
+    '대출/금융',
+    '건강/다이어트',
+    '병원',
+    '법률/개인회생',
+    '결혼',
+    '여성/육아',
+    '어린이/키성장',
+    '광고/회원가입',
+    '렌터/리스',
+    '기타',
+];
+
+mainBanners = [
+
+];
+
+cardsCpa = [
+    {
+        backgroundImg: './static/images/main/1.png',
+        category: '건강/다이어트',
+        title: '커피와 찰떡궁합 밀스브레드',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/2.png',
+        category: '여성/육아',
+        title: '휘게 원스텝 페이셜 에센스',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/3.png',
+        category: '광고/회원가입',
+        title: '센스있고 위트있는 미니 토트',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/4.png',
+        category: '병원',
+        title: '무아스 알람시계 Homtime C1 Mini',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/5.png',
+        category: '보험/상조',
+        title: '바람부는 날',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/6.png',
+        category: '법률/개인회생',
+        title: 'Izola Elder Flower Candle',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/7.png',
+        category: '어린이/키성장',
+        title: '배드파머스 1일1우엉',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/8.png',
+        category: '렌터/리스',
+        title: 'De\'Longhi ICONA VINTAGE',
+        detail: '승인률 : 72.16% / 신청률 : 10%',
+        price: '승인시 : 30,000원 '
+    },
+];
+
+cardsExperienceGroup = [
+    {
+        backgroundImg: './static/images/main/2-1.png',
+        title: 'CV601-WH R.BK(S)',
+        detail: '부드러운 스트랩과 컬러감이 돋보이는 로맨틱 시크 감성의 까르벵 와치 컬렉션입니다. ',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원',
+    },
+    {
+        backgroundImg: './static/images/main/2-2.png',
+        title: 'COTTON NEOPRENE-TOTE BAG...',
+        detail: '까다롭게 선정한 면 100% 원사만을 사용하여 모든 공정을 직접 편직, 가공하여 에이카 화이트...',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/2-3.png',
+        title: '옷장용 자연제습기 : Water bottle',
+        detail: '실리카겔을 이용해 자연적으로 공기 중의 습기를 제거하는 제습기입니다.',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/2-4.png',
+        title: '옻칠 티스푼포크',
+        detail: '나뭇결이 돋보이는 스푼포크시리즈입니다 아담한 사이즈의 스푼, 포크로 구성되어 있으...',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/2-5.png',
+        title: '1+1 커먼굿 세탁세제 32oz(946mL)',
+        detail: '3배 고농축 세제로 48회 사용이 가능합니다.10 0% 생분해성 식물성 원료를 사용하였습니다.',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원 '
+    },
+    {
+        backgroundImg: './static/images/main/2-6.png',
+        title: '장미 샴푸 500ml + 컨디셔너 250ml',
+        detail: '유기농 장미 샴푸 500ml. 섬세하고 부드러운 장 미향이 하루종일 은은하게!',
+        dDay: '7일',
+        applyStatus: '10명 모집',
+        price: '승인시 : 30,000원 '
+    },
+];
+
+notices = [
+    {
+        title: '나뭇결이 돋보이는 스푼포크시리즈입니다.',
+        date: '18.03.23'
+    },
+    {
+        title: '3배 고농축 세제로 48회 사용이 가능합니다.',
+        date: '18.03.23'
+    },
+    {
+        title: '연필 사이즈에 맞게 제작되었습니다.',
+        date: '18.03.23'
+    },
+    {
+        title: '농축액이 아닌 100% 국내산 팥과 고구마, 단호박으로...',
+        date: '18.03.23'
+    },
+    {
+        title: '부드러운 스트랩과 컬러감이 돋보이는 로맨틱 시크 감성의...',
+        date: '18.03.23'
+    },
+    {
+        title: '실리카겔을 이용해 자연적으로 공기 중의 습기를 제거하는 ...',
+        date: '18.03.23'
+    },
+];
+
+ranks = [
+    {
+        'title': '창호나이스'
+    },
+    {
+        'title': '올컷 다이어트'
+    },
+    {
+        'title': '뉴피니션 다이어트'
+    },
+    {
+        'title': '롯데 신차장 렌터카'
+    },
+    {
+        'title': '디제로킹'
+    },
+    {
+        'title': '에이스'
+    },
+    {
+        'title': '빠다코코넛'
+    },
+    {
+        'title': '맛동산'
+    },
+    {
+        'title': '허니버터칩'
+    },
+    {
+        'title': '새우깡'
+    },
+]
+%>

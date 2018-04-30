@@ -1,0 +1,89 @@
+@import './variables';
+@import './mypage_common';
+
+section.container {
+  .cols {
+    .right-col {
+      .wrapper-table {
+        border: 1px solid #e0e0e0;
+        margin-top: 11px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        table {
+          width: calc(100% - 60px);
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+          thead {
+            tr {
+              th {
+                height: 42px;
+                box-sizing: border-box;
+              }
+            }
+          } // end thead
+
+          tr:first-child {
+            th {
+              border-top: 2px solid #333333;
+              background: #fbfbfb;
+            }
+          }
+
+          tr:last-child {
+            td {
+              border-bottom: 2px solid $borderColor;
+            }
+          }
+
+          th, td {
+            border-top: 1px solid $borderColor;
+            vertical-align: middle;
+            color: #555555;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            height: 42px;
+            box-sizing: border-box;
+
+            &.exposure {
+              width: 140px;
+            }
+            &.apply {
+              width: 108px;
+            }
+            &.standby {
+              width: 91px;
+            }
+            &.defer {
+              width: 91px;
+            }
+            &.deny {
+              width: 91px;
+            }
+            &.approve {
+              width: 91px;
+            }
+            &.commission {
+              width: 126px;
+            }
+          }
+        } // end table
+      } // end .wrapper-table
+    } // end .right-col
+  } // end .cols
+} // end .container
+
+.wrapper-table table thead tr th:nth-child(1) {
+  width: 150px !important;
+}
+
+.wrapper-table table thead tr th:nth-child(1),
+.wrapper-table table thead tr th:nth-child(2),
+.wrapper-table table thead tr th:nth-child(3),
+.wrapper-table table thead tr th:nth-child(4),
+.wrapper-table table thead tr th:nth-child(5),
+.wrapper-table table thead tr th:nth-child(6) {
+  width: initial;
+}

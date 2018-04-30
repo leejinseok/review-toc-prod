@@ -1,0 +1,39 @@
+<% include ../../variables/mypage_common.ejs %>
+
+<div class="wrapper-accordion">
+  <% for (i = 0; i < accordionHeaders.length; i++) {
+    header = accordionHeaders[i];
+    parentHref = '';
+    if (header === '1:1문의내역') {
+      parentHref = '#';
+    }
+
+    if (header === '회원정보수정') {
+      parentHref = './mypage_updateProfile.html';
+    }
+    %>
+      <button class="accordion">
+
+        <% if (i < 2) { %>
+          <%= header %>
+        <% } else { %>
+          <a href="<%= parentHref %>"><%= header %></a>
+        <% } %>
+
+        <% if (i < 2) { %>
+          <img src="./static/images/mypage/my_profile_down.png">
+        <% } %>
+      </button>
+      <div class="panel">
+        <% for (j = 0; j < accordionItems[i].length; j++) {
+          item = accordionItems[i][j];
+          %>
+          <p>
+            <a href="<%= item['href'] %>" <% if (j === 0) { %> class="active" <% } %>>
+              <%= item['title'] %>
+            </a>
+          </p>
+        <% } %>
+      </div>
+    <% } %>
+</div>

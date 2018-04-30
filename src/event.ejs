@@ -1,0 +1,133 @@
+<% include ./variables/event_common.ejs %>
+<% include ./variables/event.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="event" ng-controller="eventCtrl">
+  <div class="container content-width clearfix">
+    <ul class="tab clearfix">
+      <li ng-class="{'active': isTab('ongoing')}" ng-click="setTab('ongoing')">진행중인 이벤트</li>
+      <li ng-class="{'active': isTab('outdated')}" ng-click="setTab('outdated')">종료된 이벤트</li>
+    </ul>
+  </div>
+
+  <div class="container container-body full-width">
+    <div class="body ongoing clearfix" ng-show="isTab('ongoing')">
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-01.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-02.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-03.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-01.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-02.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="wrapper-image">
+          <img src="/static/images/event/event-03.png">
+        </div>
+        <div class="wrapper-text">
+          <span class="title">유익하고 알찬이벤트</span>
+          <span class="duration">2018.04.02 ~ 2018.04.05</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="body outdated" ng-show="isTab('outdated')">
+      <div class="body ongoing clearfix" ng-show="isTab('outdated')">
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-01.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-02.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-03.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-01.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-02.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-image">
+            <img src="/static/images/event/event-03.png">
+          </div>
+          <div class="wrapper-text">
+            <span class="title">유익하고 알찬 종료된 이벤트</span>
+            <span class="duration">2018.04.02 ~ 2018.04.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% include ./partials/footer.ejs %>

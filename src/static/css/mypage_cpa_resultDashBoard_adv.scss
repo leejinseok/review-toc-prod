@@ -1,0 +1,202 @@
+@import '_variables';
+@import 'mypage_common';
+
+section.mypage .cols .right-col .search .period,
+section.mypage .cols .right-col .search .inquiry {
+  background: #484848;
+}
+
+.wrapper-table table thead tr th:nth-child(1),
+.wrapper-table table thead tr th:nth-child(2),
+.wrapper-table table thead tr th:nth-child(3),
+.wrapper-table table thead tr th:nth-child(4),
+.wrapper-table table thead tr th:nth-child(5) {
+  width: initial;
+}
+
+.wrapper-table table tr td.status {
+  
+}
+
+.wrapper-table table tr td.status span {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 4px 13.4px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.wrapper-table table tr td.status span.approve {
+  background: #2b98ed;
+}
+
+.wrapper-table table tr td.status span.deny {
+  background: #ca1818;
+}
+
+.wrapper-table table tr td.status span.wait {
+  background: #50b506;
+}
+
+.wrapper-table table tr td.status span.defer {
+  background: #f39800;
+}
+
+.wrapper-table table tr td.memo {
+  position: relative;
+}
+
+.wrapper-table table tr td.memo span {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 4px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #fff;
+  background: #959595;
+  width: 48px;
+}
+
+.wrapper-table table tr td.memo span.d-day {
+  background: #5aa428;
+}
+
+.wrapper-table table tr td.memo .reason {
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper-table table tr td.memo .reason:hover .pop-reason {
+  display: block;
+  box-shadow: 0px 0px 8px 1px rgba(17, 17, 17, 0.1);
+}
+
+.wrapper-table table tr td.memo .pop-reason {
+  position: absolute;
+  width: 161px;
+  left: 19px;
+  display: none;
+  z-index: 9;
+  margin-top: 2px;
+}
+
+.wrapper-table table tr td.memo .pop-reason .header {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  background: #333333;
+  color: #fff;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper-table table tr td.memo .pop-reason .body {
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.wrapper-bottom-controlls {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.wrapper-bottom-controlls .col {
+  float: left;
+  width: 50%;
+}
+
+.wrapper-bottom-controlls .col button {
+  width: 84px;
+  height: 34px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+.wrapper-bottom-controlls .col button.excel {
+  background: #fff;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  width: auto;
+  color: #333;
+}
+
+.wrapper-bottom-controlls .col button.excel span {
+  margin-left: 4px;
+}
+
+.wrapper-bottom-controlls .col button.excel .arrow {
+  vertical-align: middle;
+  width: 5px;
+  margin-top: -2px;
+  margin-left: 17px;
+}
+
+.wrapper-bottom-controlls .col.button-right {
+  text-align: right;
+}
+
+.search.second {
+  padding-top: 0 !important;
+}
+
+.view-detail button {
+  width: 64px;
+  height: 22px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.view-detail button:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.wrapper-table table tbody tr td {
+  height: 42px;
+}
+
+section.mypage .cols .right-col .search .datepicker input {
+  background: #fff;
+}
+
+section.mypage .cols .right-col .search .options .items .selected button {
+  background: #fff;
+}
+
+.caution {
+  border: 1px solid $borderColor;
+  background: #fafafa;
+  padding: 29px 33px;
+  margin-top: 30px;
+  h3 {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+  
+  p {
+    font-size: 12px;
+    color: #818181;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-weight: 200;
+  }
+} // end .caution
+
+
+

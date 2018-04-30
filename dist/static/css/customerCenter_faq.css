@@ -1,0 +1,42 @@
+section.customerCenter.faq .container .col.content .search .wrapper-search-input {
+  width: 460px; }
+
+section.customerCenter.faq .container .col.content .search .inquiry {
+  margin-right: 0; }
+
+section.customerCenter.faq .container .col.content table tr.reply.active {
+  height: 100px; }
+  section.customerCenter.faq .container .col.content table tr.reply.active td {
+    border-top: 1px solid #e0e0e0; }
+  section.customerCenter.faq .container .col.content table tr.reply.active .wrapper-reply-content {
+    height: auto; }
+
+section.customerCenter.faq .container .col.content table tr.reply td {
+  padding: 0;
+  height: 0;
+  border-top: 0; }
+  section.customerCenter.faq .container .col.content table tr.reply td .wrapper-reply-content {
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    padding: 0 30px; }
+    section.customerCenter.faq .container .col.content table tr.reply td .wrapper-reply-content p.if-not-find {
+      color: #fe1e53;
+      margin-top: 35px; }
+      section.customerCenter.faq .container .col.content table tr.reply td .wrapper-reply-content p.if-not-find button {
+        border: 1px solid #fe1e53;
+        font-size: 12px;
+        color: #fe1e53;
+        margin-left: 9px;
+        cursor: pointer; }
+
+section.customerCenter.faq .container .col.content table td.subject {
+  text-align: left !important;
+  padding-left: 15px;
+  position: relative; }
+  section.customerCenter.faq .container .col.content table td.subject .arrow-down {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22.5px;
+    cursor: pointer; }

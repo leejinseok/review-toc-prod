@@ -1,0 +1,66 @@
+section.customerCenter.faq {
+  .container {
+    .col.content {
+      .search {
+        .wrapper-search-input {
+          width: 460px;
+        }
+
+        .inquiry {
+          margin-right: 0;
+        }
+      }
+
+      table {
+        tr.reply {
+          &.active {
+            height: 100px;
+            td {
+              border-top: 1px solid #e0e0e0;
+            }
+            .wrapper-reply-content {
+              height: auto;
+            }
+          }
+
+          td {
+            padding: 0;
+            height: 0;
+            border-top: 0;
+            .wrapper-reply-content {
+              height: 0;
+              overflow: hidden;
+              text-align: left;
+              padding: 0 30px;
+
+              p.if-not-find {
+                color: #fe1e53;
+                margin-top: 35px;
+                button {
+                  border: 1px solid #fe1e53;
+                  font-size: 12px;
+                  color: #fe1e53;
+                  margin-left: 9px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        td.subject {
+          text-align: left !important;
+          padding-left: 15px;
+          position: relative;
+          .arrow-down {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 22.5px;
+            cursor: pointer;
+          }
+        }
+      } // end table
+    } // end .content
+  } // .container
+}

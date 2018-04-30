@@ -1,0 +1,100 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_point_charge_adv.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+<section class="container full-width clearfix mypage">
+<div class="cols">
+  <% include ./partials/mypage_adv/left_col.ejs %>
+  <div class="col-9 right-col point-charge">
+    <h1>포인트 충전</h1>
+
+    <div class="caution">
+      <h3>※ 세금계산서 관련 주의 사항</h3>
+      <p>- 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.</p>
+      <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+      <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+    </div>
+
+    <h2>결제금액</h2>
+    <div class="pay-price">
+      <ul class="select-price-wrapper center clearfix">
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span class="align">500,000원</span>
+        </li>
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span>1,000,000원</span>
+        </li>
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span>2,000,000원</span>
+        </li>
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span>3,000,000원</span>
+        </li>
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span>4,000,000원</span>
+        </li>
+        <li class="select-price-list">
+          <div class="select-circle-box">
+            <div class="select-circle-inner"></div>
+          </div>
+          <span>5,000,000원</span>
+        </li>
+        <li class="select-price-list direct-input">
+          <div class="wrapper">
+            <div class="select-circle-box">
+                <div class="select-circle-inner"></div>
+            </div>
+            <div class="wrapper-input">
+                직접입력
+                <input type="number">
+                <span>만원</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="black-btn payment" onclick="showModalChargePointSuccessfully()">결제하기</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="modal modal-charge-point-successfully" id="modal-charge-point-successfully">
+  <div class="modal-content">
+    <img 
+      src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EClose%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23707070' stroke-miterlimit='10' stroke-width='1' d='M41.999 20.002l-22 22m22 0L20 20' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" 
+      alt="Close" 
+      class="close" 
+      onclick="hideModal()"/>
+    <img 
+      src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMoney Bag%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M38 18s18 14 18 34a10 10 0 0 1-10 10H18A10 10 0 0 1 8 52c0-20 18-34 18-34S14 7.6 14 4s8 2 12 2c5.7 0 6.3-4 10-4s4.1 4.1 10 4.1c2.3 0-2 6-8 11.9z' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer2' d='M26 18h13a19.2 19.2 0 0 0 13-4m-2 8a6.5 6.5 0 0 1 6 3' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' d='M37.9 34a6 6 0 0 0-5.9-5c-3.3 0-6 2.2-6 5.5s3 4.8 6 5.5m-6 5a6 6 0 0 0 6 6c3.3 0 6-2.2 6-5.5s-3-4.8-6-5.5m0-11v-3m0 28v-3' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" 
+      alt="Money Bag" 
+      class="center money-bag" />
+    <h3>충전신청완료</h3>
+
+    <p>예금주 : 드림인사이트</p>
+    <p>송금자 : 광고주이름</p>
+    <p>입금은행 : 우리은행</p>
+    <p>입금계좌번호 : 123-1234-12345</p>
+    <p>입금금액 : 50만원</p>
+
+    <span>
+      무통장 입금으로 결제신청후 7일간 미입금 처리시 <br> 자동 취소됩니다.
+    </span>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>

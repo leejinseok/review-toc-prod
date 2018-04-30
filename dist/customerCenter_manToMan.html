@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html ng-app="reviewTocApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>리뷰톡</title>
+  <link rel="stylesheet" href="./static/css/base.css">
+
+  <link rel="stylesheet" href=".//static/css/customerCenter_common.css">
+
+  <link rel="stylesheet" href="./static/css/customerCenter_manToMan.css">
+
+  <link rel="stylesheet" href="./static/css/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="./static/js/angular.min.js"></script>
+  <script src="./static/js/prefixfree.min.js"></script>
+  <script src="./static/js/common.js"></script>
+
+  <script src="./static/js/customerCenter_common.js"></script>
+
+  <script src="./static/js/customerCenter_manToMan.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="main">
+    <div class="inner-wrapper">
+      <ul class="left">
+        <li>
+          <a href="./index.html">
+            <img src="./static/images/toc_logo.svg" class="logo">
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+          CPA
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">보험/상조</a>
+
+            <a href="#">대출/금융</a>
+
+            <a href="#">건강/다이어트</a>
+
+            <a href="#">병원</a>
+
+            <a href="#">법률/개인회생</a>
+
+            <a href="#">결혼</a>
+
+            <a href="#">여성/육아</a>
+
+            <a href="#">어린이/키성장</a>
+
+            <a href="#">광고/회원가입</a>
+
+            <a href="#">렌터/리스</a>
+
+            <a href="#">자격증/학원</a>
+
+            <a href="#">쇼핑몰</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+          체험단
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">생활</a>
+
+            <a href="#">유아</a>
+
+            <a href="#">디지털</a>
+
+            <a href="#">뷰티</a>
+
+            <a href="#">패션</a>
+
+            <a href="#">맛집</a>
+
+            <a href="#">여행</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="./mypage_cpa_mycampaign.html" class="dropbtn">
+          실적/수익확인
+        </a>
+          <div class="dropdown-content">
+
+            <a href="mypage_cpa_mycampaign.html">실적현황</a>
+
+            <a href="mypage_cpa_daily.html">데일리</a>
+
+            <a href="mypage_cpa_byCampaign.html">캠페인별</a>
+
+            <a href="mypage_cpa_accessRoute.html">접속경로</a>
+
+            <a href="mypage_cpa_withdrawRequest.html">출금신청</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="promotion_ongoing.html" class="dropbtn">
+          프로모션
+        </a>
+          <div class="dropdown-content">
+
+            <a href="promotion_ongoing.html">진행중인 프로모션</a>
+
+            <a href="promotion_prevParticipationRate.html">전월 신청률 순위</a>
+
+            <a href="promotion_prevMonthapprovalRate.html">전월 승인률 순위</a>
+
+            <a href="promotion_accumulatedProfit.html">누적 수익금</a>
+
+          </div>
+        </li>
+        <li>
+          <a href="/event.html">
+          이벤트
+        </a>
+        </li>
+      </ul>
+      <ul class="right">
+        <li>
+          <img src="./static/images/profile.svg" class="profile">
+          <a href="/login.html">
+          로그인
+        </a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="/signup.html">회원가입</a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="/customerCenter_notice.html">고객센터</a>
+        </li>
+        <li class="dot-divider"></li>
+        <li>
+          <div class="wrapper-search">
+            <input type="text" name="query" placeholder="검색하기">
+            <img src="./static/images/search.svg" class="icon-search">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="customerCenter manToMan">
+    <div class="container full-width clearfix">
+      <h2 class="main-h">고객센터</h2>
+
+      <div class="col menu">
+        <ul class="main">
+          <li><a href="customerCenter_notice.html">공지사항</a>
+          </li>
+          <li><a href="customerCenter_manToMan.html">1:1문의</a>
+          </li>
+          <li><a href="customerCenter_faq.html">FAQ</a>
+          </li>
+          <li><a href="customerCenter_tip.html">꿀TIP</a>
+          </li>
+          <li><a href="customerCenter_falseReport.html">오류신고</a>
+          </li>
+        </ul>
+
+        <ul class="extension clearfix">
+          <a href="/service_guide.html" class="col">
+            <img src="./static/images/mypage/my_page_nav1.svg">
+            <span>이용가이드</span>
+          </a>
+          <a href="/customerCenter_manToMan.html" class="col">
+            <img src="./static/images/mypage/my_page_nav2.svg">
+            <span>문의하기</span>
+          </a>
+          <a href="/customerCenter_notice.html" class="col">
+            <img src="./static/images/mypage/my_page_nav3.svg">
+            <span>고객센터</span>
+          </a>
+        </ul>
+      </div>
+
+
+      <div class="col content">
+        <h2>1:1문의</h2>
+        <div class="search">
+          <div class="options">
+            <div class="items">
+              <div class="selected">
+                <button type="button" class="selected-button">
+                  <span class="value">검색유형</span>
+                  <img src="./static/images/arrow-down.png">
+                </button>
+              </div>
+              <ul>
+                <li class="list-item">유형1</li>
+                <li class="list-item">유형2</li>
+                <li class="list-item">유형3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper-search-input">
+            <input type="text" class="search-input">
+            <img src="./static/images/search.svg" class="icon-search">
+          </div>
+          <button class="inquiry">검색</button>
+          <button class="write">글쓰기</button>
+        </div>
+
+        <div class="wrapper-table">
+          <table cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th width="80">NO</th>
+                <th>제목</th>
+                <th width="100">글쓴이</th>
+                <th width="135">조회수</th>
+                <th width="105">등록일</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>1</td>
+                <td class="title">
+
+                  문의제목
+
+                </td>
+                <td>
+
+                  작성자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td class="title">
+
+                  ⌞문의답변
+
+                </td>
+                <td>
+
+                  관리자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td class="title">
+
+                  문의제목
+
+                </td>
+                <td>
+
+                  작성자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td class="title">
+
+                  ⌞문의답변
+
+                </td>
+                <td>
+
+                  관리자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td class="title">
+
+                  문의제목
+
+                </td>
+                <td>
+
+                  작성자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td class="title">
+
+                  ⌞문의답변
+
+                </td>
+                <td>
+
+                  관리자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td class="title">
+
+                  문의제목
+
+                </td>
+                <td>
+
+                  작성자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td class="title">
+
+                  ⌞문의답변
+
+                </td>
+                <td>
+
+                  관리자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>9</td>
+                <td class="title">
+
+                  문의제목
+
+                </td>
+                <td>
+
+                  작성자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+                <td class="title">
+
+                  ⌞문의답변
+
+                </td>
+                <td>
+
+                  관리자
+
+                </td>
+                <td>12</td>
+                <td>2018.04.02</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <div class="col icon prev-last">
+            <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+          </div>
+          <div class="col icon prev">
+            <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+          </div>
+          <div class="col active">
+            1
+          </div>
+          <div class="col">
+            2
+          </div>
+          <div class="col">
+            3
+          </div>
+          <div class="col">
+            4
+          </div>
+          <div class="col">
+            5
+          </div>
+          <div class="col icon next">
+            <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+          </div>
+          <div class="col icon next-last">
+            <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="content-width">
+    <div class="inner">
+      <ul class="bottom-menu clearfix">
+        <li><a href="/reviewtoc_intro.html">회사소개</a>
+        </li>
+        <li></li>
+        <li><a href="javascript:showTermOfUse()">이용약관</a>
+        </li>
+        <li></li>
+        <li><a href="javascript:showPrivatePolicy()">개인정보처리방침</a>
+        </li>
+        <li></li>
+        <li><a href="/ad_inquiry.html">광고문의</a>
+        </li>
+        <li></li>
+        <li><a href="/service_guide.html">이용가이드</a>
+        </li>
+        <li></li>
+        <li><a href="/customerCenter_notice.html">고객센터</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom-detail clearfix">
+      <div class="col logo">
+        <img src="./static/images/toc_logo.svg" class="logo">
+      </div>
+      <div class="col info">
+        <p>
+          드림인사이트 ㅣ 대표이사 김기철 ㅣ 서울특별시 구로구 디지털로33길 12 우림이비지센터 2차 401호 ㅣ 사업자번호 114-87-03025
+          <br>TEL 02-523-7258 ㅣ FAX 02-6280-7258 ㅣ E-MAIL dream7336@nate.com
+          <br>copyright 2016 (C) dreaminsight All rights reserved.
+        </p>
+      </div>
+      <div class="col etc">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">패밀리사이트</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">
+                <a href="#">드림인사이트</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="icons">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+

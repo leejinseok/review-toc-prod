@@ -1,0 +1,266 @@
+@import './variables';
+@import './mypage_common';
+* {
+  // box-shadow: 0 0 1px 0 red;
+}
+
+section.container {
+  .cols {
+    .right-col {
+      .dashboard {
+        margin-top: 19px;
+        height: 90px;
+        border: 1px solid $borderColor;
+        box-sizing: border-box;
+        .col {
+          float: left;
+          height: 100%;
+          min-height: 20px;
+          width: 25%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          position: relative;
+          &:not(:last-child):after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20px;
+            height: 52px;
+            border-right: 1px solid $borderColor;
+          }
+
+          p.title {
+            font-size: 12px;
+            color: #818181;
+          }
+
+          span {
+            font-size: 18px;
+            color: #333333;
+            margin-top: 12px;
+          }
+        }
+      } // end .dashboard
+
+      .small-preview-with-number {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        .text {
+          font-size: 15px;
+          color: #555555;
+          margin-right: 5px;
+        }
+        .number {
+          background: black;
+          border-radius: 50%;
+          color: #fff;
+          display: inline-block;
+          width: 19px;
+          height: 19px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          margin-right: 20px;
+          &.standby {
+            background: #339707;
+          }
+          &.defer {
+            background: #dab400;
+          }
+          &.deny {
+            background: #fe1e53;
+          }
+          &.approve {
+            background: #008fae;
+          }
+        }
+      } // end .small-preview-with-number
+
+      .search {
+        .options {
+          width: 120px;
+        }
+      } // end .search
+
+      table {
+        width: 100%;
+        margin-top: 10px;
+        border-collapse: collapse;
+
+        thead {
+          tr {
+            th {
+              height: 42px;
+              box-sizing: border-box;
+            }
+          }
+        }
+
+        th, td {
+          vertical-align: middle;
+          color: #555555;
+          font-size: 12px;
+          font-weight: 400;
+          text-align: center;
+          height: 64px;
+          box-sizing: border-box;
+          &:nth-child(1) {
+            width: 79px;
+          }
+          &:nth-child(2) {
+            width: 160px;
+          }
+          &:nth-child(3) {
+            width: 160px;
+          }
+          &:nth-child(4) {
+            width: 80px;
+          }
+          &:nth-child(5) {
+            width: 80px;
+          }
+          &:nth-child(6) {
+            width: 80px;
+          }
+          &:nth-child(7) {
+            width: 80px;
+          }
+          &:nth-child(8) {
+            width: 80px;
+          }
+
+          &.advertising-name {
+
+          } // end .advertising-name
+          &.campaign-name {
+            color: #818181;
+            font-size: 12px;
+          } // end .campaign-name
+          &.apply-date {
+            color: #818181;
+          } // end .apply-date
+          &.benefit {
+            color: #333;
+          } // end .benefit
+          &.promotion {
+            color: #818181;
+          } // end .promotion
+          &.status {
+            .inner-col {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                display: inline-block;
+                width: 42px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 12px;
+                &.approve {
+                  border: 1px solid #008fae;
+                  color: #008fae;
+                }
+                &.deny {
+                  color: #fe1e53;
+                  border: 1px solid #fe1e53;
+                }
+                &.standby {
+                  color: #339707;
+                  border: 1px solid #339707;
+                }
+                &.defer {
+                  color: #dab400;
+                  border: 1px solid #dab400;
+                }
+              } // end span
+            } // end .inner-col
+
+          } // end .status
+          &.detail {
+            .inner-col {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                width: 58px;
+                height: 26px;
+                color: #fff;
+                background: #ff6b8e;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 12px;
+                &:hover {
+                  background: #fe1e53;
+                }
+              }
+            }
+          } // end .detail
+          &.reason {
+            .inner-col {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                width: 58px;
+                height: 26px;
+                cursor: pointer;
+                font-size: 12px;
+                color: #555555;
+                background: #e0e0e0;
+              }
+            }
+          } // end .reason
+        }
+      } // end table
+    }
+  }
+}
+
+
+.wrapper-table table tr td.reason{
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper-table table tr td.reason:hover .pop-reason {
+  display: block;
+  box-shadow: 0px 0px 8px 1px rgba(17, 17, 17, 0.1);
+}
+
+.wrapper-table table tr td.reason .pop-reason {
+  position: absolute;
+  width: 161px;
+  left: 1px;
+  display: none;
+  z-index: 9;
+  top: 49px;
+}
+
+.wrapper-table table tr td.reason .pop-reason .header {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  background: #333333;
+  color: #fff;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper-table table tr td.reason .pop-reason .body {
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}

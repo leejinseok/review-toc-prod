@@ -1,0 +1,282 @@
+@import './variables';
+@import './mypage_common';
+
+section.container {
+  .cols {
+    .right-col {
+      .withdraw-request {
+        margin-top: 10px;
+        min-height: 10px;
+        border: 1px solid $borderColor;
+        box-sizing: border-box;
+        .col {
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 102px;
+
+          &.available {
+            width: 33%;
+            justify-content: flex-start;
+            padding-left: 32px;
+            box-sizing: border-box;
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 20px;
+              height: 62px;
+              border-right: 1px solid $borderColor;
+            }
+            .cash {
+              width: 42px;
+              height: 42px;
+            }
+            .text {
+              margin-left: 16px;
+              .title {
+                color: #555555;
+                font-size: 13px;
+              }
+              .amount {
+                font-size: 18px;
+                color: #333;
+                margin-top: 7px;
+              }
+            }
+          }
+          &.withdrawed {
+            width: 27%;
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 20px;
+              height: 62px;
+              border-right: 1px solid $borderColor;
+            }
+            .text {
+              .title {
+                color: #555555;
+                font-size: 13px;
+              }
+              .amount {
+                font-size: 18px;
+                color: #333;
+                margin-top: 7px;
+              }
+            }
+          }
+          &.input-area {
+            width: 40%;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+            .inner-input-text {
+              p {
+                color: #333333;
+                font-size: 12px;
+              }
+              input {
+                margin-top: 10px;
+                height: 34px;
+                background: #fafafa;
+                border: 1px solid $borderColor;
+                box-sizing: border-box;
+                padding: 0;
+                padding: 0 10px;
+                &:focus {
+                  outline: none;
+                }
+              }
+              span {
+                margin-left: 8px;
+                font-size: 15px;
+              }
+            } // end .inner-input-text
+            .inner-button {
+              button {
+                background: #484848;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 68px;
+                height: 34px;
+                border-radius: 3px;
+                border: 0;
+                margin-top: 22px;
+                font-size: 12px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      } // end .withdraw-request
+      .caution {
+        border: 1px solid $borderColor;
+        background: #fafafa;
+        padding: 29px 33px;
+        margin-top: 10px;
+
+        h3 {
+          color: #333333;
+          font-size: 14px;
+          margin-bottom: 13px;
+        }
+        p {
+          font-size: 12px;
+          color: #818181;
+          margin-bottom: 5px;
+          line-height: 1.4;
+          font-weight: 300;
+          button {
+            height: 20px;
+            margin-left: 8px;
+          }
+        }
+      } // end .caution
+
+      .withdraw-history-title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        .main {
+          font-size: 16px;
+          color: #333;
+        }
+
+        .registrated-account {
+          font-size: 14px;
+          color: #707070;
+          margin-left: 14px;
+          strong {
+            color: #333333;
+          }
+        }
+
+        button {
+          background: #484848;
+          color: #fff;
+          width: 67px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0;
+          padding: 0;
+          border-radius: 3px;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        thead {
+          tr {
+            th {
+              height: 42px;
+              box-sizing: border-box;
+            }
+          }
+        } // end thead
+
+        th, td {
+          vertical-align: middle;
+          color: #555555;
+          font-size: 12px;
+          font-weight: 400;
+          text-align: center;
+          height: 42px;
+          box-sizing: border-box;
+          &.request-amount {
+            width: 150px;
+          }
+          &.receipt-info {
+            width: 348px;
+          }
+          &.payday {
+            width: 150px;
+            color: #707070;
+          }
+          &.status {
+            width: 102px;
+            span {
+              border-radius: 10px;
+              width: 42px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 11px;
+              margin: 0 auto;
+              &.standby {
+                color: #339707;
+                border: 1px solid #339707;
+              }
+              &.completed {
+                color: #008fae;
+                border: 1px solid #008fae;
+              }
+            }
+          }
+        }
+      } // end table
+    }
+  }
+}
+
+.modal.modal-reg-document .modal-content {
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.modal.modal-reg-document .modal-content h3 {
+
+}
+
+.modal.modal-reg-document .modal-content h3 ~ p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.modal.modal-reg-document .modal-content table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal.modal-reg-document .modal-content table tr {
+
+}
+
+.modal.modal-reg-document .modal-content table tr:first-child td {
+  border-top: 1px solid #333;
+}
+
+.modal.modal-reg-document .modal-content table tr td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.modal.modal-reg-document .modal-content .wrapper-buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.modal.modal-reg-document .modal-content .wrapper-buttons button.cancel {
+  background-color: $point_hotpink;
+}

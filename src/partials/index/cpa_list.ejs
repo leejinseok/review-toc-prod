@@ -1,0 +1,100 @@
+<section class="section cpa-list">
+  <div class="header">
+    <p class="text">
+      <b>CPA</b> LIST
+    </p>
+    <div class="line"> </div>
+  </div>
+
+  <div class="wrapper-sub-menu">
+    <ul>
+      <li class="select">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">승인률 순</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">승인률 순</li>
+              <li class="list-item">단가순</li>
+              <li class="list-item">등록순</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="menus">
+        <span class="gradient left"></span>
+        <span class="gradient right"></span>
+        <div class="wrapper-items">
+          <ul>
+            <% for (i = 0; i < subMenu01.length; i++) { %>
+              <li <% if (i === 0) { %> class="active" <% } %>>
+                <a href="#"><%= subMenu01[i] %></a>
+              </li>
+              <% } %>
+            </ul>
+          </div>
+        </li>
+        <li class="arrows">
+          <ul>
+            <li>
+              <a href="#" data-direction="left">
+                <img src="./static/images/arrow-left-box.png">
+              </a>
+            </li>
+            <li>
+              <a href="#" data-direction="right">
+                <img src="./static/images/arrow-right-box.png">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper-article clearfix">
+      <% for (i = 0; i < cardsCpa.length; i++) { %>
+        <div class="col-3">
+          <article>
+            <div class="header" style="background-image:url(<%= cardsCpa[i]['backgroundImg'] %>)">
+              <a href="./cpa_detail.html">
+                <img src="<%= cardsCpa[i]['backgroundImg'] %>">
+              </a>
+              <div class="label">
+                <p>추천</p>
+                <p>인기</p>
+              </div>
+            </div>
+            <div class="content">
+              <p class="category">
+                <%= cardsCpa[i]['category'] %>
+              </p>
+              <div class="icons clearfix">
+                <div class="icon">
+                  <img src="./static/images/monitor.svg">
+                </div>
+                <div class="icon">
+                  <img src="./static/images/smart_phone.svg">
+                </div>
+              </div>
+              <p class="title"><a href="./cpa_detail.html"><%= cardsCpa[i]['title'] %></a></p>
+              <p class="detail"><%= cardsCpa[i]['detail'] %></p>
+              <p class="price">
+                <%= cardsCpa[i]['price'] %>
+                <span>
+                  +3,000원
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+      <% } %>
+    </div>
+
+  <div class="view-more">
+    더보기 +
+  </div>
+</section>

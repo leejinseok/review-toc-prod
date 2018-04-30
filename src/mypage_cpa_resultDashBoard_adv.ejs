@@ -1,0 +1,379 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_resultDashBoard_adv.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_adv/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>일별 상세실적</h2>
+      <div class="search">
+
+        <div class="datepicker from">
+          <input type="text" id="datepicker-from">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <span class="wave">~</span>
+        <div class="datepicker to">
+          <input type="text" id="datepicker-to">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <button class="period today"> 오늘 </button>
+        <button class="period cur-month"> 이번달 </button>
+        <button class="period prev-month"> 지난달 </button>
+      </div>
+
+      <div class="search second">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">전체</li>
+              <li class="list-item">항목1</li>
+              <li class="list-item">항목2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">진행상태</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">상태1</li>
+              <li class="list-item">상태2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">남은시간</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">남은시간 1</li>
+              <li class="list-item">남은시간 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="inquiry"> 조회 </button>
+
+      </div>
+
+      <div class="wrapper-table">
+        <table class="table" border="1">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>
+                <input type="checkbox" name="checkAll" class="checkAll" value="" onchange="handleAllCheck(this)">
+              </th>
+              <th>광고명</th>
+              <th>신청일자</th>
+              <th>신청자명</th>
+              <th>전화번호</th>
+              <th>상세보기</th>
+              <th>진행상황</th>
+              <th>메모</th>
+              <th>수정</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 8; i++) { %>
+              <tr>
+                <td><%= i + 1 %></td>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  2018.04.17 <br>
+                  21:56:40
+                </td>
+                <td>
+                  홍길동
+                </td>
+                <td>
+                  010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">상세보기</button>
+                </td>
+                <td class="status">
+                  <% if (i % 4 === 0) { %>
+                    <span class="approve">승인</span>
+                  <% } %>
+                  <% if (i % 4 === 1) { %>
+                    <span class="deny">거절</span>
+                  <% } %>
+                  <% if (i % 4 === 2) { %>
+                    <span class="wait">대기</span>
+                  <% } %>
+                  <% if (i % 4 === 3) { %>
+                    <span class="defer">보류</span>
+                  <% } %>
+                </td>
+                <td class="memo">
+                  <% if (i % 2 === 0) { %>
+                    <span class="d-day">D-10</span>
+                  <% } %>
+
+                  <% if (i % 2 !== 0) { %>
+                    <div class="reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+                  <% } %>
+                </td>
+                <td>
+                  <input type="checkbox" class="update">
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+
+        <div class="wrapper-bottom-controlls clearfix">
+          <div class="button-left col">
+            <button class="approve">승인완료</button>
+            <button class="defer">보류처리</button>
+            <button class="deny">승인거절</button>
+          </div>
+          <div class="button-right col">
+            <button type="button" class="excel">
+              <img src="/static/images/mypage/mypage_excel.png">
+              <span>
+                엑셀다운로드
+              </span>
+              <img src="/static/images/mypage/my_page_numbering_right.png" class="arrow">
+            </button>
+            <button type="button" class="update">수정</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="pagination">
+        <div class="col icon prev-last">
+          <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+        </div>
+        <div class="col icon prev">
+          <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+        </div>
+        <div class="col active">
+          1
+        </div>
+        <div class="col">
+          2
+        </div>
+        <div class="col">
+          3
+        </div>
+        <div class="col">
+          4
+        </div>
+        <div class="col">
+          5
+        </div>
+        <div class="col icon next">
+          <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+        </div>
+        <div class="col icon next-last">
+          <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+        </div>
+      </div>
+
+      <div class="caution">
+        <h3>※ 세금계산서 관련 주의 사항</h3>
+        <p>- 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.</p>
+        <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+        <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal modal-click-one" id="modal-click-one">
+  <div class="modal-content">
+    <div class="options">
+      <div class="items">
+        <div class="selected">
+          <button type="button" class="selected-button">
+            <span class="value">진행상태</span>
+            <img src="./static/images/arrow-down.png">
+          </button>
+        </div>
+        <ul>
+          <li class="list-item">승인</li>
+          <li class="list-item">거절</li>
+          <li class="list-item">대기</li>
+          <li class="list-item">보류</li>
+        </ul>
+      </div>
+    </div>
+    <p class="reason-title">처리상태 사유</p>    
+    <textarea></textarea>
+    <button class="confirm black-btn" onclick="hideModal()">
+      확인
+    </button>
+  </div>
+</div>
+
+<div class="modal modal-click-multiple" id="modal-click-multiple">
+  <div class="modal-content">
+    <table class="mypage-table-style">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>처리상태</th>
+          <th>메모</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>홍길동</td>
+          <td>010-9999-3333</td>
+          <td>
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">승인</span>
+                    <img src="./static/images/arrow-down.png">
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">승인</li>
+                  <li class="list-item">거절</li>
+                  <li class="list-item">대기</li>
+                  <li class="list-item">보류</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+          <td>
+            메모
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="black-btn confirm-button" onclick="hideModal()">
+      확인
+    </button>
+  </div>
+</div>
+
+<div class="modal modal-show-detail" id="modal-show-detail">
+  <div class="modal-content">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>신청일자</td>
+        <td>
+            2018.03.21  15:50:51
+        </td>
+      </tr>
+      <tr>
+        <td>광고명</td>
+        <td>
+          이러쿵
+        </td>
+      </tr>
+      <tr>
+        <td>유입경로</td>
+        <td>
+          http://naver.com,/blog/47801880044
+        </td>
+      </tr>
+      <tr>
+        <td>처리상태</td>
+        <td>
+          대기
+        </td>
+      </tr>
+      <tr>
+        <td>처리사유</td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>아이피</td>
+        <td>
+          211.233.186.61
+        </td>
+      </tr>
+      <tr>
+        <td>신청자명</td>
+        <td>
+          홍길동
+        </td>
+      </tr>
+      <tr>
+        <td>휴대폰</td>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <td>자녀나이</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>자녀몸무게</td>
+        <td>130</td>
+      </tr>
+      <tr>
+        <td>문의사항</td>
+        <td>
+          문의사항 입니다.
+        </td>
+      </tr>
+    </table>
+    <div class="wrapper-buttons">
+      <button class="black-btn">승인완료</button>
+      <button class="black-btn" onclick="showDeferReasonModal()">보류</button>
+      <button class="black-btn" onclick="showDenyReasonModal()">승인거절</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-reason" id="modal-reason">
+  <div class="modal-content">
+    <p class="title defer">
+      보류사유
+    </p>
+    <p class="title deny">
+      거절사유
+    </p>
+    <textarea></textarea>
+    <button class="black-btn small-btn" onclick="hideModal()">확인</button>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>
