@@ -132,16 +132,23 @@
           bottom: 0;
           height: 100px;
           background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 20%, rgba(0, 0, 0, 0.4));
+          .col-4 {
+            width: 186px;
+          }
+          .col-8 {
+            width: calc(460px - 186px);
+          }
+
           div[class*=col] {
+           
             .category {
-              width: 140px;
               box-sizing: border-box;
               padding-left: 26px;
               .left, .right {
-                width: 50%;
-                height: 57px;
+                width: 70px;
+                height: 70px;
                 float: left;
-                line-height: 57px;
+                line-height: 70px;
                 color: #fff;
                 text-align: center;
                 font-size: 12px;
@@ -157,14 +164,13 @@
             }
             .text-description {
               color: #fff;
-              font-size: 12px;
+              font-size: 14px;
               p {
                 margin-top: 6px;
                 font-weight: 200;
               }
               .title {
-                margin-top: 6px;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 400;
               }
             }

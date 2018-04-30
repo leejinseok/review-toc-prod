@@ -262,6 +262,7 @@ function getWrapperBannerItemLeft (winWidth) {
  * @return {void}
  */
 function handleRollingBanner () {
+  return;
     var rollingBanner = new RollingBanner();
     rollingBanner.setWrapperBanner('.wrapper-banner');
     rollingBanner.setWrapperBannerItem('.wrapper-banner-item');
