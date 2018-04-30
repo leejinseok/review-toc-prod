@@ -341,15 +341,18 @@ nav.main {
       &.dropdown {
         &.active,
         &:hover {
+         
+        }
+
+        &.active {
           &:after {
             content: '';
             width: 100%;
             background: $point_hotpink;
             height: 3px;
-            display: block;
             position: absolute;
             left: 0;
-            bottom: -1px;
+            bottom: -2px;
           }
         }
       }
