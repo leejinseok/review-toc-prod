@@ -59,6 +59,7 @@ function handleTopBanners () {
        el: '.swiper-pagination',
        clickable: true,
      },
+     loop: true,
      navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

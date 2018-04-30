@@ -832,3 +832,9 @@ aside.bottom {
 * {
   // box-shadow: 1px 1px 1px 1px red !important;
 }
+
+
+.small-banner:hover .wrapper-swiper-button [class*=swiper-button] {
+  opacity: 1;
+  cursor: pointer;
+}
