@@ -8,8 +8,12 @@
   .swiper-pagination {
     opacity: 0;
     transition: opacity .2s ease;
+    text-align: left;
+    left: 10px;
+    top: 90%;
     .swiper-pagination-bullet {
       cursor: pointer;
+      display: inline-block;
     }
 
     .swiper-pagination-bullet-active {
