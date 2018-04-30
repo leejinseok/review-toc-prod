@@ -18,15 +18,31 @@ function handleCardHoverPriceColor () {
   var cpaList = $('.cpa-list .wrapper-article article');
   var img = $('.cpa-list .wrapper-article article .header a img');
 
-  img.hover(function () {
-    var index = img.index(this);
+  cpaList.hover(function () {
+    var index = cpaList.index(this);
     var curItem = cpaList.eq(index);
+
     curItem.find('.price').addClass('active');
+    img.eq(index).addClass('active');
   });
 
-  img.mouseleave(function () {
-    cpaList.find('.price').removeClass('active');
+  cpaList.mouseleave(function () {
+    var index = cpaList.index(this);
+    var curItem = cpaList.eq(index);
+
+    curItem.find('.price').removeClass('active');
+    img.eq(index).removeClass('active');
   });
+
+  // img.hover(function () {
+  //   var index = img.index(this);
+  //   var curItem = cpaList.eq(index);
+  //   curItem.find('.price').addClass('active');
+  // });
+
+  // img.mouseleave(function () {
+  //   cpaList.find('.price').removeClass('active');
+  // });
 }
 
 /**
@@ -37,15 +53,29 @@ function handleCardHoverBottom () {
   var list = $('.experienceGroup-list .wrapper-article article');
   var img = $('.experienceGroup-list .wrapper-article article .header img');
 
-  img.hover(function () {
-    var index = img.index(this);
+  list.hover(function () {
+    var index = list.index(this);
     var curItem = list.eq(index);
     curItem.find('.bottom').addClass('active');
+    img.eq(index).addClass('active');
   });
 
-  img.mouseleave(function () {
-    list.find('.bottom').removeClass('active');
+  list.mouseleave(function () {
+    var index = list.index(this);
+    var curItem = list.eq(index);
+    curItem.find('.bottom').removeClass('active');
+    img.eq(index).removeClass('active');
   });
+
+  // img.hover(function () {
+  //   var index = img.index(this);
+  //   var curItem = list.eq(index);
+  //   curItem.find('.bottom').addClass('active');
+  // });
+
+  // img.mouseleave(function () {
+  //   list.find('.bottom').removeClass('active');
+  // });
 }
 
 /**
@@ -253,16 +283,11 @@ function getWrapperBannerItemLeft (winWidth) {
     }
 }
 
-
-
-
-
 /**
  * handle rolling banner event
  * @return {void}
  */
 function handleRollingBanner () {
-  return;
     var rollingBanner = new RollingBanner();
     rollingBanner.setWrapperBanner('.wrapper-banner');
     rollingBanner.setWrapperBannerItem('.wrapper-banner-item');

@@ -319,6 +319,7 @@
       margin-top: 30px;
       article {
         border: 1px solid #e0e0e0;
+        cursor: pointer;
         .header {
           height: 180px;
           width: 100%;
@@ -330,7 +331,8 @@
           img {
             height: 180px;
             width: 100%;
-            &:hover {
+            &:hover,
+            &.active {
               transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
               transform: scale3d(1.04,1.04,1);
             }
@@ -385,8 +387,8 @@
               width: 20px;
               height: 20px;
               img {
-                width: 13px;
-                height: 13px;
+                width: 15px;
+                height: 15px;
               }
             }
           }
@@ -397,7 +399,6 @@
             margin-top: 8px;
             a {
               &:hover {
-                text-decoration: underline;
               }
             }
           }
@@ -446,6 +447,10 @@
     .wrapper-article {
       margin-top: 30px;
       article {
+        * {
+          letter-spacing: 0;
+        }
+        cursor: pointer;
         border: 1px solid #e0e0e0;
         .header {
           height: 210px;
@@ -458,7 +463,8 @@
           img {
             height: 210px;
             width: 100%;
-            &:hover {
+            &:hover,
+            &.active {
               transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
               transform: scale3d(1.04,1.04,1);
             }
@@ -858,4 +864,8 @@ aside.bottom {
 
 .small-banner .swiper-pagination .swiper-pagination-bullet {
   margin-right: 3px;
+}
+
+.section.cpa-list .wrapper-article article * {
+  letter-spacing: 0;
 }
