@@ -368,8 +368,7 @@ nav.main {
         padding-left: 0;
       }
       .logo {
-        width: 114px;
-        height: 40px;
+        width: 120px;
         vertical-align: middle;
       }
     }
@@ -391,7 +390,7 @@ nav.main {
         margin-bottom: 3.8px;
       }
       a {
-        color: #a0a0a0;
+        color: #777;
         font-size: 14px;
         &:hover {
           color: #ff8e8e;
@@ -399,7 +398,7 @@ nav.main {
       }
 
       .wrapper-search {
-        width: 130px;
+        width: 180px;
         background: #f9f9f9;
         height: 30px;
         line-height: 30px;
@@ -408,7 +407,7 @@ nav.main {
         border-radius: 15px;
         border: 1px solid #efefef;
         input[type=text] {
-          width: 70px;
+          width: 120px;
           margin: 0 auto;
           border: 0;
           background: transparent;
@@ -592,4 +591,12 @@ nav.main.logined ul.right li.dropdown.profile:hover:after {
 
 nav.main.logined ul.right li.dropdown.profile a:last-child{
   border-top: 1px solid #e0e0e0;
+}
+nav.main ul.right li a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav.main ul.right li.li-wrapper-search {
+  padding-left: 30px;
 }
