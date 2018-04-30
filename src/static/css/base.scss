@@ -307,7 +307,7 @@ nav.main {
       display: block;
     }
     .dropbtn {
-      color: #ff2b62;
+      color: $point_hotpink;
     }
   }
 
@@ -343,7 +343,7 @@ nav.main {
           &:after {
             content: '';
             width: 100%;
-            background: #ff0000;
+            background: $point_hotpink;
             height: 3px;
             display: block;
             position: absolute;
@@ -393,7 +393,7 @@ nav.main {
         color: #777;
         font-size: 14px;
         &:hover {
-          color: #ff8e8e;
+          color: $point_hotpink;
         }
       }
 
