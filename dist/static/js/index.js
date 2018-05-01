@@ -7,8 +7,17 @@ $(document).ready(function () {
     handleCPAListSubMenuLeftRight(); // handle cpa-list submenu
     handleExperienceGroupListSubMenuLeftRight(); // handle experience group submenu
     handleCardHoverPriceColor();
-    handleCardHoverBottom();
+    handleCardHoverBottom(); 
+    handleSwiperAsideBottom();
 });
+
+function handleSwiperAsideBottom () {
+  var swiper = new Swiper('aside .swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+}
 
 /**
  * cpa list card hover
@@ -83,7 +92,7 @@ function handleCardHoverBottom () {
  * @return {void}
  */
 function handleTopBanners () {
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.top-banners.swiper-container,  .middle-banner.swiper-container', {
      direction: 'vertical',
      pagination: {
        el: '.swiper-pagination',
