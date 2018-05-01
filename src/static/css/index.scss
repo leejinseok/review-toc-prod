@@ -261,6 +261,13 @@
           width: calc(100% - (130px + 56px));
           overflow: hidden;
           position: relative;
+
+          .swiper-slide:hover a,
+          .swiper-slide.active a {
+            color: #333;
+            font-weight: bold;
+          }
+
           .gradient {
             position: absolute;
             height: 100%;
@@ -402,6 +409,12 @@
             font-size: 16px;
             margin-top: 8px;
             a {
+              display: block;
+              overflow: hidden;
+              height: 16px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
               &:hover {
               }
             }
@@ -446,6 +459,12 @@
       .line {
         width: calc(100% - 210px);
       }
+    }
+
+    .swiper-slide:hover a,
+    .swiper-slide.active a {
+      color: #333;
+      font-weight: bold;
     }
 
     .wrapper-article {
@@ -530,14 +549,19 @@
 
             &.active {
               .d-day {
-                color: #ff2b62;
+                color: $point_hotpink;
                 .d {
-                  background: #ff2b62;
+                  background-color: $point_hotpink;
+                  color: #fff;
                 }
               }
 
               .apply-status {
-                background: #fe1e53;
+                color: $point_hotpink;
+                border-color: $point_hotpink;
+                .yellow {
+                  color: $point_hotpink;
+                }
               }
             }
 
@@ -548,10 +572,6 @@
               border-radius: 20px;
               text-align: center;
               padding: 8px 0;
-
-              .yellow {
-                color: #fffc00;
-              }
             }
 
             .d-day {
@@ -577,8 +597,13 @@
 
             .apply-status {
               width: 126px;
-              background: #333;
               padding: 7px 0;
+              border: 1px solid #888;
+              color: #666;
+              .yellow {
+                color: #333;
+                font-weight: bold;
+              }
             }
           }
 

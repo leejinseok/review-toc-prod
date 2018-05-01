@@ -26,6 +26,12 @@ function handleCpaListSubMenuSlide () {
       prevEl: '.section.cpa-list .list-swiper-button-prev',
     },
   });
+
+  var slide = $('.section.cpa-list .wrapper-sub-menu ul li.menus .swiper-container .swiper-slide');
+  slide.click(function () {
+    slide.removeClass('active');
+    $(this).addClass('active');
+  });
 }
 
 function handleExperienceGroupListSubMenuSlide () {
@@ -40,6 +46,12 @@ function handleExperienceGroupListSubMenuSlide () {
       nextEl: '.section.experienceGroup-list .list-swiper-button-next',
       prevEl: '.section.experienceGroup-list .list-swiper-button-prev',
     },
+  });
+
+  var slide = $('.section.experienceGroup-list  .wrapper-sub-menu ul li.menus .swiper-container .swiper-slide');
+  slide.click(function () {
+    slide.removeClass('active');
+    $(this).addClass('active');
   });
 }
 
@@ -104,7 +116,7 @@ function handleCardHoverBottom () {
  * @return {void}
  */
 function handleTopBanners () {
-  var swiper = new Swiper('.top-banners.swiper-container,  .middle-banner.swiper-container', {
+  var swiperTop = new Swiper('.top-banners.swiper-container', {
      direction: 'vertical',
      pagination: {
        el: '.swiper-pagination',
@@ -116,6 +128,22 @@ function handleTopBanners () {
       prevEl: '.swiper-button-prev',
     }
    });
+
+  var swiperMiddel = new Swiper('.middle-banner.swiper-container', {
+    direction: 'vertical',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000
+    },
+    loop: true,
+    navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   }
+  });
 }
 
 /**
