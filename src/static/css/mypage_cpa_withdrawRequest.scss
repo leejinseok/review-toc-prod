@@ -9,6 +9,7 @@ section.container {
         min-height: 10px;
         border: 1px solid $borderColor;
         box-sizing: border-box;
+        background: #fff;
         .col {
           float: left;
           display: flex;
