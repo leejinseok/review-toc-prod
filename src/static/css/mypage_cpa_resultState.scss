@@ -12,6 +12,10 @@ section.container {
         height: 90px;
         border: 1px solid $borderColor;
         box-sizing: border-box;
+        background: #fff;
+        border-top: 2px solid #333;
+        border-left: 0;
+        border-right: 0;
         .col {
           float: left;
           height: 100%;
@@ -37,9 +41,15 @@ section.container {
           }
 
           span {
-            font-size: 18px;
+            font-size: 25px;
             color: #333333;
             margin-top: 12px;
+            font-weight: bold;
+            small {
+              font-size: 18px;
+              font-weight: 400;
+              margin-left: 2px;
+            }
           }
         }
       } // end .dashboard
@@ -99,6 +109,14 @@ section.container {
           }
         }
 
+        tbody {
+          tr:hover {
+            td {
+              background: #fffbfb;
+            }
+          }
+        }
+
         th, td {
           vertical-align: middle;
           color: #555555;
@@ -135,19 +153,17 @@ section.container {
           &.advertising-name {
 
           } // end .advertising-name
+
           &.campaign-name {
-            color: #818181;
             font-size: 12px;
           } // end .campaign-name
           &.apply-date {
-            color: #818181;
           } // end .apply-date
           &.benefit {
-            color: #333;
           } // end .benefit
           &.promotion {
-            color: #818181;
           } // end .promotion
+
           &.status {
             .inner-col {
               display: flex;
@@ -155,26 +171,6 @@ section.container {
               justify-content: center;
               span {
                 display: inline-block;
-                width: 42px;
-                height: 20px;
-                line-height: 20px;
-                border-radius: 12px;
-                &.approve {
-                  border: 1px solid #008fae;
-                  color: #008fae;
-                }
-                &.deny {
-                  color: #fe1e53;
-                  border: 1px solid #fe1e53;
-                }
-                &.standby {
-                  color: #339707;
-                  border: 1px solid #339707;
-                }
-                &.defer {
-                  color: #dab400;
-                  border: 1px solid #dab400;
-                }
               } // end span
             } // end .inner-col
 
@@ -185,18 +181,17 @@ section.container {
               align-items: center;
               justify-content: center;
               span {
-                width: 58px;
-                height: 26px;
-                color: #fff;
-                background: #ff6b8e;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                width: 64px;
+                height: 22px;
+                border: 1px solid #e0e0e0;
                 border-radius: 3px;
                 cursor: pointer;
                 font-size: 12px;
+                line-height: 22px;
+                
                 &:hover {
-                  background: #fe1e53;
+                  background: #333;
+                  color: #fff;
                 }
               }
             }
@@ -217,8 +212,8 @@ section.container {
                 height: 26px;
                 cursor: pointer;
                 font-size: 12px;
-                color: #555555;
-                background: #e0e0e0;
+                color: #fff;
+                background: #959595;
               }
             }
           } // end .reason
@@ -263,4 +258,116 @@ section.container {
   padding: 10px;
   background: #fff;
   box-sizing: border-box;
+}
+
+.wrapper-table table tr td.status span {
+  color: #fff !important;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 4px 13.4px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.wrapper-table table tr td.status span.approve {
+  background: #2b98ed !important;
+}
+
+.wrapper-table table tr td.status span.deny {
+  background: #ca1818 !important;
+}
+
+.wrapper-table table tr td.status span.standby {
+  background: #50b506 !important;
+}
+
+.wrapper-table table tr td.status span.defer {
+  background: #f39800 !important;
+}
+
+.wrapper-table .status-dashboard {
+  width: calc(100% - 60px); 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.wrapper-table .status-dashboard .col {
+  float: left;
+}
+
+.wrapper-table .status-dashboard .col.number {
+  width: 70%;
+}
+
+
+
+.wrapper-table .status-dashboard .col.number ul {
+
+}
+
+.wrapper-table .status-dashboard .col.number ul li {
+  float: left;
+  position: relative;
+  padding-right: 15px;
+  font-size: 13px;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .square {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .square.wait {
+  background-color: #339707;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .square.defer {
+  background-color: #f39800;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .square.approve {
+  background-color: #2b98ed;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .square.deny {
+  background-color: #ca1818;
+}
+
+.wrapper-table .status-dashboard .col.number ul li .text {
+  margin-left: 17px;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox {
+  width: 30%;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox .inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox .inner .result .number {
+  color: #f39800;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox .inner .options {
+  height: 26px;
+  width: 90px;
+  margin-left: 9px;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox .inner .options .items .selected button {
+  padding-left: 11px;
+}
+
+.wrapper-table .status-dashboard .col.result-and-selectbox .inner .options .items .selected button img {
+  top: 9px;
+  width: 9px;
 }

@@ -311,27 +311,35 @@
         <div class="dashboard">
           <div class="col">
             <p class="title">전체건수</p>
-            <span>250건</span>
+            <span>
+            250<small>건</small>
+          </span>
           </div>
           <div class="col">
             <p class="title">승인건수</p>
-            <span>250건</span>
+            <span>
+            250<small>건</small>
+          </span>
           </div>
           <div class="col">
             <p class="title">승인률</p>
-            <span>70%</span>
+            <span>
+            70<small>%</small>
+          </span>
           </div>
           <div class="col">
             <p class="title">기간내누적금액</p>
-            <span>250건</span>
+            <span>
+            330,000<small>원</small>
+          </span>
           </div>
         </div>
-        <div class="small-preview-with-number">
-          <span class="text">대기</span><span class="number standby">2</span>
-          <span class="text">보류</span><span class="number defer">2</span>
-          <span class="text">거절</span><span class="number deny">2</span>
-          <span class="text">승인</span><span class="number approve">2</span>
-        </div>
+        <!-- <div class="small-preview-with-number">
+        <span class="text">대기</span><span class="number standby">2</span>
+        <span class="text">보류</span><span class="number defer">2</span>
+        <span class="text">거절</span><span class="number deny">2</span>
+        <span class="text">승인</span><span class="number approve">2</span>
+      </div> -->
         <div class="search">
           <div class="options">
             <div class="items">
@@ -379,6 +387,58 @@
         </div>
 
         <div class="wrapper-table">
+          <div class="status-dashboard clearfix">
+            <div class="col number">
+              <ul class="clearfix">
+                <li>
+                  <span class="square wait"></span>
+                  <span class="text">
+                  대기(2)
+                </span>
+                </li>
+                <li>
+                  <span class="square defer"></span>
+                  <span class="text">
+                  보류(2)
+                </span>
+                </li>
+                <li>
+                  <span class="square approve"></span>
+                  <span class="text">
+                  승인(2)
+                </span>
+                </li>
+                <li>
+                  <span class="square deny"></span>
+                  <span class="text">
+                  거절(2)
+                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col result-and-selectbox">
+              <div class="inner">
+                <span class="result">검색결과 <span class="number">4</span>건</span>
+                <div class="options">
+                  <div class="items">
+                    <div class="selected">
+                      <button type="button" class="selected-button">
+                        <span class="value">50개씩</span>
+                        <img src="./static/images/arrow-down.png">
+                      </button>
+                    </div>
+                    <ul>
+                      <li class="list-item">50개씩</li>
+                      <li class="list-item">40개씩</li>
+                      <li class="list-item">30개씩</li>
+                      <li class="list-item">20개씩</li>
+                      <li class="list-item">10개씩</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <table>
             <thead>
               <tr>
@@ -433,6 +493,10 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -442,6 +506,8 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
                   </div>
                 </td>
               </tr>
@@ -484,15 +550,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -535,6 +597,8 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -544,6 +608,10 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -586,15 +654,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -637,6 +701,10 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -646,6 +714,8 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
                   </div>
                 </td>
               </tr>
@@ -688,15 +758,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -739,6 +805,8 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -748,6 +816,10 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -790,15 +862,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -841,6 +909,10 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -850,6 +922,8 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
                   </div>
                 </td>
               </tr>
@@ -892,15 +966,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -943,6 +1013,8 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -952,6 +1024,10 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -994,15 +1070,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1045,6 +1117,10 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -1054,6 +1130,8 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
                   </div>
                 </td>
               </tr>
@@ -1096,15 +1174,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1147,6 +1221,8 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -1156,6 +1232,10 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1198,15 +1278,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1249,6 +1325,10 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -1258,6 +1338,8 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
                   </div>
                 </td>
               </tr>
@@ -1300,15 +1382,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1351,6 +1429,8 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
+
+
                     <span>사유</span>
                     <div class="pop-reason">
                       <div class="header">
@@ -1360,6 +1440,10 @@
                         광고주가 입력한 취소 or 보류사유
                       </div>
                     </div>
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1402,15 +1486,11 @@
                 </td>
                 <td class="reason">
                   <div class="inner-col">
-                    <span>사유</span>
-                    <div class="pop-reason">
-                      <div class="header">
-                        거절사유
-                      </div>
-                      <div class="body">
-                        광고주가 입력한 취소 or 보류사유
-                      </div>
-                    </div>
+
+
+
+
+
                   </div>
                 </td>
               </tr>
@@ -1448,6 +1528,15 @@
           <div class="col icon next-last">
             <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
           </div>
+        </div>
+
+        <div class="caution">
+          <h3>※ 세금계산서 관련 주의 사항</h3>
+          <p>
+            - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+          </p>
+          <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+          <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
         </div>
       </div>
     </div>

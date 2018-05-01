@@ -113,6 +113,10 @@ CUSTOM
         padding-left: 14px;
         position: relative;
         font-size: 12px;
+        
+        span {
+          pointer-events: none;
+        }
 
         img {
           position: absolute;

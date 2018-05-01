@@ -326,6 +326,7 @@ section.mypage {
                     color: #666666;
                     cursor: pointer;
                     border: 1px solid #cccccc;
+                    font-size: 12px;
                     &:hover {
                       background: #333;
                       color: #fff;
@@ -376,4 +377,9 @@ section.mypage {
 
 footer {
   width: $contentWidth !important;
+}
+
+
+section.mypage .cols .right-col .wrapper-table table tbody tr td {
+  color: #555 !important;
 }

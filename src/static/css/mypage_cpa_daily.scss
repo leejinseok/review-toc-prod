@@ -28,6 +28,7 @@ section.container {
             th {
               border-top: 2px solid #333333;
               background: #fbfbfb;
+              width: 132px;
             }
           }
 
@@ -47,27 +48,6 @@ section.container {
             height: 42px;
             box-sizing: border-box;
 
-            &.exposure {
-              width: 140px;
-            }
-            &.apply {
-              width: 108px;
-            }
-            &.standby {
-              width: 91px;
-            }
-            &.defer {
-              width: 91px;
-            }
-            &.deny {
-              width: 91px;
-            }
-            &.approve {
-              width: 91px;
-            }
-            &.commission {
-              width: 126px;
-            }
           }
         } // end table
       } // end .wrapper-table

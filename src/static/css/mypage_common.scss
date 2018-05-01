@@ -206,11 +206,13 @@ section.mypage {
           .items {
             .selected {
               button {
-                background: #fbfbfb;
                 img {
                   width: 10px;
                 }
               }
+            }
+            button {
+              background: #fff !important;
             }
             ul {
               margin-top: 0;
@@ -477,156 +479,173 @@ footer {
   }
   
 
-  .modal.modal-click-one .modal-content {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
-  }
-  
-  .modal.modal-click-one .modal-content .reason-title {
-    font-size: 12px;
-    margin-top: 20px;
-  }
-  
-  .modal.modal-click-one .modal-content .options button {
-    background: #fbfbfb;
-  }
-  
-  .modal.modal-click-one .modal-content textarea {
-    width: 100%;
-    margin-top: 12px;
-    height: 86px;
-    background: #fbfbfb;
-    border: 1px solid #e0e0e0;
-  }
-  
-  .modal.modal-click-one .modal-content button.confirm {
-    margin-top: 12px;
-  }
-  
-  .modal.modal-click-one .modal-content button.confirm:hover {
-    background: #000;
-  }
-  
-  .modal.modal-click-multiple .modal-content {
-    position: absolute;
-    width: 484px;
-    height: 260px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
-    overflow-y: auto;
-  }
-  
-  .modal.modal-click-multiple .modal-content table {
-    width: 100%;
-  }
-  
-  .modal.modal-click-multiple .modal-content table tr td,
-  .modal.modal-click-multiple .modal-content table tr th {
-    text-align: center;
-    height: 42px;
-  }
-  
-  .modal.modal-click-multiple .modal-content table .options {
-    width: 76px;
-    height: 26px;
-  }
-  
-  .modal.modal-click-multiple .modal-content table .options .items .selected button img {
-    right: 10px;
-    top: 11px;
-    pointer-events: none;
-    width: 10px;
-  }
-  
-  .modal.modal-click-multiple .modal-content .confirm-button {
-    margin-top: 8px;
-  }
-  
-  .modal.modal-click-multiple .modal-content .confirm-button:hover {
-    background: #000;
-  }
-  
-  .modal.modal-show-detail .modal-content {
-    position: absolute;
-    width: 480px;
-    height: 568px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
-    overflow-y: auto;
-  }
-  
-  .modal.modal-show-detail .modal-content table {
-    width: 100%;
-  }
-  
-  .modal.modal-show-detail .modal-content table tr {
-  
-  }
-  
-  .modal.modal-show-detail .modal-content table tr:first-child td {
-    border-top: 1px solid #333;
-  }
-  
-  .modal.modal-show-detail .modal-content table tr td {
-    border-bottom: 1px solid #e0e0e0;
-    padding: 12px 0;
-    font-size: 14px;
-  }
-  
-  .modal.modal-show-detail .modal-content table tr td:first-child {
-    font-weight: 200;
-  }
-  
-  .modal.modal-show-detail .modal-content .wrapper-buttons {
-    margin-top: 10px;
-  }
-  
-  .modal.modal-show-detail .modal-content .wrapper-buttons button {
-    width: 60px;
-    height: 24px;
-    font-size: 10px;
-  }
-  
-  .small-btn {
-    width: 60px;
-    height: 24px;
-    font-size: 10px;
-  }
-  
-  .modal.modal-reason .modal-content {
-    position: absolute;
-    width: 250px;
-    height: 190px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
-    overflow-y: auto;
-    padding: 20px;
-  }
-  
-  .modal.modal-reason .modal-content p.title {
-    display: none;
-    font-size: 12px;
-  }
-  
-  .modal.modal-reason .modal-content textarea {
-    background: #fbfbfb;
-    border: 1px solid #e0e0e0;
-    width: 100%;
-    min-height: 90px;
-    margin-top: 10px;
-  }
-  
-  .modal.modal-reason .modal-content button {
-    margin-top: 8px;
-  }
+.modal.modal-click-one .modal-content {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.modal.modal-click-one .modal-content .reason-title {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.modal.modal-click-one .modal-content .options button {
+  background: #fbfbfb;
+}
+
+.modal.modal-click-one .modal-content textarea {
+  width: 100%;
+  margin-top: 12px;
+  height: 86px;
+  background: #fbfbfb;
+  border: 1px solid #e0e0e0;
+}
+
+.modal.modal-click-one .modal-content button.confirm {
+  margin-top: 12px;
+}
+
+.modal.modal-click-one .modal-content button.confirm:hover {
+  background: #000;
+}
+
+.modal.modal-click-multiple .modal-content {
+  position: absolute;
+  width: 484px;
+  height: 260px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.modal.modal-click-multiple .modal-content table {
+  width: 100%;
+}
+
+.modal.modal-click-multiple .modal-content table tr td,
+.modal.modal-click-multiple .modal-content table tr th {
+  text-align: center;
+  height: 42px;
+}
+
+.modal.modal-click-multiple .modal-content table .options {
+  width: 76px;
+  height: 26px;
+}
+
+.modal.modal-click-multiple .modal-content table .options .items .selected button img {
+  right: 10px;
+  top: 11px;
+  pointer-events: none;
+  width: 10px;
+}
+
+.modal.modal-click-multiple .modal-content .confirm-button {
+  margin-top: 8px;
+}
+
+.modal.modal-click-multiple .modal-content .confirm-button:hover {
+  background: #000;
+}
+
+.modal.modal-show-detail .modal-content {
+  position: absolute;
+  width: 480px;
+  height: 568px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.modal.modal-show-detail .modal-content table {
+  width: 100%;
+}
+
+.modal.modal-show-detail .modal-content table tr {
+
+}
+
+.modal.modal-show-detail .modal-content table tr:first-child td {
+  border-top: 1px solid #333;
+}
+
+.modal.modal-show-detail .modal-content table tr td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.modal.modal-show-detail .modal-content table tr td:first-child {
+  font-weight: 200;
+}
+
+.modal.modal-show-detail .modal-content .wrapper-buttons {
+  margin-top: 10px;
+}
+
+.modal.modal-show-detail .modal-content .wrapper-buttons button {
+  width: 60px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.small-btn {
+  width: 60px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.modal.modal-reason .modal-content {
+  position: absolute;
+  width: 250px;
+  height: 190px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal.modal-reason .modal-content p.title {
+  display: none;
+  font-size: 12px;
+}
+
+.modal.modal-reason .modal-content textarea {
+  background: #fbfbfb;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  min-height: 90px;
+  margin-top: 10px;
+}
+
+.modal.modal-reason .modal-content button {
+  margin-top: 8px;
+}
+
+section.mypage .cols .right-col .search .datepicker input {
+  background: #fff !important;
+}
+
+section.mypage .cols .right-col .search .datepicker img {
+  right: 7px !important;
+}
+
+section.mypage .cols .right-col .search .period, 
+section.mypage .cols .right-col .search .inquiry {
+  font-weight: 300 !important;
+}
+
+section.mypage .cols .left-col .wrapper-accordion .panel p a {
+  font-size: 14px !important;
+}
