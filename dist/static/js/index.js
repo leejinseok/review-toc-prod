@@ -9,7 +9,39 @@ $(document).ready(function () {
     handleCardHoverPriceColor();
     handleCardHoverBottom(); 
     handleSwiperAsideBottom();
+    handleCpaListSubMenuSlide();
+    handleExperienceGroupListSubMenuSlide();
 });
+
+function handleCpaListSubMenuSlide () {
+  var swiper = new Swiper('.section.cpa-list .wrapper-sub-menu ul li.menus .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.section.cpa-list .list-swiper-button-next',
+      prevEl: '.section.cpa-list .list-swiper-button-prev',
+    },
+  });
+}
+
+function handleExperienceGroupListSubMenuSlide () {
+  var swiper = new Swiper('.section.experienceGroup-list .wrapper-sub-menu ul li.menus .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.section.experienceGroup-list .list-swiper-button-next',
+      prevEl: '.section.experienceGroup-list .list-swiper-button-prev',
+    },
+  });
+}
 
 function handleSwiperAsideBottom () {
   var swiper = new Swiper('aside .swiper-container', {
@@ -42,16 +74,6 @@ function handleCardHoverPriceColor () {
     curItem.find('.price').removeClass('active');
     img.eq(index).removeClass('active');
   });
-
-  // img.hover(function () {
-  //   var index = img.index(this);
-  //   var curItem = cpaList.eq(index);
-  //   curItem.find('.price').addClass('active');
-  // });
-
-  // img.mouseleave(function () {
-  //   cpaList.find('.price').removeClass('active');
-  // });
 }
 
 /**
@@ -75,16 +97,6 @@ function handleCardHoverBottom () {
     curItem.find('.bottom').removeClass('active');
     img.eq(index).removeClass('active');
   });
-
-  // img.hover(function () {
-  //   var index = img.index(this);
-  //   var curItem = list.eq(index);
-  //   curItem.find('.bottom').addClass('active');
-  // });
-
-  // img.mouseleave(function () {
-  //   list.find('.bottom').removeClass('active');
-  // });
 }
 
 /**
