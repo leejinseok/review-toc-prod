@@ -348,7 +348,7 @@
             top: 0;
             p {
               color: #fff;
-              font-size: 12px;
+              font-size: 13px;
               text-align: center;
               padding: 14px 0;
               width: 40px;
@@ -366,7 +366,7 @@
 
         .content {
           height: 140px;
-          padding: 25px 18px;
+          padding: 25px 20px;
           box-sizing: border-box;
           position: relative;
           .category {
@@ -399,7 +399,7 @@
 
           .title {
             color: #333;
-            font-size: 15px;
+            font-size: 16px;
             margin-top: 8px;
             a {
               &:hover {
@@ -480,7 +480,7 @@
             top: 0;
             p {
               color: #fff;
-              font-size: 12px;
+              font-size: 13px;
               text-align: center;
               padding: 14px 0;
               width: 40px;
@@ -498,25 +498,32 @@
 
         .content {
           height: 155px;
-          padding: 20px 18px;
+          padding: 18px;
           box-sizing: border-box;
 
           .title {
             color: #333;
-            font-size: 15px;
+            font-size: 16px;
             margin-top: 8px;
+            overflow: hidden;
+            white-space: pre;
           }
 
           .detail {
             color: #a0a0a0;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 200;
-            margin-top: 12px;
+            margin-top: 10px;
             line-height: 1.6;
+            display: -webkit-box;
+            height: 40px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
 
           .bottom {
-            margin-top: 14px;
+            margin-top: 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -550,12 +557,21 @@
             .d-day {
               width: 60px;
               color: #333;
-              font-size: 11px;
+              font-size: 13px;
+              font-weight: bold;
+              line-height: 12px;
+              padding: 0;
 
               .d {
                 background: #333;
                 color: #fff;
                 padding: 3px 5px;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                font-weight: 200;
+                font-size: 11px;
+                box-sizing: border-box;
               }
             }
 
@@ -631,7 +647,10 @@ aside.bottom {
         td {
           font-size: 13px;
           padding: 16px 0;
-          border-bottom: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0; 
+          * {
+            letter-spacing: 0;
+          }
           &.title {
             width: 80%;
             color: #a0a0a0;
@@ -648,6 +667,7 @@ aside.bottom {
             text-align: right;
             color: #555;
             font-weight: 200;
+            font-size: 12px;
           }
         }
       }
@@ -674,7 +694,6 @@ aside.bottom {
           font-size: 14px;
           line-height: 22px;
           color: #555;
-          font-weight: 200;
 
           .circle-number {
             display: inline-block;
@@ -734,6 +753,22 @@ aside.bottom {
             color: #707070;
             cursor: pointer;
             position: relative;
+
+            &.menu {
+              a {
+                display: flex;
+                align-items: center;
+              }
+
+              .symbol.chat {
+                height: 20px; 
+                width: 21px;
+              }
+
+              .symbol.question {
+                height: 16px;
+              }
+            }
 
             &:hover {
             }
@@ -899,7 +934,7 @@ aside.bottom .inner .guide-contact .right .swiper-container .swiper-wrapper .swi
   width: auto;
   padding: 0 20px;
   color: #818181;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -909,4 +944,9 @@ aside.bottom .inner .guide-contact .right .swiper-container .swiper-wrapper .swi
 
 .section .wrapper-sub-menu ul li.arrows a:focus {
   outline: none;
+}
+
+
+.options .items .selected button {
+  font-size: 14px;
 }

@@ -358,8 +358,8 @@ nav.main {
       }
 
       a {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-size: 15px;
       }
 
@@ -416,6 +416,8 @@ nav.main {
           margin: 0 auto;
           border: 0;
           background: transparent;
+          font-size: 12px;
+          font-weight: 300;
           &:focus {
             outline: none;
           }
@@ -598,10 +600,10 @@ nav.main.logined ul.right li.dropdown.profile a:last-child{
   border-top: 1px solid #e0e0e0;
 }
 nav.main ul.right li a {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 nav.main ul.right li.li-wrapper-search {
-  padding-left: 30px;
+  padding-left: 23px;
 }

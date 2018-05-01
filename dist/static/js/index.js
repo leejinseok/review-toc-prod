@@ -18,7 +18,7 @@ function handleCpaListSubMenuSlide () {
     slidesPerView: 'auto',
     spaceBetween: 0,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.section.cpa-list .swiper-pagination',
       clickable: true,
     },
     navigation: {
@@ -33,7 +33,7 @@ function handleExperienceGroupListSubMenuSlide () {
     slidesPerView: 'auto',
     spaceBetween: 0,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.section.experienceGroup-list .swiper-pagination',
       clickable: true,
     },
     navigation: {
