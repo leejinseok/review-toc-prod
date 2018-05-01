@@ -392,12 +392,23 @@ nav.main {
         padding-right: 0;
         font-weight: 100;
       }
-      .profile {
+
+      .profile,
+      .letter {
         width: 18px;
         height: 18px;
         vertical-align: middle;
         margin-bottom: 3.8px;
       }
+
+      .letter {
+        display: none;
+      }
+
+      .letter.active {
+        display: inline-block;
+      }
+
       a {
         color: #777;
         font-size: 14px;
@@ -585,18 +596,38 @@ nav.main.logined ul.right {
 
 }
 
-nav.main.logined ul.right li.dropdown.profile {
+nav.main.logined ul.right li.dropdown.mypage {
+  position: relative;
+}
 
+nav.main.logined ul.right li.dropdown.mypage img.letter {
+  margin-right: 6px;
+}
+
+nav.main.logined ul.right li.dropdown.mypage .count-alarm {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background-color: $point_hotpink;
+  color: #fff;
+  line-height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 32px;
+  left: 16px;
+  text-align: center;
+  font-size: 10px;
+  vertical-align: middle;
 }
 
 nav.main.logined ul.right li {
 }
 
-nav.main.logined ul.right li.dropdown.profile .dropdown-content {
+nav.main.logined ul.right li.dropdown.mypage .dropdown-content {
 }
 
-nav.main.logined ul.right li.dropdown.profile.active:after, 
-nav.main.logined ul.right li.dropdown.profile:hover:after {
+nav.main.logined ul.right li.dropdown.mypage.active:after, 
+nav.main.logined ul.right li.dropdown.mypage:hover:after {
   display: none;
 }
 
@@ -610,4 +641,53 @@ nav.main ul.right li a {
 
 nav.main ul.right li.li-wrapper-search {
   padding-left: 23px;
+}
+
+nav.main .dropdown:hover > a {
+  color: $point_hotpink;
+}
+
+nav.main.logined .dropdown .dropdown-content .panel {
+  overflow: hidden;
+  max-height: 0;
+}
+
+nav.main.logined .dropdown .dropdown-content .accordion {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 0;
+  line-height: 24px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  text-align: left;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+nav.main.logined .dropdown .dropdown-content .accordion:hover {
+  color: #fe1e53;
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+nav.main.logined .dropdown .dropdown-content .accordion:focus {
+  outline: none;
+}
+
+nav.main.logined .dropdown .dropdown-content .accordion img {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+nav.main.logined .dropdown .dropdown-content .accordion a {
+  padding: 0;
 }
