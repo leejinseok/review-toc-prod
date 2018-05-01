@@ -95,8 +95,6 @@ function handleOptions () {
   });
   
   function listToggle () {
-    console.log(display);
-    
     if (!display) {
       options.eq(index).addClass('active');
     } else {
