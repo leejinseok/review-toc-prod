@@ -205,12 +205,29 @@ footer {
     ul.bottom-menu {
       li {
         float: left;
-        padding: 18px 12px;
+        padding: 18px 20px;
         font-size: 12px;
         color: #707070;
+        position: relative;
         &:first-child {
           padding-left: 0;
         }
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: calc(50% - 5px);
+          height: 10px;
+          width: 1px;
+          background: #e0e0e0;
+        }
+
       }
     }
   }
