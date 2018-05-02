@@ -4,7 +4,17 @@ $(document).ready(function () {
   handleBodyClick(); // handle body click event
   handleUpdateButton();
   handleBodyClickHideModal();
+  handleUpdateCheckedItem();
 });
+
+function handleUpdateCheckedItem () {
+  var checkbox = $('[type=checkbox].check');
+  var btn = $('.wrapper-bottom-controlls .col button');
+  btn.click(function () {
+    if (!confirm('체크된 항목을 수정하시겠습니까?')) return;
+    // TODO
+  });
+}
 
 function handleBodyClickHideModal () {
   var modal = $('.modal');
@@ -58,8 +68,13 @@ function hideModal () {
   modal.hide();
 }
 
+function showModalOneUpdate () {
+  var modal = $('.modal.modal-click-one');
+  modal.show();  
+}
+
 function handleUpdateButton () {
-  var checkbox = $('[type=checkbox].update');
+  var checkbox = $('[type=checkbox].check');
   var updateBtn = $('button.update');
   var modal = $('.modal.modal-click-one');
   var modalMultipleSelect = $('.modal.modal-click-multiple');

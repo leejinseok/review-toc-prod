@@ -18,6 +18,10 @@ section.mypage .cols .right-col .search .inquiry {
   
 }
 
+.wrapper-table table tr td {
+  padding: 5px 0;
+}
+
 .wrapper-table table tr td.status span {
   display: inline-block;
   margin: 0 auto;
@@ -45,6 +49,15 @@ section.mypage .cols .right-col .search .inquiry {
 
 .wrapper-table table tr td.memo {
   position: relative;
+}
+
+.wrapper-table table tr td.memo .wrapper-memo {
+  
+}
+
+.wrapper-table table tr td.memo .wrapper-memo.with-d-day .d-day{
+  margin: initial;
+  margin-bottom: 5px;
 }
 
 .wrapper-table table tr td.memo span {
@@ -198,5 +211,7 @@ section.mypage .cols .right-col .search .options .items .selected button {
   }
 } // end .caution
 
-
+.black-btn.small-btn.update {
+  margin-right: 0;
+}
 

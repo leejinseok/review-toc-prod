@@ -77,6 +77,58 @@
       </div>
 
       <div class="wrapper-table">
+          <div class="status-dashboard clearfix">
+              <div class="col number">
+                <ul class="clearfix">
+                  <li class="wait">
+                    <span class="square wait"></span>
+                    <span class="text">
+                    대기(2)
+                  </span>
+                  </li>
+                  <li class="defer">
+                    <span class="square defer"></span>
+                    <span class="text">
+                    보류(2)
+                  </span>
+                  </li>
+                  <li class="approve">
+                    <span class="square approve"></span>
+                    <span class="text">
+                    승인(2)
+                  </span>
+                  </li>
+                  <li class="deny">
+                    <span class="square deny"></span>
+                    <span class="text">
+                    거절(2)
+                  </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col result-and-selectbox">
+                <div class="inner">
+                  <span class="result">검색결과 <span class="number">4</span>건</span>
+                  <div class="options">
+                    <div class="items">
+                      <div class="selected">
+                        <button type="button" class="selected-button">
+                          <span class="value">50개씩</span>
+                          <img src="./static/images/arrow-down.png">
+                        </button>
+                      </div>
+                      <ul>
+                        <li class="list-item">50개씩</li>
+                        <li class="list-item">40개씩</li>
+                        <li class="list-item">30개씩</li>
+                        <li class="list-item">20개씩</li>
+                        <li class="list-item">10개씩</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         <table class="table" border="1">
           <thead>
             <tr>
@@ -132,7 +184,8 @@
                   <% } %>
                 </td>
                 <td class="memo">
-                  <% if (i % 2 === 0) { %>
+                  <div class="wrapper-memo <% if (i % 4 === 3) { %> with-d-day <% } %>">
+                  <% if (i % 4 === 2 || i % 4 === 3) { %>
                     <span class="d-day">D-10</span>
                   <% } %>
 
@@ -149,9 +202,13 @@
                       </div>
                     </div>
                   <% } %>
+                  </div>
                 </td>
                 <td>
-                  <input type="checkbox" class="update">
+                  <!-- <input type="checkbox" class="update"> -->
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
                 </td>
               </tr>
             <% } %>
