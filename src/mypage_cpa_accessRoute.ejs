@@ -71,21 +71,31 @@
                 <td class="campaign-name">슬피우는 두견새야</td>
                 <td class="remote-ip">110.xxx.xxx.67</td>
                 <td class="status">
-                  <% if (i % 4 === 3) { %>
+                  <% if (i % 5 === 4) { %>
                     <span class="defer">보류</span>
                   <% } %>
-                  <% if (i % 4 === 2) { %>
-                    <span class="visited">방문</span>
+                  <% if (i % 5 === 3) { %>
+                    <span class="wait">대기</span>
                   <% } %>
-                  <% if (i % 4 === 1) { %>
+                  <% if (i % 5 === 2) { %>
                     <span class="approve">승인</span>
                   <% } %>
-                  <% if (i % 4 === 0) { %>
+                  <% if (i % 5 === 1) { %>
                     <span class="deny">거절</span>
+                  <% } %>
+                  <% if (i % 5 === 0) { %>
+                    <span class="visited">방문</span>
                   <% } %>
                 </td>
                 <td class="access-route">
-                  <a target="_blank" href="http://www.rainy-heaven.com">www.rainy-heaven.com</a>
+                  <% if (i % 2 === 0) { %>
+                    <a target="_blank" href="http://www.rainy-heaven.com">
+                      www.rainy-heaven.comwww.
+                    </a>
+                  <% } %>
+                  <% if (i % 2 === 1) { %>
+                    직접입력
+                  <% } %>
                 </td>
                 <td class="access-device">
                   <% if (i % 2 === 0) { %>

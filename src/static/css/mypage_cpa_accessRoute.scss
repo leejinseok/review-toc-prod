@@ -29,7 +29,6 @@ section.container {
             width: 140px;
           }
           &.remote-ip {
-            width: 130px;
             color: #818181;
           }
           &.status {
@@ -42,31 +41,34 @@ section.container {
               display: inline-block;
               color: #fff;
               &.defer {
-                background-color: #ceaa01;
+                background-color: #ff9300;
                 // color: #ceaa01;
                 // border:1px solid #ceaa01;
               }
               &.visited {
-                background-color: #339707;
+                background-color: #959595;
                 // color: #339707;
                 // border: 1px solid #339707;
               }
               &.approve {
-                background-color: #008fae;
+                background-color: #0092f4;
                 // color: #008fae;
                 // border: 1px solid #008fae;
               }
               &.deny {
-                background-color: #fe1e53;
+                background-color: #da0000;
                 // color: #fe1e53;
                 // border: 1px solid #fe1e53;
+              }
+              &.wait {
+                background: #00bd00;
               }
             }
           } // end status
           &.access-route {
-            width: 267px;
+            text-align: left;
             a {
-              color: #0000ff;
+              padding: 10px 0;
             }
           }
           &.access-device {
@@ -76,4 +78,12 @@ section.container {
       } // end table
     }
   }
+}
+
+.wrapper-table table thead tr th:nth-child(3) {
+  width: 90px;
+}
+
+.wrapper-table table thead tr th:nth-child(4) {
+  width: 90px;
 }
