@@ -944,12 +944,41 @@ aside.bottom .inner .guide-contact .right .swiper-container {
 
 }
 
+aside.bottom .inner .guide-contact .right .swiper-container:hover .swiper-button-next,
+aside.bottom .inner .guide-contact .right .swiper-container:hover .swiper-button-prev,
+aside.bottom .inner .guide-contact .right .swiper-container:hover .swiper-pagination {
+  display: block;
+}
+
 aside.bottom .inner .guide-contact .right .swiper-container .swiper-wrapper {
 
 }
 
 aside.bottom .inner .guide-contact .right .swiper-container .swiper-wrapper .swiper-slide {
   flex-direction: column;
+}
+
+aside.bottom .inner .guide-contact .right .swiper-container .swiper-pagination {
+  display: none;
+}
+
+aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-prev, 
+aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-next {
+  background-image: none;
+  display: none;
+  background: rgba(0,0,0,.5);
+}
+
+aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-next {
+  right: 0;
+}
+
+aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-prev {
+  left: 0;
+}
+
+aside.bottom .inner .guide-contact .right .swiper-container [class*=swiper-button] img {
+  margin-top: 8px;
 }
 
 .section .wrapper-sub-menu ul li.menus .swiper-container {

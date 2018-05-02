@@ -59,6 +59,11 @@ function handleSwiperAsideBottom () {
   var swiper = new Swiper('aside .swiper-container', {
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: 'aside .swiper-button-next',
+      prevEl: 'aside .swiper-button-prev',
     },
   });
 }
