@@ -26,7 +26,6 @@
         </div>
         <div class="col input-area">
           <div class="inner-input-text">
-            <p>출금신청</p>
             <input type="number" maxlength="15" oninput="maxLengthCheck(this)">
             <span>원</span>
           </div>
@@ -36,23 +35,87 @@
         </div>
       </div>
       <div class="caution">
-        <h3>※ 세금계산서 관련 주의 사항</h3>
+        <h3>
+          <img src="./static/images/exclamation-mark.png">
+          세금계산서 관련 주의 사항
+        </h3>
         <p>
-          - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
-          <button class="black-btn small-btn" onclick="showModalRegDocument();">서류등록</button>
+          - 1. 출금신청은 서류(통장, 주민등록증 사본) 등록 후 관리자 승인후에 신청이 가능합니다.
         </p>
-        <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
-        <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+        <p>
+          - 출금신청은 300,000원부터 가능합니다.  
+        </p>
+        <p>
+          - 아래의 "등록한 계좌 정보" 잘못 되었거나 입금 받고자 하시는 계좌가 변경되었을시 아래의 "계좌번호변경"을 통해 변경 후 출금신청을 해주세요.
+        </p>
+        <p>
+          - 출금신청은 매월 26일 ~ 말일 출금이 가능합니다.
+        </p>
+        <p>
+          - 출금 신청 금액은 매월 10일 날 일괄 지급됩니다. (10일이 휴일일 경우 전날 미리 지급 됩니다.)
+        </p>
       </div>
 
       <div class="withdraw-history-title">
         <span class="main">출금신청내역</span>
-        <span class="registrated-account">[등록된 계좌정보 : 254-741254-6547(<strong>국민은행 임꺽정</strong>)]</span>
+        <span class="registrated-account">등록된 계좌정보 : 254-741254-6547(국민은행 임꺽정)</span>
         <button type="button" onclick="showModalRegDocument();">
           계좌번경
         </button>
       </div>
       <div class="wrapper-table">
+          <div class="status-dashboard clearfix">
+              <div class="col number">
+                <ul class="clearfix">
+                  <li class="wait">
+                    <span class="square wait"></span>
+                    <span class="text">
+                    대기(2)
+                  </span>
+                  </li>
+                  <li class="defer">
+                    <span class="square defer"></span>
+                    <span class="text">
+                    보류(2)
+                  </span>
+                  </li>
+                  <li class="approve">
+                    <span class="square approve"></span>
+                    <span class="text">
+                    승인(2)
+                  </span>
+                  </li>
+                  <li class="deny">
+                    <span class="square deny"></span>
+                    <span class="text">
+                    거절(2)
+                  </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col result-and-selectbox">
+                <div class="inner">
+                  <span class="result">검색결과 <span class="number">4</span>건</span>
+                  <div class="options">
+                    <div class="items">
+                      <div class="selected">
+                        <button type="button" class="selected-button">
+                          <span class="value">50개씩</span>
+                          <img src="./static/images/arrow-down.png">
+                        </button>
+                      </div>
+                      <ul>
+                        <li class="list-item">50개씩</li>
+                        <li class="list-item">40개씩</li>
+                        <li class="list-item">30개씩</li>
+                        <li class="list-item">20개씩</li>
+                        <li class="list-item">10개씩</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         <table>
           <thead>
             <tr>
@@ -60,7 +123,8 @@
               <th>신청금액</th>
               <th>입금정보</th>
               <th>지급일</th>
-              <th>상태</th>
+              <th>처리상태</th>
+              <th>처리사유</th>
             </tr>
           </thead>
           <tbody>
@@ -78,18 +142,53 @@
                 <td class="payday">
                   <% if (i % 2 !== 0) { %>
                     2018.3.10
-                  <% } %>
+                  <% } else { %>
+                    -
+                  <% }%>
                 </td>
                 <td class="status">
-                  <% if (i % 2 === 0) { %>
-                    <span class="standby">
-                      대기
-                    </span>
-                  <% }
-                  else { %>
-                    <span class="completed">
-                      완료
-                    </span>
+                  <div class="inner-col">
+                    <% if (i % 4 === 3) { %>
+                      <span class="approve">완료</span>
+                    <% } %>
+                    <% if (i % 4 === 2) { %>
+                      <span class="deny">거절</span>
+                    <% } %>
+                    <% if (i % 4 === 1) { %>
+                      <span class="standby">대기</span>
+                    <% } %>
+                    <% if (i % 4 === 0) { %>
+                      <span class="defer">보류</span>
+                    <% } %>
+                  </div>
+                </td>
+                <td class="reason">
+                  <% if (i % 4 === 2) { %>
+                    <div class="wrapper-reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+                  <% } %>
+        
+                  <% if (i % 4 === 0) { %>
+                    <div class="wrapper-reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
                   <% } %>
                 </td>
               </tr>
