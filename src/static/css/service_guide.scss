@@ -37,6 +37,12 @@ section.service-guide .service-guide-nav .guide-nav-btn-box button {
   cursor: pointer;
 }
 
+section.service-guide .service-guide-nav .guide-nav-btn-box button:hover {
+  background: $point_hotpink;
+  color: #fff;
+  border: 0;
+}
+
 section.service-guide .service-guide-nav .guide-nav-btn-box button:focus {
   outline: none;
 }
