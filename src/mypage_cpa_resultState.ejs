@@ -35,26 +35,20 @@
           </span>
         </div>
       </div>
-      <!-- <div class="small-preview-with-number">
-        <span class="text">대기</span><span class="number standby">2</span>
-        <span class="text">보류</span><span class="number defer">2</span>
-        <span class="text">거절</span><span class="number deny">2</span>
-        <span class="text">승인</span><span class="number approve">2</span>
-      </div> -->
       <div class="search">
         <div class="options">
-            <div class="items">
-                <div class="selected">
-                    <button type="button" class="selected-button">
-                        <span class="value">전체</span>
-                        <img src="./static/images/arrow-down.png">
-                    </button>
-                </div>
-                <ul>
-                  <li class="list-item">전체</li>
-                  <li class="list-item">등록한광고명</li>
-                </ul>
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
             </div>
+            <ul>
+              <li class="list-item">전체</li>
+              <li class="list-item">등록한광고명</li>
+            </ul>
+          </div>
         </div>
 
         <div class="options">
@@ -91,25 +85,25 @@
         <div class="status-dashboard clearfix">
           <div class="col number">
             <ul class="clearfix">
-              <li>
+              <li class="wait">
                 <span class="square wait"></span>
                 <span class="text">
                   대기(2)
                 </span>
               </li> 
-              <li>
+              <li class="defer">
                 <span class="square defer"></span>
                 <span class="text">
                   보류(2)
                 </span>
               </li> 
-              <li>
+              <li class="approve">
                 <span class="square approve"></span>
                 <span class="text">
                   승인(2)
                 </span>
               </li> 
-              <li>
+              <li class="deny">
                 <span class="square deny"></span>
                 <span class="text">
                   거절(2)
@@ -156,7 +150,7 @@
           </thead>
           <tbody>
             <% for (i = 0; i < 20; i++) { %>
-              <tr>
+              <tr class="<% if (i % 4 === 2) { %> deny <% } %>">
                 <td><%= i + 1 %></td>
                 <td class="advertising-name">
                   <span>

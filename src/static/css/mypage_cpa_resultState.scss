@@ -110,7 +110,7 @@ section.container {
         }
 
         tbody {
-          tr:hover {
+          tr.deny {
             td {
               background: #fffbfb;
             }
@@ -182,13 +182,14 @@ section.container {
               justify-content: center;
               span {
                 width: 64px;
-                height: 22px;
-                border: 1px solid #e0e0e0;
+                height: 20px;
+                border: 1px solid #ccc;
                 border-radius: 3px;
                 cursor: pointer;
                 font-size: 12px;
-                line-height: 22px;
-                
+                line-height: 20px;
+                box-sizing: border-box;
+                background-color: #f6f6f6;
                 &:hover {
                   background: #333;
                   color: #fff;
@@ -209,7 +210,7 @@ section.container {
                 justify-content: center;
                 border-radius: 3px;
                 width: 58px;
-                height: 26px;
+                height: 20px;
                 cursor: pointer;
                 font-size: 12px;
                 color: #fff;
@@ -258,6 +259,7 @@ section.container {
   padding: 10px;
   background: #fff;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .wrapper-table table tr td.status span {
@@ -320,6 +322,22 @@ section.container {
   position: absolute;
   left: 0;
   top: 2px;
+}
+
+.wrapper-table .status-dashboard .col.number ul li.wait:hover {
+  color: #339707;
+}
+
+.wrapper-table .status-dashboard .col.number ul li.defer:hover {
+  color: #f39800;
+}
+
+.wrapper-table .status-dashboard .col.number ul li.approve:hover {
+  color: #2b98ed;
+}
+
+.wrapper-table .status-dashboard .col.number ul li.deny:hover {
+  color: #ca1818;
 }
 
 .wrapper-table .status-dashboard .col.number ul li .square.wait {
