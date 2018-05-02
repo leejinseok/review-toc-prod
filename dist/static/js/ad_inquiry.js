@@ -10,10 +10,15 @@ function handleCouncilModalTypeButtonActive () {
   var btn = $('.modal.modal-council .modal-content form .btn-container button');
   btn.click(function () {
     var index = btn.index(this);
-    btn.removeClass('selected');
-    btn.find('img').attr('src', '/static/images/sign-up/uncheked.png');
-    $(this).addClass('selected');
-    $(this).find('img').attr('src', '/static/images/sign-up/cheked.png')
+
+    if ($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+      $(this).find('img').attr('src', '/static/images/sign-up/uncheked.png');
+    } else {
+      $(this).addClass('selected');
+      $(this).find('img').attr('src', '/static/images/sign-up/cheked.png');
+    }
+    
   });
 }
 
