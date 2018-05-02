@@ -60,3 +60,23 @@ section.container {
     }
   }
 }
+
+.wrapper-table table th.th-status {
+
+}
+
+.wrapper-table table th.th-status .wait {
+  color: #339707;
+}
+
+.wrapper-table table th.th-status .defer {
+  color: #dab400;
+}
+
+.wrapper-table table th.th-status .deny {
+  color: #fe1e53;
+}
+
+.wrapper-table table th.th-status .approve {
+  color: #008fae;
+}
