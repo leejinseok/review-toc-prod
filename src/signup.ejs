@@ -109,19 +109,21 @@
       <h3>추가정보</h3>
       <nav class="sign-up-nav clearfix">
         <div class="btn-container">
-          <button type="button" name="button" class="selected" class="signup-type" data-type="partner">
+          <button type="button" name="button" class="selected" class="signup-type" data-type="cpa">
             <span> <img src="/static/images/sign-up/cheked.png" alt=""> </span>CPA
           </button>
         </div>
         <div class="btn-container">
-          <button type="button" name="button" class="signup-type" data-type="advertiser">
+          <button type="button" name="button" class="signup-type" data-type="tester">
             <span> <img src="/static/images/sign-up/uncheked.png" alt=""> </span>체험단
           </button>
         </div>
       </nav>
-      <ul class="sub-info-wrap clearfix">
+      <ul class="sub-info-wrap cpa active clearfix">
         <li>
-          <input type="text" name="" placeholder="업체종류(CPA)">
+          <select name="" id="" >
+            <option value="" selected>업체종류(CPA)</option>
+          </select>
         </li>
         <li>
           <input type="text" name="" placeholder="DB단가">
@@ -131,6 +133,30 @@
         </li>
         <li>
           <input type="text" name="" placeholder="취소 DB기준">
+        </li>
+        <li class="inquiry">
+          <textarea name="name" placeholder="문의사항"></textarea>
+        </li>
+      </ul>
+      <ul class="sub-info-wrap tester clearfix">
+        <li>
+          <input type="text" placeholder="업체종류(체험단)을 입력해주세요. ex) 음식점, 교육서비스등">
+        </li>
+        <li>
+          <select name="" id="" >
+            <option value="" selected>체험단유형</option>
+            <option value="">유형1</option>
+            <option value="">유형2</option>
+            <option value="">유형3</option>
+          </select>
+        </li>
+        <li>
+          <select name="" id="" >
+            <option value="" selected>체험단지역</option>
+            <option value="">지역1</option>
+            <option value="">지역2</option>
+            <option value="">지역3</option>
+          </select>
         </li>
         <li class="inquiry">
           <textarea name="name" placeholder="문의사항"></textarea>
