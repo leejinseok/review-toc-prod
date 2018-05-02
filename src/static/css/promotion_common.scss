@@ -67,6 +67,7 @@ section.promotion {
           box-sizing: border-box;
           cursor: pointer;
           padding-left: 0;
+          overflow: hidden;
           &:hover {
             span {
               color: #333;
@@ -101,6 +102,13 @@ section.promotion {
               width: 30px;
               height: 35px;
             }
+          }
+
+          &:last-child {
+            width: calc(50% - 1px);
+            border-top: 0;
+            border-left: 0;
+            cursor: default;
           }
         } // end .col
       } // end .extension
