@@ -389,3 +389,7 @@ section.container {
   top: 9px;
   width: 9px;
 }
+
+.modal.modal-show-detail .modal-content table tr.ip span.same-ip-exist {
+  color: $point_hotpink;
+}
