@@ -56,7 +56,7 @@ section.detail {
             } // end .category
 
             .icons {
-              width: 48px;
+              width: 52px;
               display: inline-block;
               position: absolute;
               right: 16px;
@@ -67,10 +67,11 @@ section.detail {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 20px;
-                height: 20px;
+                width: 26px;
+                height: 26px;
+                box-sizing: border-box;
                 img {
-                  width: 14px;
+                  width: 16px;
                   display: inline-block;
                 }
               }
@@ -259,8 +260,10 @@ section.detail {
           justify-content: center;
           padding: 20px 0;
           font-size: 12px;
-          font-weight: 200;
+          font-weight: 400;
           color: #333;
+          height: 56px;
+          box-sizing: border-box;
 
           &:nth-child(1) {
             width: 10%;
@@ -297,6 +300,9 @@ section.detail {
               color: #fff;
               font-size: 11px;
               cursor: pointer;
+              &:hover {
+                background: #333;
+              }
             }
           }
 
@@ -307,6 +313,8 @@ section.detail {
             img.delete {
               cursor: pointer;
               margin-right: 4px;
+              width: 16px;
+              margin-top: -1px;
             }
             span {
               cursor: pointer;
