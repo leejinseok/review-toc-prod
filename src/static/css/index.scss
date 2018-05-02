@@ -234,6 +234,7 @@
       width: auto;
       display: inline-block;
       font-weight: 200;
+      color: #333;
     }
     .line {
       position: absolute;
@@ -434,19 +435,22 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            font-weight: bold;
             &.active {
-              color: #fe1e53;
+              color: $point_hotpink;
               span {
-                background-color: #fe1e53;
+                color: $point_hotpink;
+                border-color: $point_hotpink;
               }
             }
             span {
               padding: 5px 12px;
               border-radius: 12px;
-              color: #fff;
-              background: #333;
+              color: #333;
+              background: #fff;
               font-size: 12px;
               font-weight: 200;
+              border: 1px solid #888;
             }
           }
         } // end .content
@@ -596,10 +600,11 @@
             }
 
             .apply-status {
-              width: 126px;
+              width: 128px;
               padding: 7px 0;
               border: 1px solid #888;
               color: #666;
+              font-size: 12px;
               .yellow {
                 color: #333;
                 font-weight: bold;
