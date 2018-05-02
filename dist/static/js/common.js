@@ -9,7 +9,22 @@ $(document).ready(function () {
   });
   handleOptions(); // handle options
   handleAccordionLogined();
+  handleNavMainFixed(); 
 });
+
+function handleNavMainFixed () {
+  var nav = $('nav.main');
+
+  $(window).scroll(function (e) {
+    var scrollTop = $(this).scrollTop();
+    
+    if (scrollTop > 100) {
+      nav.addClass('fixed');
+    } else {
+      nav.removeClass('fixed');
+    }
+  });
+}
 
 function showPrivatePolicy () {
   window.open('/privatePolicy.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=426,height=430');
