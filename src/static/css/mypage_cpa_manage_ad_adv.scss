@@ -29,10 +29,13 @@ section.container .cols .ad-container .ad-container-inner {
     border: 1px solid #e0e0e0;
 }
 
+section.container .cols .ad-container .ad-container-inner .wrapper-ad-img-box  {
+  float: left;
+  width: 25%;
+}
 section.container .cols .ad-container .ad-container-inner .ad-img-box {
-    float: left;
-    width: 25%;
-    height: 230px;
+    margin-top: 10px;
+    height: 199.5px;
     background-image: url(/static/images/mypage/ad-manage-01.png);
     background-repeat: no-repeat;
     background-position: center;
