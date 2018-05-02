@@ -56,7 +56,6 @@ section.mypage {
         }
         .current-point-value {
           font-size: 18px;
-          color: #ffb400;
           margin-top: 8px;
         }
         .withdraw-request {
@@ -66,7 +65,7 @@ section.mypage {
           align-items: center;
           justify-content: center;
           color: #fff;
-          background: #484848;
+          background: #333;
           margin-top: 16px;
           display: inline-block;
           border-radius: 3px;
@@ -99,7 +98,6 @@ section.mypage {
             border-bottom: 0;
           }
           &.active {
-            color: #fe1e53;
           }
 
           &:focus {
@@ -165,7 +163,6 @@ section.mypage {
 
         .datepicker {
           height: 34px;
-          width: 89px;
           margin-right: 10px;
           display: inline-block;
           position: relative;
@@ -194,24 +191,6 @@ section.mypage {
         .wave {
           margin-right: 5px;
           color: #333;
-        }
-        .period, .inquiry {
-          width: 84px;
-          height: 34px;
-          background: #333;
-          color: #fff;
-          text-align: center;
-          margin-right: 10px;
-          font-size: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 3px;
-          border: 0;
-          cursor: pointer;
-          &:focus {
-            outline: none;
-          }
         }
       } // end .search
       .caution {
@@ -317,7 +296,6 @@ section.mypage {
                   button {
                     margin: 0 auto;
                     border: 0;
-                    border-radius: 3px;
                     width: 64px;
                     height: 29px;
                     display: flex;

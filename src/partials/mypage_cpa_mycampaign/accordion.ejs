@@ -1,39 +1,62 @@
 <% include ../../variables/mypage_common.ejs %>
+  <div class="wrapper-accordion">
+    <button class="accordion with-menus">
+      CPA
+      <img src="./static/images/mypage/my_profile_down.png">
+    </button>
+    <div class="panel">
+      <p>
+        <a href="mypage_cpa_mycampaign.html">
+          마이 캠페인관리
+        </a>
+      </p>
+      <p>
+        <a href="mypage_cpa_resultState.html">
+          실적현황
+        </a>
+      </p>
 
-<div class="wrapper-accordion">
-  <% for (i = 0; i < accordionHeaders.length; i++) {
-    header = accordionHeaders[i];
-    parentHref = '';
-    if (header === '1:1문의내역') {
-      parentHref = '#';
-    }
+      <p>
+        <a href="mypage_cpa_daily.html">
+          데일리
+        </a>
+      </p>
 
-    if (header === '회원정보수정') {
-      parentHref = './mypage_updateProfile.html';
-    }
-    %>
-      <button class="accordion">
+      <p>
+        <a href="mypage_cpa_byCampaign.html">
+          캠페인별
+        </a>
+      </p>
 
-        <% if (i < 2) { %>
-          <%= header %>
-        <% } else { %>
-          <a href="<%= parentHref %>"><%= header %></a>
-        <% } %>
+      <p>
+        <a href="mypage_cpa_accessRoute.html">
+          접속경로
+        </a>
+      </p>
 
-        <% if (i < 2) { %>
-          <img src="./static/images/mypage/my_profile_down.png">
-        <% } %>
-      </button>
-      <div class="panel">
-        <% for (j = 0; j < accordionItems[i].length; j++) {
-          item = accordionItems[i][j];
-          %>
-          <p>
-            <a href="<%= item['href'] %>" <% if (j === 0) { %> class="active" <% } %>>
-              <%= item['title'] %>
-            </a>
-          </p>
-        <% } %>
-      </div>
-    <% } %>
-</div>
+      <p>
+        <a href="mypage_cpa_withdrawRequest.html">
+          출금신청
+        </a>
+      </p>
+    </div>
+
+    <button class="accordion with-menus">
+      체험단
+      <img src="./static/images/mypage/my_profile_down.png">
+    </button>
+    <div class="panel">
+      <p>
+        <a href="">체험단 메뉴 1</a>
+      </p>
+    </div>
+    <button class="accordion no-menus">
+      <a href="">1:1 문의내역</a>
+    </button>
+    <button class="accordion no-menus">
+      <a href="./mypage_updateProfile.html">회원정보수정</a>
+    </button>
+    <button class="accordion no-menus">
+      <a href="">꿀tip</a>
+    </button>
+  </div>

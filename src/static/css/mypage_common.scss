@@ -80,7 +80,6 @@ section.mypage {
       .wrapper-accordion {
         width: 100%;
         border:1px solid $borderColor;
-        border-bottom: 0;
         box-sizing: border-box;
         margin-top: 10px;
         button.accordion {
@@ -97,11 +96,15 @@ section.mypage {
           box-sizing: border-box;
           cursor: pointer;
           border-bottom: 1px solid #e9e9e9;
+          &.no-menus:hover,
+          &.no-menus.active {
+            color: $point_hotpink;
+          }
+
           &:last-child {
             border-bottom: 0;
           }
           &.active {
-            color: #fe1e53;
             font-weight: 500;
           }
 
@@ -126,15 +129,24 @@ section.mypage {
             font-size: 12px;
             box-sizing: border-box;
             &.active {
-              border-bottom: 2px solid #fe1e53;
+              border-bottom: 2px solid $point_hotpink;
+              a {
+                color: $point_hotpink;
+                font-weight: 500;
+              }
+            }
+
+            &:hover {
+              a {
+                color: $point_hotpink;
+              }
             }
 
             a {
               font-weight: 400;
               font-size: 13px;
               &.active {
-                color: $point_hotpink;
-                font-weight: 500;
+                
               }
             }
           }
@@ -233,7 +245,7 @@ section.mypage {
 
         .datepicker {
           height: 34px;
-          width: 92px;
+          width: 94px;
           margin-right: 10px;
           display: inline-block;
           position: relative;
@@ -264,7 +276,7 @@ section.mypage {
           color: #333;
         }
         .period, .inquiry {
-          width: 84px;
+          width: 74px;
           height: 34px;
           background: #333;
           color: #fff;
@@ -274,7 +286,7 @@ section.mypage {
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 3px;
+          border-radius: 5px;
           border: 0;
           cursor: pointer;
           &:focus {
@@ -441,7 +453,7 @@ footer {
             button {
               margin: 0 auto;
               border: 0;
-              border-radius: 3px;
+              border-radius: 5px;
               width: 64px;
               height: 29px;
               display: flex;
@@ -453,6 +465,9 @@ footer {
               &:hover {
                 background: #333;
                 color: #fff;
+              }
+              &:focus {
+                outline: none;
               }
             }
           }
@@ -471,6 +486,10 @@ footer {
     color: #333333;
     font-size: 14px;
     margin-bottom: 13px;
+    img {
+      width: 16px;
+      margin-right: 3px;
+    }
   }
   
   p {

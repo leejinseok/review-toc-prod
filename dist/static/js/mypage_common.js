@@ -16,7 +16,7 @@ function handleAccordion (accordionIndex, itemIndex) {
   };
 
   accordions.click(function () {
-    var panel = $(this).next();
+    var panel = $(this).next('.panel');
     var downArrow = $(this).find('img');
     var maxHeight = parseInt(panel.css('max-height'));
     var scollHeight = panel.prop('scrollHeight');
@@ -24,11 +24,14 @@ function handleAccordion (accordionIndex, itemIndex) {
     if (maxHeight) {
       panel.css('max-height', 0);
       downArrow.attr('src', downArrowSrc.unselected);
-      // accordions.removeClass('active');
       return;
     }
-    accordions.removeClass('active');
-    accordions.eq(accordionIndex).addClass('active');
+
+    if ($(this).hasClass('no-menus')) {
+      accordions.removeClass('active');
+      accordions.eq(accordionIndex).addClass('active');
+    }
+    
     downArrow.attr('src', downArrowSrc.selected);
     panel.css('max-height', scollHeight);
   });
