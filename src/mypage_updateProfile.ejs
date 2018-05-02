@@ -45,27 +45,85 @@
           <span>추가정보</span>
         </div>
         <div class="form-group cpa-and-tester">
-          <button type="button" name="button" class="active">
+          <button type="button" name="button" class="active" data-type="cpa">
             <img src="./static/images/mypage/checked.png" class="check checked">
             &nbsp;CPA
           </button>
-          <button type="button" name="button">
+          <button type="button" name="button" data-type="tester">
             <img src="./static/images/mypage/un-checked.png" class="check">
             &nbsp;체험단
           </button>
         </div>
-        <div class="form-group">
-          <input type="text" name="" value="" placeholder="업체종류(CPA)">
+        <div class="wrapper-extra cpa active">
+          <div class="form-group">
+            <!-- <input type="text" name="" value="" placeholder="업체종류(CPA)"> -->
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">업체종류(CPA)</span>
+                    <img src="./static/images/arrow-down.png">
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">업체종류1</li>
+                  <li class="list-item">업체종류2</li>
+                  <li class="list-item">업체종류3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="DB단가">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="유효 DB기준">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="취소 DB기준">
+          </div>
         </div>
-        <div class="form-group">
-          <input type="text" name="" value="" placeholder="DB단가">
+
+        <div class="wrapper-extra tester">
+          <div class="form-group">
+            <input type="text" placeholder="업체종류(체험단)을 입력해주세요. ex) 음식점, 교육서비스등">
+          </div>
+          <div class="form-group">
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">체험단유형</span>
+                    <img src="./static/images/arrow-down.png">
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">유형1</li>
+                  <li class="list-item">유형2</li>
+                  <li class="list-item">유형3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">체험단지역</span>
+                    <img src="./static/images/arrow-down.png">
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">지역1</li>
+                  <li class="list-item">지역2</li>
+                  <li class="list-item">지역3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="text" name="" value="" placeholder="유효 DB기준">
-        </div>
-        <div class="form-group">
-          <input type="text" name="" value="" placeholder="취소 DB기준">
-        </div>
+        
         <div class="form-group">
           <textarea placeholder="문의사항"></textarea>
         </div>

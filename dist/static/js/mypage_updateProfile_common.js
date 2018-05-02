@@ -9,16 +9,27 @@ $(document).ready(function () {
 function handleCheckCpaOrTester () {
   var btn = $('form .form-group.cpa-and-tester button');
   var checkImgs = $('form .form-group.cpa-and-tester button img');
+  var wrapperExtar = $('form .wrapper-extra');
+  var wrapperExtraCpa = $('form .wrapper-extra.cpa');
+  var wrapperExtraTester = $('form .wrapper-extra.tester');
+
   btn.click(function () {
+    var type = $(this).data('type');
+    checkImgs.attr('src', './static/images/mypage/un-checked.png');
+    btn.removeClass('active');
+
     var checkImg = $(this).find('img');
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
-      checkImg.attr('src', './static/images/mypage/un-checked.png');
-    } else {
-      $(this).addClass('active');
-      checkImg.attr('src', './static/images/mypage/checked.png');
+    checkImg.attr('src', './static/images/mypage/checked.png');
+
+    $(this).addClass('active');
+
+    wrapperExtar.removeClass('active');
+    if (type === 'cpa') {
+      wrapperExtraCpa.addClass('active');
     }
 
-    // checkImgs.attr('src', './static/images/mypage/un-checked.png');
+    if (type === 'tester') {
+      wrapperExtraTester.addClass('active');
+    }
   });
 }

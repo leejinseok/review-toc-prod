@@ -20,6 +20,52 @@ form textarea {
   border: 0;
   color: #818181;
   border: 1px solid #e0e0e0;
+  &:focus {
+    outline: none;
+  }
+}
+
+form textarea {
+  resize: none;
+  height: 180px;
+}
+
+form .wrapper-extra {
+  display: none;
+}
+
+form .wrapper-extra.active {
+  display: block;
+}
+
+form .form-group .options {
+  width: 100%;
+  height: auto;
+}
+
+form .form-group .options .items {
+
+}
+
+form .form-group .options .items .selected {
+
+}
+
+form .form-group .options .items .selected button {
+  padding: 20px;
+  font-size: 16px;
+  color: #818181;
+}
+
+form .form-group .options .items .selected button img {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+form .form-group .options .items ul li {
+  padding: 20px;
+  color: #818181;
+  font-size: 16px;
 }
 
 form input.disabled {
