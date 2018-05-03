@@ -291,3 +291,15 @@ section.container {
 .modal.modal-show-detail .modal-content table tr.ip span.same-ip-exist {
   color: $point_hotpink;
 }
+
+.modal.modal-show-detail table tr:nth-child(n+7) td {
+  background: #efefef;
+}
+
+.modal.modal-show-detail table tr td:first-child {
+  padding-left: 10px;
+}
+
+.modal.modal-show-detail .modal-content {
+  overflow: hidden;
+}
