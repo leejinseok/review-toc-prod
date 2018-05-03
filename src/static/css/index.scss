@@ -148,6 +148,7 @@
             .category {
               box-sizing: border-box;
               padding-left: 26px;
+              opacity: .9;
               .left, .right {
                 width: 70px;
                 height: 70px;
@@ -159,11 +160,18 @@
               }
               .left {
                 color: #333;
-                background: #fff;
+                background: rgba(255, 255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 1.5;
               }
               .right {
                 color: #fff;
                 background-color: #ffb400;
+                &.cpa {
+                  background-color: $point_hotpink;
+                }
               }
             }
             .text-description {
@@ -181,19 +189,19 @@
           }
         }
         &.item-01 {
-          background-image: url('../images/banner/main8_07.png');
+          background-image: url('../images/banner/tester.png');
         }
         &.item-02 {
-          background-image: url('../images/banner/main_banner_02.png');
+          background-image: url('../images/banner/cpa.png');
         }
         &.item-03 {
-          background-image: url('../images/banner/main_banner_03.png');
+          background-image: url('../images/banner/service-guide.png');
         }
         &.item-04 {
-          background-image: url('../images/banner/main_banner_04.png');
+          background-image: url('../images/banner/tester.png');
         }
         &.item-05 {
-          background-image: url('../images/banner/main_banner_05.png');
+          background-image: url('../images/banner/cpa.png');
         }
       }
     }
