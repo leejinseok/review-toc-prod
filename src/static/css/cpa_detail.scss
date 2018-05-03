@@ -502,6 +502,7 @@ section.detail {
         background: #fff;
         padding: 64px 27px;
         padding-bottom: 90px;
+        padding-top: 0;
         h3 {
           color: #333;
         }
@@ -520,7 +521,7 @@ section.detail {
         }
 
         .options {
-          margin-top: 56px;
+          margin-top: 35px;
           .items {
             .selected {
               button {
