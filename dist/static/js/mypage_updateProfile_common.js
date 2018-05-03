@@ -15,21 +15,43 @@ function handleCheckCpaOrTester () {
 
   btn.click(function () {
     var type = $(this).data('type');
-    checkImgs.attr('src', './static/images/mypage/un-checked.png');
-    btn.removeClass('active');
+    var checked = !($(this).data('checked'));
+    var allUnChecked = false;
+    
+    btn.each(function (idx, item) {
+      if (!$(item).data('checked')) {
+        allUnChecked = true;
+      }
+    });
 
-    var checkImg = $(this).find('img');
-    checkImg.attr('src', './static/images/mypage/checked.png');
-
-    $(this).addClass('active');
-
-    wrapperExtar.removeClass('active');
-    if (type === 'cpa') {
-      wrapperExtraCpa.addClass('active');
+    if (allUnChecked && !checked) {
+      alert('CPA, 체험단 둘 중 하나는 꼭 선택헤주세요.');
+      return;
     }
 
-    if (type === 'tester') {
-      wrapperExtraTester.addClass('active');
+    $(this).data('checked', checked);
+    var checkImg = $(this).find('img');
+
+    if (checked) {
+      checkImg.attr('src', './static/images/mypage/checked.png');
+      $(this).addClass('active');
+    } else {
+      checkImg.attr('src', './static/images/mypage/un-checked.png');
+      $(this).removeClass('active');
+    }
+
+    if (type === 'cpa') {
+      if (checked) {
+        wrapperExtraCpa.addClass('active');
+      } else {
+        wrapperExtraCpa.removeClass('active');
+      }
+    } else {
+      if (checked) {
+        wrapperExtraTester.addClass('active');
+      } else {
+        wrapperExtraTester.removeClass('active');
+      }
     }
   });
 }
