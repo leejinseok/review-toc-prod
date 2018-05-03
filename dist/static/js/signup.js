@@ -6,8 +6,8 @@ $(document).ready(function () {
 
 function handleExtraInfo () {
   var btn = $('.sub-info .btn-container button');
-  var bodyCpa = $('.sub-info ul.sub-info-wrap.cpa');
-  var bodyTester = $('.sub-info ul.sub-info-wrap.tester');
+  var bodyCpa = $('.sub-info ul.sub-info-wrap li.visible-in-cpa');
+  var bodyTester = $('.sub-info ul.sub-info-wrap li.visible-in-tester');
   var src = {
     uncheked: '/static/images/sign-up/uncheked.png',
     checked: '/static/images/sign-up/cheked.png'
@@ -15,19 +15,42 @@ function handleExtraInfo () {
 
   btn.click(function () {
     var type = $(this).data('type');
-    btn.removeClass('selected');
-    btn.find('img').attr('src', src.uncheked);
-    $(this).addClass('selected');
-    $(this).find('img').attr('src', src.checked);
-    
-    if (type === 'cpa') {
-      bodyTester.removeClass('active');
-      bodyCpa.addClass('active');
-    } 
+    var checked = !($(this).data('checked'));
+    var allUnChecked = false;
 
-    if (type === 'tester') {
+    btn.each(function (idx, item) {
+      if (!$(item).data('checked')) {
+        allUnChecked = true;
+      }
+    });
+
+    if (allUnChecked && !checked) {
+      alert('CPA, 체험단 둘중 하나는 선택해주셔야합니다.');
+      return;
+    }
+    
+    $(this).data('checked', checked);
+    if (checked) {
+      $(this).addClass('selected');
+      $(this).find('img').attr('src', src.checked);
+    } else {
+      $(this).removeClass('selected');
+      $(this).find('img').attr('src', src.uncheked);
+    }
+
+   
+    
+    
+    if (type === 'cpa' && checked) {
+      bodyCpa.addClass('active');
+    } else if (type === 'cpa' && !checked) {
       bodyCpa.removeClass('active');
+    }
+
+    if (type === 'tester' && checked) {
       bodyTester.addClass('active');
+    } else if (type === 'tester' && !checked ) {
+      bodyTester.removeClass('active');
     }
   });
 }
