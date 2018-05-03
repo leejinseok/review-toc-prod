@@ -6,6 +6,13 @@ section.mypage .cols .right-col .search .inquiry {
   background: #484848;
 }
 
+section.mypage .cols .right-col .search {
+  padding-top: 0;
+}
+
+section.mypage .cols .right-col > h2 {
+}
+
 .wrapper-table table thead tr th:nth-child(1),
 .wrapper-table table thead tr th:nth-child(2),
 .wrapper-table table thead tr th:nth-child(3),
@@ -215,3 +222,58 @@ section.mypage .cols .right-col .search .options .items .selected button {
   margin-right: 0;
 }
 
+section.mypage .cols .right-col .wrapper-table {
+  padding-top: 0;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  width: 50%;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.result {
+  text-align: left;
+  font-size: 12px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.result span {
+  color: #f39800;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.searchOption {
+  text-align: right;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options {
+  width: 96px;
+  height: 26px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items .selected button {
+  padding-left: 10px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items .selected button img {
+  top: 8px;
+  right: 8px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items ul li {
+  text-align: left;
+  height: 26px !important;
+  line-height: 26px;
+  padding: 3px 10px;
+}
+
+.status-dashboard {
+  width: 100%;
+  margin-top: 18px;
+}
