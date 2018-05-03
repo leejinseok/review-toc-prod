@@ -447,8 +447,9 @@
             &.active {
               color: $point_hotpink;
               span {
-                color: $point_hotpink;
+                color: #fff;
                 border-color: $point_hotpink;
+                background-color: $point_hotpink;
               }
             }
             span {
