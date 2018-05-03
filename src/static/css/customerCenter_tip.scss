@@ -1,3 +1,10 @@
 .wrapper-search-input .search-input {
-  padding-left: 5px !important;
+}
+
+section.customerCenter .container .col.content .search .wrapper-search-input {
+  width: 460px;
+}
+
+section.customerCenter .container .col.content .search .wrapper-search-input input {
+  padding-left: 35px;
 }

@@ -1,3 +1,5 @@
+@import '_variables';
+
 * {
   // box-shadow: 0 0 1px 0 red;
 }
@@ -658,6 +660,7 @@ section.detail {
         .card {
           border: 1px solid #e6e6e6;
           margin: 0 auto;
+          cursor: pointer;
 
           .wrapper-thumbnail {
             height: 142px;
@@ -670,7 +673,8 @@ section.detail {
               background-size: cover !important;
               background-position: center !important;
               cursor: pointer;
-              &:hover {
+              &:hover,
+              &.active {
                 transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
                 transform: scale3d(1.04, 1.04, 1);
               }
@@ -748,18 +752,54 @@ section.detail {
               display: flex;
               align-items: center;
               justify-content: space-between;
+
+              &.active {
+                color: red;
+                color: $point_hotpink;
+                span {
+                  color: #fff;
+                  border-color: $point_hotpink;
+                  background-color: $point_hotpink;
+                }
+              }
+
               span {
-                background: #333;
-                color: #fff;
+                padding: 5px 12px;
                 border-radius: 12px;
-                padding: 5px 10px;
-                font-size: 11px;
+                color: #333;
+                background: #fff;
+                font-size: 12px;
+                font-weight: 200;
+                border: 1px solid #888;
               }
             } // end .price
             .dDay-and-recruitment {
               display: flex;
               font-size: 11px;
               margin-top: 20px;
+
+              &.active {
+                .dDay {
+                  color: $point_hotpink;
+                  .d {
+                    background-color: $point_hotpink;
+                    color: #fff;
+                  }
+                }
+  
+                .recruitment {
+                  span {
+                    color: #fff;
+                    border-color: $point_hotpink;
+                    background-color: $point_hotpink;
+                  }
+                  
+                  .yellow {
+                    color: #fff;
+                  }
+                }
+              }
+
               .dDay {
                 flex: 3;
                 display: flex;

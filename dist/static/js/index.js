@@ -64,6 +64,7 @@ function handleSwiperAsideBottom () {
     autoplay: {
       delay: 2000
     },
+    loop: true,
     navigation: {
       nextEl: 'aside .swiper-button-next',
       prevEl: 'aside .swiper-button-prev',
