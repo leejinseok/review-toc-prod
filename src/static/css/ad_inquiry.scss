@@ -72,6 +72,11 @@ aside.ad-inquiry-banner .ad-inquiry-banner-title .btn-box button {
   border: 0;
   font-size: 14px;
   cursor: pointer;
+
+  &:hover {
+    background: #333;
+    color: #fff;
+  }
 }
 
 aside.ad-inquiry-banner .bottom-white-box {

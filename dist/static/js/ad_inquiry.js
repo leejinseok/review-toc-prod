@@ -10,7 +10,22 @@ function handleCouncilModalTypeButtonActive () {
   var btn = $('.modal.modal-council .modal-content form .btn-container button');
   btn.click(function () {
     var index = btn.index(this);
+    var checked = !($(this).data('checked'));
+    var allUnChecked = false;
 
+    btn.each(function (idx, item) {
+      if (!($(item).data('checked'))) {
+        allUnChecked = true;
+      }
+    });
+
+    if (allUnChecked && !checked) {
+      alert('둘중의 하나는 선택해 주세요');
+      return;
+    }
+
+    $(this).data('checked', checked);
+    
     if ($(this).hasClass('selected')) {
       $(this).removeClass('selected');
       $(this).find('img').attr('src', '/static/images/sign-up/uncheked.png');
@@ -18,7 +33,6 @@ function handleCouncilModalTypeButtonActive () {
       $(this).addClass('selected');
       $(this).find('img').attr('src', '/static/images/sign-up/cheked.png');
     }
-    
   });
 }
 
