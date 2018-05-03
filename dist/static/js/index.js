@@ -61,6 +61,9 @@ function handleSwiperAsideBottom () {
       el: '.swiper-pagination',
       clickable: true
     },
+    autoplay: {
+      delay: 2000
+    },
     navigation: {
       nextEl: 'aside .swiper-button-next',
       prevEl: 'aside .swiper-button-prev',
