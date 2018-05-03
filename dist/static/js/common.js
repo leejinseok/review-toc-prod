@@ -10,7 +10,16 @@ $(document).ready(function () {
   handleOptions(); // handle options
   handleAccordionLogined();
   handleNavMainFixed(); 
+  handleSearch();
 });
+
+function handleSearch () {
+  var query = $('nav [name=query]');
+  var search = $('.icon-search');
+  search.click(function () {
+    location.href = '/search.html?query=' + query.val();
+  });
+}
 
 function handleNavMainFixed () {
   var nav = $('nav.main');

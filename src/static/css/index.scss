@@ -570,10 +570,11 @@
               }
 
               .apply-status {
-                color: $point_hotpink;
+                color: #fff;
                 border-color: $point_hotpink;
+                background-color: $point_hotpink;
                 .yellow {
-                  color: $point_hotpink;
+                  color: #fff;
                 }
               }
             }
