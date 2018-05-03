@@ -41,12 +41,17 @@ section.container {
               .title {
                 color: #555555;
                 font-size: 13px;
+                font-weight: 300;
               }
               .amount {
-                font-size: 18px;
+                font-size: 25px;
                 color: #333;
                 margin-top: 7px;
                 font-weight: bold;
+
+                small {
+                  font-size: 19px;
+                }
               }
             }
           }
@@ -65,9 +70,10 @@ section.container {
               .title {
                 color: #555555;
                 font-size: 13px;
+                font-weight: 300;
               }
               .amount {
-                font-size: 18px;
+                font-size: 19px;
                 color: #333;
                 margin-top: 7px;
                 font-weight: bold;
@@ -112,7 +118,6 @@ section.container {
                 justify-content: center;
                 width: 68px;
                 height: 34px;
-                border-radius: 3px;
                 border: 0;
                 font-size: 12px;
                 cursor: pointer;
@@ -159,6 +164,7 @@ section.container {
           font-size: 14px;
           color: #707070;
           margin-left: 14px;
+          font-weight: 300;
           strong {
             color: #333333;
           }
@@ -174,7 +180,6 @@ section.container {
           justify-content: center;
           border: 0;
           padding: 0;
-          border-radius: 3px;
           margin-left: 10px;
           font-size: 10px;
           cursor: pointer;
@@ -202,6 +207,7 @@ section.container {
           text-align: center;
           height: 42px;
           box-sizing: border-box;
+          padding: 15px 0;
           // &.request-amount {
           //   width: 150px;
           // }
@@ -371,4 +377,14 @@ section.container {
   background: #fff;
   box-sizing: border-box;
   text-align: left;
+}
+
+.wrapper-table table tr.tr-deny td {
+  background-color: #f2f2f2;
+}
+
+.wrapper-table table thead tr th {
+  &:nth-child(1) {
+    width: 50px !important;
+  }
 }
