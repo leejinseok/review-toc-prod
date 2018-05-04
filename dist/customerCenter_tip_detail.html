@@ -6,9 +6,9 @@
   <title>리뷰톡</title>
   <link rel="stylesheet" href="./static/css/base.css">
 
-  <link rel="stylesheet" href=".//static/css/customerCenter_common.css">
+  <link rel="stylesheet" href="./static/css/customerCenter_detail_common.css">
 
-  <link rel="stylesheet" href="./static/css/customerCenter_tip.css">
+  <link rel="stylesheet" href="./static/css/customerCenter_tip_detail.css">
 
   <link rel="stylesheet" href="./static/css/jquery-ui.css">
 
@@ -17,9 +17,9 @@
   <script src="./static/js/prefixfree.min.js"></script>
   <script src="./static/js/common.js"></script>
 
-  <script src="./static/js/customerCenter_common.js"></script>
+  <script src="./static/js/customerCenter_detail_common.js"></script>
 
-  <script src="./static/js/customerCenter_tip.js"></script>
+  <script src="./static/js/customerCenter_tip_detail.js"></script>
 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -202,200 +202,154 @@
 
       <div class="col content">
         <h2>꿀TIP</h2>
-        <div class="search">
-          <div class="options">
-            <div class="items">
-              <div class="selected">
-                <button type="button" class="selected-button">
-                  <span class="value">대분류</span>
-                  <img src="./static/images/arrow-down.png">
-                </button>
+
+        <div class="wrapper-detail">
+
+          <div class="header">
+            <div class="title">
+              <h2>흐르는 강물을 거꾸로 거슬로 오르는 연어들의</h2>
+            </div>
+            <div class="sub clearfix">
+              <div class="col writer">
+                작성자 : 장길산
               </div>
-              <ul>
-                <li class="list-item">분류1</li>
-                <li class="list-item">분류2</li>
-                <li class="list-item">분류3</li>
-              </ul>
+              <div class="col regdate-and-views">
+                <span>2018.04.02</span>
+                <span>조회 1</span>
+              </div>
             </div>
           </div>
 
-          <div class="options">
-            <div class="items">
-              <div class="selected">
-                <button type="button" class="selected-button">
-                  <span class="value">분류없음</span>
-                  <img src="./static/images/arrow-down.png">
-                </button>
-              </div>
-              <ul>
-                <li class="list-item">분류1</li>
-                <li class="list-item">분류2</li>
-                <li class="list-item">분류3</li>
-              </ul>
+          <div class="wrapper-content">
+            <div class="content">
+              <h2>이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다.</h2>
+              <br>국가는 여자의 복지와 권익의 향상을 위하여
+              <br>노력하여야 한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+              <br>
+              <br>누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의
+              <br>조력을 받을 권리를 가진다.
+              <br>
+              <br>다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
             </div>
           </div>
-          <div class="wrapper-search-input">
-            <img src="./static/images/search.svg" class="icon-search">
-            <input type="text" class="search-input" placeholder="검색어를 입력해주세요.">
+
+          <div class="wrapper-buttons clearfix">
+            <button>
+              삭제
+            </button>
+            <button>
+              수정
+            </button>
+            <button>
+              글목록
+            </button>
           </div>
-          <button class="inquiry">검색</button>
-        </div>
 
-        <div class="wrapper-table">
-          <table cellpadding="0" cellspacing="0">
-            <thead>
-              <tr>
-                <th width="80">번호</th>
-                <th>대분류</th>
-                <th width="100">소분류</th>
-                <th>제목</th>
-              </tr>
-            </thead>
-            <tbody>
+          <div class="wrapper-reply">
+            <h3>댓글등록 (0)</h3>
 
-              <tr>
-                <td>1</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+            <div class="write-reply clearfix">
+              <div class="col textarea">
+                <textarea></textarea>
+              </div>
+              <div class="col button">
+                <button class="">
+                  등록
+                </button>
+              </div>
+            </div>
 
-              <tr>
-                <td>2</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+            <div class="replies">
 
-              <tr>
-                <td>3</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+              <div class="reply">
+                <div class="info-and-write-comment-button clearfix">
+                  <div class="col info">
+                    <span>
+                    <span>장길산</span>님이 작성한 댓글
+                    </span>
 
-              <tr>
-                <td>4</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+                    <span class="regdate">
+                    2018.04.02 오후 6:08:56
+                  </span>
+                  </div>
+                  <div class="col write-comment-button">
+                    <button class="black-btn small-btn write-comment">
+                      댓글
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  행복을 줄 수 없었어 그런데 널 사랑했어.
+                  <br>네 곁에 감히 머무른 내 욕심을 용서치마.
+                  <br>사는 게 참 힘들었어.
+                  <br>널 보며 난 견뎠어.
+                  <br>
+                </div>
+                <div class="update-and-delete">
+                  <button class="update">
+                    수정
+                  </button>
+                  <button class="del">
+                    삭제
+                  </button>
+                </div>
+              </div>
 
-              <tr>
-                <td>5</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+              <div class="reply">
+                <div class="info-and-write-comment-button clearfix">
+                  <div class="col info">
+                    <span>
+                    <span>장길산</span>님이 작성한 댓글
+                    </span>
 
-              <tr>
-                <td>6</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+                    <span class="regdate">
+                    2018.04.02 오후 6:08:56
+                  </span>
+                  </div>
+                  <div class="col write-comment-button">
+                    <button class="black-btn small-btn write-comment">
+                      댓글
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  행복을 줄 수 없었어 그런데 널 사랑했어.
+                  <br>네 곁에 감히 머무른 내 욕심을 용서치마.
+                  <br>사는 게 참 힘들었어.
+                  <br>널 보며 난 견뎠어.
+                  <br>
+                </div>
+              </div>
 
-              <tr>
-                <td>7</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+              <div class="reply comment">
+                <div class="info-and-write-comment-button clearfix">
+                  <div class="col info">
+                    <span>
+                    <span>장길산</span>님이 작성한 댓글
+                    </span>
 
-              <tr>
-                <td>8</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
+                    <span class="regdate">
+                    2018.04.02 오후 6:08:56
+                  </span>
+                  </div>
+                  <div class="col write-comment-button">
+                    <button class="black-btn small-btn write-comment">
+                      댓글
+                    </button>
+                  </div>
+                </div>
+                <div class="content">
+                  행복을 줄 수 없었어 그런데 널 사랑했어.
+                  <br>네 곁에 감히 머무른 내 욕심을 용서치마.
+                  <br>사는 게 참 힘들었어.
+                  <br>널 보며 난 견뎠어.
+                  <br>
+                </div>
+              </div>
 
-              <tr>
-                <td>9</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <td>10</td>
-                <td>CPA</td>
-                <td>프로모션</td>
-                <td class="subject">
-                  <a href="/customerCenter_tip_detail.html">
-                    Q.제목이 출력이 안됩니다.
-                  </a>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-        <div class="pagination">
-          <div class="col icon prev-last">
-            <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
-          </div>
-          <div class="col icon prev">
-            <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
-          </div>
-          <div class="col active">
-            1
-          </div>
-          <div class="col">
-            2
-          </div>
-          <div class="col">
-            3
-          </div>
-          <div class="col">
-            4
-          </div>
-          <div class="col">
-            5
-          </div>
-          <div class="col icon next">
-            <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
-          </div>
-          <div class="col icon next-last">
-            <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
