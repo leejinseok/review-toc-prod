@@ -1,0 +1,211 @@
+@import '_variables';
+@import 'customerCenter_common';
+
+.wrapper-detail {
+  background: #fff;
+  margin-top: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.wrapper-detail .header {
+  padding: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.wrapper-detail .header .title {
+
+}
+
+.wrapper-detail .header .title h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper-detail .header .sub {
+  font-size: 12px;
+  color: #707070;
+}
+
+.wrapper-detail .header .sub .col {
+  float: left;
+  padding: 10px 0;
+}
+
+.wrapper-detail .header .sub .col.writer {
+  width: 50%;
+}
+
+.wrapper-detail .header .sub .col.regdate-and-views {
+  width: 50%;
+  text-align: right;
+}
+
+.wrapper-detail .wrapper-content {
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
+.wrapper-detail .wrapper-content .content {
+  background: #fafafa;
+  padding: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-weight: 300;
+}
+
+.wrapper-detail .wrapper-buttons {
+  text-align: right;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.wrapper-detail .wrapper-buttons button {
+  padding: 7.5px 20px;
+  background: #fbfbfb;
+  color: #555555;
+  font-size: 14px;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  margin-right: 0;
+  float: right;
+  cursor: pointer;
+  &:last-child {
+    border-left: 1px solid #e0e0e0;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper-detail .wrapper-reply {
+  padding: 30px;
+  padding-top: 0;
+}
+
+.wrapper-detail .wrapper-reply h3 {
+  font-weight: 400;
+}
+
+.wrapper-detail .wrapper-reply .write-reply {
+  padding-top: 10px;
+  padding-bottom: 36px;
+}
+
+.wrapper-detail .wrapper-reply .write-reply .col {
+  float: left;
+  height: 72px;
+}
+
+.wrapper-detail .wrapper-reply .write-reply .col.textarea {
+  width: 85%;
+}
+
+.wrapper-detail .wrapper-reply .write-reply .col.textarea textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.wrapper-detail .wrapper-reply .write-reply .col.button {
+  width: 15%;
+}
+
+.wrapper-detail .wrapper-reply .write-reply .col.button button {
+  height: 100%;
+  width: calc(100% - 10px);
+  margin-left: 10px;
+  background-color: #009dd0;
+  color: #fff;
+  border-color: #009dd0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.wrapper-detail .wrapper-reply .replies {
+}
+
+.wrapper-detail .wrapper-reply .replies .reply {
+  padding: 30px 20px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply.comment {
+  padding-left: 50px;
+  &::before {
+    content: '⌞';
+    position: absolute;
+    left: 50px - 20px;
+    top: 26px;
+    font-size: 24px;
+    font-weight: 100;
+    opacity: .7;
+  }
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button {
+
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col {
+  float: left;
+  height: 32px;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.info {
+  width: 70%;
+  line-height: 32px;
+  font-size: 15px;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.info span > span {
+  color: #009dd0;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.info .regdate {
+  color: #818181;
+  font-size: 12px;
+  margin-left: 26px;
+  font-weight: 300;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.write-comment-button {
+  width: 30%;
+  text-align: right;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.write-comment-button button {
+  height: 32px;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-weight: 300;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .update-and-delete {
+  text-align: right;
+}
+
+.wrapper-detail .wrapper-reply .replies .reply .update-and-delete button {
+  background-color: #fff;
+  padding: 7px 24px;
+  font-size: 12px;
+  color: #707070;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
