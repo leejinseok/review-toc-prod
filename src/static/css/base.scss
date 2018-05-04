@@ -649,7 +649,6 @@ nav.main.logined ul.right li.dropdown.mypage .count-alarm {
   color: #fff;
   line-height: 13px;
   border-radius: 50%;
-  display: inline-block;
   top: 32px;
   left: 16px;
   text-align: center;
@@ -731,4 +730,8 @@ nav.main.logined .dropdown .dropdown-content .accordion a {
 
 nav.main.fixed {
   z-index: 9;
+}
+
+.hide {
+  display: none;
 }

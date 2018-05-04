@@ -3,3 +3,18 @@
 <% include ./partials/header.ejs %>
 <% include ./partials/nav_logined.ejs %>
 <% include ./partials/footer.ejs %>
+<script>
+$(document).ready(function () {
+  handleLetterIcon();
+})
+
+function handleLetterIcon () {
+  var countAlarm = $('.count-alarm');
+  var search = parse_query_string(window.location.search.substr(1));
+  if (search.login) {
+    countAlarm.show();
+  } else {
+    countAlarm.hide();
+  }
+}
+</script>
