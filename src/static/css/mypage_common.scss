@@ -172,6 +172,21 @@ section.mypage {
             span {
               color: #333;
             }
+
+            .on {
+              display: block;
+            }
+
+            .off {
+              display: none;
+            }
+          }
+          .off {
+            display: block;
+          }
+
+          .on {
+            display: none;
           }
 
           span {
