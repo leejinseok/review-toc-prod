@@ -703,8 +703,31 @@ nav.main.logined .dropdown .dropdown-content .accordion {
   color: #777;
   text-align: left;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #fff;
   box-sizing: border-box;
+  &:hover {
+    background-color: #fff !important;
+  }
+}
+
+nav.main.logined .dropdown .dropdown-content .panel {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+nav.main.logined .dropdown .dropdown-content .panel a {
+  position: relative;
+}
+
+nav.main.logined .dropdown .dropdown-content .panel a:hover {
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $point_hotpink;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 nav.main.logined .dropdown .dropdown-content .accordion:hover {
