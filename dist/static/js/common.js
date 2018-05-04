@@ -12,14 +12,64 @@ $(document).ready(function () {
   handleNavMainFixed();
   handleSearch();
   handleLetterClick();
+  handleLetterIcon();
+  handleBodyClickForModalRoot();
 });
+
+function handleAllCheckMessageModal (allCheck) {
+  console.log('hi');
+  
+  var allCheck = $(allCheck);
+  var checked = allCheck.prop('checked');
+  var checkboxes = $('.modal-messages table .check');
+  checkboxes.each(function (idx, item) {
+    $(item).prop('checked', checked);
+  });
+}
+
+function handleIsCheckBoxAllMessageModal (checkbox) {
+  var allCheck = $('.modal-messages table .checkAll');
+  var checkbox = $(checkbox);
+  var checked = checkbox.prop('checked');
+  var checkboxes = $('.modal-messages table .check');
+
+  if (!checked) {
+    allCheck.prop('checked', false);
+    return;
+  }
+
+  var result = true;
+  checkboxes.each(function (idx, item) {
+    if (!($(item).prop('checked'))) {
+      result = false;
+    }
+  });
+
+  if (result) {
+      allCheck.prop('checked', true);
+  }
+}
+
+function handleBodyClickForModalRoot () {
+  $('html, body').click(function (e) {
+    var targetId = e.target.id;
+    if (targetId === 'modal-messages') {
+      hideModal();
+    }
+  });
+}
 
 function handleLetterClick () {
   var modal = $('.modal.modal-messages');
   var letterIcon = $('nav.main.logined ul.right li.dropdown.mypage img.letter');
+  var numberCount = $('nav.main.logined ul.right li.dropdown.mypage .count-alarm');
   letterIcon.click(function () {
     modal.show();
   });
+
+  numberCount.click(function () {
+    modal.show();
+  })
 }
 
 function handleSearch () {

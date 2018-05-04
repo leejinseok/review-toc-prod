@@ -758,3 +758,199 @@ nav.main.fixed {
 .hide {
   display: none;
 }
+
+.modal.modal-messages {
+
+}
+
+.modal.modal-messages .modal-content {
+  width: 506px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 0;
+}
+
+.modal.modal-messages .modal-content .header {
+  height: 41px;
+  background: #f73651;
+  line-height: 41px;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions {
+  padding: 10px 0;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.controll {
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.controll button {
+  background: #484848;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  border-color: #484848;
+  padding: 4px 13px;
+  margin-left: 12px;
+  cursor: pointer;
+  &:last-child {
+    margin-left: 6px;
+  }
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.searchOptions {
+  width: 40%;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.searchOptions .options {
+  display: inline-block;
+  width: 84px;
+  height: 34px;
+  box-sizing: border-box;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.searchOptions .options .selected button {
+  background: #fbfbfb;
+  padding-bottom: 0;
+}
+
+.modal.modal-messages .modal-content .wrapper-controll-and-searchOptions .col.searchOptions .options .items ul li {
+  text-align: left;
+  line-height: 20px;
+}
+
+.modal.modal-messages .modal-content .wrapper-table {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td,
+.modal.modal-messages .modal-content .wrapper-table table th {
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-checkbox {
+  text-align: center;
+  padding: 0;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-checkbox,
+.modal.modal-messages .modal-content .wrapper-table table th.th-checkbox  {
+  padding: 14px 8px;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-no,
+.modal.modal-messages .modal-content .wrapper-table table th.th-no {
+  width: 10px;
+  padding: 14px 8px;
+  text-align: center;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-subject {
+  text-align: left;
+  width: 238px;
+  box-sizing: border-box;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-regdate {
+  width: 75px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #555; 
+}
+
+.modal.modal-messages .modal-content .wrapper-table table tr.read td {
+  color: #aaaaaa;
+}
+
+.modal.modal-messages .modal-content .wrapper-table table td.td-writer {
+  text-align: center;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .options {
+  width: 84px;
+  height: 34px;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .options .selected button {
+  padding-bottom: 1px;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .options.active .items ul {
+  margin-top: 0;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search input {
+  height: 34px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  margin-left: 10px;
+  background: #fafafa;
+  width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .search-btn {
+  height: 34px;
+  width: 84px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  cursor: pointer;
+  background: #fbfbfb;
+  margin-left: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .options .items ul {
+  margin-top: 2px !important;
+  box-sizing: border-box;
+}
+
+.modal.modal-messages .modal-content .wrapper-bottom-search .options .items ul li {
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.modal.modal-messages .modal-content .pagination {
+  margin-top: 20px;
+  padding-bottom: 35px;
+}

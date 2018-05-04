@@ -2,14 +2,164 @@
 <% include ./variables/logined.ejs %>
 <% include ./partials/header.ejs %>
 <% include ./partials/nav_logined.ejs %>
-<div class="modal modal-messages">
+<div class="modal modal-messages" id="modal-messages">
   <div class="modal-content">
-    <h1>hello world</h1>
+    <div class="header">
+      받은편지
+    </div>
+
+    <div class="wrapper-controll-and-searchOptions clearfix">
+      <div class="col controll">
+        읽지않은 쪽지 2개
+        <button>
+          모두읽음
+        </button>
+        <button>
+          삭제
+        </button>
+      </div>
+      <div class="col searchOptions">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">
+                <a href="#">항목1</a>
+              </li>
+              <li class="list-item">
+                <a href="#">항목2</a>
+              </li>
+              <li class="list-item">
+                <a href="#">항목3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">10개씩</span>
+                <img src="./static/images/arrow-down.png">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">
+                <a href="#">10개씩</a>
+              </li>
+              <li class="list-item">
+                <a href="#">20개씩</a>
+              </li>
+              <li class="list-item">
+                <a href="#">30개씩</a>
+              </li>
+              <li class="list-item">
+                <a href="#">40개씩</a>
+              </li>
+              <li class="list-item">
+                <a href="#">50개씩</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-table">
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="th-checkbox">
+              <input type="checkbox" name="checkAll" class="checkAll" onclick="handleAllCheckMessageModal(this);">
+            </th>
+            <th class="th-no">NO</th>
+            <th class="th-subject">제목</th>
+            <th class="th-writer">보낸사람</th>
+            <th class="th-regdate">날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (i = 0; i < 10; i++) { %>
+            <tr class="<% if (i > 1) { %> read <% } %>">
+              <td class="td-checkbox">
+                <input type="checkbox" class="check" onclick="handleIsCheckBoxAllMessageModal(this)">
+              </td>
+              <td class="td-no"><%= i + 1%></td>
+              <td class="td-subject">포인트 잔여량이 부족합니다</td>
+              <td class="td-writer">관리자</td>
+              <td class="td-regdate">
+                2018.01.01 <br>
+                05:05:56
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+    <div class="wrapper-bottom-search">
+      <div class="options">
+        <div class="items">
+          <div class="selected">
+            <button type="button" class="selected-button">
+              <span class="value">제목</span>
+              <img src="./static/images/arrow-down.png">
+            </button>
+          </div>
+          <ul>
+            <li class="list-item">
+              <a href="#">항목1</a>
+            </li>
+            <li class="list-item">
+              <a href="#">항목2</a>
+            </li>
+            <li class="list-item">
+              <a href="#">항목3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <input type="text" placeholder="">
+
+      <button class="search-btn">
+        검색
+      </button>
+    </div>
+
+    <div class="pagination">
+        <div class="col icon prev-last">
+          <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+        </div>
+        <div class="col icon prev">
+          <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+        </div>
+        <div class="col active">
+          1
+        </div>
+        <div class="col">
+          2
+        </div>
+        <div class="col">
+          3
+        </div>
+        <div class="col">
+          4
+        </div>
+        <div class="col">
+          5
+        </div>
+        <div class="col icon next">
+          <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+        </div>
+        <div class="col icon next-last">
+          <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+        </div>
+      </div>
   </div>
 </div>
 <% include ./partials/footer.ejs %>
-<script>
-$(document).ready(function () {
-  handleLetterIcon();
-});
-</script>
