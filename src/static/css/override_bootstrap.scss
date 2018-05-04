@@ -1,0 +1,33 @@
+nav.main ul {
+  margin-bottom: 0;
+}
+
+nav.main ul li a {
+  color: initial;
+}
+
+section.customerCenter {
+  background-color: #f9f8fa;
+  width: 100%;
+}
+
+section.customerCenter .container .col.menu ul.main li a {
+  color: #555;
+}
+
+footer .inner ul.bottom-menu li a {
+  color: #707070;
+}
+
+nav.main.fixed {
+  z-index: 999;
+}
+
+section .container .col.content > h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+nav.main ul.right li .wrapper-search .icon-search {
+  top: -1px;
+}

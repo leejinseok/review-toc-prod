@@ -1,0 +1,41 @@
+<% include ./variables/customerCenter_manToMan_write.ejs %>
+  <% include ./partials/header.ejs %>
+    <% include ./partials/nav.ejs %>
+
+      <script type="text/javascript" src="<%=request.getContextPath()%>/se2폴더를 붙여넣기 한 곳의 경로/se2/js/HuskyEZCreator.js" charset="utf-8"></script>
+      <script type="text/javascript" src="<%=request.getContextPath()%>/se2폴더를 붙여넣기 한 곳의 경로/se2/photo_uploader/plugin/hp_SE2M_AttachQuickPhoto.js" charset="utf-8"></script>
+
+      <section class="customerCenter notice">
+        <div class="container full-width clearfix">
+          <h2 class="main-h">고객센터</h2>
+
+          <% include ./partials/customerCenter/menu.ejs %>
+
+            <div class="col content">
+              <h2>1:1문의</h2>
+
+              <div class="wrapper-form">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="ir1" id="ir1" rows="10" style="width: 100%;"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <script>
+        var oEditors = [];
+        nhn.husky.EZCreator.createInIFrame({
+          oAppRef: oEditors,
+          elPlaceHolder: "ir1",
+          sSkinURI: "./static/naver-editor-2/SmartEditor2Skin.html",
+          fCreator: "createSEditor2",
+          width: '100%'
+        });
+      </script>
+      <% include ./partials/footer.ejs %>

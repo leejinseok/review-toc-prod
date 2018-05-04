@@ -1,0 +1,62 @@
+<% include ./variables/customerCenter_manToMan_write.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+<link rel="stylesheet" href="./static/summernote-master/dist/summernote.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script type="text/javascript" src="./static/summernote-master/dist/summernote.js"></script>
+
+<section class="customerCenter notice">
+  <div class="container full-width clearfix">
+    <h2 class="main-h">고객센터</h2>
+
+    <% include ./partials/customerCenter/menu.ejs %>
+
+    <div class="col content">
+      <h2>1:1문의</h2>
+
+      <div class="wrapper-form">
+        <form action="">
+          <div class="form-group">
+            <input type="text" placeholder="제목을 입력해주세요.">
+          </div>
+          <div class="form-group">
+            <textarea class="summernote" name="ir1" id="ir1"  rows="10" style="width: 100%;"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="private">
+            <label for="private">비밀글로 등록합니다.</label>
+          </div>
+        </form>
+      </div>
+      <div class="wrapper-button">
+        <button class="black-btn">등록</button>
+        <button class="cancel-btn">취소</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+// var oEditors = [];
+// nhn.husky.EZCreator.createInIFrame({
+//   oAppRef: oEditors,
+//   elPlaceHolder: "ir1",
+//   sSkinURI: "./static/naver-editor-2/SmartEditor2Skin.html",
+//   fCreator: "createSEditor2",
+//   width: '100%'
+// });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.summernote').summernote({
+      height: 300,
+      tabsize: 2
+    });
+  });
+</script>
+<% include ./partials/footer.ejs %>
