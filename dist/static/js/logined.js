@@ -3,7 +3,5 @@ $(document).ready(function () {
 });
 
 function handleLetterExist () {
-  alert('hi');
   var search = window.location.search;
-  console.log(search);
 }

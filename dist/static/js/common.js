@@ -11,7 +11,16 @@ $(document).ready(function () {
   handleAccordionLogined();
   handleNavMainFixed();
   handleSearch();
+  handleLetterClick();
 });
+
+function handleLetterClick () {
+  var modal = $('.modal.modal-messages');
+  var letterIcon = $('nav.main.logined ul.right li.dropdown.mypage img.letter');
+  letterIcon.click(function () {
+    modal.show();
+  });
+}
 
 function handleSearch () {
   var query = $('nav [name=query]');
@@ -247,4 +256,15 @@ function parse_query_string (query) {
     }
   }
   return query_string;
+}
+
+
+function handleLetterIcon () {
+  var countAlarm = $('.count-alarm');
+  var search = parse_query_string(window.location.search.substr(1));
+  if (search.message) {
+    countAlarm.show();
+  } else {
+    countAlarm.hide();
+  }
 }

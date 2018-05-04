@@ -226,6 +226,11 @@
       </ul>
     </div>
   </nav>
+  <div class="modal modal-messages">
+    <div class="modal-content">
+      <h1>hello world</h1>
+    </div>
+  </div>
   <footer class="content-width">
     <div class="inner">
       <ul class="bottom-menu clearfix">
@@ -295,15 +300,5 @@
 <script>
   $(document).ready(function () {
     handleLetterIcon();
-  })
-  
-  function handleLetterIcon () {
-    var countAlarm = $('.count-alarm');
-    var search = parse_query_string(window.location.search.substr(1));
-    if (search.login) {
-      countAlarm.show();
-    } else {
-      countAlarm.hide();
-    }
-  }
+  });
 </script>
