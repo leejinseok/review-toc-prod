@@ -6,9 +6,9 @@
   <title>리뷰톡</title>
   <link rel="stylesheet" href="./static/css/base.css">
 
-  <link rel="stylesheet" href=".//static/css/customerCenter_common.css">
+  <link rel="stylesheet" href="./static/css/customerCenter_write_common.css">
 
-  <link rel="stylesheet" href="./static/css/customerCenter_falseReport.css">
+  <link rel="stylesheet" href="./static/css/customerCenter_falseReport_write.css">
 
   <link rel="stylesheet" href="./static/css/jquery-ui.css">
 
@@ -17,9 +17,11 @@
   <script src="./static/js/prefixfree.min.js"></script>
   <script src="./static/js/common.js"></script>
 
-  <script src="./static/js/customerCenter_common.js"></script>
+  <script src="./static/js/customerCenter_write_common.js"></script>
 
-  <script src="./static/js/customerCenter_falseReport.js"></script>
+  <script src="./static/js/customerCenter_falseReport_write.js"></script>
+
+  <script src="./static/naver-editor-2/js/service/HuskyEZCreator.js"></script>
 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -165,6 +167,11 @@
   </nav>
 
 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="./static/summernote-master/dist/summernote.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./static/summernote-master/dist/summernote.js"></script>
+
   <section class="customerCenter notice">
     <div class="container full-width clearfix">
       <h2 class="main-h">고객센터</h2>
@@ -205,241 +212,50 @@
 
       <div class="col content">
         <h2>오류신고</h2>
-        <div class="search">
-          <div class="options">
-            <div class="items">
-              <div class="selected">
-                <button type="button" class="selected-button">
-                  <span class="value">검색유형</span>
-                  <img src="./static/images/arrow-down.png">
-                </button>
-              </div>
-              <ul>
-                <li class="list-item">유형1</li>
-                <li class="list-item">유형2</li>
-                <li class="list-item">유형3</li>
-              </ul>
+
+        <div class="wrapper-form">
+          <form action="">
+            <div class="form-group">
+              <input type="text" placeholder="제목을 입력해주세요.">
             </div>
-          </div>
-
-          <div class="wrapper-search-input">
-            <input type="text" class="search-input">
-            <img src="./static/images/search.svg" class="icon-search">
-          </div>
-          <button class="inquiry">검색</button>
-          <a href="/customerCenter_falseReport_write.html" class="write">글쓰기</a>
+            <div class="form-group">
+              <textarea class="summernote" name="ir1" id="ir1" rows="10" style="width: 100%;"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="private">
+              <label for="private">비밀글로 등록합니다.</label>
+            </div>
+          </form>
         </div>
-
-        <div class="wrapper-table">
-          <table cellpadding="0" cellspacing="0">
-            <thead>
-              <tr>
-                <th width="80">NO</th>
-                <th>제목</th>
-                <th width="100">글쓴이</th>
-                <th>조회수</th>
-                <th>등록일</th>
-              </tr>
-            </thead>
-            <tbody>
-
-              <tr>
-                <td>1</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>2</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>3</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>4</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>5</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>6</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>7</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>8</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>9</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-              <tr>
-                <td>10</td>
-                <td class="subject">
-                  <a href="/customerCenter_falseReport_detail.html">
-                    임00회원님의 요청 사항이 정상적으로 접수 되었습니다
-                  </a>
-                </td>
-                <td>임00</td>
-                <td>
-                  12
-                </td>
-                <td>
-                  2018.04.02
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
+        <div class="wrapper-button">
+          <button class="black-btn">등록</button>
+          <button class="cancel-btn">취소</button>
         </div>
-        <div class="pagination">
-          <div class="col icon prev-last">
-            <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
-          </div>
-          <div class="col icon prev">
-            <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
-          </div>
-          <div class="col active">
-            1
-          </div>
-          <div class="col">
-            2
-          </div>
-          <div class="col">
-            3
-          </div>
-          <div class="col">
-            4
-          </div>
-          <div class="col">
-            5
-          </div>
-          <div class="col icon next">
-            <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
-          </div>
-          <div class="col icon next-last">
-            <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
+
+
+  <script>
+    // var oEditors = [];
+    // nhn.husky.EZCreator.createInIFrame({
+    //   oAppRef: oEditors,
+    //   elPlaceHolder: "ir1",
+    //   sSkinURI: "./static/naver-editor-2/SmartEditor2Skin.html",
+    //   fCreator: "createSEditor2",
+    //   width: '100%'
+    // });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.summernote').summernote({
+        height: 300,
+        tabsize: 2
+      });
+    });
+  </script>
   <footer class="content-width">
     <div class="inner">
       <ul class="bottom-menu clearfix">
