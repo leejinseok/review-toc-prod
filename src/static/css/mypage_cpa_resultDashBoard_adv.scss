@@ -278,3 +278,11 @@ section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption 
   width: 100%;
   margin-top: 18px;
 }
+
+.right-col > .dashboard .col {
+  width: 20%;
+}
+
+section.mypage .cols .right-col .search:not(.second) {
+  margin-top: 20px;
+}
