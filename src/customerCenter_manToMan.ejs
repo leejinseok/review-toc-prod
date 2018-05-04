@@ -51,12 +51,14 @@
               <tr>
                 <td><%= i + 1 %></td>
                 <td class="title">
-                  <% if (i % 2 === 0) { %>
-                    문의제목
-                  <% }
-                  else { %>
-                    ⌞문의답변
-                  <% } %>
+                  <a href="/customerCenter_manToMan_detail.html">
+                    <% if (i % 2 === 0) { %>
+                      문의제목
+                    <% }
+                    else { %>
+                      ⌞문의답변
+                    <% } %>
+                  </a>
                 </td>
                 <td>
                   <% if (i % 2 === 0) { %>
