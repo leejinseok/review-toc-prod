@@ -596,7 +596,6 @@ section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) {
 section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) span {
   position: absolute;
   right: 10px;
-  top: calc(50% - 10px);
   width: 58px;
   height: 20px;
   display: flex;
@@ -605,9 +604,16 @@ section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) span 
   background: #fff;
   color: #666;
   border: 1px solid #ccc;
-  font-size: 11px;
   font-weight: 400;
   cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+}
+
+section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) span:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
 }
 
 section.detail .main .wrapper-marketingSource {
@@ -617,6 +623,7 @@ section.detail .main .wrapper-marketingSource {
 section.detail .main .wrapper-marketingSource .body {
   min-height: 50px;
   background: #fff;
+  border: 1px solid #e6e6e6;
 }
 
 section.detail .main .wrapper-marketingSource .body ul.row {
@@ -738,20 +745,20 @@ section.detail .sub .inner .item .card .content {
 
 section.detail .sub .inner .item .card .content .category {
   color: #707070;
-  font-size: 12px;
+  font-size: 13px;
   position: relative;
 }
 
 section.detail .sub .inner .item .card .content .category .icons {
   position: absolute;
-  width: 44px;
-  right: -4px;
-  top: -4px;
+  width: 50px;
+  right: 0px;
+  top: -6px;
 }
 
 section.detail .sub .inner .item .card .content .category .icons .icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   float: left;
@@ -761,8 +768,8 @@ section.detail .sub .inner .item .card .content .category .icons .icon {
 }
 
 section.detail .sub .inner .item .card .content .category .icons .icon img {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   display: inline-block;
 }
 
@@ -773,19 +780,20 @@ section.detail .sub .inner .item .card .content .title {
 
 section.detail .sub .inner .item .card .content .detail {
   font-size: 12px;
-  color: #a0a0a0;
-  font-weight: 200;
+  color: #888;
+  font-weight: 400;
   margin-top: 6px;
   line-height: 1.4;
 }
 
 section.detail .sub .inner .item .card .content .price {
   color: #333;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 section.detail .sub .inner .item .card .content .price.active {
@@ -805,7 +813,7 @@ section.detail .sub .inner .item .card .content .price span {
   color: #333;
   background: #fff;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
   border: 1px solid #888;
 }
 
@@ -842,7 +850,6 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .dDay {
 }
 
 section.detail .sub .inner .item .card .content .dDay-and-recruitment .dDay .d {
-  background: #ff2b62;
   background: #333;
   color: #fff;
   border-radius: 50%;
@@ -852,6 +859,13 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .dDay .d {
   line-height: 17px;
   text-align: center;
   margin-right: 3px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+section.detail .sub .inner .item .card .content .dDay-and-recruitment .dDay .day {
+  font-size:14px; 
+  font-weight:bold;
 }
 
 section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitment {
@@ -862,7 +876,6 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
 }
 
 section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitment>span {
-  width: 114px;
   height: 24px;
   background: #fff;
   display: flex;
@@ -871,6 +884,8 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   border-radius: 12px;
   color: #333;
   border: 1px solid #888;
+  font-size:12px; 
+  width:125px;
 }
 
 section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitment>span .apply {
