@@ -83,7 +83,7 @@ section.mypage {
         section.mypage .cols .left-col .wrapper-accordion button.accordion.no-menus:hover, section.mypage .cols .left-col .wrapper-accordion button.accordion.no-menus.active {
           color: #fe1e53; }
         section.mypage .cols .left-col .wrapper-accordion button.accordion:last-child {
-          border-bottom: 0; }
+           }
         section.mypage .cols .left-col .wrapper-accordion button.accordion.active {
           font-weight: 500; }
         section.mypage .cols .left-col .wrapper-accordion button.accordion:focus {
@@ -491,7 +491,7 @@ section.mypage .cols .right-col .search .datepicker img {
 
 section.mypage .cols .right-col .search .period,
 section.mypage .cols .right-col .search .inquiry {
-  font-weight: 300 !important; }
+   }
 
 section.mypage .cols .left-col .wrapper-accordion .panel p a {
   font-size: 14px !important; }

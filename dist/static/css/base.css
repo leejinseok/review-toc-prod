@@ -308,6 +308,7 @@ CUSTOM
   float: none !important;
   height: auto !important;
   background: #fff;
+  line-height: 1.5;
 }
 
 .options .items ul li:hover {
@@ -1097,4 +1098,31 @@ nav.main.fixed {
 .modal.modal-messages .modal-content .pagination {
   margin-top: 20px;
   padding-bottom: 35px;
+}
+
+section.mypage .cols .right-col .search .options .items .selected button img {
+  width: 22px !important;
+}
+
+section.mypage .cols .right-col .search .period, section.mypage .cols .right-col .search .inquiry {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+section.mypage .cols .right-col .search .period:hover, 
+section.mypage .cols .right-col .search .inquiry:hover {
+  background: #444;
+}
+
+section.mypage .cols .right-col .caution p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+section.mypage .cols .left-col .wrapper-accordion .panel p {
+  font-weight: 400;
+}
+
+section.mypage .cols .left-col .profile .withdraw-request:hover {
+  background: #444;
 }
