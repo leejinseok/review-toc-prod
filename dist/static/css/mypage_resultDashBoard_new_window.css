@@ -1,0 +1,58 @@
+html, body {
+  min-width: 320px;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 10px;
+  background-color: #F8F8F8;
+  border-top: 1px solid #fe1e53;
+}
+
+body > h3 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+table tr.ip span.same-ip-exist {
+  color: #fe1e53;
+}
+
+table tr:nth-child(n+7) td {
+}
+
+table tr td:first-child {
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  background: #fff;
+}
+
+table tr:first-child td {
+  border-top: 1px solid #333;
+}
+
+table tr td {
+  border-bottom: 1px solid #EBEBEB;
+  padding: 12px 0;
+  font-size: 14px;
+  background: #fff;
+  font-weight: 400;
+}
+
+table tr td:first-child {
+  font-weight: 400;
+}
+
+.wrapper-buttons {
+  margin-top: 10px;
+}
+
+.wrapper-buttons button {
+  width: 60px;
+  height: 24px;
+  font-size: 10px;
+}

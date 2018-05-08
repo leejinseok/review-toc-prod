@@ -603,44 +603,7 @@ footer {
   background: #000;
 }
 
-.modal.modal-show-detail .modal-content {
-  position: absolute;
-  width: 480px;
-  height: 568px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-  overflow-y: auto;
-}
 
-.modal.modal-show-detail .modal-content table {
-  width: 100%;
-}
-
-.modal.modal-show-detail .modal-content table tr:first-child td {
-  border-top: 1px solid #333;
-}
-
-.modal.modal-show-detail .modal-content table tr td {
-  border-bottom: 1px solid #e0e0e0;
-  padding: 12px 0;
-  font-size: 14px;
-}
-
-.modal.modal-show-detail .modal-content table tr td:first-child {
-  font-weight: 200;
-}
-
-.modal.modal-show-detail .modal-content .wrapper-buttons {
-  margin-top: 10px;
-}
-
-.modal.modal-show-detail .modal-content .wrapper-buttons button {
-  width: 60px;
-  height: 24px;
-  font-size: 10px;
-}
 
 .small-btn {
   width: 60px;
@@ -1103,4 +1066,43 @@ section.container .cols .right-col table td.reason .inner-col span {
 
 .modal.modal-show-detail .modal-content {
   overflow: hidden;
+}
+
+.modal.modal-show-detail .modal-content {
+  position: absolute;
+  width: 480px;
+  height: 568px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.modal.modal-show-detail .modal-content table {
+  width: 100%;
+}
+
+.modal.modal-show-detail .modal-content table tr:first-child td {
+  border-top: 1px solid #333;
+}
+
+.modal.modal-show-detail .modal-content table tr td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.modal.modal-show-detail .modal-content table tr td:first-child {
+  font-weight: 200;
+}
+
+.modal.modal-show-detail .modal-content .wrapper-buttons {
+  margin-top: 10px;
+}
+
+.modal.modal-show-detail .modal-content .wrapper-buttons button {
+  width: 60px;
+  height: 24px;
+  font-size: 10px;
 }

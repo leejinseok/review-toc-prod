@@ -59,6 +59,8 @@ function showDenyReasonModal () {
 }
 
 function showDetail () {
+
+
   var modal = $('.modal.modal-show-detail');
   modal.show();
 }
