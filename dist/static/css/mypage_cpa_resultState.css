@@ -784,11 +784,14 @@ section.mypage .cols .left-col .wrapper-accordion .panel p a {
 
 .status-dashboard .col.result-and-selectbox .inner .options .items .selected button {
   padding-left: 11px;
+  font-size: 13px;
 }
 
 .status-dashboard .col.result-and-selectbox .inner .options .items .selected button img {
-  top: 9px;
-  width: 9px;
+  top: 20px;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .col-9.right-col {
@@ -828,8 +831,9 @@ section.mypage .cols .left-col .wrapper-accordion .panel p a {
 }
 
 .right-col>.dashboard .col p.title {
-  font-size: 12px;
+  font-size: 13px;
   color: #818181;
+  font-weight: 400;
 }
 
 .right-col>.dashboard .col span {
