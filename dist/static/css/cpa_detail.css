@@ -427,6 +427,9 @@ section.detail .main .with-tab nav.tab ul li {
   background: #fbfbfb;
   border-right: 1px solid #e0e0e0;
   border-top: 1px solid #e0e0e0;
+  width: 108px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 section.detail .main .with-tab nav.tab ul li:first-child {
@@ -458,6 +461,7 @@ section.detail .main .wrapper-detail-info .body {
   background: #fff;
   padding: 64px 27px;
   padding-bottom: 90px;
+  border: 1px solid #e6e6e6;
 }
 
 section.detail .main .wrapper-detail-info .body h3 {
@@ -489,6 +493,7 @@ section.detail .main .wrapper-keyword .body {
   background: #fff;
   padding: 64px 27px;
   padding-bottom: 90px;
+  border: 1px solid #e6e6e6;
 }
 
 section.detail .main .wrapper-keyword .body h3 {
@@ -520,6 +525,7 @@ section.detail .main .wrapper-ad-banner .body {
   padding: 64px 27px;
   padding-bottom: 90px;
   padding-top: 0;
+  border: 1px solid #e6e6e6;
 }
 
 section.detail .main .wrapper-ad-banner .body h3 {
