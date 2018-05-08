@@ -4,7 +4,7 @@
 html, body {
   margin: 0 auto;
   position: relative;
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR", sans-serif;
   min-width: 1440px;
 }
 
@@ -415,6 +415,7 @@ nav.main {
       }
       .logo {
         width: 120px;
+        height: 40.88px;
         vertical-align: middle;
       }
     }

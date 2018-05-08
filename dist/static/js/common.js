@@ -17,8 +17,6 @@ $(document).ready(function () {
 });
 
 function handleAllCheckMessageModal (allCheck) {
-  console.log('hi');
-  
   var allCheck = $(allCheck);
   var checked = allCheck.prop('checked');
   var checkboxes = $('.modal-messages table .check');
@@ -167,6 +165,11 @@ function handleOptions () {
     display = options.eq(index).hasClass('active');
     listToggle();
     display = !display;
+  });
+
+  options.mouseleave(function () {
+    options.removeClass('active');
+    button.blur();
   });
   
   li.click(function () {

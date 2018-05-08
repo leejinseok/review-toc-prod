@@ -25,9 +25,7 @@ gulp.task('ejs', () => {
 
 gulp.task('scss', () => {
   gulp.src(config.scss.path)
-  .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
-  .pipe(sourcemaps.write())
   .on('error', swallowError)
   .pipe(rename(function (path) {
     path.extname = '.css';
@@ -47,12 +45,12 @@ gulp.task('scss:prod', () => {
   .pipe(gulp.dest('./dist/static/css'));
 });
 
-gulp.task('default', ['webserver', 'ejs', 'scss'], () => {
+gulp.task('default', ['webserver', 'ejs'], () => {
   gulp.watch(config.ejs.path.watch, ['ejs']);
-  gulp.watch(config.scss.path, ['scss']);
+  // gulp.watch(config.scss.path, ['scss']);
 });
 
-gulp.task('build', ['ejs', 'scss:prod']);
+gulp.task('build', ['ejs']);
 
 /**
 * swallowError - 에러 핸들링 (https://stackoverflow.com/questions/23971388/prevent-errors-from-breaking-crashing-gulp-watch)
