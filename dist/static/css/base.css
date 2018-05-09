@@ -1126,3 +1126,7 @@ section.mypage .cols .left-col .wrapper-accordion .panel p {
 section.mypage .cols .left-col .profile .withdraw-request:hover {
   background: #444;
 }
+
+section.mypage .cols .right-col .search .options {
+  width: 136px !important;
+}

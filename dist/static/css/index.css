@@ -351,6 +351,14 @@
   line-height: 34px;
 }
 
+.section .wrapper-sub-menu ul li.arrows ul li:hover .show {
+  display: none;
+}
+
+.section .wrapper-sub-menu ul li.arrows ul li:hover .hide {
+  display: inline-block;
+}
+
 .section .wrapper-sub-menu ul li.arrows ul li img {
   vertical-align: middle;
 }
