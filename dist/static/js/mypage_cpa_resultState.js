@@ -50,7 +50,7 @@ function showDenyReasonModal () {
 
 function showDetail () {
   window.open('/mypage_resultDashBoard_new_window.html', '_blank', 'toolbar=yes, scrollbars=yes, resizable=no,top=100,left=0,width=460,height=620');
-  // return;
+  return;
 
   var modal = $('.modal.modal-show-detail');
   modal.show();
