@@ -288,7 +288,7 @@ section.mypage .cols .right-col .search .datepicker input {
   border: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: 100px;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   background: #fbfbfb;
