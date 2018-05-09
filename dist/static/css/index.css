@@ -430,7 +430,7 @@
 }
 
 .section.cpa-list .wrapper-article article .content .icons {
-  width: 54px;
+  width: 59px;
   display: inline-block;
   position: absolute;
   right: 20px;
@@ -445,16 +445,14 @@
   justify-content: center;
   width: 25px;
   height: 25px;
+  border-radius: 3px;
 }
 
 .section.cpa-list .wrapper-article article .content .icons .icon:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 .section.cpa-list .wrapper-article article .content .icons .icon:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  margin-left: 5px;
 }
 
 .section.cpa-list .wrapper-article article .content .icons .icon img {

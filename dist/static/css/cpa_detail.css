@@ -751,7 +751,7 @@ section.detail .sub .inner .item .card .content .category {
 
 section.detail .sub .inner .item .card .content .category .icons {
   position: absolute;
-  width: 50px;
+  width: 55px;
   right: 0px;
   top: -6px;
 }
@@ -765,6 +765,10 @@ section.detail .sub .inner .item .card .content .category .icons .icon {
   border: 1px solid #e9e9e9;
   justify-content: center;
   box-sizing: border-box;
+}
+
+section.detail .sub .inner .item .card .content .category .icons .icon:last-child {
+  margin-left: 5px;
 }
 
 section.detail .sub .inner .item .card .content .category .icons .icon img {
