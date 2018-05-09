@@ -744,6 +744,13 @@ aside.bottom .inner .notice table td.title {
   letter-spacing: -1px;
 }
 
+aside.bottom .inner .notice table td.title a {
+  height: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 aside.bottom .inner .notice table td.title a:hover {
   text-decoration: underline;
 }

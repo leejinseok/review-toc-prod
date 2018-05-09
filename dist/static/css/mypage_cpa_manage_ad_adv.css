@@ -44,7 +44,8 @@ section.mypage {
       section.mypage .cols .left-col .profile .current-point-value {
         font-size: 18px;
         color: #fe1e53;
-        margin-top: 8px; }
+        margin-top: 8px; 
+        font-weight: bold;}
       section.mypage .cols .left-col .profile .withdraw-request {
         width: 111px;
         height: 38px;

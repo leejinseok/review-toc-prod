@@ -11,7 +11,7 @@ function handleAccordion (accordionIndex, itemIndex) {
   var parentParagraph = $('.wrapper-accordion .panel p');
   var items = $('.wrapper-accordion .panel p a');
   var downArrowSrc = {
-    'selected': './static/images/mypage/my_profile_up_selected.png',
+    'selected': './static/images/mypage/my_profile_up.png',
     'unselected': './static/images/mypage/my_profile_down.png'
   };
 
