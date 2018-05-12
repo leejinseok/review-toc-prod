@@ -976,6 +976,10 @@ section.mypage .cols .right-col .search {
   cursor: pointer;
 }
 
+.wrapper-bottom-controlls .col button:not(.excel):hover {
+  background-color: #444;
+}
+
 .wrapper-bottom-controlls .col button.excel {
   background: #fff;
   text-align: left;
@@ -1054,6 +1058,10 @@ section.mypage .cols .right-col .search .options .items .selected button {
 .black-btn.small-btn.update {
   margin-right: 0;
   width: 48px;
+}
+
+.black-btn.small-btn.update:hover {
+  background: #444;
 }
 
 section.mypage .cols .right-col .wrapper-table {

@@ -11,6 +11,7 @@ section.customerCenter h2.main-h {
   font-size: 18px;
   color: #333;
   margin-bottom: 31px;
+
 }
 
 section.customerCenter .container {
@@ -238,6 +239,12 @@ section.customerCenter .container .col.content .search .write {
   border-radius: 3px;
   border: 0;
   cursor: pointer;
+}
+
+section.customerCenter .container .col.content .search .period:hover,
+section.customerCenter .container .col.content .search .inquiry:hover,
+section.customerCenter .container .col.content .search .write:hover  {
+  background: #444;
 }
 
 section.customerCenter .container .col.content .search .period:focus,
