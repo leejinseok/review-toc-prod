@@ -1,6 +1,7 @@
 $(document).ready(function () {
     handleTopBanners(); // top banner
     handleTopBannerClose(); // top banner close event
+    handleRollingBannerMobile();
     handleRollingBanner(); // handle rolling banner event
     handleRollingBannerLeft(); // handle rolling banner left css
     handleBodyClick(); // handle body click event
@@ -12,6 +13,27 @@ $(document).ready(function () {
     handleCpaListSubMenuSlide();
     handleExperienceGroupListSubMenuSlide();
 });
+
+function handleRollingBannerMobile () {
+  var swiper = new Swiper('.swiper-container.rolling-banner-mobile', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+      }
+    },
+    pagination: {
+      el: '.wrapper-mobile-rolling-banner .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.wrapper-mobile-rolling-banner .arrow-right.arrow',
+      prevEl: '.wrapper-mobile-rolling-banner .arrow-left.arrow',
+    },
+  });
+}
 
 function handleCpaListSubMenuSlide () {
   var swiper = new Swiper('.section.cpa-list .wrapper-sub-menu ul li.menus .swiper-container', {
@@ -356,7 +378,7 @@ function handleRollingBanner () {
     rollingBanner.setDots('.navigation .dot');
     rollingBanner.setItemWidth();
     rollingBanner.setDirection('right');
-    rollingBanner.startInterval();
+    // rollingBanner.startInterval();
 
     $('.rolling-banner').find('.arrow').click(function () {
         rollingBanner.pauseInterval();
