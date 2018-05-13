@@ -115,8 +115,8 @@ function handleBodyClickForModalRoot () {
     if (targetId === 'modal-messages') {
       hideModal();
     }
-    
-    if (targetId === 'wrapper-sidemenu') {
+
+    if (targetId === 'sidemenu') {
       $('.wrapper-sidemenu').removeClass('active');
     }
   });

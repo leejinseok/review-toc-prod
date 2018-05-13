@@ -484,19 +484,24 @@ nav.main.mobile .logo {
 
 .wrapper-sidemenu .sidemenu {
   height: 100%;
-  background: #fff;
+  width: 100%;
   display: inline-block;
 }
 
 .wrapper-sidemenu .sidemenu ul {
-
+  width: calc(100% - 60px);
+  height: 100%;
+  background: #F1F1F1;
 }
 
 .wrapper-sidemenu .sidemenu > ul > li {
-  width: 180px;
 }
 
-.wrapper-sidemenu .sidemenu > ul > li button.accordion {
+.wrapper-sidemenu .sidemenu > ul > li.divider {
+  margin-top: 10px;
+}
+
+.wrapper-sidemenu .sidemenu > ul > li .accordion {
   width: 100%;
   height: 50px;
   display: flex;
@@ -1260,5 +1265,33 @@ section.mypage .cols .right-col .search .options {
 
   nav.main.mobile {
     display: block;
+  }
+
+  footer {
+    width: 100% !important;
+  }
+
+  footer .inner {
+    text-align: center;
+  }
+
+  footer .inner ul.bottom-menu {
+    display: inline-block;
+  }
+
+  footer .inner ul.bottom-menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+
+  footer .bottom-detail .col {
+    width: 100% !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  footer .bottom-detail .col.etc {
+    justify-content: flex-start;
   }
 }
