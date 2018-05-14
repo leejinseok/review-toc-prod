@@ -24,7 +24,6 @@ section.mypage h2.main-h {
 }
 
 section.mypage .cols {
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -391,10 +390,6 @@ section.mypage .cols .right-col .pagination .col.icon {
 
 section.mypage .cols .right-col .pagination .col img {
   vertical-align: middle;
-}
-
-footer {
-  width: 1180px !important;
 }
 
 .wrapper-table {
@@ -1120,6 +1115,11 @@ section.mypage .cols .right-col .wrapper-table table thead tr th:nth-child(5) {
   width: 268px;
 }
 
+
+section.mypage .cols .right-col .wrapper-table table.mobile tr td.campaignName-and-url a {
+  color: #0000ff;
+}
+
 section.mypage .cols .right-col .wrapper-table table tbody tr td {
   height: 64px;
   text-align: center;
@@ -1166,6 +1166,21 @@ section.mypage .cols .right-col .wrapper-table table tbody tr td.confirm button:
   color: #fff;
 }
 
+/* 테이블 > 모바일 */
+section.mypage .cols .right-col .wrapper-table table.mobile  {
+  display: none;
+}
+
+section.mypage .cols .right-col .wrapper-table table.mobile thead tr th:nth-child(1),
+section.mypage .cols .right-col .wrapper-table table.mobile thead tr th:nth-child(2),
+section.mypage .cols .right-col .wrapper-table table.mobile thead tr th:nth-child(3) {
+  width: initial;
+}
+
+section.mypage .cols .right-col .wrapper-table table.mobile tbody tr td.thumbnail p {
+  margin-top: 4px;
+}
+
 section.mypage .cols .right-col .pagination {
   display: flex;
   align-items: center;
@@ -1200,10 +1215,30 @@ section.mypage .cols .right-col .pagination .col img {
   vertical-align: middle;
 }
 
-footer {
-  width: 1180px !important;
-}
 
 section.mypage .cols .right-col .wrapper-table table tbody tr td {
   color: #555 !important;
+}
+
+/* 모바일 */
+
+
+@media only screen and (max-width: 768px) {
+  .table.pc {
+    display: none;
+  }
+  
+  section.mypage .cols .right-col .wrapper-table table.mobile {
+    display: table;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table.mobile tbody tr td img {
+    max-width: 100px;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table.mobile tbody tr td.confirm button {
+    width: 40px;
+  }
+
+  
 }

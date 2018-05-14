@@ -446,14 +446,14 @@ nav.main {
 
 nav.main.mobile {
   display: none;
-  height: 70px;
-  line-height: 70px;
+  height: 56px;
+  line-height: 56px;
   position: relative;
   text-align: center;
 }
 
 nav.main.mobile .hamburger {
-  width: 40px;
+  width: 30px;
   position: absolute;
   left: 10px;
   top: 50%;
@@ -462,7 +462,7 @@ nav.main.mobile .hamburger {
 }
 
 nav.main.mobile .logo {
-  width: 100px;
+  width: 80px;
   vertical-align: middle;
 }
 
@@ -1293,5 +1293,46 @@ section.mypage .cols .right-col .search .options {
 
   footer .bottom-detail .col.etc {
     justify-content: flex-start;
+  }
+
+  /* 마이페이지 공통 */
+  section.mypage h2.main-h {
+    width: 100% !important;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  section.mypage .cols {
+    width: 100% !important;
+  }
+
+  .cols .left-col,
+  .cols .right-col {
+    width: 100%;
+  }
+
+  section.mypage .cols .right-col .search {
+    display: block !important;
+  }
+
+  section.mypage .cols .right-col .search .options {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  section.mypage .cols .right-col .search .datepicker.from,
+  section.mypage .cols .right-col .search .datepicker.to {
+    width: calc(50% - 13.47px);
+    margin-right: 0;
+  }
+
+  section.mypage .cols .right-col .search .datepicker input {
+    width: 100% !important;
+  }
+
+  section.mypage .cols .right-col .search .period, 
+  section.mypage .cols .right-col .search .inquiry {
+    display: inline-block !important;
+    margin-top: 10px;
   }
 }

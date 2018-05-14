@@ -67,7 +67,7 @@
       </div>
 
       <div class="wrapper-table">
-        <table class="table" border="1">
+        <table class="table pc" border="1">
           <thead>
             <tr>
               <th>NO</th>
@@ -91,13 +91,38 @@
                 <td class="campaign-name">
                   <p class="title">슬피우는 두견새야</p>
                   <p class="controll">
-                    <!--
-                      <button type="button" title="수정">수정</button>
-                      <button type="button" title="삭제">삭제</button>
-                    -->
                   </p>
                 </td>
                 <td class="url">
+                  <a href="http://www.rainy-heaven.com" target="_blank">www.rainy-heaven.com</a>
+                </td>
+                <td class="confirm">
+                  <button type="button">
+                    확인
+                  </button>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+
+        <table class="table mobile" border="1">
+          <thead>
+            <tr>
+              <th>썸네일/광고주명</th>
+              <th>캠페인명/홍보 URL</th>
+              <th>실적확인</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 5; i++) { %>
+              <tr>
+                <td class="thumbnail">
+                  <img src="./static/images/mypage/campaign_ad_img.png">
+                  <p>네이버 라인</p>
+                </td>
+                <td class="campaignName-and-url">
+                  <p class="title">슬피우는 두견새야</p>
                   <a href="http://www.rainy-heaven.com" target="_blank">www.rainy-heaven.com</a>
                 </td>
                 <td class="confirm">

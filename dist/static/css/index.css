@@ -391,7 +391,7 @@
 .section.cpa-list .wrapper-article article .header img:hover,
 .section.cpa-list .wrapper-article article .header img.active {
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translate(-50%, -50%) scale3d(1.04, 1.04, 1)  !important;
+  transform: scale3d(1.04, 1.04, 1);
 }
 
 .section.cpa-list .wrapper-article article .header .label {
@@ -553,7 +553,7 @@
 .section.experienceGroup-list .wrapper-article article .header img:hover,
 .section.experienceGroup-list .wrapper-article article .header img.active {
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translate(-50%, -50%) scale3d(1.04, 1.04, 1) !important;
+  transform: scale3d(1.04, 1.04, 1);
 }
 
 .section.experienceGroup-list .wrapper-article article .header .label {
@@ -1279,6 +1279,18 @@ aside.bottom .inner .guide-contact .right .swiper-container [class*=swiper-butto
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .section.cpa-list .wrapper-article article .header img:hover,
+  .section.cpa-list .wrapper-article article .header img.active {
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate(-50%, -50%) scale3d(1.04, 1.04, 1)  !important;
+  }
+
+  .section.cpa-list .wrapper-article article .header img:hover,
+  .section.cpa-list .wrapper-article article .header img.active {
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate(-50%, -50%) scale3d(1.04, 1.04, 1)  !important;
   }
 }
 

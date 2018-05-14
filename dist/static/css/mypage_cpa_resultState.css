@@ -1107,3 +1107,22 @@ section.container .cols .right-col table td.reason .inner-col span {
   height: 24px;
   font-size: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .right-col>.dashboard .col {
+    width: 50%;
+    height: 90px;
+  }
+
+  .right-col>.dashboard {
+    height: 182px;
+  }
+
+  .right-col>.dashboard .col:nth-child(2):after {
+    display: none;
+  }
+
+  .status-dashboard .col.number {
+    width: 100%;
+  }
+}
