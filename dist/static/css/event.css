@@ -1,0 +1,27 @@
+section.event {
+
+}
+
+section.event > .container {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section.event > .container.container-body {
+
+}
+
+section.event > .container.container-body .body {
+
+}
+
+section.event > .container.container-body .body .col-4 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+section.event > .container.container-body .body .col-4 .wrapper-image img {
+  max-width: 100%;
+}
