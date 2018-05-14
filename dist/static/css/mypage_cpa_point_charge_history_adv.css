@@ -998,3 +998,79 @@ section.mypage .cols .left-col .wrapper-accordion .panel p a {
   height: 100px;
   background: #fbfbfb;
 }
+
+@media only screen and (max-width: 768px) {
+  section.mypage .cols .right-col .search .options {
+    display: block;
+  }
+
+  section.mypage .cols .right-col .search .options.list-per-page {
+    margin-top: 10px;
+  }
+
+  section.mypage .cols .right-col .search .period, section.mypage .cols .right-col .search .inquiry {
+    width: calc(33.3333% - 8px) !important;
+  }
+
+  .search .options.list-per-page {
+    position: static;
+  }
+
+  .wrapper-table table tr td .bill-apply {
+    padding: 6px 6px;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table.mobile th, section.mypage .cols .right-col .wrapper-table table.mobile td {
+    font-size: 10px;
+  }
+
+  .modal .modal-content table tr td {
+    font-size: 10px;
+  }
+
+  .modal.modal-reg-document .modal-content {
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
+
+  .modal.modal-reg-document-update .modal-content {
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
+
+  .modal.modal-bill-apply .modal-content {
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
+
+  .parent-wrapper-guide .wrapper-guide .content {
+    font-size: 10px;
+  }
+
+  .parent-wrapper-guide .wrapper-guide .content button {
+    word-break: keep-all;
+  }
+
+  .wrapper-table .header-p {
+    width: calc(100% - 20px);
+    padding-top: 0;
+    line-height: 1.5;
+    padding-bottom: 10px;
+  }
+
+  .wrapper-table .header-p button {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+  }
+
+  footer {
+    width: 100% !important;
+  }
+
+  .modal {
+    z-index: 10;
+  }
+}

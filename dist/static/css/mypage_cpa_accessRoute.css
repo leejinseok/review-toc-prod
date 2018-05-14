@@ -2,6 +2,10 @@ body {
   background: #f9f8fa;
 }
 
+.status-dashboard {
+  display: none;
+}
+
 .wrapper-table {
   background: #fff;
 }
@@ -758,6 +762,11 @@ section.mypage .cols .left-col .wrapper-accordion .panel p a {
   background-color: #ca1818;
 }
 
+.status-dashboard .col.number ul li .square.visited {
+  background-color: #959595;
+}
+
+
 .status-dashboard .col.number ul li .text {
   margin-left: 17px;
 }
@@ -963,7 +972,7 @@ section.container .cols .right-col table td.access-device {
   }
 
   .status-dashboard .col.number ul li {
-    padding-right: 4px;
+    padding-right: 8px;
   }
 
   section.container .cols .right-col table th.status, 
@@ -986,5 +995,9 @@ section.container .cols .right-col table td.access-device {
   section.container .cols .right-col table td.campaign-name span {
     color: #a0a0a0;
     font-weight: 200;
+  }
+
+  .status-dashboard {
+    display: block;
   }
 }

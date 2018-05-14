@@ -1127,3 +1127,98 @@ section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption 
 section.mypage .cols .right-col .search:not(.second) {
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  section.mypage .cols .right-col .wrapper-table table th, 
+  section.mypage .cols .right-col .wrapper-table table td {
+    font-size: 10px;
+  }
+
+  .right-col>.dashboard .col {
+  }
+
+  .right-col>.dashboard .col span {
+    font-size: 14px;
+  }
+
+  .right-col>.dashboard .col span small {
+    font-size: 12px;
+  }
+
+  section.mypage .cols .right-col .search .period, 
+  section.mypage .cols .right-col .search .inquiry {
+    width: calc(33.33% - 8px) !important;
+  }
+
+  .status-dashboard {
+    width: calc(100% - 20px);
+    margin-top: 2px;
+  }
+
+  section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption {
+    padding: 10px;
+  }
+
+  section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items .selected button img {
+    width: 20px;
+    top: 11px;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table tr:first-child th {
+    word-break: keep-all;
+  }
+
+  .view-detail button {
+    font-size: 10px;
+    width: 34px;
+  }
+
+  .wrapper-table table tr td.status span {
+    padding: 4px;
+    border-radius: 0;
+  }
+
+  .wrapper-table table tr td.memo span {
+    width: 25px;
+  }
+
+  .black-btn.small-btn.update {
+    width: 30px;
+    height: 18px;
+    font-size: 10px;
+    letter-spacing: -1px;
+  }
+
+  .wrapper-table table tr td.memo .pop-reason {
+    left: -133px;
+  }
+
+  .wrapper-bottom-controlls .col {
+    width: 100%;
+  }
+
+  .wrapper-bottom-controlls .col button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-bottom-controlls .col button.excel {
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper-bottom-controlls .col button.excel .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  .wrapper-bottom-controlls {
+    width: calc(100% - 20px);
+  }
+
+  footer {
+    width: 100% !important;
+  }
+}

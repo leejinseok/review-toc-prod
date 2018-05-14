@@ -423,41 +423,6 @@
 
       <div class="col-9 right-col">
         <h2>일별 상세실적</h2>
-
-        <!-- <div class="status-dashboard clearfix">
-          <div class="col number">
-            <ul class="clearfix">
-              <li class="wait">
-                <span class="square wait"></span>
-                <span class="text">
-                  대기(2)
-                </span>
-              </li>
-              <li class="defer">
-                <span class="square defer"></span>
-                <span class="text">
-                  보류(2)
-                </span>
-              </li>
-              <li class="approve">
-                <span class="square approve"></span>
-                <span class="text">
-                  승인(2)
-                </span>
-              </li>
-              <li class="deny">
-                <span class="square deny"></span>
-                <span class="text">
-                  거절(2)
-                </span>
-              </li>
-              <li class="rate">
-                승인률 80%
-              </li>
-            </ul>
-          </div>
-        </div> -->
-
         <div class="dashboard">
           <div class="col">
             <p class="title">대기</p>
@@ -586,7 +551,7 @@
               </div>
             </div>
           </div>
-          <table class="table" border="1">
+          <table class="table pc" border="1">
             <thead>
               <tr>
                 <th>NO</th>
@@ -1007,6 +972,424 @@
                 </td>
                 <td>
                   <!-- <input type="checkbox" class="update"> -->
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="status-dashboard clearfix">
+            <div class="col number">
+              <ul class="clearfix">
+                <li class="wait">
+                  <span class="square wait"></span>
+                  <span class="text">
+              대기
+            </span>
+                </li>
+                <li class="defer">
+                  <span class="square defer"></span>
+                  <span class="text">
+              보류
+            </span>
+                </li>
+                <li class="approve">
+                  <span class="square approve"></span>
+                  <span class="text">
+              승인
+            </span>
+                </li>
+                <li class="deny">
+                  <span class="square deny"></span>
+                  <span class="text">
+              거절
+            </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <table class="table mobile" border="1">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" name="checkAll" class="checkAll" value="" onchange="handleAllCheck(this)">
+                </th>
+                <th>광고명</th>
+                <th>신청일자</th>
+                <th>신청자명/전화번호</th>
+                <th>상세보기</th>
+                <th>진행상황</th>
+                <th>메모</th>
+                <th>수정</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+                  <span class="approve"></span>
+
+
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+                  <span class="deny"></span>
+
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+
+
+                    <div class="reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+
+                  <span class="wait"></span>
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+                    <span class="d-day">D-10</span>
+
+
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+
+
+                  <span class="defer"></span>
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo  with-d-day ">
+
+                    <span class="d-day">D-10</span>
+
+
+
+                    <div class="reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+                  <span class="approve"></span>
+
+
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+                  <span class="deny"></span>
+
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+
+
+                    <div class="reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+
+                  <span class="wait"></span>
+
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo ">
+
+                    <span class="d-day">D-10</span>
+
+
+
+                  </div>
+                </td>
+                <td>
+                  <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
+                    수정
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="check" value="" onchange="handleIsCheckBoxAll(this)">
+                </td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  04.17
+                </td>
+                <td>
+                  홍길동
+                  <br>010-5555-9999
+                </td>
+                <td class="view-detail">
+                  <button type="button" onclick="showDetail()">보기</button>
+                </td>
+                <td class="status">
+
+
+
+
+                  <span class="defer"></span>
+
+                </td>
+                <td class="memo">
+                  <div class="wrapper-memo  with-d-day ">
+
+                    <span class="d-day">D-10</span>
+
+
+
+                    <div class="reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </td>
+                <td>
                   <button class="black-btn small-btn update" onclick="showModalOneUpdate();">
                     수정
                   </button>

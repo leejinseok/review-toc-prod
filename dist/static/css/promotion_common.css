@@ -187,3 +187,38 @@ section.promotion .container .col.content .wrapper-table table tbody tr td {
 section.promotion .container .col.content .wrapper-table table tbody tr td.term {
   font-size: 11px;
 }
+
+@media only screen and (max-width: 768px) {
+  section.promotion .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  section.promotion h2.main-h {
+    width: 100%;
+  }
+
+  section.promotion .container .col.menu {
+    width: 100%;
+  }
+
+  section.promotion .container .col.content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  section.promotion .container .col.content .wrapper-table {
+    padding: 10px;
+  }
+
+  section.promotion .container .col.content .wrapper-table table {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  section.promotion .container .col.content .wrapper-table table th, 
+  section.promotion .container .col.content .wrapper-table table td {
+    font-size: 10px !important;
+  }
+}

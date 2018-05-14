@@ -64,7 +64,7 @@
       </div>
 
       <div class="wrapper-table">
-        <table class="table" border="1">
+        <table class="table pc" border="1">
           <thead>
             <tr>
               <th>일자</th>
@@ -94,6 +94,34 @@
                 </td>
                 <td>
                   0
+                </td>
+                <td class="btn">
+                  <button type="button">
+                    확인
+                  </button>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile" border="1">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>광고명</th>
+              <th>대기/보류/거절/승인</th>
+              <th>실적확인</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>01.01</td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  0/0/0/0
                 </td>
                 <td class="btn">
                   <button type="button">

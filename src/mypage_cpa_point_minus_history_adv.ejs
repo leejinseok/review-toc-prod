@@ -57,7 +57,7 @@
 
 
     <div class="wrapper-table">
-      <table>
+      <table class="table pc">
         <thead>
           <tr>
             <th>NO</th>
@@ -103,8 +103,49 @@
           <% } %>
         </tbody>
       </table>
-
-
+      <table class="table mobile">
+        <thead>
+          <tr>
+            <th>
+              광고명/일자
+            </th>
+            <th>DB단가</th>
+            <th>프로모션</th>
+            <th>승인</th>
+            <th>
+              포인트차감 <br>
+              잔여포인트
+            </th>
+            <th>상세보기</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (i = 0; i < 10; i++) { %>
+            <tr>
+              <td>
+                네이버 블로그 <br>
+                04.17
+              </td>
+              <td>
+                홍길동
+              </td>
+              <td>
+                3,000원
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                -33,000원 <br>
+                1,500,000원
+              </td>
+              <td>
+                <button class="show-detail">보기</button>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
     <div class="pagination">
       <div class="col icon prev-last">
         <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">

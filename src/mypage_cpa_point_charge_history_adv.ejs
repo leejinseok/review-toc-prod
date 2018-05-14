@@ -74,7 +74,7 @@
           서류등록
         </button>
       </p>
-      <table>
+      <table class="table pc">
         <thead>
           <tr>
             <th>NO</th>
@@ -90,6 +90,51 @@
               <td><%= i + 1 %></td>
               <td>
                 2018.04.07
+              </td>
+              <td>
+                10,000원
+              </td>
+              <td>
+                <% if (i % 3 === 0) { %>
+                  입금완료
+                <% } else if (i % 3 === 1) { %>
+                  계산서발행
+                <% } else { %>
+                  입금전
+                <% } %>
+              </td>
+              <td>
+                <% if (i % 3 === 0) { %>
+                  <span class="bill-apply" onclick="showModalBillApply();">계산서 발행요청</span>
+                <% } else if (i % 3 === 1 ){ %>
+                  <span>
+                    2018.03.23 청구발행
+                  </span>
+                <% } else { %>
+                  <span>
+                    -
+                  </span>
+                <% } %>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      
+      <table class="table mobile">
+        <thead>
+          <tr>
+            <th>일자</th>
+            <th>충전금액</th>
+            <th>진행상태</th>
+            <th>계산서 발행여부</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (i = 0; i < 10; i++) { %>
+            <tr>
+              <td>
+                04.07
               </td>
               <td>
                 10,000원

@@ -1,0 +1,7 @@
+section.promotion .container .col.content .wrapper-table table tr:first-child th:nth-child(1) {
+  width: 30px;
+}
+
+section.promotion .container .col.content .wrapper-table table tr:first-child th:nth-child(2) {
+  width: initial;
+}
