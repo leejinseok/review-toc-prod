@@ -1258,7 +1258,20 @@ section.mypage .cols .right-col .search .options {
   width: 136px !important;
 }
 
+section.mypage .cols .right-col .wrapper-table table.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  table.pc {
+    display: none;
+  }
+  
+  section.mypage .cols .right-col .wrapper-table table.mobile {
+    display: table;
+    width: calc(100% - 20px);
+  }
+
   nav.main.pc {
     display: none;
   }
@@ -1336,3 +1349,4 @@ section.mypage .cols .right-col .search .options {
     margin-top: 10px;
   }
 }
+

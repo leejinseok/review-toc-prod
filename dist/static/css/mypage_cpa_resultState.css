@@ -387,7 +387,7 @@ section.mypage .cols .right-col .pagination .col img {
 }
 
 footer {
-  width: 1180px !important;
+  width: 1180px;
 }
 
 .wrapper-table {
@@ -1108,7 +1108,17 @@ section.container .cols .right-col table td.reason .inner-col span {
   font-size: 10px;
 }
 
+/* 모바일 */
+.wrapper-table table.mobile thead tr th {
+  width: initial !important;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .status-dashboard {
+    width: calc(100% - 20px);
+  }
+
   .right-col>.dashboard .col {
     width: 50%;
     height: 90px;
@@ -1124,5 +1134,43 @@ section.container .cols .right-col table td.reason .inner-col span {
 
   .status-dashboard .col.number {
     width: 100%;
+  }
+
+  .status-dashboard .col.result-and-selectbox {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .status-dashboard .col.result-and-selectbox .inner {
+    justify-content: flex-start;
+  }
+
+  section.container .cols .right-col table th:nth-child(1), 
+  section.container .cols .right-col table td:nth-child(1) {
+    text-align: center;
+    width: initial;
+  }
+
+  section.container .cols .right-col table th:nth-child(1) {
+    text-align: center;
+  }
+
+  section.container .cols .right-col table th:nth-child(2), 
+  section.container .cols .right-col table td:nth-child(2) {
+    width: initial;
+  }
+
+  section.container .cols .right-col table th:nth-child(3), 
+  section.container .cols .right-col table td:nth-child(3) {
+    width: initial;
+  }
+
+  section.container .cols .right-col table th:nth-child(4), 
+  section.container .cols .right-col table td:nth-child(4) {
+    width: initial;
+  }
+
+  .status-dashboard .col.number ul li {
+    padding-right: 10px;
   }
 }

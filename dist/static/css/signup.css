@@ -234,6 +234,7 @@ section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap.active {
   display: block;
 }
 
+section.sign-up .inflowRoute .options,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options {
   width: 100%;
   height: 100%;
@@ -249,6 +250,17 @@ section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .visible-in-
   display: list-item;
 }
 
+section.sign-up .inflowRoute {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  box-sizing: border-box;
+}
+
+section.sign-up .inflowRoute .options .items .selected button {
+  box-sizing: border-box;
+}
+
+section.sign-up .inflowRoute .options .items .selected button,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items .selected button {
   border: 0;
   padding-left: 20px;
@@ -256,10 +268,12 @@ section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .it
   font-size: 13px;
 }
 
+section.sign-up .inflowRoute .options .items .selected button img,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items .selected button img {
   top: 20px;
 }
 
+section.sign-up .inflowRoute .options .items ul,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items ul {
   box-sizing: border-box;
   margin-top: 1px;
@@ -268,6 +282,14 @@ section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .it
   border-left: 0;
 }
 
+section.sign-up .inflowRoute .options .items ul {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  width: calc(100% + 2px);
+  left: -1px;
+}
+
+section.sign-up .inflowRoute .options .items ul li,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items ul li {
   box-sizing: border-box;
   padding: 20px;
@@ -275,13 +297,16 @@ section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .it
   background-color: #efefef;
 }
 
+section.sign-up .inflowRoute .options .items ul li:first-child,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items ul li:first-child {
   border-top: 0;
 }
 
+section.sign-up .inflowRoute .options .items ul li:hover,
 section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items ul li:hover {
   background-color: #f6f6f6;
 }
+
 
 section.sign-up .wrapper-advertiser-form .sub-info-wrap li.inquiry {
   height: auto;
