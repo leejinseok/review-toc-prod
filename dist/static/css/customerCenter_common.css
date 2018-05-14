@@ -70,6 +70,13 @@ section.customerCenter .container .col.menu ul.extension .col {
   padding-left: 0;
 }
 
+section.customerCenter .container .col.menu ul.extension .col:last-child {
+  width: calc(50% - 1px);
+  overflow: hidden;
+  border-left: 0;
+  border-top: 0;
+}
+
 section.customerCenter .container .col.menu ul.extension .col:hover span {
   color: #333;
 }
