@@ -365,7 +365,6 @@ section.customerCenter .container .pagination .col:hover {
 
 .wrapper-detail .wrapper-buttons button {
   padding: 7.5px 20px;
-  background: #fbfbfb;
   color: #555555;
   font-size: 14px;
   border: 0;
@@ -379,6 +378,12 @@ section.customerCenter .container .pagination .col:hover {
 
 .wrapper-detail .wrapper-buttons button:last-child {
   border-left: 1px solid #e0e0e0;
+}
+
+.wrapper-detail .wrapper-buttons button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
 }
 
 .wrapper-detail .wrapper-buttons button:focus {

@@ -956,6 +956,12 @@ section.container .cols .right-col .withdraw-request .col.input-area .inner-inpu
   padding: 0 10px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 section.container .cols .right-col .withdraw-request .col.input-area .inner-input-text input:focus {
   outline: none;
 }
@@ -1204,4 +1210,98 @@ section.container .cols .right-col table td {
 
 .wrapper-table table thead tr th:nth-child(1) {
   width: 50px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  section.container .cols .right-col .withdraw-request .col.available {
+    width: 50%;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.withdrawed:after {
+    display: none;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.withdrawed {
+    width: 50%;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.available .cash {
+    width: 32px;
+    height: 32px;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.input-area {
+    width: 100%;
+  }
+
+  section.container .cols .right-col .withdraw-history-title {
+    display: block;
+  }
+
+  section.container .cols .right-col .withdraw-history-title .main {
+    display: block;
+  }
+
+  section.container .cols .right-col .withdraw-history-title .registrated-account {
+    margin-left: 0;
+    margin-top: 6px;
+    display: block;
+  }
+
+  section.container .cols .right-col .withdraw-history-title button {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  .status-dashboard {
+    width: calc(100% - 20px);
+  }
+
+  .status-dashboard .col.number {
+    width: 100%;
+  }
+
+  .status-dashboard .col.result-and-selectbox {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .status-dashboard .col.result-and-selectbox  .inner {
+    justify-content: flex-start;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table th, 
+  section.mypage .cols .right-col .wrapper-table table td {
+    font-size: 10px;
+  }
+
+  .wrapper-table table td.request-amount {
+    word-break: keep-all;
+  }
+
+  .wrapper-table table td.receipt-info {
+    text-align: left !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  section.mypage .cols .right-col .wrapper-table table tr:first-child th {
+    word-break: keep-all;
+  }
+
+  .wrapper-table table tr td.status span {
+    padding: 4px 4px;
+    border-radius: 0;
+  }
+
+  .wrapper-table table tr td.reason span {
+    font-size: 10px;
+    width: 30px;
+  }
+
+  .wrapper-table table tr td.reason .pop-reason {
+    left: -116px;
+  }
 }

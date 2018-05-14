@@ -1302,6 +1302,7 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
     width: 100% !important;
     padding: 0 10px;
     box-sizing: border-box;
+    height: 80px;
   }
 
   footer .bottom-detail .col.etc {
@@ -1347,6 +1348,10 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   section.mypage .cols .right-col .search .inquiry {
     display: inline-block !important;
     margin-top: 10px;
+    margin-right: 0 !important;
+    margin-left: 2px;
+    margin-right: 2px !important;
+    width: calc(25% - 8px) !important;
   }
 }
 

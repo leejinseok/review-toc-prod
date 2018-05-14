@@ -68,59 +68,59 @@
         </button>
       </div>
       <div class="wrapper-table">
-          <div class="status-dashboard clearfix">
-              <div class="col number">
-                <ul class="clearfix">
-                  <li class="wait">
-                    <span class="square wait"></span>
-                    <span class="text">
-                    대기(2)
-                  </span>
-                  </li>
-                  <li class="defer">
-                    <span class="square defer"></span>
-                    <span class="text">
-                    보류(2)
-                  </span>
-                  </li>
-                  <li class="approve">
-                    <span class="square approve"></span>
-                    <span class="text">
-                    승인(2)
-                  </span>
-                  </li>
-                  <li class="deny">
-                    <span class="square deny"></span>
-                    <span class="text">
-                    거절(2)
-                  </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col result-and-selectbox">
-                <div class="inner">
-                  <span class="result">검색결과 <span class="number">4</span>건</span>
-                  <div class="options">
-                    <div class="items">
-                      <div class="selected">
-                        <button type="button" class="selected-button">
-                          <span class="value">50개씩</span>
-                          <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
-                        </button>
-                      </div>
-                      <ul>
-                        <li class="list-item">50개씩</li>
-                        <li class="list-item">40개씩</li>
-                        <li class="list-item">30개씩</li>
-                        <li class="list-item">20개씩</li>
-                        <li class="list-item">10개씩</li>
-                      </ul>
-                    </div>
+        <div class="status-dashboard clearfix">
+          <div class="col number">
+            <ul class="clearfix">
+              <li class="wait">
+                <span class="square wait"></span>
+                <span class="text">
+                대기(2)
+              </span>
+              </li>
+              <li class="defer">
+                <span class="square defer"></span>
+                <span class="text">
+                보류(2)
+              </span>
+              </li>
+              <li class="approve">
+                <span class="square approve"></span>
+                <span class="text">
+                승인(2)
+              </span>
+              </li>
+              <li class="deny">
+                <span class="square deny"></span>
+                <span class="text">
+                거절(2)
+              </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col result-and-selectbox">
+            <div class="inner">
+              <span class="result">검색결과 <span class="number">4</span>건</span>
+              <div class="options">
+                <div class="items">
+                  <div class="selected">
+                    <button type="button" class="selected-button">
+                      <span class="value">50개씩</span>
+                      <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
                   </div>
+                  <ul>
+                    <li class="list-item">50개씩</li>
+                    <li class="list-item">40개씩</li>
+                    <li class="list-item">30개씩</li>
+                    <li class="list-item">20개씩</li>
+                    <li class="list-item">10개씩</li>
+                  </ul>
                 </div>
               </div>
             </div>
-        <table>
+          </div>
+        </div>
+        <table class="table pc">
           <thead>
             <tr>
               <th>NO</th>
@@ -168,6 +168,90 @@
                     <% } %>
                     <% if (i % 4 === 0) { %>
                       <span class="defer">보류</span>
+                    <% } %>
+                  </div>
+                </td>
+                <td class="reason">
+                  <% if (i % 4 === 2) { %>
+                    <div class="wrapper-reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+                  <% } %>
+        
+                  <% if (i % 4 === 0) { %>
+                    <div class="wrapper-reason">
+                      <span>사유</span>
+                      <div class="pop-reason">
+                        <div class="header">
+                          거절사유
+                        </div>
+                        <div class="body">
+                          광고주가 입력한 취소 or 보류사유
+                        </div>
+                      </div>
+                    </div>
+                  <% } %>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile">
+          <thead>
+            <tr>
+              <!-- <th>NO</th> -->
+              <th>신청일자</th>
+              <th>신청금액</th>
+              <th>입금정보</th>
+              <th>지급일</th>
+              <th>처리상태</th>
+              <th>처리사유</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr class="<% if (i % 4 === 2) { %> tr-deny <% } %>">
+                <!-- <td>
+                  <%= i + 1 %>
+                </td> -->
+                <td>
+                  01.01
+                </td>
+                <td class="request-amount">
+                  80,000원
+                </td>
+                <td class="receipt-info">
+                  장길산 <br>
+                  (우리은행 111-222-333-44)
+                </td>
+                <td class="payday">
+                  <% if (i % 4 === 3) { %>
+                    3.10
+                  <% } else { %>
+                    -
+                  <% }%>
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+                    <% if (i % 4 === 3) { %>
+                      <span class="approve"></span>
+                    <% } %>
+                    <% if (i % 4 === 2) { %>
+                      <span class="deny"></span>
+                    <% } %>
+                    <% if (i % 4 === 1) { %>
+                      <span class="standby"></span>
+                    <% } %>
+                    <% if (i % 4 === 0) { %>
+                      <span class="defer"></span>
                     <% } %>
                   </div>
                 </td>

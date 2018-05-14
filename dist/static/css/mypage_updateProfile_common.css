@@ -977,3 +977,31 @@ form .form-group.submit button {
   color: #fff;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  form {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  form input, 
+  form textarea {
+    font-size: 12px;
+  }
+
+  form .form-group .options .items .selected button {
+    font-size: 12px;
+  }
+
+  form .form-group.cpa-and-tester button {
+    font-size: 12px;
+  }
+
+  form .form-group.cpa-and-tester button img {
+    height: 14px;
+  }
+
+  footer {
+    width: 100% !important;
+  }
+}

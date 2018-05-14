@@ -27,7 +27,51 @@
       </div>
 
       <div class="wrapper-table">
-        <table>
+        <table class="table pc">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>캠페인명</th>
+              <th>DB단가</th>
+              <th>프로모션</th>
+              <th class="th-status">
+                <span class="wait">대기/</span>
+                <span class="defer">보류/</span>
+                <span class="approve">승인/</span>
+                <span class="deny">거절</span>
+              </th>
+              <th>수익금합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>
+                  2018.01.01
+                </td>
+                <td class="campaign-name">
+                  네이버블로그
+                </td>
+                <td class="db-price">
+                  10,000원
+                </td>
+                <td class="promotion">
+                  +1,000
+                </td>
+                <td class="status">
+                  <span class="standby">0/</span>
+                  <span class="defer">1/</span>
+                  <span class="approve">0/</span>
+                  <span class="deny">2</span>
+                </td>
+                <td class="benefit-total">
+                  10,000원
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile">
           <thead>
             <tr>
               <th>일자</th>
