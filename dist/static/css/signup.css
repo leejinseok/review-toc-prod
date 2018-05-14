@@ -104,6 +104,11 @@ section.sign-up .main-info li button.confirm-btn {
   background-color: #333;
   color: #fff;
   font-weight: 400;
+  cursor: pointer;
+}
+
+section.sign-up .main-info li button.confirm-btn:hover {
+  background: #444;
 }
 
 section.sign-up .sub-info {
