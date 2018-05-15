@@ -51,7 +51,7 @@
       </div>
 
       <div class="wrapper-table">
-        <table cellpadding="0" cellspacing="0">
+        <table class="table pc" cellpadding="0" cellspacing="0">
           <thead>
             <tr>
               <th width="80">번호</th>
@@ -64,6 +64,28 @@
             <% for (i = 0; i < 10; i++) { %>
               <tr>
                 <td><%= i + 1 %></td>
+                <td>CPA</td>
+                <td>프로모션</td>
+                <td class="subject">
+                  <a href="/customerCenter_tip_detail.html">
+                    Q.제목이 출력이 안됩니다.
+                  </a>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile" cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th>대분류</th>
+              <th>소분류</th>
+              <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
                 <td>CPA</td>
                 <td>프로모션</td>
                 <td class="subject">

@@ -402,3 +402,27 @@ nav.main ul.right li .wrapper-search .icon-search {
 section.customerCenter .container .col.menu ul.main li a:hover {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+  section.customerCenter .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  section.customerCenter .container .col.menu {
+    width: 100%;
+  }
+
+  section.customerCenter .container .col.content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .wrapper-form {
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}

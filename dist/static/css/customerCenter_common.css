@@ -321,6 +321,10 @@ section.customerCenter .container .pagination .col:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  section.customerCenter .container .col.content > h2 {
+    margin-top: 20px;
+  }
+
   section.customerCenter .container {
     width: 100%;
     padding: 10px;
@@ -334,5 +338,58 @@ section.customerCenter .container .pagination .col:hover {
   section.customerCenter .container .col.content {
     width: 100%;
     padding: 0;
+  }
+
+  table.pc {
+    display: none;
+  }
+
+  table.mobile {
+    display: table;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table {
+    padding: 10px;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table table {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  section.customerCenter .container .col.content .search {
+    display: block;
+  }
+
+  section.customerCenter .container .col.content .search .wrapper-search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  section.customerCenter .container .col.content .search .options {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  section.customerCenter .container .col.content .search .inquiry {
+    width: 100%;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table table tr:first-child th {
+    word-break: keep-all;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table table th, 
+  section.customerCenter .container .col.content .wrapper-table table td {
+    font-size: 10px !important;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table table tbody tr td.subject .wrapper-subject {
+    display: block;
+    height: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
   }
 }
