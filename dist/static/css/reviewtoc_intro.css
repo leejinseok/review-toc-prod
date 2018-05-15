@@ -168,14 +168,16 @@ section.tester-inquiry .tester-inquiry-info button {
 @media only screen and (max-width: 768px) {
   section {
     box-sizing: border-box;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
     margin: 0;
     margin-top: 0;
   }
 
   section [class*=col] > h2 {
     font-size: 30px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
   }
 
   section.reviewtoc-intro {
@@ -272,5 +274,9 @@ section.tester-inquiry .tester-inquiry-info button {
 
   section.win-win-container .container .win-win-img {
     padding:0 10px;
+  }
+
+  section.tester-inquiry .tester-inquiry-info h2 {
+    margin-top: 10px !important; 
   }
 }
