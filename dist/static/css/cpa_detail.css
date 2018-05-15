@@ -1150,7 +1150,7 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   }
 
   section.detail .main .with-tab nav.tab ul li.active {
-    width: 100%;
+    width: 25%;
   }
 
   section.detail .main .with-tab nav.tab ul li a {
@@ -1174,7 +1174,10 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   }
 
   section.detail .main .with-tab nav.tab ul li {
+    border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
+    width: 25%;
+    padding: 14px 8px;
   }
 
   nav.tab {

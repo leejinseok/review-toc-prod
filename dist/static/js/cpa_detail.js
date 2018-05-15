@@ -31,7 +31,7 @@ function handleRelativeTester () {
  */
 function handleRelativeCpa () {
   var cpaList = $('.sub .cpa .card');
-  var img = $('.sub .cpa .card .header a img');
+  var img = $('.sub .cpa .card .wrapper-img');
 
   cpaList.hover(function () {
     var index = cpaList.index(this);
