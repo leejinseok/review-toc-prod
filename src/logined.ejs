@@ -90,11 +90,15 @@
                 <input type="checkbox" class="check" onclick="handleIsCheckBoxAllMessageModal(this)">
               </td>
               <td class="td-no"><%= i + 1%></td>
-              <td class="td-subject">포인트 잔여량이 부족합니다</td>
+              <td class="td-subject">
+                <a href="#"> 포인트 잔여량이 부족합니다 </a>
+              </td>
               <td class="td-writer">관리자</td>
               <td class="td-regdate">
                 2018.01.01 <br>
-                05:05:56
+                <span>
+                  05:05:56
+                </span>
               </td>
             </tr>
           <% } %>
@@ -124,8 +128,7 @@
         </div>
       </div>
 
-      <input type="text" placeholder="">
-
+      <input type="text" placeholder="검색어를 입력해주세요.">
       <button class="search-btn">
         검색
       </button>

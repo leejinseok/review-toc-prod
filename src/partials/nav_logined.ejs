@@ -1,146 +1,363 @@
-<nav class="main logined">
-    <div class="inner-wrapper">
-        <ul class="left">
-          <li>
-            <a href="./index.html">
-              <img src="./static/images/toc_logo.svg" class="logo">
-            </a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">
-              CPA
-            </a>
-            <div class="dropdown-content">
-              <% for (i = 0; i < mainNavMenus.cpaList.length; i++) { %>
-                <a href="<%= mainNavMenus.cpaList[i]['href'] %>"><%= mainNavMenus.cpaList[i]['title'] %></a>
-                <% } %>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">
-              체험단
-            </a>
-            <div class="dropdown-content">
-                <% for (i = 0; i < mainNavMenus.experienceGroup.length; i++) { %>
-                  <a href="<%= mainNavMenus.experienceGroup[i]['href'] %>"><%= mainNavMenus.experienceGroup[i]['title'] %></a>
-                <% } %>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="./mypage_cpa_mycampaign.html" class="dropbtn">
-              실적/수익확인
-            </a>
-            <div class="dropdown-content">
-              <% for (i = 0; i < mainNavMenus.confirmProfit.length; i++) { %>
-                <a href="<%= mainNavMenus.confirmProfit[i]['href'] %>"><%= mainNavMenus.confirmProfit[i]['title'] %></a>
-              <% } %>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="promotion_ongoing.html" class="dropbtn">
-              프로모션
-            </a>
-            <div class="dropdown-content">
-              <% for (i = 0; i < mainNavMenus.promotion.length; i++) { %>
-                <a href="<%= mainNavMenus.promotion[i]['href'] %>"><%= mainNavMenus.promotion[i]['title'] %></a>
-              <% } %>
-            </div>
-          </li>
-          <li>
-            <a href="/event.html">
-              이벤트
-            </a>
-          </li>
-        </ul>
-        <ul class="right">
-          <li class="dropdown mypage">
-            <a href="#">
-              <img class="letter active" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Mail" />
+<nav class="main logined pc">
+  <div class="inner-wrapper">
+    <ul class="left">
+      <li>
+        <a href="./index.html">
+          <img src="./static/images/toc_logo.svg" class="logo">
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">
+          CPA
+        </a>
+        <div class="dropdown-content">
+          <% for (i = 0; i < mainNavMenus.cpaList.length; i++) { %>
+            <a href="<%= mainNavMenus.cpaList[i]['href'] %>"><%= mainNavMenus.cpaList[i]['title'] %></a>
+            <% } %>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">
+          체험단
+        </a>
+        <div class="dropdown-content">
+            <% for (i = 0; i < mainNavMenus.experienceGroup.length; i++) { %>
+              <a href="<%= mainNavMenus.experienceGroup[i]['href'] %>"><%= mainNavMenus.experienceGroup[i]['title'] %></a>
+            <% } %>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./mypage_cpa_mycampaign.html" class="dropbtn">
+          실적/수익확인
+        </a>
+        <div class="dropdown-content">
+          <% for (i = 0; i < mainNavMenus.confirmProfit.length; i++) { %>
+            <a href="<%= mainNavMenus.confirmProfit[i]['href'] %>"><%= mainNavMenus.confirmProfit[i]['title'] %></a>
+          <% } %>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="promotion_ongoing.html" class="dropbtn">
+          프로모션
+        </a>
+        <div class="dropdown-content">
+          <% for (i = 0; i < mainNavMenus.promotion.length; i++) { %>
+            <a href="<%= mainNavMenus.promotion[i]['href'] %>"><%= mainNavMenus.promotion[i]['title'] %></a>
+          <% } %>
+        </div>
+      </li>
+      <li>
+        <a href="/event.html">
+          이벤트
+        </a>
+      </li>
+    </ul>
+    <ul class="right">
+      <li class="dropdown mypage">
+        <a href="#">
+          <img class="letter active" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Mail" />
+          <span class="count-alarm hide">
+            2
+          </span>
+          <img class="letter red" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23fe1e53' stroke-miterlimit='10' stroke-width='2' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23fe1e53' stroke-miterlimit='10' stroke-width='2' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Mail" />
+          마이페이지
+        </a>
+        <div class="dropdown-content">
+          <a href="/service_guide.html" class="accordion">
+            이용가이드
+          </a>
+          <a class="accordion">
+            CPA
+            <img src="./static/images/mypage/my_profile_down.png">
+          </a>
+          <div class="panel">
+            <p>
+              <a href="/mypage_cpa_mycampaign.html">
+                마이 캠페인관리
+              </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_resultState.html">
+                실적현황
+              </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_daily.html">
+                데일리
+              </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_byCampaign.html">
+                캠페인별
+              </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_accessRoute.html">
+                접속경로
+              </a>
+            </p>
+            <p>
+              <a href="/mypage_cpa_withdrawRequest.html">
+                출금신청
+              </a>
+            </p>
+          </div>
+          <a class="accordion">
+            체험단
+            <img src="./static/images/mypage/my_profile_down.png">
+          </a>
+          <div class="panel">
+            <p>
+              <a href="" class="active">
+                메뉴1
+              </a>
+            </p>
+          </div>
+
+          <a href="/customerCenter_manToMan.html" class="accordion">
+            1:1 문의내역
+          </a>
+
+          <a href="/mypage_updateProfile.html" class="accordion">
+            회원정보수정
+          </a>
+          <a href="/customerCenter_tip.html" class="accordion">
+            꿀tip
+          </a>
+        </div>
+      </li>
+      <li class="dot-divider">·</li>
+      <li>
+        <a href="#">로그아웃</a>
+      </li>
+      <li class="dot-divider">·</li>
+      <li>
+        <a href="/customerCenter_notice.html">고객센터</a>
+      </li>
+      <li class="dot-divider"></li>
+      <li class="li-wrapper-search">
+        <div class="wrapper-search">
+          <input type="text" name="query" placeholder="검색하기">
+          <img src="./static/images/search.svg" class="icon-search">
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="main mobile">
+  <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMenu%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' d='M14 18h36M14 32h36' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' d='M14 46h36' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" 
+  class="hamburger"
+  alt="Menu" 
+  onclick="toogleSlideMenu();"/>
+
+  <a href="/">
+    <img src="./static/images/toc_logo.svg" class="logo">
+  </a>
+</nav>
+
+<div class="wrapper-sidemenu" id="wrapper-sidemenu">
+  <div class="sidemenu" id="sidemenu">
+    <ul>
+      <li>
+        <button class="accordion">
+          마이페이지
+          <div class="wrapper-letter">
+              <img class="letter" id="letter" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='2' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Mail" />
               <span class="count-alarm hide">
                 2
               </span>
-              <img class="letter red" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23fe1e53' stroke-miterlimit='10' stroke-width='2' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23fe1e53' stroke-miterlimit='10' stroke-width='2' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Mail" />
-              마이페이지
-            </a>
-            <div class="dropdown-content">
-              <a href="/service_guide.html" class="accordion">
-                이용가이드
-              </a>
-              <a class="accordion">
-                CPA
-                <img src="./static/images/mypage/my_profile_down.png">
-              </a>
-              <div class="panel">
-                <p>
-                  <a href="/mypage_cpa_mycampaign.html">
-                    마이 캠페인관리
-                  </a>
-                </p>
-                <p>
-                  <a href="/mypage_cpa_resultState.html">
-                    실적현황
-                  </a>
-                </p>
-                <p>
-                  <a href="/mypage_cpa_daily.html">
-                    데일리
-                  </a>
-                </p>
-                <p>
-                  <a href="/mypage_cpa_byCampaign.html">
-                    캠페인별
-                  </a>
-                </p>
-                <p>
-                  <a href="/mypage_cpa_accessRoute.html">
-                    접속경로
-                  </a>
-                </p>
-                <p>
-                  <a href="/mypage_cpa_withdrawRequest.html">
-                    출금신청
-                  </a>
-                </p>
-              </div>
-              <a class="accordion">
-                체험단
-                <img src="./static/images/mypage/my_profile_down.png">
-              </a>
-              <div class="panel">
-                <p>
-                  <a href="" class="active">
-                    메뉴1
-                  </a>
-                </p>
-              </div>
-    
-              <a href="/customerCenter_manToMan.html" class="accordion">
-                1:1 문의내역
-              </a>
-    
-              <a href="/mypage_updateProfile.html" class="accordion">
-                회원정보수정
-              </a>
-              <a href="/customerCenter_tip.html" class="accordion">
-                꿀tip
-              </a>
-            </div>
-          </li>
-          <li class="dot-divider">·</li>
-          <li>
-            <a href="#">로그아웃</a>
-          </li>
-          <li class="dot-divider">·</li>
-          <li>
-            <a href="/customerCenter_notice.html">고객센터</a>
-          </li>
-          <li class="dot-divider"></li>
-          <li class="li-wrapper-search">
-            <div class="wrapper-search">
-              <input type="text" name="query" placeholder="검색하기">
-              <img src="./static/images/search.svg" class="icon-search">
-            </div>
-          </li>
-        </ul>
-      </div>
-</nav>
+          </div>
+          <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+        </button>
+        <div class="panel">
+          <p>
+            <a href="#">이용가이드</a>
+          </p>
+          <button class="accordion inner">
+            CPA
+            <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+          </button>
+          <div class="panel inner">
+            <p><a href="#">마이페이지</a></p>
+            <p><a href="#">실적현황</a></p>
+            <p><a href="#">데일리</a></p>
+            <p><a href="#">캠페인별</a></p>
+            <p><a href="#">접속경로</a></p>
+            <p><a href="#">출금신청</a></p>
+          </div>
+          <button class="accordion inner">
+            체험단
+            <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+          </button>
+          <div class="panel inner">
+            <p><a href="#">메뉴1</a></p>
+            <p><a href="#">메뉴2</a></p>
+          </div>
+          <p>
+            <a href="#">1:1문의내역</a>
+          </p>
+          <p>
+            <a href="#">회원정보수정</a>
+          </p>
+          <p>
+            <a href="#">꿀Tip</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <a href="/signup.html" class="accordion">
+          로그아웃
+        </a>
+      </li>
+      <li class="divider"> </li>
+      <li>
+        <button class="accordion">
+          CPA
+          <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+        </button>
+        <div class="panel">
+          <p>
+            <a href="#">전체보기</a>
+          </p>
+          <p>
+            <a href="#">보험/상조</a>
+          </p>
+          <p>
+            <a href="#">대출/금융</a>
+          </p>
+          <p>
+            <a href="#">건강/다이어트</a>
+          </p>
+          <p>
+            <a href="#">병원</a>
+          </p>
+          <p>
+            <a href="#">법률/개인회생</a>
+          </p>
+          <p>
+            <a href="#">결혼</a>
+          </p>
+          <p>
+            <a href="#">여성/육아</a>
+          </p>
+          <p>
+            <a href="#">어린이/키성장</a>
+          </p>
+          <p>
+            <a href="#">광고/회원가입</a>
+          </p>
+          <p>
+            <a href="#">렌터/리스</a>
+          </p>
+          <p>
+            <a href="#">자격증/학원</a>
+          </p>
+          <p>
+            <a href="#">쇼핑몰</a>
+          </p>
+          <p>
+            <a href="#">기타</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="accordion">
+          체험단
+          <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+        </button>
+        <div class="panel">
+          <p>
+            <a href="#">전체보기</a>
+          </p>
+          <p>
+            <a href="#">생활</a>
+          </p>
+          <p>
+            <a href="#">유아</a>
+          </p>
+          <p>
+            <a href="#">디지털</a>
+          </p>
+          <p>
+            <a href="#">뷰티</a>
+          </p>
+          <p>
+            <a href="#">패션</a>
+          </p>
+          <p>
+            <a href="#">맛집</a>
+          </p>
+          <p>
+            <a href="#">여행</a>
+          </p>
+          <p>
+            <a href="#">기타</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="accordion">
+          실적/수익확인
+          <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+        </button>
+        <div class="panel">
+          <p>
+            <a href="/mypage_cpa_mycampaign.html">실적현황</a>
+          </p>
+          <p>
+            <a href="/mypage_cpa_daily.html">데일리</a>
+          </p>
+          <p>
+            <a href="/mypage_cpa_byCampaign.html">캠페인별</a>
+          </p>
+          <p>
+            <a href="/mypage_cpa_accessRoute.html">접속경로</a>
+          </p>
+          <p>
+            <a href="/mypage_cpa_withdrawRequest.html">출금신청</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="accordion">
+          프로모션
+          <img src="./static/images/mypage/my_profile_down.png" class="arrow">
+        </button>
+        <div class="panel">
+          <p>
+            <a href="/promotion_ongoing.html">진행중인 프로모션</a>
+          </p>
+          <p>
+            <a href="/promotion_prevParticipationRate.html">전월 신청률 순위</a>
+          </p>
+          <p>
+            <a href="/promotion_prevMonthapprovalRate.html">전월 승인률 순위</a>
+          </p>
+          <p>
+            <a href="/promotion_accumulatedProfit.html">누적 수익금</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <a href="/event.html" class="accordion">
+          이벤트
+        </a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="/customerCenter_notice.html" class="accordion">
+          고객센터
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style>
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+</style>

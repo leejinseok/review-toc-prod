@@ -441,9 +441,15 @@ section.customerCenter .container .pagination .col:hover {
   background-color: #009dd0;
   color: #fff;
   border-color: #009dd0;
+  border: 1px solid #009dd0;
   font-size: 14px;
   cursor: pointer;
 }
+
+.wrapper-detail .wrapper-reply .write-reply .col.button button:hover {
+  background: #00abe2;
+}
+
 
 .wrapper-detail .wrapper-reply .replies .reply {
   padding: 30px 20px;

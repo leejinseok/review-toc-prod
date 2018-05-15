@@ -12,6 +12,7 @@ $(document).ready(function () {
   handleNavMainFixed();
   handleSearch();
   handleLetterClick();
+  handleLetterClickMobile();
   handleLetterIcon();
   handleBodyClickForModalRoot();
   handleAccordionSlideMenu();
@@ -30,9 +31,14 @@ function handleAccordionSlideMenu (accordionIndex, itemIndex) {
     'unselected': './static/images/mypage/my_profile_down.png'
   };
 
-  accordions.click(function () {
+  accordions.click(function (e) {
+    var targetId = e.target.id;
+    if (targetId === 'letter') {
+      return;
+    }
+    
     var panel = $(this).next('.panel');
-    var downArrow = $(this).find('img');
+    var downArrow = $(this).find('img.arrow');
     var maxHeight = parseInt(panel.css('max-height'));
     var scollHeight = panel.prop('scrollHeight');
     accordionIndex = $(accordions).index(this);
@@ -46,9 +52,16 @@ function handleAccordionSlideMenu (accordionIndex, itemIndex) {
       accordions.removeClass('active');
       accordions.eq(accordionIndex).addClass('active');
     }
-    
+
     downArrow.attr('src', downArrowSrc.selected);
     panel.css('max-height', scollHeight);
+
+    if ($(this).hasClass('inner')) {
+      var parentPanel = $(this).parent('.panel');
+      var parentPanelScrollHeight = parseInt(parentPanel.prop('scrollHeight'));
+      parentPanel.css('max-height', parentPanelScrollHeight + scollHeight);
+      
+    }
   });
 
   accordions
@@ -127,6 +140,21 @@ function handleLetterClick () {
   var letterIcon = $('nav.main.logined ul.right li.dropdown.mypage img.letter');
   var numberCount = $('nav.main.logined ul.right li.dropdown.mypage .count-alarm');
   letterIcon.click(function () {
+    modal.show();
+  });
+
+  numberCount.click(function () {
+    modal.show();
+  })
+}
+
+function handleLetterClickMobile () {
+  var modal = $('.modal.modal-messages');
+  var letterIcon = $('img.letter');
+  var numberCount = $('.count-alarm');
+  
+  letterIcon.click(function (e) {
+    e.preventDefault();
     modal.show();
   });
 
