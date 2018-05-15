@@ -896,7 +896,23 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   font-weight: bold;
 }
 
+.wrapper-campaign.pc {
+  display: block;
+}
+
+.wrapper-campaign.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  .wrapper-campaign.pc {
+    display: none;
+  }
+
+  .wrapper-campaign.mobile {
+    display: block;
+  }
+
   section.detail {
     width: 100%;
   }
@@ -964,6 +980,7 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
 
   section.detail .main .wrapper-pic-and-info>div.info .detail ul li.subject {
     width: 100%;
+    font-size: 12px;
   }
 
   section.detail .main .wrapper-pic-and-info>div.info .detail {
@@ -974,6 +991,7 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   section.detail .main .wrapper-pic-and-info>div.info .detail ul li.content {
     width: 100%;
     padding-left: 10px;
+    font-size: 12px;
   }
 
   section.detail .main .wrapper-pic-and-info>div.info .price .col.left {
@@ -1016,6 +1034,11 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   section.detail .main .wrapper-pic-and-info>div.info .price .col.right .inner span {
     top: 28px;
     font-size: 10px;
+    left: calc(50% - 40px);
+  }
+
+  section.detail .main .wrapper-pic-and-info>div.info .price .col.left .inner .info {
+    padding-left: 10px;
   }
 
   section.detail .main .wrapper-campaign ul.row.header li {
@@ -1027,6 +1050,198 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   }
 
   section.detail .sub {
+    width: 100%;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(1) {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(2) {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(3) {
+    padding-left: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(3) span {
+    margin-left: 4px;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li span.copy-code {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+    width: 40px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 10px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li span.copy-code:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(3) .delete {
+    cursor: pointer;
+  }
+
+  section.detail .main .wrapper-campaign ul.row li:nth-child(3) span {
+    cursor: pointer;
+  }
+
+  section.detail .main .wrapper-campaign .frm-submit-campaign {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  section.detail .main .wrapper-campaign .frm-submit-campaign input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  section.detail .main .wrapper-campaign .frm-submit-campaign button {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px 0;
+    display: block;
+  }
+
+  section.detail .main .with-tab nav.tab ul li {
+    width: 100%;
+    border: 0;
+    background: #fff;
+    font-size: 12px;
+  }
+
+  section.detail .main .with-tab nav.tab ul li:first-child {
+    border-left: 0;
+  }
+
+  section.detail .main .with-tab nav.tab ul li.active {
+    width: 100%;
+  }
+
+  section.detail .main .with-tab nav.tab ul li a {
+    font-size: 12px;
+  }
+
+  section.detail .main .with-tab nav.tab ul:after {
+    display: none;
+  }
+
+  section.detail .main .wrapper-ad-banner .body img {
+    max-width: 100%;
+  }
+
+  section.detail .main .with-tab nav.tab ul {
+    height: auto;
+  }
+
+  section.detail .main .with-tab nav.tab ul li:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  section.detail .main .with-tab nav.tab ul li {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  nav.tab {
+    margin-bottom: 10px;
+  }
+  
+  nav.tab:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  section.detail .main .wrapper-detail-info .body {
+    padding: 20px;
+  }
+
+  section.detail .main .wrapper-keyword .body {
+    padding: 20px;
+  }
+
+  section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(1) {
+    width: 100%;
+    padding-left: 10px;
+    justify-content: flex-start;
+  }
+
+  section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(2) {
+    width: 100%;
+    padding-left: 10px;
+    justify-content: flex-start;
+  }
+
+  section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) {
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  section.detail .main .wrapper-ad-banner .body ul.copy-code li:nth-child(3) span {
+    width: 100%;
+    position: static;
+    background: #333;
+    color: #fff;
+    border-color: #333;
+    padding: 5px 0;
+  }
+
+  section.detail .main .wrapper-marketingSource .body ul.row li {
+    font-size: 10px;
+  }
+
+  section.detail .main .wrapper-marketingSource .body ul.row li:nth-child(1) {
+    width: 15%;
+  }
+
+  section.detail .main .wrapper-marketingSource .body ul.row li:nth-child(2) {
+    width: 45%;
+    justify-content: flex-start;
+  }
+
+  section.detail .main .wrapper-marketingSource .body ul.row.header li {
+    justify-content: center;
+  }
+
+  section.detail .sub .inner .item {
     width: 100%;
   }
 }

@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="wrapper-campaign">
+    <div class="wrapper-campaign pc">
       <ul class="row header clearfix">
         <li>No.</li>
         <li>광고명</li>
@@ -98,6 +98,33 @@
               http://www.mbcplus.com/web/index.do#
             </a>
             <span>코드복사</span>
+          </li>
+          <li>
+            <img src="./static/images/delete.png" class="delete" alt="삭제" title="삭제">
+            <span>삭제</span>
+          </li>
+        </ul>
+      <% } %>
+      <form class="frm-submit-campaign">
+        <input type="text">
+        <button type="button">
+          캠페인생성
+        </button>
+      </form>
+    </div>
+
+    <div class="wrapper-campaign mobile">
+      <% for (i = 0; i < 3; i++) { %>
+        <ul class="row clearfix">
+          <li>
+            <%= i + 1 %>
+            아이커 (아이커캠페인)
+          </li>
+          <li>
+            <a href="http://www.mbcplus.com/web/index.do#" target="_blank">
+              http://www.mbcplus.com/web/index.do#
+            </a>
+            <span class="copy-code">복사</span>
           </li>
           <li>
             <img src="./static/images/delete.png" class="delete" alt="삭제" title="삭제">
@@ -315,35 +342,35 @@
         </div>
     </div>
     <div class="inner tester">
-        <div class="item">
-            <h2>체험단 <span>List</span></h2>
-            <div class="card">
-              <div class="wrapper-thumbnail">
-                <div class="wrapper-img" style="background:url('./static/images/cpa_detail/right2.png')">
-                </div>
-                <div class="label">
-                  <p>추천</p>
-                  <p>인기</p>
-                </div>
+      <div class="item">
+        <h2>체험단 <span>List</span></h2>
+        <div class="card">
+          <div class="wrapper-thumbnail">
+            <div class="wrapper-img" style="background:url('./static/images/cpa_detail/right2.png')">
+            </div>
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">옻칠 티스푼포크</p>
+            <p class="detail">
+              나뭇결이 돋보이는 스푼포크시리즈입니다
+              아담한 사이즈의 스푼, 포크로 구성되어...
+            </p>
+
+            <div class="dDay-and-recruitment">
+              <div class="dDay">
+                <span class="d">D</span> - &nbsp;<span class="day"> 7일 </span>
               </div>
-              <div class="content">
-                <p class="title">옻칠 티스푼포크</p>
-                <p class="detail">
-                  나뭇결이 돋보이는 스푼포크시리즈입니다
-                  아담한 사이즈의 스푼, 포크로 구성되어...
-                </p>
-    
-                <div class="dDay-and-recruitment">
-                  <div class="dDay">
-                    <span class="d">D</span> - &nbsp;<span class="day"> 7일 </span>
-                  </div>
-                  <div class="recruitment">
-                    <span><span class="apply">61명 신청</span> / 10명 모집</span>
-                  </div>
-                </div>
+              <div class="recruitment">
+                <span><span class="apply">61명 신청</span> / 10명 모집</span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
