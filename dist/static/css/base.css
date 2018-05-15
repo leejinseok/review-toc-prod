@@ -1491,5 +1491,21 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   aside.bottom .inner .rank {
     height: auto !important;
   }
+
+  .section .wrapper-sub-menu ul li.select {
+    width: 100% !important;
+  }
+
+  .section .wrapper-sub-menu ul li.select .options {
+    width: 100%;
+  }
+
+  .section .wrapper-sub-menu ul li.menus {
+    width: calc(100% - 56px) !important;
+  }
+
+  .section .wrapper-sub-menu ul li.menus .swiper-container .swiper-wrapper .swiper-slide {
+    padding: 0 10px !important;
+  }
 }
 
