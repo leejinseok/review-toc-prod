@@ -1234,6 +1234,22 @@ section.container .cols .right-col table td {
 
   section.container .cols .right-col .withdraw-request .col.input-area {
     width: 100%;
+    padding: 10px;
+    height: 40px;
+    padding-top: 0;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.input-area .inner-input-text input {
+    height: 24px;
+    width: 150px;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.input-area .inner-button button {
+    height: 24px;
+  }
+
+  section.container .cols .right-col .withdraw-request .col {
+    height: 80px;
   }
 
   section.container .cols .right-col .withdraw-history-title {
@@ -1248,6 +1264,7 @@ section.container .cols .right-col table td {
     margin-left: 0;
     margin-top: 6px;
     display: block;
+    font-size: 12px;
   }
 
   section.container .cols .right-col .withdraw-history-title button {
@@ -1303,5 +1320,15 @@ section.container .cols .right-col table td {
 
   .wrapper-table table tr td.reason .pop-reason {
     left: -116px;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.available .text .amount {
+    font-size: 19px;
+  }
+
+  section.container .cols .right-col .withdraw-request .col.available:after {
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

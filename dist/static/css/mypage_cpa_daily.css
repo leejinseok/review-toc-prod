@@ -904,5 +904,12 @@ section.container .cols .right-col .wrapper-table table td {
   .wrapper-table table thead tr th:nth-child(1) {
     width: initial;
   }
+
+  section.container .cols .right-col .wrapper-table table th, section.container .cols .right-col .wrapper-table table td {
+    font-size: 10px;
+  }
+
+  .wrapper-table table thead tr th:nth-child(1) {
+  }
 }
 

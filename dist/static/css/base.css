@@ -1483,5 +1483,13 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
     width: 100%;
     margin-left: 0;
   }
+
+  aside.bottom .inner .notice table td.title a {
+    max-width: 190px;
+  }
+
+  aside.bottom .inner .rank {
+    height: auto !important;
+  }
 }
 
