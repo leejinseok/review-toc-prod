@@ -1,4 +1,74 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); */
+
+/* @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css); */
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Thin'), local('Noto Sans Thin'), local('Noto Sans Thin');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Thin.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Thin.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Thin.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Light.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Light.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Light.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans DemiLight'), local('Noto Sans DemiLight'), local('Noto Sans DemiLight');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-DemiLight.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-DemiLight.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-DemiLight.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Regular.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Regular.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Medium.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Medium.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Medium.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('Noto Sans Bold'), local('Noto Sans Bold');
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Bold.eot);
+  src: url(/static/fonts/NotoSans-subset-master/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Bold.woff) format('woff'),
+  url(/static/fonts/NotoSans-subset-master/NotoSans-Bold.otf) format('truetype');
+}
+
+
 html,
 body {
   margin: 0 auto;
@@ -971,6 +1041,7 @@ nav.main.logined ul.right li.dropdown.profile a:last-child {
 nav.main ul.right li a {
   padding-left: 7px;
   padding-right: 7px;
+  font-weight: 400;
 }
 
 nav.main ul.right li.li-wrapper-search {
