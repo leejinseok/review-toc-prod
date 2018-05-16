@@ -527,6 +527,12 @@ section.customerCenter .container .pagination .col:hover {
   cursor: pointer;
 }
 
+.wrapper-detail .wrapper-reply .replies .reply .update-and-delete button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
 .wrapper-detail .wrapper-reply .replies .reply .update-and-delete button:focus {
   outline: none;
 }
@@ -594,5 +600,18 @@ section.customerCenter .container .pagination .col:hover {
 
   .wrapper-detail .wrapper-reply {
     padding: 10px;
+  }
+
+  .wrapper-detail .wrapper-reply .replies .reply {
+    padding: 20px;
+  }
+
+  .wrapper-detail .wrapper-reply .replies .reply.comment {
+    padding-left: 30px;
+  }
+
+  .wrapper-detail .wrapper-reply .replies .reply.comment::before {
+    left: 16px;
+    top: 16px;
   }
 }
