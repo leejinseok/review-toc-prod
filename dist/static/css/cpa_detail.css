@@ -915,6 +915,7 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
 
   section.detail {
     width: 100%;
+    padding-top: 0;
   }
 
   .col-9.main {

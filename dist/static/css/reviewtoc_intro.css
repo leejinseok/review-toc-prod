@@ -279,4 +279,8 @@ section.tester-inquiry .tester-inquiry-info button {
   section.tester-inquiry .tester-inquiry-info h2 {
     margin-top: 10px !important; 
   }
+
+  section.tester-inquiry .tester-inquiry-info button {
+    margin-left: 0;
+  }
 }

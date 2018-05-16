@@ -364,4 +364,26 @@ section.sign-up .wrapper-advertiser-form .sub-info-wrap li.inquiry textarea:focu
     margin-left: 5px;
     margin-right: 5px;
   }
+
+  section.sign-up .main-info li input {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  section.sign-up .main-info li button.confirm-btn {
+    font-size: 12px;
+  }
+
+  section.sign-up .inflowRoute .options .items .selected button, section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items .selected button {
+    font-size: 12px;
+  }
+
+  section.sign-up .sub-info ul.sub-info-wrap li input, section.sign-up .sub-info ul.sub-info-wrap li select {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  section.sign-up .inflowRoute .options .items .selected button img, section.sign-up .wrapper-advertiser-form .sub-info ul.sub-info-wrap .options .items .selected button img {
+    top: 50%;
+  }
 }
