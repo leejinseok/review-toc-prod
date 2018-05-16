@@ -424,10 +424,22 @@ footer .bottom-detail .col.etc {
   justify-content: flex-end;
 }
 
+footer .bottom-detail .col.etc .options {
+  width: 100%;
+}
+
 footer .bottom-detail .col.etc .options ul {
   margin-top: 0px;
   box-sizing: border-box;
   border-top: 0;
+}
+
+footer .bottom-detail .col.etc .options .selected button {
+  font-size: 12px;
+}
+
+footer .bottom-detail .col.etc .icons {
+  margin-top: 10px;
 }
 
 footer .bottom-detail .col.etc svg {
@@ -1280,7 +1292,59 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   display: none;
 }
 
+.wrapper-sidemenu .wrapper-search {
+  width: calc(100% - 20px);
+  background: #f9f9f9;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  border-radius: 15px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-sidemenu .wrapper-search {
+  display: inline-block;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 28px;
+}
+
+.wrapper-sidemenu .wrapper-search input {
+  margin: 0 auto;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 300;
+  width: calc(100% - 30px);
+}
+
+.wrapper-sidemenu .wrapper-search input:focus {
+  outline: none;
+}
+
+.wrapper-sidemenu .wrapper-search .icon-search {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: -8px;
+  right: -13px;
+}
+
+.wrapper-sidemenu .li-search {
+  background: #fff;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
+
+
+
   table.pc {
     display: none;
   }
@@ -1320,7 +1384,7 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
     width: 100% !important;
     padding: 0 10px;
     box-sizing: border-box;
-    height: 80px;
+    height: 60px;
   }
 
   footer .bottom-detail .col.etc {
@@ -1407,6 +1471,7 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
 
   .modal.modal-messages .modal-content {
     width: 100%;
+    border: 0;
   }
 
   .modal.modal-messages .modal-content .header {
@@ -1507,5 +1572,20 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   .section .wrapper-sub-menu ul li.menus .swiper-container .swiper-wrapper .swiper-slide {
     padding: 0 10px !important;
   }
-}
 
+  footer .bottom-detail .col.info {
+    font-size: 10px;
+  }
+
+  section.mypage {
+    margin-top: 20px !important;
+  }
+
+  section.mypage h2.main-h {
+    margin-bottom: 20px !important;
+  }
+
+  section.mypage .cols .right-col .pagination .col {
+    font-size: 12px !important;
+  }
+}

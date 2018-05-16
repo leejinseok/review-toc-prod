@@ -1238,7 +1238,11 @@ section.mypage .cols .right-col .wrapper-table table tbody tr td {
 
   section.mypage .cols .right-col .wrapper-table table.mobile tbody tr td.confirm button {
     width: 40px;
+    font-size: 10px;
+    height: 22px;
   }
 
-  
+  section.mypage .cols .right-col .wrapper-table table th, section.mypage .cols .right-col .wrapper-table table td {
+    font-size: 10px;
+  }
 }

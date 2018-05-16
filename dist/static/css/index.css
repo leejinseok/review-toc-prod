@@ -1226,15 +1226,24 @@ aside.bottom .inner .guide-contact .right .swiper-container [class*=swiper-butto
     width: 100%;
   }
 
+  aside.bottom .inner .notice {
+    padding: 20px;
+  }
+
   aside.bottom .inner .rank {
     margin-left: 0;
     margin-top: 20px;
+    padding: 20px;
   }
 
   aside.bottom .inner .guide-contact {
     margin-left: 0;
     height: auto;
     margin-top: 20px;
+  }
+
+  aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-next, aside.bottom .inner .guide-contact .right .swiper-container .swiper-button-prev, aside.bottom .inner .guide-contact .right .swiper-container .swiper-pagination {
+    display: block;
   }
 
   aside.bottom .inner .guide-contact .left, 
@@ -1291,6 +1300,18 @@ aside.bottom .inner .guide-contact .right .swiper-container [class*=swiper-butto
   .section.cpa-list .wrapper-article article .header img.active {
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: translate(-50%, -50%) scale3d(1.04, 1.04, 1)  !important;
+  }
+
+  .view-more {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .wrapper-mobile-rolling-banner .arrow {
+    width: 40px;
+    height: 40px;
   }
 }
 

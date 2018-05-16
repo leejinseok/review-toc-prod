@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>리뷰톡</title>
   <link rel="stylesheet" href="./static/css/base.css">
 
@@ -35,35 +36,34 @@
     <div class="signup-partner-btn">
       <button type="submit" name="button">로그인</button>
     </div>
-    <nav class="bottom-menu clearfix">
-      <!-- <table>
-      <tr>
-        <td>
-          <p>리뷰톡 소개</p>
-        </td>
-        <td>
-          <p>광고문의</p>
-        </td>
-        <td>
-          <p>개인정보취급방침</p>
-        </td>
-        <td>
-          <p>이용약관</p>
-        </td>
-      </tr>
-    </table> -->
+    <nav class="bottom-menu pc clearfix">
       <div class="intro">
-        <p>리뷰톡 소개</p>
+        <p><a href="/reviewtoc_intro.html">리뷰톡 소개</a>
+        </p>
       </div>
       <div class="ad">
-        <p>광고문의</p>
+        <p><a href="/ad_inquiry.html">광고문의</a>
+        </p>
       </div>
       <div class="privacy">
-        <p>개인정보취급방침</p>
+        <p><a href="javascript:showPrivatePolicy();">개인정보취급방침</a>
+        </p>
       </div>
       <div class="term">
-        <p class="last">이용약관</p>
+        <p class="last"><a href="javascript:showTermOfUse();">이용약관</a>
+        </p>
       </div>
+    </nav>
+
+    <nav class="bottom-menu mobile clearfix">
+      <p><a href="/reviewtoc_intro.html">리뷰톡 소개</a>
+      </p>
+      <p><a href="/ad_inquiry.html">광고문의</a>
+      </p>
+      <p><a href="javascript:showPrivatePolicy();">개인정보취급방침</a>
+      </p>
+      <p class="last"><a href="javascript:showTermOfUse();">이용약관</a>
+      </p>
     </nav>
     <div class="bottom-text">
       <p>D.02-523-7258 E. dream7336@nate.co.kr</p>

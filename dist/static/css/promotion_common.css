@@ -221,4 +221,8 @@ section.promotion .container .col.content .wrapper-table table tbody tr td.term 
   section.promotion .container .col.content .wrapper-table table td {
     font-size: 10px !important;
   }
+
+  section.promotion {
+    padding-top: 10px;
+  }
 }

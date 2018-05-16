@@ -2,7 +2,11 @@ section.event {
 
 }
 
-@media screen only and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  ul.tab {
+    margin-top: 0;
+  }
+
   section.event > .container {
     padding: 10px;
     width: 100%;

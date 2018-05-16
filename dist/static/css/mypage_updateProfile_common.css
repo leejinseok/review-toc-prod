@@ -1004,4 +1004,14 @@ form .form-group.submit button {
   footer {
     width: 100% !important;
   }
+
+  form .form-group .btn-send-verify {
+    height: 56px;
+    font-size: 12px;
+    width: 100px;
+  } 
+
+  form .form-group .mobile-tel {
+    width: calc(100% - 110px);
+  }
 }

@@ -1173,4 +1173,13 @@ section.container .cols .right-col table td.reason .inner-col span {
   .status-dashboard .col.number ul li {
     padding-right: 10px;
   }
+
+  section.mypage .cols .right-col .wrapper-table table th, section.mypage .cols .right-col .wrapper-table table td {
+    font-size: 10px;
+  }
+
+  section.container .cols .right-col table th.detail .inner-col span, section.container .cols .right-col table td.detail .inner-col span {
+    font-size: 10px;
+    width: 40px;
+  }
 }
