@@ -7,18 +7,18 @@
   <title>리뷰톡</title>
   <link rel="stylesheet" href="/static/css/base.css">
 
-  <link rel="stylesheet" href="./static/css/mypage_cpa_dayByDay_record_adv.css">
+  <link rel="stylesheet" href="/static/css/m/mypage_cpa_dayByDay_record_adv.css">
 
-  <link rel="stylesheet" href="./static/css/jquery-ui.css">
+  <link rel="stylesheet" href="/static/css/jquery-ui.css">
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="/static/js/angular.min.js"></script>
   <script src="/static/js/prefixfree.min.js"></script>
   <script src="/static/js/common.js"></script>
 
-  <script src="./static/js/mypage_common.js"></script>
+  <script src="/static/js/m/mypage_common.js"></script>
 
-  <script src="./static/js/mypage_cpa_dayByDay_record_adv.js"></script>
+  <script src="/static/js/m/mypage_cpa_dayByDay_record_adv.js"></script>
 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -363,12 +363,12 @@
     <div class="cols">
       <div class="col-3 left-col">
         <div class="profile">
-          <div class="thumbnail" style="background-image:url('./static/images/mypage/dog.jpeg')"></div>
+          <div class="thumbnail" style="background-image:url('/static/images/mypage/dog.jpeg')"></div>
           <input type="file" id="thumbnailFile" accept="image/*" onchange="myPageThumbnailChange(this.files[0])">
           <h3 class="nickname">bigcloud1990</h3>
           <p class="current-point-title">ⓟ 포인트현황</p>
           <p class="current-point-value">200,000P</p>
-          <a href="/mypage_cpa_point_charge_adv.html" class="withdraw-request">
+          <a href="./mypage_cpa_point_charge_adv.html" class="withdraw-request">
 
       포인트충전
 
@@ -378,39 +378,39 @@
         <div class="wrapper-accordion">
           <button class="accordion">
             CPA
-            <img src="./static/images/mypage/my_profile_down.png">
+            <img src="/static/images/mypage/my_profile_down.png">
           </button>
           <div class="panel">
             <p>
-              <a href="/mypage_cpa_dayByDay_record_adv.html" class="active">
+              <a href="./mypage_cpa_dayByDay_record_adv.html" class="active">
 
         일별실적
 
       </a>
             </p>
             <p>
-              <a href="/mypage_cpa_resultDashBoard_adv.html" class="active">
+              <a href="./mypage_cpa_resultDashBoard_adv.html" class="active">
 
         일별 실적현황
 
       </a>
             </p>
             <p>
-              <a href="/mypage_cpa_point_minus_history_adv.html">
+              <a href="./mypage_cpa_point_minus_history_adv.html">
 
         포인트 차감내역
 
       </a>
             </p>
             <p>
-              <a href="/mypage_cpa_point_charge_history_adv.html">
+              <a href="./mypage_cpa_point_charge_history_adv.html">
 
         포인트 충전내역
 
       </a>
             </p>
             <p>
-              <a href="/mypage_cpa_manage_ad_adv.html">
+              <a href="./mypage_cpa_manage_ad_adv.html">
 
         광고 관리
 
@@ -440,23 +440,23 @@
           </div>
         </div>
         <div class="extension">
-          <a href="/service_guide.html" class="col">
-            <img class="on" src="./static/images/mypage/my_page_nav1.svg">
-            <img class="off" src="./static/images/mypage/my_page_nav1_gray.png">
+          <a href="./service_guide.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav1.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav1_gray.png">
             <span>이용가이드</span>
           </a>
-          <a href="/customerCenter_manToMan.html" class="col">
-            <img class="on" src="./static/images/mypage/my_page_nav2.svg">
-            <img class="off" src="./static/images/mypage/my_page_nav2_gray.png">
+          <a href="./customerCenter_manToMan.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav2.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav2_gray.png">
             <span>문의하기</span>
           </a>
-          <a href="/customerCenter_notice.html" class="col">
-            <img class="on" src="./static/images/mypage/my_page_nav3.svg">
-            <img class="off" src="./static/images/mypage/my_page_nav3_gray.png">
+          <a href="./customerCenter_notice.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav3.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav3_gray.png">
             <span>고객센터</span>
           </a>
           <a class="col">
-            <img src="./static/images/x.png">
+            <img src="/static/images/x.png">
           </a>
         </div>
       </div>
@@ -498,12 +498,12 @@
 
           <div class="datepicker from">
             <input type="text" id="datepicker-from">
-            <img src="./static/images/mypage/mypage_calendar.png">
+            <img src="/static/images/mypage/mypage_calendar.png">
           </div>
           <span class="wave">~</span>
           <div class="datepicker to">
             <input type="text" id="datepicker-to">
-            <img src="./static/images/mypage/mypage_calendar.png">
+            <img src="/static/images/mypage/mypage_calendar.png">
           </div>
           <button class="period cur-month">이번달</button>
           <button class="period prev-month">지난달</button>
@@ -512,7 +512,7 @@
         <div class="caution">
           <h3>
 
-          <img src="./static/images/exclamation-mark.png">
+          <img src="/static/images/exclamation-mark.png">
 
           세금계산서 관련 주의 사항
 
@@ -946,10 +946,10 @@
 
         <div class="pagination">
           <div class="col icon prev-last">
-            <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+            <img src="/static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
           </div>
           <div class="col icon prev">
-            <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+            <img src="/static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
           </div>
           <div class="col active">
             1
@@ -967,10 +967,10 @@
             5
           </div>
           <div class="col icon next">
-            <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+            <img src="/static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
           </div>
           <div class="col icon next-last">
-            <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+            <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
           </div>
         </div>
       </div>

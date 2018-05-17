@@ -580,7 +580,12 @@ section.customerCenter .container .pagination .col:hover {
 
   .wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.info > span {
     display: block;
+    font-size: 12px;
   } 
+
+  .wrapper-detail .wrapper-reply .replies .reply .content {
+    font-size: 12px;
+  }
 
   .wrapper-detail .wrapper-reply .replies .reply .info-and-write-comment-button .col.write-comment-button {
     width: 100%;
@@ -613,5 +618,15 @@ section.customerCenter .container .pagination .col:hover {
   .wrapper-detail .wrapper-reply .replies .reply.comment::before {
     left: 16px;
     top: 16px;
+  }
+
+  .wrapper-detail .wrapper-buttons button {
+    padding: 5.5px 10px;
+    font-size: 12px;
+  }
+
+  .wrapper-detail .wrapper-reply .replies .reply .update-and-delete button {
+    padding: 5.5px 10px;
+    font-size: 12px;    
   }
 }

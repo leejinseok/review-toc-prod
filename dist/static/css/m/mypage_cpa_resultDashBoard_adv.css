@@ -1221,4 +1221,19 @@ section.mypage .cols .right-col .search:not(.second) {
   footer {
     width: 100% !important;
   }
+
+  .modal.modal-show-detail{
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  .modal.modal-show-detail .modal-content {
+    width: calc(100% - 10px);
+    padding: 10px;
+  }
+
+  .modal.modal-show-detail .modal-content table tr td {
+    font-size: 10px;
+  }
 }

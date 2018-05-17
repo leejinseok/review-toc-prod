@@ -1014,4 +1014,9 @@ form .form-group.submit button {
   form .form-group .mobile-tel {
     width: calc(100% - 110px);
   }
+
+  form .form-group.submit button {
+    height: 54px;
+    font-size: 14px;
+  }
 }
