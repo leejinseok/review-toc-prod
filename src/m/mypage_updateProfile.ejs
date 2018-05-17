@@ -1,0 +1,139 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_updateProfile.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>회원정보수정</h2>
+
+      <form>
+        <div class="form-group">
+          <input type="text" class="disabled" value="registratedIdReadonly" readonly>
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="현재 비밀번호">
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="비밀번호 변경(영문/숫자 조합 8~16자)">
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="비밀번호 확인">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="업체명 (입점 예정인 브랜드명을 입력해주세요 ex. 리뷰톡)">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="담당자명">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="담당자 이메일">
+        </div>
+        <div class="form-group">
+          <input type="text" class="mobile-tel" placeholder="휴대전화번호( “-”제외하고 숫자만 입력)">
+          <button type="button" class="btn-send-verify">
+            인증번호전송
+          </button>
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="홈페이지URL(운영중인 홈페이지 및 카페,블로그 주소를 입력해주세요">
+        </div>
+        <div class="form-group extension">
+          <span>추가정보</span>
+        </div>
+        <div class="form-group cpa-and-tester">
+          <button type="button" class="active" data-type="cpa" data-checked="true">
+            <img src="/static/images/mypage/checked.png" class="check checked">
+            &nbsp;CPA
+          </button>
+          <button type="button" data-type="tester" data-checked="false">
+            <img src="/static/images/mypage/un-checked.png" class="check">
+            &nbsp;체험단
+          </button>
+        </div>
+        <div class="wrapper-extra cpa active">
+          <div class="form-group">
+            <!-- <input type="text" name="" value="" placeholder="업체종류(CPA)"> -->
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">업체종류(CPA)</span>
+                    <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">업체종류1</li>
+                  <li class="list-item">업체종류2</li>
+                  <li class="list-item">업체종류3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="DB단가">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="유효 DB기준">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" value="" placeholder="취소 DB기준">
+          </div>
+        </div>
+
+        <div class="wrapper-extra tester">
+          <div class="form-group">
+            <input type="text" placeholder="업체종류(체험단)을 입력해주세요. ex) 음식점, 교육서비스등">
+          </div>
+          <div class="form-group">
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">체험단유형</span>
+                    <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">유형1</li>
+                  <li class="list-item">유형2</li>
+                  <li class="list-item">유형3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="options">
+              <div class="items">
+                <div class="selected">
+                  <button type="button" class="selected-button">
+                    <span class="value">체험단지역</span>
+                    <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                  </button>
+                </div>
+                <ul>
+                  <li class="list-item">지역1</li>
+                  <li class="list-item">지역2</li>
+                  <li class="list-item">지역3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <textarea placeholder="문의사항"></textarea>
+        </div>
+        <div class="form-group submit">
+          <button type="submit" name="button">
+            수정하기
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,36 @@
+.container {
+  margin: 0 auto; }
+
+ul.tab {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 72px; }
+
+ul.tab li {
+  float: left;
+  padding: 11px 25px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-bottom: 0;
+  cursor: pointer; }
+  ul.tab li:last-child {
+    border-left: 0; }
+  ul.tab li.active, ul.tab li:hover {
+    background: #fe1e53;
+    color: #fff;
+    font-weight: 300;
+    border: 1px solid #fe1e53; }
+
+.container-body {
+  padding-top: 40px;
+  padding-bottom: 187px; }
+  .container-body .wrapper-text {
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .container-body .wrapper-text .title {
+      font-size: 15px;
+      color: #333333; }
+    .container-body .wrapper-text .duration {
+      color: #707070;
+      font-size: 12px; }

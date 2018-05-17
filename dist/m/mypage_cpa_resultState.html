@@ -1,0 +1,3089 @@
+<!DOCTYPE html>
+<html ng-app="reviewTocApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>리뷰톡</title>
+  <link rel="stylesheet" href="/static/css/base.css">
+
+  <link rel="stylesheet" href="/static/css/m/mypage_cpa_resultState.css">
+
+  <link rel="stylesheet" href="/static/css/m/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/static/js/angular.min.js"></script>
+  <script src="/static/js/prefixfree.min.js"></script>
+  <script src="/static/js/common.js"></script>
+
+  <script src="/static/js/m/mypage_common.js"></script>
+
+  <script src="/static/js/m/mypage_cpa_resultState.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="main pc">
+    <div class="inner-wrapper">
+      <ul class="left">
+        <li>
+          <a href="./index.html">
+            <img src="/static/images/toc_logo.svg" class="logo">
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+
+          CPA
+
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">보험/상조</a>
+
+            <a href="#">대출/금융</a>
+
+            <a href="#">건강/다이어트</a>
+
+            <a href="#">병원</a>
+
+            <a href="#">법률/개인회생</a>
+
+            <a href="#">결혼</a>
+
+            <a href="#">여성/육아</a>
+
+            <a href="#">어린이/키성장</a>
+
+            <a href="#">광고/회원가입</a>
+
+            <a href="#">렌터/리스</a>
+
+            <a href="#">자격증/학원</a>
+
+            <a href="#">쇼핑몰</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+
+          체험단
+
+        </a>
+          <div class="dropdown-content">
+
+            <a href="#">전체보기</a>
+
+            <a href="#">생활</a>
+
+            <a href="#">유아</a>
+
+            <a href="#">디지털</a>
+
+            <a href="#">뷰티</a>
+
+            <a href="#">패션</a>
+
+            <a href="#">맛집</a>
+
+            <a href="#">여행</a>
+
+            <a href="#">기타</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="./mypage_cpa_mycampaign.html" class="dropbtn">
+
+          실적/수익확인
+
+        </a>
+          <div class="dropdown-content">
+
+            <a href="mypage_cpa_mycampaign.html">실적현황</a>
+
+            <a href="mypage_cpa_daily.html">데일리</a>
+
+            <a href="mypage_cpa_byCampaign.html">캠페인별</a>
+
+            <a href="mypage_cpa_accessRoute.html">접속경로</a>
+
+            <a href="mypage_cpa_withdrawRequest.html">출금신청</a>
+
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="promotion_ongoing.html" class="dropbtn">
+
+          프로모션
+
+        </a>
+          <div class="dropdown-content">
+
+            <a href="promotion_ongoing.html">진행중인 프로모션</a>
+
+            <a href="promotion_prevParticipationRate.html">전월 신청률 순위</a>
+
+            <a href="promotion_prevMonthapprovalRate.html">전월 승인률 순위</a>
+
+            <a href="promotion_accumulatedProfit.html">누적 수익금</a>
+
+          </div>
+        </li>
+        <li>
+          <a href="./event.html">
+
+          이벤트
+
+        </a>
+        </li>
+      </ul>
+      <ul class="right">
+        <li>
+          <img class="profile" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMale User%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M50.9 55.3a12.2 12.2 0 0 0-4.3-1.7c-8.1-1.5-8.1-4.1-8.1-5.7v-1a14.8 14.8 0 0 0 4.2-7.1c2.5 0 3-5.1 3-5.9s.1-3.8-2.4-3.8c5.4-14.6-8.9-20.5-19.6-13-4.4 0-4.8 6.5-3.1 13-2.5 0-2.4 3.1-2.4 3.8s.6 5.9 3 5.9a14.8 14.8 0 0 0 4.3 7.2v1c0 1.6 0 4.2-8.1 5.7a11.9 11.9 0 0 0-4.3 1.6' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle data-name='layer1' cx='32' cy='32' r='30' fill='none' stroke='%23777777' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E"
+          alt="Male User" />
+          <a href="./login.html">
+
+          로그인
+
+        </a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="./signup.html">회원가입</a>
+        </li>
+        <li class="dot-divider">·</li>
+        <li>
+          <a href="./customerCenter_notice.html">고객센터</a>
+        </li>
+        <li class="dot-divider"></li>
+        <li class="li-wrapper-search">
+          <div class="wrapper-search">
+            <input type="text" name="query" placeholder="검색하기">
+            <img src="/static/images/search.svg" class="icon-search">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="main mobile">
+    <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMenu%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' d='M14 18h36M14 32h36' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23333333' stroke-miterlimit='10' stroke-width='2' d='M14 46h36' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+    class="hamburger" alt="Menu" onclick="toogleSlideMenu();" />
+
+    <a href="./index.html">
+      <img src="/static/images/toc_logo.svg" class="logo">
+    </a>
+  </nav>
+
+  <div class="wrapper-sidemenu" id="wrapper-sidemenu">
+    <div class="sidemenu" id="sidemenu">
+      <ul>
+        <li class="li-search">
+          <div class="wrapper-search">
+            <input type="text" name="query" placeholder="검색하기">
+            <img src="/static/images/search.svg" class="icon-search">
+          </div>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="./login.html" class="accordion">
+
+            로그인
+
+        </a>
+        </li>
+        <li>
+          <a href="./signup.html" class="accordion">
+
+          회원가입
+
+        </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <button class="accordion">
+            CPA
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="#">전체보기</a>
+            </p>
+            <p>
+              <a href="#">보험/상조</a>
+            </p>
+            <p>
+              <a href="#">대출/금융</a>
+            </p>
+            <p>
+              <a href="#">건강/다이어트</a>
+            </p>
+            <p>
+              <a href="#">병원</a>
+            </p>
+            <p>
+              <a href="#">법률/개인회생</a>
+            </p>
+            <p>
+              <a href="#">결혼</a>
+            </p>
+            <p>
+              <a href="#">여성/육아</a>
+            </p>
+            <p>
+              <a href="#">어린이/키성장</a>
+            </p>
+            <p>
+              <a href="#">광고/회원가입</a>
+            </p>
+            <p>
+              <a href="#">렌터/리스</a>
+            </p>
+            <p>
+              <a href="#">자격증/학원</a>
+            </p>
+            <p>
+              <a href="#">쇼핑몰</a>
+            </p>
+            <p>
+              <a href="#">기타</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <button class="accordion">
+            체험단
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="#">전체보기</a>
+            </p>
+            <p>
+              <a href="#">생활</a>
+            </p>
+            <p>
+              <a href="#">유아</a>
+            </p>
+            <p>
+              <a href="#">디지털</a>
+            </p>
+            <p>
+              <a href="#">뷰티</a>
+            </p>
+            <p>
+              <a href="#">패션</a>
+            </p>
+            <p>
+              <a href="#">맛집</a>
+            </p>
+            <p>
+              <a href="#">여행</a>
+            </p>
+            <p>
+              <a href="#">기타</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <button class="accordion">
+            실적/수익확인
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="./mypage_cpa_mycampaign.html">실적현황</a>
+            </p>
+            <p>
+              <a href="./mypage_cpa_daily.html">데일리</a>
+            </p>
+            <p>
+              <a href="./mypage_cpa_byCampaign.html">캠페인별</a>
+            </p>
+            <p>
+              <a href="./mypage_cpa_accessRoute.html">접속경로</a>
+            </p>
+            <p>
+              <a href="./mypage_cpa_withdrawRequest.html">출금신청</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <button class="accordion">
+            프로모션
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="./promotion_ongoing.html">진행중인 프로모션</a>
+            </p>
+            <p>
+              <a href="./promotion_prevParticipationRate.html">전월 신청률 순위</a>
+            </p>
+            <p>
+              <a href="./promotion_prevMonthapprovalRate.html">전월 승인률 순위</a>
+            </p>
+            <p>
+              <a href="./promotion_accumulatedProfit.html">누적 수익금</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <a href="./event.html" class="accordion">
+
+          이벤트
+
+        </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="./customerCenter_notice.html" class="accordion">
+
+          고객센터
+
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <section class="container full-width clearfix mypage">
+    <h2 class="main-h">마이페이지</h2>
+    <div class="cols">
+      <div class="col-3 left-col">
+        <div class="profile">
+          <div class="thumbnail" style="background-image:url('/static/images/mypage/dog.jpeg')"></div>
+          <input type="file" id="thumbnailFile" accept="image/*" onchange="myPageThumbnailChange(this.files[0])">
+          <h3 class="nickname">bigcloud1990</h3>
+          <p class="current-point-title">ⓟ 포인트현황</p>
+          <p class="current-point-value">200,000P</p>
+          <button class="withdraw-request" type="button">출금신청</button>
+        </div>
+
+
+
+        <div class="wrapper-accordion">
+          <button class="accordion with-menus">
+            CPA
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="mypage_cpa_mycampaign.html">
+
+          마이 캠페인관리
+
+        </a>
+            </p>
+            <p>
+              <a href="mypage_cpa_resultState.html">
+
+          실적현황
+
+        </a>
+            </p>
+
+            <p>
+              <a href="mypage_cpa_daily.html">
+
+          데일리
+
+        </a>
+            </p>
+
+            <p>
+              <a href="mypage_cpa_byCampaign.html">
+
+          캠페인별
+
+        </a>
+            </p>
+
+            <p>
+              <a href="mypage_cpa_accessRoute.html">
+
+          접속경로
+
+        </a>
+            </p>
+
+            <p>
+              <a href="mypage_cpa_withdrawRequest.html">
+
+          출금신청
+
+        </a>
+            </p>
+          </div>
+
+          <button class="accordion with-menus">
+            체험단
+            <img src="/static/images/mypage/my_profile_down.png">
+          </button>
+          <div class="panel">
+            <p>
+              <a href="">체험단 메뉴 1</a>
+            </p>
+          </div>
+          <button class="accordion no-menus">
+            <a href="">1:1 문의내역</a>
+          </button>
+          <button class="accordion no-menus">
+            <a href="./mypage_updateProfile.html">회원정보수정</a>
+          </button>
+          <button class="accordion no-menus">
+            <a href="">꿀tip</a>
+          </button>
+        </div>
+
+        <div class="extension">
+          <a href="/service_guide.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav1.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav1_gray.png">
+            <span>이용가이드</span>
+          </a>
+          <a href="/customerCenter_manToMan.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav2.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav2_gray.png">
+            <span>문의하기</span>
+          </a>
+          <a href="/customerCenter_notice.html" class="col">
+            <img class="on" src="/static/images/mypage/my_page_nav3.svg">
+            <img class="off" src="/static/images/mypage/my_page_nav3_gray.png">
+            <span>고객센터</span>
+          </a>
+          <a class="col">
+            <img src="/static/images/x.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-9 right-col">
+        <h2>실적현황</h2>
+        <div class="dashboard clearfix">
+          <div class="col">
+            <p class="title">전체건수</p>
+            <span>
+
+            250<small>건</small>
+
+          </span>
+          </div>
+          <div class="col">
+            <p class="title">승인건수</p>
+            <span>
+
+            250<small>건</small>
+
+          </span>
+          </div>
+          <div class="col">
+            <p class="title">승인률</p>
+            <span>
+
+            70<small>%</small>
+
+          </span>
+          </div>
+          <div class="col">
+            <p class="title">기간내누적금액</p>
+            <span>
+
+            330,000<small>원</small>
+
+          </span>
+          </div>
+        </div>
+        <div class="search">
+          <div class="options">
+            <div class="items">
+              <div class="selected">
+                <button type="button" class="selected-button">
+                  <span class="value">전체</span>
+                  <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+                  alt="Angle Down" />
+                </button>
+              </div>
+              <ul>
+                <li class="list-item">전체</li>
+                <li class="list-item">등록한광고명</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="options">
+            <div class="items">
+              <div class="selected">
+                <button type="button" class="selected-button">
+                  <span class="value">전체</span>
+                  <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+                  alt="Angle Down" />
+                </button>
+              </div>
+              <ul>
+                <li class="list-item">전체</li>
+                <li class="list-item">등록한 캠페인명</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="datepicker from">
+            <input type="text" id="datepicker-from">
+            <img src="/static/images/mypage/mypage_calendar.png">
+          </div>
+          <span class="wave">~</span>
+          <div class="datepicker to">
+            <input type="text" id="datepicker-to">
+            <img src="/static/images/mypage/mypage_calendar.png">
+          </div>
+          <button class="period today">오늘</button>
+          <button class="period cur-month">이번달</button>
+          <button class="period prev-month">저번달</button>
+          <button class="inquiry">조회</button>
+        </div>
+
+        <div class="wrapper-table">
+          <div class="status-dashboard clearfix">
+            <div class="col number">
+              <ul class="clearfix">
+                <li class="wait">
+                  <span class="square wait"></span>
+                  <span class="text">
+
+                  대기(2)
+
+                </span>
+                </li>
+                <li class="defer">
+                  <span class="square defer"></span>
+                  <span class="text">
+
+                  보류(2)
+
+                </span>
+                </li>
+                <li class="approve">
+                  <span class="square approve"></span>
+                  <span class="text">
+
+                  승인(2)
+
+                </span>
+                </li>
+                <li class="deny">
+                  <span class="square deny"></span>
+                  <span class="text">
+
+                  거절(2)
+
+                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col result-and-selectbox">
+              <div class="inner">
+                <span class="result">검색결과 <span class="number">4</span>건</span>
+                <div class="options">
+                  <div class="items">
+                    <div class="selected">
+                      <button type="button" class="selected-button">
+                        <span class="value">50개씩</span>
+                        <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23bcbcbc' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+                        alt="Angle Down" />
+                      </button>
+                    </div>
+                    <ul>
+                      <li class="list-item">50개씩</li>
+                      <li class="list-item">40개씩</li>
+                      <li class="list-item">30개씩</li>
+                      <li class="list-item">20개씩</li>
+                      <li class="list-item">10개씩</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <table class="table pc">
+            <thead>
+              <tr>
+                <th>NO</th>
+                <th>광고명</th>
+                <th>캠페인명</th>
+                <th>신청일자</th>
+                <th>수익금</th>
+                <th>프로모션</th>
+                <th>처리상태</th>
+                <th>상세보기</th>
+                <th width="80">처리사유</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="">
+                <td>1</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>2</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class=" deny ">
+                <td>3</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>4</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>5</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>6</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class=" deny ">
+                <td>7</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>8</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>9</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>10</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class=" deny ">
+                <td>11</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>12</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>13</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>14</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class=" deny ">
+                <td>15</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>16</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>17</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>18</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class=" deny ">
+                <td>19</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+                    <span>사유</span>
+                    <div class="pop-reason">
+                      <div class="header">
+                        거절사유
+                      </div>
+                      <div class="body">
+                        광고주가 입력한 취소 or 보류사유
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>20</td>
+                <td class="advertising-name">
+                  <span>
+
+                    네이버블로그
+
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+
+                    슬피우는 두견새야
+
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28 21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+
+
+
+
+
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table class="table mobile">
+            <thead>
+              <tr>
+                <!-- <th>NO</th> -->
+                <th>광고명/캠페인명</th>
+                <!-- <th>캠페인명</th> -->
+                <th>신청일자</th>
+                <!-- <th>수익금</th> -->
+                <!-- <th>프로모션</th> -->
+                <th>처리상태</th>
+                <th>상세보기</th>
+                <!-- <th width="80">처리사유</th> -->
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="">
+                <!-- <td>1</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>2</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class=" deny ">
+                <!-- <td>3</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>4</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>5</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>6</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class=" deny ">
+                <!-- <td>7</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>8</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>9</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>10</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class=" deny ">
+                <!-- <td>11</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>12</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>13</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>14</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class=" deny ">
+                <!-- <td>15</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>16</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>17</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+
+                    <span class="defer">보류</span>
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>18</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+
+                    <span class="standby">대기</span>
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class=" deny ">
+                <!-- <td>19</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+
+                    <span class="deny">거절</span>
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+              <tr class="">
+                <!-- <td>20</td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28
+                  <br>21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+
+                    <span class="approve">승인</span>
+
+
+
+
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      
+           
+                      
+                  </div>
+                </td> -->
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+
+        <div class="pagination">
+          <div class="col icon prev-last">
+            <img src="/static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+          </div>
+          <div class="col icon prev">
+            <img src="/static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+          </div>
+          <div class="col active">
+            1
+          </div>
+          <div class="col">
+            2
+          </div>
+          <div class="col">
+            3
+          </div>
+          <div class="col">
+            4
+          </div>
+          <div class="col">
+            5
+          </div>
+          <div class="col icon next">
+            <img src="/static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+          </div>
+          <div class="col icon next-last">
+            <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+          </div>
+        </div>
+
+        <div class="caution">
+          <h3>
+
+          <img src="/static/images/exclamation-mark.png">
+
+          세금계산서 관련 주의 사항
+
+        </h3>
+          <p>
+            - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+          </p>
+          <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+          <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal modal-show-detail" id="modal-show-detail">
+    <div class="modal-content">
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td>신청일자</td>
+          <td>
+            2018.03.21 15:50:51
+          </td>
+        </tr>
+        <tr>
+          <td>광고명</td>
+          <td>
+            이러쿵
+          </td>
+        </tr>
+        <tr>
+          <td>캠페인명</td>
+          <td>
+            이러쿵
+          </td>
+        </tr>
+        <tr>
+          <td>유입경로</td>
+          <td>
+            <a href="http://naver.com/blog/47801880044" target="_blank">
+
+            http://naver.com/blog/47801880044
+
+          </a>
+          </td>
+        </tr>
+        <tr>
+          <td>처리상태</td>
+          <td>
+            보류
+          </td>
+        </tr>
+        <tr>
+          <td>처리사유</td>
+          <td>
+            부재
+          </td>
+        </tr>
+        <tr class="ip">
+          <td>아이피</td>
+          <td>
+            211.233.186.xxx
+            <span class="same-ip-exist">
+
+            (접수내역중 동일 IP가 존재합니다.)
+
+          </span>
+          </td>
+        </tr>
+        <tr>
+          <td>신청자명</td>
+          <td>
+            홍길x
+          </td>
+        </tr>
+        <tr>
+          <td>휴대폰</td>
+          <td>010-xxxx-5678</td>
+        </tr>
+        <tr>
+          <td>자녀나이</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>자녀키</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>자녀몸무게</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>문의사항</td>
+          <td>
+            문의사항 입니다.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal modal-reason" id="modal-reason">
+    <div class="modal-content">
+      <p class="title defer">
+        보류사유
+      </p>
+      <p class="title deny">
+        거절사유
+      </p>
+      <textarea></textarea>
+      <button class="black-btn small-btn" onclick="hideModal()">확인</button>
+    </div>
+  </div>
+  <footer class="content-width">
+    <div class="inner">
+      <ul class="bottom-menu clearfix">
+        <li><a href="./reviewtoc_intro.html">리뷰톡소개</a>
+        </li>
+        <li><a href="./ad_inquiry.html">광고문의</a>
+        </li>
+        <li><a href="javascript:showTermOfUse()">이용약관</a>
+        </li>
+        <li><a href="javascript:showPrivatePolicy()">개인정보처리방침</a>
+        </li>
+        <li><a href="#">운영정책</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom-detail clearfix">
+      <div class="col logo">
+        <img src="/static/images/toc_logo.svg" class="logo">
+      </div>
+      <div class="col info">
+        <p>
+          드림인사이트 ㅣ 대표이사 김기철 ㅣ 서울특별시 구로구 디지털로33길 12 우림이비지센터 2차 401호 ㅣ 사업자번호 114-87-03025
+          <br>TEL 02-523-7258 ㅣ FAX 02-6280-7258 ㅣ E-MAIL dream7336@nate.com
+          <br>copyright 2016 (C) dreaminsight All rights reserved.
+        </p>
+      </div>
+      <div class="col etc">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">패밀리사이트</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+                alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">
+                <a href="#">드림인사이트</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="icons">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+

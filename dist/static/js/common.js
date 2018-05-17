@@ -1,4 +1,5 @@
 var app = angular.module('reviewTocApp', []);
+var isMobile = window.location.pathname.split('/')[1] === 'm';
 
 $(document).ready(function () {
   $('a').click(function (e) {
@@ -27,8 +28,8 @@ function handleAccordionSlideMenu (accordionIndex, itemIndex) {
   var parentParagraph = $('.wrapper-sidemenu .panel p');
   var items = $('.wrapper-sidemenu .panel p a');
   var downArrowSrc = {
-    'selected': './static/images/mypage/my_profile_up_black.png',
-    'unselected': './static/images/mypage/my_profile_down.png'
+    'selected': '/static/images/mypage/my_profile_up_black.png',
+    'unselected': '/static/images/mypage/my_profile_down.png'
   };
 
   accordions.click(function (e) {
@@ -166,8 +167,9 @@ function handleLetterClickMobile () {
 function handleSearch () {
   var query = $('nav [name=query]');
   var search = $('.icon-search');
+  var prefix = isMobile ? '.' : '';
   search.click(function () {
-    location.href = '/search.html?query=' + query.val();
+    location.href = prefix + '/search.html?query=' + query.val();
   });
 }
 
@@ -350,8 +352,8 @@ function handleAccordionLogined (accordionIndex, itemIndex) {
   var parentParagraph = $('nav.main.logined .panel p');
   var items = $('nav.main.logined .panel p a');
   var downArrowSrc = {
-    'selected': './static/images/mypage/my_profile_up_selected.png',
-    'unselected': './static/images/mypage/my_profile_down.png'
+    'selected': '/static/images/mypage/my_profile_up_selected.png',
+    'unselected': '/static/images/mypage/my_profile_down.png'
   };
 
   accordions.click(function () {
@@ -360,12 +362,15 @@ function handleAccordionLogined (accordionIndex, itemIndex) {
     var maxHeight = parseInt(panel.css('max-height'));
     var scollHeight = panel.prop('scrollHeight');
     accordionIndex = $(accordions).index(this);
+    alert('hi');
     if (maxHeight) {
       panel.css('max-height', 0);
       downArrow.attr('src', downArrowSrc.unselected);
       // accordions.removeClass('active');
       return;
     }
+
+
     accordions.removeClass('active');
     accordions.eq(accordionIndex).addClass('active');
     // downArrow.attr('src', downArrowSrc.selected);

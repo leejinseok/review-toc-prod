@@ -1,0 +1,286 @@
+section.reviewtoc-intro {
+  margin-top: 200px;
+}
+
+section .container {
+  margin: 0 auto;
+}
+
+section.reviewtoc-intro .container .info h2 {
+  font-size: 44px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #333;
+}
+
+section.reviewtoc-intro .container .info h2 span.bold {
+  font-weight: 400;
+}
+
+section.reviewtoc-intro .container .info h2 span.red-bold {
+  font-weight: 400;
+  color: #fe1e53;
+}
+
+section.reviewtoc-intro .container p {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #707070;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+section.cpa-marketing-container {
+  margin-top: 140px;
+  background-color: #f9f9f9;
+  padding-top: 135px;
+}
+
+section.cpa-marketing-container .cpa-marketing-info h2 {
+  font-size: 38px;
+  font-weight: 200;
+  color: #333;
+  margin-top: 60px;
+}
+
+section.cpa-marketing-container .cpa-marketing-info h2 span {
+  font-weight: 400;
+}
+
+section.cpa-marketing-container .cpa-marketing-info p {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #707070;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+section.cpa-marketing-container .cpa-marketing-info button {
+  margin-top: 40px;
+  height: 50px;
+  width: 198px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+section.tester-marketing-container {
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
+
+section.tester-marketing-container .container .tester-marketing-info h2 {
+  font-size: 38px;
+  font-weight: 200;
+  color: #333;
+  margin-top: 80px;
+}
+
+section.tester-marketing-container .container .tester-marketing-info h2 span {
+  font-weight: 400;
+}
+
+section.tester-marketing-container .container .tester-marketing-info p {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #707070;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+section.tester-marketing-container .container .tester-marketing-info button {
+  margin-top: 40px;
+  height: 50px;
+  width: 198px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+section.win-win-container {
+  background-color: #f9f9f9;
+  padding-top: 154px;
+  padding-bottom: 100px;
+}
+
+section.win-win-container .container .win-win-title {
+  text-align: center;
+  line-height: 1.4;
+}
+
+section.win-win-container .container .win-win-title h2 {
+  font-size: 38px;
+  font-weight: 200;
+  color: #333;
+}
+
+section.win-win-container .container .win-win-title h2 span.red-bold {
+  font-weight: 400;
+  color: #fe1e53;
+}
+
+section.win-win-container .container .win-win-title h2 span.black-bold {
+  font-weight: 400;
+}
+
+section.win-win-container .container .win-win-img {
+  margin-top: 114px;
+}
+
+section.tester-inquiry {
+  margin-top: 312px;
+  padding-bottom: 90px;
+}
+
+section.tester-inquiry .tester-inquiry-info h2 {
+  font-size: 38px;
+  font-weight: 200;
+  color: #333;
+  line-height: 1.4;
+  margin-left: 30px;
+}
+
+section.tester-inquiry .tester-inquiry-info h2 span.red-bold {
+  font-weight: 400;
+  color: #fe1e53;
+}
+
+section.tester-inquiry .tester-inquiry-info h2 span.black-bold {
+  font-weight: 400;
+}
+
+section.tester-inquiry .tester-inquiry-info button {
+  margin-left: 30px;
+  margin-top: 40px;
+  height: 50px;
+  width: 198px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    box-sizing: border-box;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  section [class*=col] > h2 {
+    font-size: 30px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  section.reviewtoc-intro {
+    margin-top: 60px;
+  }
+
+  section.reviewtoc-intro > .container {
+    width: 100%;
+  }
+
+
+  section.reviewtoc-intro > .container > [class*=col] {
+    width: 100%;
+  }
+
+  section.reviewtoc-intro > .container .contents img {
+    max-width: 100%;
+  }
+
+  section.cpa-marketing-container {
+    margin-top: 0;
+  }
+
+  
+  section.cpa-marketing-container .cpa-marketing-info h2 {
+    margin-top: 0;
+  }
+
+  section.cpa-marketing-container > .container {
+    width: 100%;
+  }
+
+  section.cpa-marketing-container > .container > [class*=col] {
+    width: 100%;
+  }
+
+  section.cpa-marketing-container > .container .cpa-marketing img {
+    max-width: 100%;
+  }
+
+  section.tester-marketing-container > .container {
+    width: 100%;
+  }
+
+  section.tester-marketing-container > .container > [class*=col] {
+    width: 100%;
+  }
+
+  section.tester-marketing-container > .container .tester-marketing  img {
+    width: 100%;
+  }
+
+  section.win-win-container > .container {
+    width: 100%;
+  }
+
+  section.win-win-container > .container > [class*=col] {
+    width: 100%;
+  }   
+
+  section.tester-inquiry {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  section.tester-inquiry > .container {
+    width: 100%;
+  }
+
+  section.tester-inquiry > .container > [class*=col] {
+    width: 100%;
+  }
+
+  section.tester-inquiry > .container > .tester-inquiry-img img {
+    max-width: 100%;
+  }
+
+  section.tester-marketing-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  section.win-win-container .container .win-win-title h2 {
+    font-size: 30px !important;
+  }
+
+  section.win-win-container .container .win-win-title h2 .red-bold {
+    display: block;
+  }
+
+  section.win-win-container .container .win-win-title h2 .black-bold {
+    display: block;
+  }
+
+  section.win-win-container .container .win-win-img {
+    padding:0 10px;
+  }
+
+  section.tester-inquiry .tester-inquiry-info h2 {
+    margin-top: 10px !important; 
+  }
+
+  section.tester-inquiry .tester-inquiry-info button {
+    margin-left: 0;
+  }
+}

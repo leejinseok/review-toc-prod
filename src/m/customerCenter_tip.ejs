@@ -1,0 +1,106 @@
+<% include ./variables/customerCenter_common.ejs %>
+<% include ./variables/customerCenter_tip.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="customerCenter notice">
+  <div class="container full-width clearfix">
+    <h2 class="main-h">고객센터</h2>
+
+    <% include ./partials/customerCenter/menu.ejs %>
+
+    <div class="col content">
+      <h2>꿀TIP</h2>
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">대분류</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">분류1</li>
+              <li class="list-item">분류2</li>
+              <li class="list-item">분류3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">분류없음</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">분류1</li>
+              <li class="list-item">분류2</li>
+              <li class="list-item">분류3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper-search-input">
+          <img src="/static/images/search.svg" class="icon-search">
+          <input type="text" class="search-input" placeholder="검색어를 입력해주세요.">
+        </div>
+        <button class="inquiry"> 검색 </button>
+      </div>
+
+      <div class="wrapper-table">
+        <table class="table pc" cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th width="80">번호</th>
+              <th>대분류</th>
+              <th width="100">소분류</th>
+              <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td><%= i + 1 %></td>
+                <td>CPA</td>
+                <td>프로모션</td>
+                <td class="subject">
+                  <a href="./customerCenter_tip_detail.html">
+                    Q.제목이 출력이 안됩니다.
+                  </a>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile" cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th>대분류</th>
+              <th>소분류</th>
+              <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>CPA</td>
+                <td>프로모션</td>
+                <td class="subject">
+                  <a href="./customerCenter_tip_detail.html">
+                    Q.제목이 출력이 안됩니다.
+                  </a>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      <% include ./partials/customerCenter/pagination.ejs %>
+    </div>
+  </div>
+</section>
+
+<% include ./partials/footer.ejs %>

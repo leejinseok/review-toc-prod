@@ -1,0 +1,152 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_byCampaign.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>캠페인별</h2>
+
+      <div class="search">
+        <div class="datepicker from">
+          <input type="text" id="datepicker-from">
+          <img src="/static/images/mypage/mypage_calendar.png">
+        </div>
+        <span class="wave">~</span>
+        <div class="datepicker to">
+          <input type="text" id="datepicker-to">
+          <img src="/static/images/mypage/mypage_calendar.png">
+        </div>
+        <button class="period today"> 오늘 </button>
+        <button class="period cur-month"> 이번달 </button>
+        <button class="period prev-month"> 저번달 </button>
+        <button class="inquiry"> 조회 </button>
+      </div>
+
+      <div class="wrapper-table">
+        <table class="table pc">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>캠페인명</th>
+              <th>DB단가</th>
+              <th>프로모션</th>
+              <th class="th-status">
+                <span class="wait">대기/</span>
+                <span class="defer">보류/</span>
+                <span class="approve">승인/</span>
+                <span class="deny">거절</span>
+              </th>
+              <th>수익금합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>
+                  2018.01.01
+                </td>
+                <td class="campaign-name">
+                  네이버블로그
+                </td>
+                <td class="db-price">
+                  10,000원
+                </td>
+                <td class="promotion">
+                  +1,000
+                </td>
+                <td class="status">
+                  <span class="standby">0/</span>
+                  <span class="defer">1/</span>
+                  <span class="approve">0/</span>
+                  <span class="deny">2</span>
+                </td>
+                <td class="benefit-total">
+                  10,000원
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>캠페인명</th>
+              <th>
+                DB단가/ <br>
+                프로모션
+              </th>
+              <th class="th-status">
+                <span class="wait">대기/</span>
+                <span class="defer">보류/</span>
+                <span class="approve">승인/</span>
+                <span class="deny">거절</span>
+              </th>
+              <th>수익금합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>
+                  01.01
+                </td>
+                <td class="campaign-name">
+                  네이버블로그
+                </td>
+                <td class="db-price">
+                  10,000원 <br>
+                  +1,000
+                </td>
+                <td class="status">
+                  <span class="standby">0/</span>
+                  <span class="defer">1/</span>
+                  <span class="approve">0/</span>
+                  <span class="deny">2</span>
+                </td>
+                <td class="benefit-total">
+                  10,000원
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <div class="col icon prev-last">
+          <img src="/static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+        </div>
+        <div class="col icon prev">
+          <img src="/static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+        </div>
+        <div class="col active">
+          1
+        </div>
+        <div class="col">
+          2
+        </div>
+        <div class="col">
+          3
+        </div>
+        <div class="col">
+          4
+        </div>
+        <div class="col">
+          5
+        </div>
+        <div class="col icon next">
+          <img src="/static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+        </div>
+        <div class="col icon next-last">
+          <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>

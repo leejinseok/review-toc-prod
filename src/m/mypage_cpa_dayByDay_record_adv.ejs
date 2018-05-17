@@ -1,0 +1,169 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_dayByDay_record_adv.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_adv/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>일별실적</h2>
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">전체</li>
+              <li class="list-item">등록한 캠페인명</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">전체</li>
+              <li class="list-item">등록한 캠페인명</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="datepicker from">
+          <input type="text" id="datepicker-from">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <span class="wave">~</span>
+        <div class="datepicker to">
+          <input type="text" id="datepicker-to">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <button class="period cur-month"> 이번달 </button>
+        <button class="period prev-month"> 지난달 </button>
+        <button class="inquiry"> 조회 </button>
+      </div>
+      <div class="caution">
+        <h3>
+          <img src="./static/images/exclamation-mark.png">
+          세금계산서 관련 주의 사항
+        </h3>
+        <p>-   정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다. </p>
+        <p>-   국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+        <p>-   국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다. </p>
+      </div>
+
+      <div class="wrapper-table">
+        <table class="table pc" border="1">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>광고명</th>
+              <th width="90">대기</th>
+              <th width="90">보류</th>
+              <th width="90">거절</th>
+              <th width="90">승인</th>
+              <th width="95">실적확인</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>2018.01.01</td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td class="btn">
+                  <button type="button">
+                    확인
+                  </button>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile" border="1">
+          <thead>
+            <tr>
+              <th>일자</th>
+              <th>광고명</th>
+              <th>대기/보류/거절/승인</th>
+              <th>실적확인</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 10; i++) { %>
+              <tr>
+                <td>01.01</td>
+                <td>
+                  네이버블로그
+                </td>
+                <td>
+                  0/0/0/0
+                </td>
+                <td class="btn">
+                  <button type="button">
+                    확인
+                  </button>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <div class="col icon prev-last">
+          <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+        </div>
+        <div class="col icon prev">
+          <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+        </div>
+        <div class="col active">
+          1
+        </div>
+        <div class="col">
+          2
+        </div>
+        <div class="col">
+          3
+        </div>
+        <div class="col">
+          4
+        </div>
+        <div class="col">
+          5
+        </div>
+        <div class="col icon next">
+          <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+        </div>
+        <div class="col icon next-last">
+          <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>

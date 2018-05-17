@@ -1,0 +1,30 @@
+.wrapper-buttons {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+td.subject {
+  text-align: left !important;
+}
+
+@media only screen and (max-width: 768px) {
+  section.customerCenter .container .col.content .search .inquiry {
+    margin-bottom: 10px;
+  }
+  
+  section.customerCenter .container .col.content .search .write {
+    width: 100%;
+  }
+
+  section.customerCenter .container .col.content .wrapper-table table.mobile td.subject a {
+    display: block;
+    height: 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

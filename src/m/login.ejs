@@ -1,0 +1,91 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/login.ejs %>
+<% include ./partials/header.ejs %>
+
+<section class="log-in-container center">
+  <div class="logo">
+    <img src="/static/images/log-in/toc_logo.svg" alt="">
+  </div>
+  <nav class="log-in-nav clearfix">
+    <div class="btn-container">
+      <button type="button" name="button" class="selected">파트너</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" name="button">광고주</button>
+    </div>
+  </nav>
+  <div class="input-container">
+    <div class="id">
+      <input type="text" name="" placeholder="아이디">
+    </div>
+    <div class="password">
+      <input type="text" name="" placeholder="비밀번호">
+    </div>
+  </div>
+  <div class="auto-log-in clearfix">
+    <div class="chek">
+      <img src="/static/images/log-in/log-in-box_unchecked.png" alt="">
+      <span>자동 로그인</span>
+    </div>
+    <div class="find-info">
+      <a href="/find_account.html">아이디/비밀번호 찾기</a>
+    </div>
+  </div>
+  <div class="log-in-btn">
+    <button type="button" name="button">로그인</button>
+  </div>
+  <div class="log-in-text">
+    <h3>국내최초 통합제휴마케팅 플랫폼 ‘리뷰톡’</h3>
+    <p>여러분의 성공을 리뷰톡과 함께하세요.</p>
+  </div>
+  <div class="sign-in">
+    <a href="/signup.html"><button type="button" name="button">회원가입</button></a>
+  </div>
+  <nav class="bottom-menu pc clearfix">
+    <div class="intro">
+      <p>
+        <a href="/reviewtoc_intro.html">
+          리뷰톡 소개
+        </a>
+      </p>
+    </div>
+    <div class="ad">
+      <p>
+        <a href="/ad_inquiry.html">
+          광고문의
+        </a>
+      </p>
+    </div>
+    <div class="privacy">
+      <p>
+        <a href="javascript:showPrivatePolicy();">
+          개인정보취급방침
+        </a>
+      </p>
+    </div>
+    <div class="term">
+      <p class="last">
+        <a href="javascript:showTermOfUse();">
+          이용약관
+        </a>
+      </p>
+    </div>
+  </nav>
+  <nav class="bottom-menu mobile clearfix">
+    <a href="/reviewtoc_intro.html">
+      리뷰톡 소개
+    </a>
+    <a href="/ad_inquiry.html">
+      광고문의
+    </a>
+    <a href="javascript:showPrivatePolicy();">
+      개인정보취급방침
+    </a>
+    <a href="javascript:showTermOfUse();">
+      이용약관
+    </a>
+  </nav>
+  <div class="bottom-text">
+    <p>D.02-523-7258  E. dream7336@nate.co.r</p>
+  </div>
+</section>

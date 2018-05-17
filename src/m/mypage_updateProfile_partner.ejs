@@ -1,0 +1,71 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_updateProfile_partner.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>회원정보수정</h2>
+
+      <form>
+        <div class="form-group">
+          <input type="text" class="disabled" value="registratedIdReadonly" readonly>
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="가입시 입력한 닉네임">
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="현재 비밀번호">
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="비밀번호 변경(영문/숫자 조합 8~16자)">
+        </div>
+        <div class="form-group">
+          <input type="password" name="" value="" placeholder="비밀번호 확인">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="가입한 이름">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="가입한 이메일">
+        </div>
+        <div class="form-group">
+          <input type="text" class="mobile-tel" placeholder="휴대전화번호( “-”제외하고 숫자만 입력)">
+          <button type="button" class="btn-send-verify">
+            인증번호전송
+          </button>
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="인증번호">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="가입시 입력한 URL 노출 (변경가능)">
+        </div>
+        <div class="form-group extension">
+          <span>추가정보</span>
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="1231)입력한 주소 노출 (변경가능)">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="나머지주소">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="생년월일(ex.19900101)">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" value="" placeholder="성별">
+        </div>
+        <div class="form-group submit">
+          <button type="submit" name="button">
+            수정하기
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>

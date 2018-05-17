@@ -1,0 +1,467 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_resultState.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>실적현황</h2>
+      <div class="dashboard clearfix">
+        <div class="col">
+          <p class="title">전체건수</p>
+          <span>
+            250<small>건</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">승인건수</p>
+          <span>
+            250<small>건</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">승인률</p>
+          <span>
+            70<small>%</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">기간내누적금액</p>
+          <span>
+            330,000<small>원</small>
+          </span>
+        </div>
+      </div>
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">전체</li>
+              <li class="list-item">등록한광고명</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="options">
+            <div class="items">
+                <div class="selected">
+                    <button type="button" class="selected-button">
+                        <span class="value">전체</span>
+                        <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
+                </div>
+                <ul>
+                  <li class="list-item">전체</li>
+                  <li class="list-item">등록한 캠페인명</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="datepicker from">
+          <input type="text" id="datepicker-from">
+          <img src="/static/images/mypage/mypage_calendar.png">
+        </div>
+        <span class="wave">~</span>
+        <div class="datepicker to">
+          <input type="text" id="datepicker-to">
+          <img src="/static/images/mypage/mypage_calendar.png">
+        </div>
+        <button class="period today"> 오늘 </button>
+        <button class="period cur-month"> 이번달 </button>
+        <button class="period prev-month"> 저번달 </button>
+        <button class="inquiry"> 조회 </button>
+      </div>
+
+      <div class="wrapper-table">
+        <div class="status-dashboard clearfix">
+          <div class="col number">
+            <ul class="clearfix">
+              <li class="wait">
+                <span class="square wait"></span>
+                <span class="text">
+                  대기(2)
+                </span>
+              </li> 
+              <li class="defer">
+                <span class="square defer"></span>
+                <span class="text">
+                  보류(2)
+                </span>
+              </li> 
+              <li class="approve">
+                <span class="square approve"></span>
+                <span class="text">
+                  승인(2)
+                </span>
+              </li> 
+              <li class="deny">
+                <span class="square deny"></span>
+                <span class="text">
+                  거절(2)
+                </span>
+              </li> 
+            </ul>
+          </div>
+          <div class="col result-and-selectbox">
+            <div class="inner">
+              <span class="result">검색결과 <span class="number">4</span>건</span> 
+              <div class="options">
+                <div class="items">
+                  <div class="selected">
+                    <button type="button" class="selected-button">
+                      <span class="value">50개씩</span>
+                      <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23bcbcbc' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
+                  </div>
+                  <ul>
+                    <li class="list-item">50개씩</li>
+                    <li class="list-item">40개씩</li>
+                    <li class="list-item">30개씩</li>
+                    <li class="list-item">20개씩</li>
+                    <li class="list-item">10개씩</li>
+                  </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="table pc">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>광고명</th>
+              <th>캠페인명</th>
+              <th>신청일자</th>
+              <th>수익금</th>
+              <th>프로모션</th>
+              <th>처리상태</th>
+              <th>상세보기</th>
+              <th width="80">처리사유</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 20; i++) { %>
+              <tr class="<% if (i % 4 === 2) { %> deny <% } %>">
+                <td><%= i + 1 %></td>
+                <td class="advertising-name">
+                  <span>
+                    네이버블로그
+                  </span>
+                </td>
+                <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td>
+                <td class="apply-date">
+                  2017.03.28
+                  21:50:51
+                </td>
+                <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td>
+                <td class="status">
+                  <div class="inner-col">
+                    <% if (i % 4 === 3) { %>
+                      <span class="approve">승인</span>
+                    <% } %>
+                    <% if (i % 4 === 2) { %>
+                      <span class="deny">거절</span>
+                    <% } %>
+                    <% if (i % 4 === 1) { %>
+                      <span class="standby">대기</span>
+                    <% } %>
+                    <% if (i % 4 === 0) { %>
+                      <span class="defer">보류</span>
+                    <% } %>
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">상세보기</span>
+                  </div>
+                </td>
+                <td class="reason">
+                  <div class="inner-col">
+        
+                      <% if (i % 4 === 2) { %>
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      <% } %>
+           
+                      <% if (i % 4 === 0) { %>
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      <% } %>
+                    
+                  </div>
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <table class="table mobile">
+          <thead>
+            <tr>
+              <!-- <th>NO</th> -->
+              <th>광고명/캠페인명</th>
+              <!-- <th>캠페인명</th> -->
+              <th>신청일자</th>
+              <!-- <th>수익금</th> -->
+              <!-- <th>프로모션</th> -->
+              <th>처리상태</th>
+              <th>상세보기</th>
+              <!-- <th width="80">처리사유</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <% for (i = 0; i < 20; i++) { %>
+              <tr class="<% if (i % 4 === 2) { %> deny <% } %>">
+                <!-- <td><%= i + 1 %></td> -->
+                <td class="advertising-name">
+                  <p>
+                    네이버블로그
+                  </p>
+                  <p>
+                    슬피우는 두견새야
+                  </p>
+                </td>
+                <!-- <td class="campaign-name">
+                  <span>
+                    슬피우는 두견새야
+                  </span>
+                </td> -->
+                <td class="apply-date">
+                  2017.03.28<br>
+                  21:50:51
+                </td>
+                <!-- <td class="benefit">
+                  30,000원
+                </td>
+                <td class="promotion">
+                  2,000
+                </td> -->
+                <td class="status">
+                  <div class="inner-col">
+                    <% if (i % 4 === 3) { %>
+                      <span class="approve">승인</span>
+                    <% } %>
+                    <% if (i % 4 === 2) { %>
+                      <span class="deny">거절</span>
+                    <% } %>
+                    <% if (i % 4 === 1) { %>
+                      <span class="standby">대기</span>
+                    <% } %>
+                    <% if (i % 4 === 0) { %>
+                      <span class="defer">보류</span>
+                    <% } %>
+                  </div>
+                </td>
+                <td class="detail">
+                  <div class="inner-col">
+                    <span onclick="showDetail();">보기</span>
+                  </div>
+                </td>
+                <!-- <td class="reason">
+                  <div class="inner-col">
+        
+                      <% if (i % 4 === 2) { %>
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      <% } %>
+           
+                      <% if (i % 4 === 0) { %>
+                        <span>사유</span>
+                        <div class="pop-reason">
+                          <div class="header">
+                            거절사유
+                          </div>
+                          <div class="body">
+                            광고주가 입력한 취소 or 보류사유
+                          </div>
+                        </div>
+                      <% } %>
+                  </div>
+                </td> -->
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+       
+      </div>
+
+
+      <div class="pagination">
+        <div class="col icon prev-last">
+          <img src="/static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+        </div>
+        <div class="col icon prev">
+          <img src="/static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+        </div>
+        <div class="col active">
+          1
+        </div>
+        <div class="col">
+          2
+        </div>
+        <div class="col">
+          3
+        </div>
+        <div class="col">
+          4
+        </div>
+        <div class="col">
+          5
+        </div>
+        <div class="col icon next">
+          <img src="/static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+        </div>
+        <div class="col icon next-last">
+          <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+        </div>
+      </div>
+
+      <div class="caution">
+        <h3>
+          <img src="/static/images/exclamation-mark.png">
+          세금계산서 관련 주의 사항
+        </h3>
+        <p>
+          - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+        </p>
+        <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+        <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal modal-show-detail" id="modal-show-detail">
+  <div class="modal-content">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>신청일자</td>
+        <td>
+            2018.03.21  15:50:51
+        </td>
+      </tr>
+      <tr>
+        <td>광고명</td>
+        <td>
+          이러쿵
+        </td>
+      </tr>
+      <tr>
+        <td>캠페인명</td>
+        <td>
+          이러쿵
+        </td>
+      </tr>
+      <tr>
+        <td>유입경로</td>
+        <td>
+          <a href="http://naver.com/blog/47801880044" target="_blank">
+            http://naver.com/blog/47801880044
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>처리상태</td>
+        <td>
+          보류
+        </td>
+      </tr>
+      <tr>
+        <td>처리사유</td>
+        <td>
+          부재
+        </td>
+      </tr>
+      <tr class="ip">
+        <td>아이피</td>
+        <td>
+          211.233.186.xxx
+          <span class="same-ip-exist">
+            (접수내역중 동일 IP가 존재합니다.)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>신청자명</td>
+        <td>
+          홍길x
+        </td>
+      </tr>
+      <tr>
+        <td>휴대폰</td>
+        <td>010-xxxx-5678</td>
+      </tr>
+      <tr>
+        <td>자녀나이</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>자녀키</td>
+        <td>180</td>
+      </tr>
+      <tr>
+        <td>자녀몸무게</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>문의사항</td>
+        <td>
+          문의사항 입니다.
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="modal modal-reason" id="modal-reason">
+  <div class="modal-content">
+    <p class="title defer">
+      보류사유
+    </p>
+    <p class="title deny">
+      거절사유
+    </p>
+    <textarea></textarea>
+    <button class="black-btn small-btn" onclick="hideModal()">확인</button>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>

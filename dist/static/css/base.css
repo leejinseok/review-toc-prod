@@ -1509,6 +1509,7 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
 
   .wrapper-sidemenu .sidemenu > ul > li .accordion {
     font-size: 14px;
+    font-weight: 200;
   }
 
   .wrapper-sidemenu .sidemenu > ul > li .accordion .wrapper-letter {

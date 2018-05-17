@@ -1,0 +1,377 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/cpa_detail.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix detail">
+  <div class="col-9 main">
+    <div class="wrapper-pic-and-info clearfix">
+      <div class="pic">
+        <img src="./static/images/cpa_detail/product.png">
+      </div>
+      <div class="info">
+        <div class="title-and-category">
+          <h2>아침 모닝죽세트</h2>
+          <span class="category">어린이/키성장</span>
+          <div class="icons clearfix">
+            <div class="icon">
+              <img src="./static/images/monitor.svg">
+            </div>
+            <div class="icon">
+              <img src="./static/images/smart_phone.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class="detail">
+          <ul class="clearfix">
+            <li class="subject">· 사이트URL</li>
+            <li class="content">
+              https://norebro.colabr.io/portfolio/horizontal
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 수수료 지급조건</li>
+            <li class="content">
+              DB 비유효 기준확인 > 승인지급
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 신청률 / 승인률 </li>
+            <li class="content">
+              4.98% / 85.12%
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 승인여부</li>
+            <li class="content">
+              승인 후 수수료 지급
+            </li>
+          </ul>
+        </div>
+
+        <div class="price clearfix">
+          <div class="col left">
+            <div class="inner">
+              <img src="./static/images/money.svg">
+              <div class="info">
+                <p class="title">수익금 금액정보</p>
+                <p class="price-and-plus-benefit">
+                  32,000 <span class="won">원</span>
+                </p>
+                <img src="./static/images/cpa_detail/vertical-dot.png" class="divider">
+              </div>
+            </div>
+          </div>
+          <div class="col right">
+            <div class="inner">
+              <span>
+                P
+              </span>
+              <p class="p-01">
+                추가지급
+              </p>
+              <p class="p-02">
+                +0원
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-campaign pc">
+      <ul class="row header clearfix">
+        <li>No.</li>
+        <li>광고명</li>
+        <li>캠페인명</li>
+        <li>홍보링크</li>
+        <li>메뉴</li>
+      </ul>
+      <% for (i = 0; i < 3; i++) { %>
+        <ul class="row clearfix">
+          <li><%= i + 1 %></li>
+          <li>아이커</li>
+          <li>아이커캠페인</li>
+          <li>
+            <a href="http://www.mbcplus.com/web/index.do#" target="_blank">
+              http://www.mbcplus.com/web/index.do#
+            </a>
+            <span>코드복사</span>
+          </li>
+          <li>
+            <img src="./static/images/delete.png" class="delete" alt="삭제" title="삭제">
+            <span>삭제</span>
+          </li>
+        </ul>
+      <% } %>
+      <form class="frm-submit-campaign">
+        <input type="text">
+        <button type="button">
+          캠페인생성
+        </button>
+      </form>
+    </div>
+
+    <div class="wrapper-campaign mobile">
+      <% for (i = 0; i < 3; i++) { %>
+        <ul class="row clearfix">
+          <li>
+            <%= i + 1 %>
+            아이커 (아이커캠페인)
+          </li>
+          <li>
+            <a href="http://www.mbcplus.com/web/index.do#" target="_blank">
+              http://www.mbcplus.com/web/index.do#
+            </a>
+            <span class="copy-code">복사</span>
+          </li>
+          <li>
+            <img src="./static/images/delete.png" class="delete" alt="삭제" title="삭제">
+            <span>삭제</span>
+          </li>
+        </ul>
+      <% } %>
+      <form class="frm-submit-campaign">
+        <input type="text">
+        <button type="button">
+          캠페인생성
+        </button>
+      </form>
+    </div>
+    
+    <div class="wrapper-detail-info with-tab">
+      <nav class="tab" id="tab-detail-info">
+        <ul class="clearfix">
+          <li class="active" data-to="tab-detail-info">상세정보</li>
+          <li><a href="#" data-to="tab-keyword">키워드</a></li>
+          <li><a href="#" data-to="tab-ad-banner">홍보배너</a></li>
+          <li><a href="#" data-to="tab-marketingSource">홍보자료</a></li>
+        </ul>
+      </nav>
+      <div class="body">
+        <h3>
+          법관은 헌법과 법률에 의하여 그 양심에 따라 독립하여 심판한다.
+        </h3>
+        <p>
+          국회는 의장 1인과 부의장 2인을 선출한다. <br>
+          법원은 최고법원인 대법원과 각급법원으로 조직된다.
+        </p>
+
+        <h3>
+          재판의 심리와 판결은 공개한다.
+        </h3>
+        <p>
+          다만, 심리는 국가의 안전보장 또는 안녕질서를 방해하거나 선량한 풍속을 해할 염려가 있을 때에는 <br>
+          법원의 결정으로 공개하지 아니할 수 있다.
+        </p>
+      </div>
+    </div>
+
+    <div class="wrapper-keyword with-tab">
+      <nav class="tab" id="tab-keyword">
+        <ul class="clearfix">
+          <li><a href="#" data-to="tab-detail-info">상세정보</a></li>
+          <li class="active" data-to="tab-keyword">키워드</li>
+          <li><a href="#" data-to="tab-ad-banner">홍보배너</a></li>
+          <li><a href="#" data-to="tab-marketingSource">홍보자료</a></li>
+        </ul>
+      </nav>
+      <div class="body">
+        <h3>※금지키워드</h3>
+
+        <div class="list">
+          <p>- 타사 제품명 키워드 사용 및 배포 금지 (ex .....등)</p>
+          <p>- 사기, 부작용 및 부정적인 키워드</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-ad-banner with-tab">
+      <nav class="tab" id="tab-ad-banner">
+        <ul class="clearfix">
+          <li><a href="#" data-to="tab-detail-info">상세정보</a></li>
+          <li><a href="#" data-to="tab-keyword">키워드</a></li>
+          <li class="active" data-to="tab-ad-banner">홍보배너</li>
+          <li><a href="#" data-to="tab-marketingSource">홍보자료</a></li>
+        </ul>
+      </nav>
+      <div class="body">
+          <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">캠페인명</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">캠페인1</li>
+              <li class="list-item">캠페인2</li>
+              <li class="list-item">캠페인2</li>
+            </ul>
+          </div>
+        </div>
+        <img src="./static/images/cpa_detail/bottom.png">
+
+        <ul class="copy-code clearfix">
+          <li>이미지 300 X 300</li>
+          <li>
+            <xmp>
+              <a href="http://www.voice2u.net/"><img src="img/introduce/ipad_iphone.png"></a>
+            </xmp>
+          </li>
+          <li>
+            <span>코드복사</span>
+          </li>
+        </ul>
+
+        <img src="./static/images/cpa_detail/bottom.png">
+        
+        <ul class="copy-code clearfix">
+          <li>이미지 300 X 300</li>
+          <li>
+            <xmp>
+              <a href="http://www.voice2u.net/"><img src="img/introduce/ipad_iphone.png"></a>
+            </xmp>
+          </li>
+          <li>
+            <span>코드복사</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper-marketingSource with-tab">
+      <nav class="tab" id="tab-marketingSource">
+        <ul class="clearfix">
+          <li><a href="#" data-to="tab-detail-info">상세정보</a></li>
+          <li><a href="#" data-to="tab-keyword">키워드</a></li>
+          <li><a href="#" data-to="tab-ad-banner">홍보배너</a></li>
+          <li class="active" data-to="tab-marketingSource">홍보자료</li>
+        </ul>
+      </nav>
+      <div class="body">
+        <ul class="row header clearfix">
+          <li>No.</li>
+          <li>제목</li>
+          <li>작성자</li>
+          <li>날짜</li>
+        </ul>
+        <ul class="row clearfix">
+          <li>1</li>
+          <li>아이커 제품 촬영사진</li>
+          <li>관리자</li>
+          <li>2018.03.26</li>
+        </ul>
+        <ul class="row clearfix">
+          <li>2</li>
+          <li>아이커 포스팅 참고자료</li>
+          <li>관리자</li>
+          <li>2018.03.26</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-3 sub">
+    <div class="inner cpa">
+      <div class="item">
+        <h2>연관 CPA</h2>
+        <div class="card">
+          <div class="wrapper-thumbnail">
+            <div class="wrapper-img" style="background:url('./static/images/main/8.png')">
+            </div>
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="category">
+              렌터/리스
+              <div class="icons">
+                <div class="icon">
+                  <img src="./static/images/monitor.svg">
+                </div>
+                <div class="icon">
+                  <img src="./static/images/smart_phone.svg">
+                </div>
+              </div>
+            </div>
+            <p class="title">De'Longhi ICONA VINTAGE</p>
+            <p class="detail">승인률 : 72.16% / 신청률 : 10%</p>
+            <p class="price">
+              승인시 : 30,000원
+              <span>+3,000원</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item ">
+          <div class="card">
+            <div class="wrapper-thumbnail">
+              <div class="wrapper-img" style="background:url('./static/images/main/8.png')">
+              </div>
+              <div class="label">
+                <p>추천</p>
+                <p>인기</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="category">
+                렌터/리스
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./static/images/monitor.svg">
+                  </div>
+                  <div class="icon">
+                    <img src="./static/images/smart_phone.svg">
+                  </div>
+                </div>
+              </div>
+              <p class="title">De'Longhi ICONA VINTAGE</p>
+              <p class="detail">승인률 : 72.16% / 신청률 : 10%</p>
+              <p class="price">
+                승인시 : 30,000원
+                <span>+3,000원</span>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="inner tester">
+      <div class="item">
+        <h2>체험단 <span>List</span></h2>
+        <div class="card">
+          <div class="wrapper-thumbnail">
+            <div class="wrapper-img" style="background:url('./static/images/cpa_detail/right2.png')">
+            </div>
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">옻칠 티스푼포크</p>
+            <p class="detail">
+              나뭇결이 돋보이는 스푼포크시리즈입니다
+              아담한 사이즈의 스푼, 포크로 구성되어...
+            </p>
+
+            <div class="dDay-and-recruitment">
+              <div class="dDay">
+                <span class="d">D</span> - &nbsp;<span class="day"> 7일 </span>
+              </div>
+              <div class="recruitment">
+                <span><span class="apply">61명 신청</span> / 10명 모집</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>

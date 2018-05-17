@@ -1,0 +1,181 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_cpa_point_minus_history_adv.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+<section class="container full-width clearfix mypage">
+<div class="cols">
+  <% include ./partials/mypage_adv/left_col.ejs %>
+  <div class="col-9 right-col">
+    <h2>포인트 차감내역</h2>
+    <div class="search">
+      <div class="options">
+        <div class="items">
+          <div class="selected">
+            <button type="button" class="selected-button">
+              <span class="value">전체</span>
+              <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+            </button>
+          </div>
+          <ul>
+            <li class="list-item">광고명</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="datepicker from">
+        <input type="text" id="datepicker-from">
+        <img src="./static/images/mypage/mypage_calendar.png">
+      </div>
+      <span class="wave">~</span>
+      <div class="datepicker to">
+        <input type="text" id="datepicker-to">
+        <img src="./static/images/mypage/mypage_calendar.png">
+      </div>
+      <button class="period cur-month"> 이번달 </button>
+      <button class="period prev-month"> 지난달 </button>
+      <button class="inquiry"> 조회 </button>
+
+
+      <div class="options list-per-page">
+        <div class="items">
+          <div class="selected">
+            <button type="button" class="selected-button">
+              <span class="value">50개씩</span>
+              <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+            </button>
+          </div>
+          <ul>
+            <li class="list-item">50개씩</li>
+            <li class="list-item">40개씩</li>
+            <li class="list-item">30개씩</li>
+            <li class="list-item">20개씩</li>
+            <li class="list-item">10개씩</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper-table">
+      <table class="table pc">
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>광고명</th>
+            <th>일자</th>
+            <th>DB단가</th>
+            <th>프로모션</th>
+            <th>승인</th>
+            <th>포인트차감</th>
+            <th>잔여포인트</th>
+            <th>상세보기</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (i = 0; i < 10; i++) { %>
+            <tr>
+              <td><%= i + 1 %></td>
+              <td>
+                네이버 블로그
+              </td>
+              <td>
+                2018.04.17
+              </td>
+              <td>
+                홍길동
+              </td>
+              <td>
+                3,000원
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                -33,000원
+              </td>
+              <td>
+                1,500,000원
+              </td>
+              <td>
+                <button class="show-detail">상세보기</button>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <table class="table mobile">
+        <thead>
+          <tr>
+            <th>
+              광고명/일자
+            </th>
+            <th>DB단가</th>
+            <th>프로모션</th>
+            <th>승인</th>
+            <th>
+              포인트차감 <br>
+              잔여포인트
+            </th>
+            <th>상세보기</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (i = 0; i < 10; i++) { %>
+            <tr>
+              <td>
+                네이버 블로그 <br>
+                04.17
+              </td>
+              <td>
+                홍길동
+              </td>
+              <td>
+                3,000원
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                -33,000원 <br>
+                1,500,000원
+              </td>
+              <td>
+                <button class="show-detail">보기</button>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    <div class="pagination">
+      <div class="col icon prev-last">
+        <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+      </div>
+      <div class="col icon prev">
+        <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
+      </div>
+      <div class="col active">
+        1
+      </div>
+      <div class="col">
+        2
+      </div>
+      <div class="col">
+        3
+      </div>
+      <div class="col">
+        4
+      </div>
+      <div class="col">
+        5
+      </div>
+      <div class="col icon next">
+        <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
+      </div>
+      <div class="col icon next-last">
+        <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<% include ./partials/footer.ejs %>

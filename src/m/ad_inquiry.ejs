@@ -1,0 +1,183 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/ad_inquiry.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<aside class="ad-inquiry-banner">
+  <div class="ad-inquiry-banner-title content-width center">
+    <h3>
+      <span>90%</span>의 만족, <span>100%</span>의 효율
+    </h3>
+    <h2>
+      리뷰톡
+    </h2>
+    <p>
+      여러분의 성공을 리뷰톡과 함께하세요.
+    </p>
+    <div class="sub-title-container">
+      <div class="line-div"></div>
+      <span class="sub-title">
+        No.1 종합제휴마케팅
+      </span>
+      <div class="line-div"></div>
+    </div>
+    <div class="btn-box">
+      <button type="button" name="button" onclick="showCouncilModal();">비용문의하기</button>
+      <button type="button" name="button">리뷰톡 문의하기</button>
+    </div>
+  </div>
+
+  <div class="bottom-white-box">
+    <h3>효율적인 광고비 절감을 동반한 최대의 매출 효과! 리뷰톡이 제안하겠습니다.</h3>
+  </div>
+
+  <nav class="right-nav">
+    <button type="button" name="button">Why<br>리뷰톡인가?</button>
+    <button type="button" name="button">광고<br>상품</button>
+    <button type="button" name="button" onclick="showCouncilModal();">상담<br>신청</button>
+    <button type="button" name="button">TOP</button>
+  </nav>
+</aside>
+
+<section class="why-reviewtoc">
+  <div class="why-reviewtoc-title content-width center">
+    <h3>
+      why<br>
+      <span>왜 리뷰톡일까요?</span>
+    </h3>
+  </div>
+
+  <nav class="why-reviewtoc-nav content-width center">
+    <div class="a-wrapper">
+      <a href="#" class="selected">다양한 채널</a>
+    </div>
+    <div class="a-wrapper-center">
+      <a href="#">지속적인 광고효과</a>
+    </div>
+    <div class="a-wrapper">
+      <a href="#">높은효율</a>
+    </div>
+  </nav>
+
+  <div class="why-reviewtoc-img content-width center">
+    <img src="/static/images/ad-inquiry/channel.png" class="active">
+    <img src="/static/images/ad-inquiry/ad-effect.svg">
+    <img src="/static/images/ad-inquiry/high-efficiency.svg">
+  </div>
+
+  <div class="why-reviewtoc-text">
+    <p class="active">
+      “특정 채널에 국한된 홍보가 아닌다양한 홍보 채널을 통해<br>
+      많은 사용자에게 광고를 노출합니다.”
+    </p>
+    <p> 
+      “남아있는 컨텐츠를 통해 지속적인 광고 효과와 자연 유입을  <br>
+      유도할 수 있어 지속적인 마케팅 효과를 볼 수 있습니다.”
+    </p>
+    <p>
+      “양질의 DB한에서만 광고주 승인을 통해 파트너 회원에게 포인트가 <br> 
+      지급되기 때문에 높은 고효율을 자랑하고 있습니다.
+    </p>
+  </div>
+</section>
+
+<section class="revietoc-ad">
+  <div class="revietoc-ad-title content-width center">
+    <h3>
+      Reviewtoc AD<br>
+      <span>리뷰톡 광고상품</span>
+    </h3>
+  </div>
+  <nav class="revietoc-ad-nav content-width center">
+    <button type="button" name="button" class="selected">CPA</button>
+    <button type="button" name="button">체험단</button>
+  </nav>
+  <div class="revietoc-ad-img content-width center">
+    <img src="/static/images/ad-inquiry/reviewtoc-ad-cpa.svg" class="active">
+    <img src="/static/images/ad-inquiry/ad-tester.svg">
+  </div>
+  <div class="revietoc-ad-text">
+    <div class="wrapper-text active">
+      <h3>
+        cpa란?
+      </h3>
+      <p class="pc-view">
+        잠재고객이 홍보링크를 타고 광고주 홈페이지에 들어와 상담 신청 및 회원가입 등의<br>
+        액션이 발생할 시 광고비가 지불되는 제휴마케팅 광고 입니다.
+      </p>
+      <p class="mobile-view">
+        잠재고객이 홍보링크를 타고 광고주 홈페이지에 들어와 상담 신청 및 회원가입 등의
+        액션이 발생할 시 광고비가 지불되는 제휴마케팅 광고 입니다.
+      </p>
+    </div>
+    <div class="wrapper-text">
+      <h3>
+        체험단이란?
+      </h3>
+      <p class="pc-view">
+        체험단을 통하여 제품 또는 서비스를 직접 체험하는 기회를 주고 후기를 작성함으로써 <br> 
+        구매 전의 고객에게 구매를 유도 하는 마케팅 광고 입니다.
+      </p>
+      <p class="mobile-view">
+        체험단을 통하여 제품 또는 서비스를 직접 체험하는 기회를 주고 후기를 작성함으로써
+        구매 전의 고객에게 구매를 유도 하는 마케팅 광고 입니다.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="modal modal-council" id="modal-council">
+  <div class="modal-content">
+    <form>
+      <div class="wrapper-buttons clearfix">
+        <div class="btn-container">
+          <button type="button" name="button" class="selected" data-type="partner" data-checked="true">
+            <span> <img src="/static/images/sign-up/cheked.png" alt=""> </span>CPA
+          </button>
+        </div>
+        <div class="btn-container">
+          <button type="button" name="button" class="signup-type" data-type="advertiser" data-checked="false">
+            <span> <img src="/static/images/sign-up/uncheked.png" alt=""> </span>체험단
+          </button>
+        </div>
+      </div>
+
+      <div class="wrapper-input">
+        <input type="text" placeholder="회사명">
+      </div>
+      <div class="wrapper-input">
+        <input type="text" placeholder="담당자명">
+      </div>
+      <div class="wrapper-input">
+        <input type="text" placeholder="직책">
+      </div>
+      <div class="wrapper-input">
+        <input type="tel" placeholder="연락처">
+      </div>
+      <div class="wrapper-input email">
+        <input type="email" placeholder="이메일">
+        <p>
+          * 문의답변이 이메일로 전송되오니 정확히 답변해주세요.
+        </p>
+      </div>
+      <div class="wrapper-input">
+        <textarea placeholder="문의 내용을 입력해주세요."></textarea>
+      </div>
+      <div class="wrapper-input private-policy">
+        <input type="checkbox">
+        <span>
+          개인정보보호정책에 동의합니다. 
+        </span>
+        <a href="javascript:showPrivatePolicy()">
+          [자세히보기]
+        </a>
+      </div>
+      <div class="wrapper-input">
+        <button class="submit">
+          문의하기
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
