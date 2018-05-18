@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  handleNavMenuActive(1);
+  handleNavMenuActive(2);
   handleBodyClick();
   handleScrollToEachTab();
   handleRelativeCpa();
