@@ -362,7 +362,6 @@ function handleAccordionLogined (accordionIndex, itemIndex) {
     var maxHeight = parseInt(panel.css('max-height'));
     var scollHeight = panel.prop('scrollHeight');
     accordionIndex = $(accordions).index(this);
-    alert('hi');
     if (maxHeight) {
       panel.css('max-height', 0);
       downArrow.attr('src', downArrowSrc.unselected);
