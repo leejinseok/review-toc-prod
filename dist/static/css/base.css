@@ -1539,6 +1539,7 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   .modal.modal-messages {
     z-index: 100;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   .modal.modal-messages .modal-content {
