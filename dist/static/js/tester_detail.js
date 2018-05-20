@@ -4,7 +4,30 @@ $(document).ready(function () {
   handleScrollToEachTab();
   handleRelativeCpa();
   handleRelativeTester();
+  handleDetailInfoTableShow();
 });
+
+/**
+ * 세부사항 테이블
+ */
+function handleDetailInfoTableShow () {
+  var button = $('section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button.detail');
+
+  button.click(function () {
+    var parents = $(this).parents();
+    var tr = $(parents[2]);
+    
+    
+    var wrapperDetailTable = tr.next();   
+    
+
+    if (wrapperDetailTable.hasClass('hide')) {
+      wrapperDetailTable.removeClass('hide');
+      return;
+    }
+    wrapperDetailTable.addClass('hide');
+  });
+}
 
 function handleRelativeTester () {
   var list = $('.sub .tester .card');

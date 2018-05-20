@@ -750,7 +750,49 @@ section.detail .main .body table tr td .thumbnail {
   background-color: #fff;
 }
 
+section.detail .main .body table .wrapper-detail-table {
 
+}
+
+section.detail .main .body table tr.wrapper-detail-table > td {
+  background-color: transparent;
+}
+
+section.detail .main .body table table.detail {
+  margin-top: 0;
+  width: calc(100% + 4px);
+  margin-left: -2px;
+  margin-top: -1px;
+}
+
+section.detail .main .body table table.detail tr td {
+  font-size: 12px;
+  vertical-align: middle;
+  height: auto;
+  padding: 10px;
+}
+
+section.detail .main .body table table.detail tr td:first-child {
+  width: 110px;
+  box-sizing: border-box;
+}
+
+section.detail .main .body table table.detail tr.tr-comment td {
+
+}
+
+section.detail .main .body table table.detail tr.tr-comment td:last-child p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+section.detail .main .body table table.detail tr.tr-comment td:last-child p:first-child span {
+  font-weight: 400;
+}
+
+section.detail .main .body table table.detail tr.tr-comment td:last-child p:last-child {
+  margin-top: 6px;
+}
 
 section.detail .main .wrapper-keyword {
   margin-top: 40px;
