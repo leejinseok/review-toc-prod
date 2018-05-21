@@ -1,0 +1,65 @@
+section.mypage .cols .right-col .search .options {
+  width: auto !important;
+}
+
+section.mypage .cols .right-col .search .options .items button {
+  padding-right: 30px;
+}
+
+.search .wrapper-search-input {
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  height: 34px;
+  position: relative;
+  margin-right: 10px;
+  width: 244px;
+}
+
+.search .wrapper-search-input .icon-search {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 11px;
+  top: 9px;
+}
+
+.search .wrapper-search-input .search-input {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.search .wrapper-search-input .search-input:focus {
+  outline: none;
+}
+
+section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit {
+  border: 1px solid #e0e0e0;
+  padding: 0 20px;
+  line-height: 63px;
+}
+
+section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .totalBenefit {
+  float: left;
+  width: calc(100% - 300px);
+  font-size: 12px;
+}
+
+section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons {
+  float: left;
+  width: 300px;
+  text-align: right;
+}
+
+section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons button {
+  width: auto;
+  padding: 4px 15px;
+  font-size: 10px;
+  height: auto;
+  display: inline-block;
+}

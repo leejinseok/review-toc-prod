@@ -1,0 +1,114 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_tester_manage_campaign.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>캠페인관리</h2>
+
+      <div class="dashboard clearfix">
+        <div class="col">
+          <p class="title">참여캠페인</p>
+          <span>
+            100<small>건</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">선정된 캠페인</p>
+          <span>
+            10<small>건</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">베스트 선정</p>
+          <span>
+            1<small>건</small>
+          </span>
+        </div>
+        <div class="col">
+          <p class="title">베스트 선정</p>
+          <span>
+            1<small>건</small>
+          </span>
+        </div>
+      </div>
+
+
+      <div class="search">
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">전체캠페인</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">신청캠페인</li>
+              <li class="list-item">선정된캠페인</li>
+              <li class="list-item">리뷰등록</li>
+              <li class="list-item">베스트 선정</li>
+              <li class="list-item">종료된 캠페인</li>
+            </ul>
+          </div>
+        </div>
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">블로그</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">블로그</li>
+              <li class="list-item">SNS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="options">
+          <div class="items">
+            <div class="selected">
+              <button type="button" class="selected-button">
+                <span class="value">카테고리</span>
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down">
+              </button>
+            </div>
+            <ul>
+              <li class="list-item">카테고리1</li>
+              <li class="list-item">카테고리2</li>
+              <li class="list-item">카테고리3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper-search-input">
+          <input type="text" class="search-input">
+        </div>
+        <button class="inquiry">검색</button>
+      </div>      
+
+      <div class="wrapper-buttons-and-totalBenefit clearfix">
+        <div class="totalBenefit">
+          아이디(닉네임) 회원님의 체험단 수익금은 30,000P 입니다.
+        </div>
+        <div class="buttons">
+          <button class="black-btn small-btn">
+            수익현황
+          </button>
+          <button class="black-btn small-btn">
+            출금신청
+          </button>
+          <button class="black-btn small-btn">
+            마이채널관리
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>
