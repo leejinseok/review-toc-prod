@@ -7,18 +7,20 @@
   <title>리뷰톡</title>
   <link rel="stylesheet" href="./static/css/base.css">
 
-  <link rel="stylesheet" href="./static/css/mypage_cpa_byCampaign.css">
+  <link rel="stylesheet" href="/static/css/mypage_common.css">
 
-  <link rel="stylesheet" href="./static/css/jquery-ui.css">
+  <link rel="stylesheet" href="/static/css/mypage_tester_manage_campaign.css">
+
+  <link rel="stylesheet" href="/static/css/jquery-ui.css">
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="./static/js/angular.min.js"></script>
   <script src="./static/js/prefixfree.min.js"></script>
   <script src="./static/js/common.js"></script>
 
-  <script src="./static/js/mypage_common.js"></script>
+  <script src="/static/js/mypage_common.js"></script>
 
-  <script src="./static/js/mypage_cpa_byCampaign.js"></script>
+  <script src="/static/js/mypage_tester_manage_campaign.js"></script>
 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -476,561 +478,68 @@
       </div>
 
       <div class="col-9 right-col">
-        <h2>캠페인별</h2>
+        <h2>마이채널관리</h2>
 
-        <div class="search">
-          <div class="datepicker from">
-            <input type="text" id="datepicker-from">
-            <img src="./static/images/mypage/mypage_calendar.png">
+        <div class="inner">
+          <div class="wrapper-input blog">
+            <table>
+              <tr>
+                <td>블로그 주소</td>
+                <td>
+                  <input type="text" placeholder="예) http://blog.naver.com/reviewtoc">
+                </td>
+                <td>
+                  <button>등록하기</button>
+                </td>
+              </tr>
+            </table>
           </div>
-          <span class="wave">~</span>
-          <div class="datepicker to">
-            <input type="text" id="datepicker-to">
-            <img src="./static/images/mypage/mypage_calendar.png">
+          <div class="caution">
+            <h3>
+
+              <img src="./static/images/exclamation-mark.png">
+
+              세금계산서 관련 주의 사항
+
+            </h3>
+            <p>
+              - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+            </p>
+            <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+            <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
           </div>
-          <button class="period today">오늘</button>
-          <button class="period cur-month">이번달</button>
-          <button class="period prev-month">저번달</button>
-          <button class="inquiry">조회</button>
-        </div>
-
-        <div class="wrapper-table">
-          <table class="table pc">
-            <thead>
+          <div class="wrapper-input fb">
+            <table>
               <tr>
-                <th>일자</th>
-                <th>캠페인명</th>
-                <th>DB단가</th>
-                <th>프로모션</th>
-                <th class="th-status">
-                  <span class="wait">대기/</span>
-                  <span class="defer">보류/</span>
-                  <span class="approve">승인/</span>
-                  <span class="deny">거절</span>
-                </th>
-                <th>수익금합계</th>
-              </tr>
-            </thead>
-            <tbody>
-
-              <tr>
+                <td>페이스북 주소</td>
                 <td>
-                  2018.01.01
+                  <input type="text" placeholder="예) facebook.com/reviewtoc">
                 </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
                 <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
+                  <button>등록하기</button>
                 </td>
               </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2018.01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                </td>
-                <td class="promotion">
-                  +1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-          <table class="table mobile">
-            <thead>
-              <tr>
-                <th>일자</th>
-                <th>캠페인명</th>
-                <th>
-                  DB단가/
-                  <br>프로모션
-                </th>
-                <th class="th-status">
-                  <span class="wait">대기/</span>
-                  <span class="defer">보류/</span>
-                  <span class="approve">승인/</span>
-                  <span class="deny">거절</span>
-                </th>
-                <th>수익금합계</th>
-              </tr>
-            </thead>
-            <tbody>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  01.01
-                </td>
-                <td class="campaign-name">
-                  네이버블로그
-                </td>
-                <td class="db-price">
-                  10,000원
-                  <br>+1,000
-                </td>
-                <td class="status">
-                  <span class="standby">0/</span>
-                  <span class="defer">1/</span>
-                  <span class="approve">0/</span>
-                  <span class="deny">2</span>
-                </td>
-                <td class="benefit-total">
-                  10,000원
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-
-        <div class="pagination">
-          <div class="col icon prev-last">
-            <img src="./static/images/mypage/my_page_numbering_left_end.png" alt="처음페이지">
+            </table>
           </div>
-          <div class="col icon prev">
-            <img src="./static/images/mypage/my_page_numbering_left.png" alt="이전페이지">
-          </div>
-          <div class="col active">
-            1
-          </div>
-          <div class="col">
-            2
-          </div>
-          <div class="col">
-            3
-          </div>
-          <div class="col">
-            4
-          </div>
-          <div class="col">
-            5
-          </div>
-          <div class="col icon next">
-            <img src="./static/images/mypage/my_page_numbering_right.png" alt="다음페이지">
-          </div>
-          <div class="col icon next-last">
-            <img src="./static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
+          <div class="wrapper-input instagram">
+            <table>
+              <tr>
+                <td>인스타그램 주소</td>
+                <td>
+                  <input type="text" placeholder="예) www.Instagram.com/reviewtoc">
+                </td>
+                <td>
+                  <button>등록하기</button>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
+
   <footer class="content-width">
     <div class="inner">
       <ul class="bottom-menu clearfix">
