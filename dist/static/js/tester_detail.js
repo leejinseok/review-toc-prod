@@ -5,7 +5,21 @@ $(document).ready(function () {
   handleRelativeCpa();
   handleRelativeTester();
   handleDetailInfoTableShow();
+  handleApplyFormShow();
 });
+
+function handleApplyFormShow () {
+  var button = $('section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons .apply');
+  var form = $('.wrapper-apply-form');
+  button.click(function () {
+    if (form.hasClass('active')) {
+      form.removeClass('active');
+      return;
+    }
+
+    form.addClass('active');
+  });
+}
 
 /**
  * 세부사항 테이블

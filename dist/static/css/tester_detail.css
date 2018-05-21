@@ -1218,6 +1218,211 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
   display: none;
 }
 
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.detail .main .wrapper-apply-form {
+  background: #fff;
+  padding: 30px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+  padding-bottom: 0;
+  display: none;
+}
+
+section.detail .main .wrapper-apply-form.active {
+  display: block;
+}
+
+section.detail .main .wrapper-apply-form > h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+section.detail .main .wrapper-apply-form form {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+section.detail .main .wrapper-apply-form form table {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table td {
+  vertical-align: middle;
+  height: 48px;
+  padding-bottom: 15px;
+}
+
+section.detail .main .wrapper-apply-form form table td input {
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+section.detail .main .wrapper-apply-form form table tr {
+}
+
+section.detail .main .wrapper-apply-form form table tr.name td input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth {
+
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth input {
+  width: 100px;
+}
+
+.wrapper-radios {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-radios label {
+  cursor: pointer;
+}
+
+.wrapper-radios input[type=radio] {
+  height: auto !important;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address input {
+  float: left;
+  width: calc(100% - 150px);
+  height: 48px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address input:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button {
+  float: left;
+  width: 150px;
+  height: 48px;
+  background: #333;
+  color: #fff;
+  border: 0;
+  display: block;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button:hover {
+  background-color: #444;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address-detail input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.tel .options {
+  height: 48px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.tel input {
+  width: 100px;
+  height: 48px;
+  background: #eeeeee;
+  color: #818181;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input {
+  width: calc(100% - 150px);
+  height: 48px;
+  float: left;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button {
+  width: 150px;
+  height: 48px;
+  background: #333;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button:hover {
+  background: #444;
+}
+
+section.detail .main .wrapper-apply-form form table tr.facebook input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.instagram input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.word input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.gift-option input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree p.title {
+  color: #fe1e53;
+  font-size: 14px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table {
+  margin-top: 15px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table tr td {
+  vertical-align: top;
+  padding: initial;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #555;
+  height: auto !important;
+  padding-bottom: 5px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table tr td input[type=checkbox] {
+  height: auto !important;
+}
+
+section.detail .main .wrapper-apply-form form button.apply-btn {
+  margin-top: 26px;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: #fe1e53;
+  color: #fff;
+  font-size: 20px;
+  padding: 22px;
+  border: 0;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper-campaign.pc {
     display: none;
