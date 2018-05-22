@@ -15,6 +15,7 @@ function handleAccordion (accordionIndex, itemIndex) {
     'unselected': './static/images/mypage/my_profile_down.png'
   };
 
+
   accordions.click(function () {
     var panel = $(this).next('.panel');
     var downArrow = $(this).find('img');
