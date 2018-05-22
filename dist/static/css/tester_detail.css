@@ -1283,6 +1283,25 @@ section.detail .main .wrapper-apply-form form table tr.birth input {
   width: 100px;
 }
 
+section.detail .main .wrapper-apply-form form table tr.birth .options {
+  width: auto;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options .items .selected button {
+  padding-right: 30px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options .items .selected button img {
+  width: 20px;
+  height: 20px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options.year ul,
+section.detail .main .wrapper-apply-form form table tr.birth .options.day ul  {
+  height: 300px;
+  overflow-y: scroll;
+}
+
 .wrapper-radios {
   display: flex;
   align-items: center;

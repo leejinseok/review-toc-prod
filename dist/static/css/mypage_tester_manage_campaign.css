@@ -63,3 +63,173 @@ section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons butto
   height: auto;
   display: inline-block;
 }
+
+section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons button:hover {
+  background: #444;
+}
+
+/* 아이템 */
+section.container .cols .ad-container {
+  margin-top: 20px;
+}
+
+section.container .cols .ad-container .ad-container-inner {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 310px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+section.container .cols .ad-container .ad-container-inner .wrapper-ad-img-box {
+  float: left;
+  width: 25%;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-img-box {
+  margin-top: 10px;
+  height: 199.5px;
+  background-image: url("http://localhost:8889/static/images/mypage/ad-manage-01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box {
+  float: left;
+  width: 75%;
+  height: 230px;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner {
+  width: 100%;
+  height: 100%;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top {
+  padding-top: 10px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.left {
+  float: left;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.left h4 {
+  font-size: 14px;
+  color: #555;
+  font-weight: 300;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.left h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right {
+  float: right;
+  display: table;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #e0e0e0;
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div.add {
+  background-color: #fe1e53;
+  border: 0;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div.pc {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 46px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div.pc img {
+  width: 28px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div.mobile {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 46px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right div.mobile img {
+  width: 28px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right .add {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;  
+  vertical-align: middle;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right .add:focus {
+  outline: none;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right .add img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right .status {
+  padding: 13px 0;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  vertical-align: middle;
+  width: 140px;
+  text-align: center;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-info {
+  border-top: 2px solid #333;
+  margin-top: 20px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-info table {
+  margin-top: 10px;
+  width: 100%;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-info table td {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-info table td:first-child {
+  width: 100px;
+}
+
+section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-info table td:last-child {
+  color: #818181;
+  font-weight: 300;
+}
+
+
