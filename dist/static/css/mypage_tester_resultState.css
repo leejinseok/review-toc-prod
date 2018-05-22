@@ -1,0 +1,64 @@
+section.mypage .cols .right-col .search .options .items button {
+  padding-right: 30px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  width: 50%;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.result {
+  text-align: left;
+  font-size: 12px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.result span {
+  color: #f39800;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.searchOption {
+  text-align: right;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.searchOption > span {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col.searchOption > span > span {
+  color: #f39800;
+}
+
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options {
+  width: 96px;
+  height: 26px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items .selected button {
+  padding-left: 10px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items .selected button img {
+  top: 12px;
+  right: 2px;
+}
+
+section.mypage .cols .right-col .wrapper-table .wrapper-result-and-searchOption .col .options .items ul li {
+  text-align: left;
+  height: 26px !important;
+  line-height: 26px;
+  padding: 3px 10px;
+}
+
+.wrapper-table table thead tr th {
+  width: auto !important;
+}
