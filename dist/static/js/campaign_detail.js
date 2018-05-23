@@ -116,6 +116,31 @@ function submitDeferReviewer () {
 x  
 }
 
+function submitChoiceBest () {
+  if (!confirm('베스트리뷰 및 우수리뷰를 선정 확인하셨습니까?\n승인하시면 2018-04-29 날짜가 지나면 자동으로 베스트발표 리스트가 출력됩니다.')) return;
+  $('.complete-choice-best').addClass('hide');
+  $('.defer-choice-best').removeClass('hide');
+}
+
+function submitDeferBest () {
+  if (!confirm('베스트리뷰 및 우수리뷰 선정을 취소 하시겠습니까?\n승인을 취소하시면 2018-04-29 날짜가 지나도 자동으로 베스트발표 리스트가 공개되지 않습니다.')) return;
+  $('.defer-choice-best').addClass('hide');
+  $('.complete-choice-best').removeClass('hide');
+}
+
+function choiceBest (btn) {
+  $(btn)
+    .html('베스트 선정취소')
+    .attr('onclick', 'deferBest(this)');
+}
+
+function deferBest (btn) {
+  
+  $(btn)
+    .html('베스트 선정하기')
+    .attr('onclick', 'choiceBest(this)');
+}
+
 function choiceReviewer (btn) {
   var thisBtn = $(btn);
   thisBtn.addClass('hide');

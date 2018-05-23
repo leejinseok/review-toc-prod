@@ -416,6 +416,12 @@
         </ul>
       </nav>
       <div class="body">
+        <div class="header clearfix">
+          <span>블로그체험단</span>
+          <span>
+            신청인원 <span>4명</span>
+          </span>
+        </div>
         <img src="/static/images/campaign-image.png" style="width: 100%;">
         <div class="item">
           <span>제공상품</span>
@@ -658,6 +664,7 @@
       </div>
     </div>
 
+    <!-- 선정된리뷰어 -->
     <div class="wrapper-ad-banner with-tab">
       <nav class="tab" id="tab-chosen-reviewer">
         <ul class="clearfix">
@@ -670,7 +677,7 @@
               22
             </span>
           </li>
-          <li  class="active">
+          <li class="active">
             <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
             <span class="number">
               22
@@ -692,6 +699,12 @@
       </nav>
 
       <div class="body">
+        <div class="header clearfix">
+          <span>블로그체험단</span>
+          <span>
+            선정된인원 <span>4명</span>
+          </span>
+        </div>
         <table>
           <tr>
             <td>
@@ -706,7 +719,6 @@
                 꼭 참여하고 싶어요~
               </p>
               <div class="wrapper-buttons">
-                <button class="detail">상세정보</button>
               </div>
             </td>
             <td>
@@ -780,6 +792,7 @@
       </div>
     </div>
 
+    <!-- 리뷰등록 -->
     <div class="wrapper-marketingSource with-tab">
       <nav class="tab" id="tab-reg-review">
         <ul class="clearfix">
@@ -813,6 +826,12 @@
         </ul>
       </nav>
       <div class="body">
+        <div class="header clearfix">
+          <span>블로그체험단</span>
+          <span>
+            등록리뷰 <span>4명</span>
+          </span>
+        </div>
         <table>
           <tr>
             <td>
@@ -826,6 +845,11 @@
               <p class="text">
                 꼭 참여하고 싶어요~
               </p>
+              <div class="wrapper-buttons">
+                <button onclick="choiceBest(this)">
+                  베스트 선정하기
+                </button>
+              </div>
             </td>
             <td>
               2018.04.31
@@ -844,6 +868,9 @@
                 꼭 참여하고 싶어요~
               </p>
               <div class="wrapper-buttons">
+                <button onclick="deferBest(this)">
+                  베스트 선정취소
+                </button>
               </div>
             </td>
             <td>
@@ -863,6 +890,9 @@
                 꼭 참여하고 싶어요~
               </p>
               <div class="wrapper-buttons">
+                <button onclick="choiceBest(this)">
+                  베스트 선정하기
+                </button>
               </div>
             </td>
             <td>
@@ -870,6 +900,12 @@
             </td>
           </tr>
         </table>
+        <button class="black-btn complete-choice-best center" onclick="submitChoiceBest()">
+          베스트 선정완료
+        </button>
+        <button class="black-btn defer-choice-best center hide" onclick="submitDeferBest()">
+          베스트 선정보류
+        </button>
       </div>
     </div>
 
@@ -906,6 +942,12 @@
         </ul>
       </nav>
       <div class="body">
+        <div class="header clearfix">
+          <span>블로그체험단</span>
+          <span>
+            베스트리뷰어 <span>4명</span>
+          </span>
+        </div>
         <table>
           <tr>
             <td>

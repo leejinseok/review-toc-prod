@@ -909,7 +909,6 @@ section.detail .main .wrapper-ad-banner .body {
   background: #fff;
   padding: 64px 27px;
   padding-bottom: 90px;
-  padding-top: 0;
   border: 1px solid #e6e6e6;
 }
 
@@ -1647,7 +1646,9 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
 }
 
 section.detail .main .complete-choice-reviewer,
-section.detail .main .defer-choice-reviewer {
+section.detail .main .defer-choice-reviewer,
+section.detail .main .complete-choice-best,
+section.detail .main .defer-choice-best {
   width: auto;
   display: block;
   margin-right: auto;
@@ -1657,12 +1658,16 @@ section.detail .main .defer-choice-reviewer {
 }
 
 section.detail .main .complete-choice-reviewer.hide,
-section.detail .main .defer-choice-reviewer.hide {
+section.detail .main .defer-choice-reviewer.hide,
+section.detail .main .complete-choice-best.hide,
+section.detail .main .defer-choice-best.hide {
   display: none;
 }
 
 section.detail .main .complete-choice-reviewer:hover,
-section.detail .main .defer-choice-reviewer:hover {
+section.detail .main .defer-choice-reviewer:hover,
+section.detail .main .complete-choice-best:hover,
+section.detail .main .defer-choice-best:hover {
   background: #444;
 }
 
