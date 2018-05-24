@@ -1,0 +1,79 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/campaign_report_blog.ejs %>
+<% include ./partials/header.ejs %>
+
+
+
+<h3>00캠페인보고서</h3>
+
+<div class="search">
+  <div class="datepicker from">
+    <input type="text" id="datepicker-from">
+    <img src="./static/images/mypage/mypage_calendar.png">
+  </div>
+  <span class="wave">~</span>
+  <div class="datepicker to">
+    <input type="text" id="datepicker-to">
+    <img src="./static/images/mypage/mypage_calendar.png">
+  </div>
+  <button class="period today">오늘</button>
+  <button class="period cur-month">이번달</button>
+  <button class="period prev-month">지난달</button>
+  <button class="inquiry">조회</button>
+</div>
+
+<div class="dashboard clearfix">
+  <div class="col">
+    <p class="title">총조회수</p>
+    <span>
+
+    250<small>건</small>
+
+  </span>
+  </div>
+  <div class="col">
+    <p class="title">PC</p>
+    <span>
+
+    500<small>건</small>
+
+  </span>
+  </div>
+  <div class="col">
+    <p class="title">Mobile</p>
+    <span>
+
+    1022<small>건</small>
+
+  </span>
+  </div>
+  <div class="col">
+    <p class="title">일일평균조회수</p>
+    <span>
+
+    163<small>회</small>
+
+  </span>
+  </div>
+</div>
+
+<div class="wrapper-chart chart-views-in-oneday">
+  <h3>
+    일별 콘텐츠 조회수
+  </h3>
+  <canvas id="canvas" width="400" height="200"></canvas>
+</div>
+
+<div class="wrapper-chart chart-inflow-keyword">
+  <h3>
+    PC 유입키워드 TOP 10
+  </h3>
+  <canvas id="canvasInflowKeywordsPc"></canvas>
+</div>
+
+<div class="wrapper-chart chart-inflow-keyword">
+  <h3>
+    Mobile 유입키워드 TOP 10
+  </h3>
+  <canvas id="canvasInflowKeywordsMobile"></canvas>
+</div>
