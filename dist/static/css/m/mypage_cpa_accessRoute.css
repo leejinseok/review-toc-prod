@@ -95,7 +95,7 @@ section.mypage .cols .left-col .wrapper-accordion {
   margin-top: 10px;
 }
 
-section.mypage .cols .left-col .wrapper-accordion button.accordion {
+section.mypage .cols .left-col .wrapper-accordion .accordion {
   width: 100%;
   height: 50px;
   display: flex;
@@ -111,18 +111,18 @@ section.mypage .cols .left-col .wrapper-accordion button.accordion {
   border-bottom: 1px solid #e9e9e9;
 }
 
-section.mypage .cols .left-col .wrapper-accordion button.accordion.no-menus:hover,
-section.mypage .cols .left-col .wrapper-accordion button.accordion.no-menus.active {
+section.mypage .cols .left-col .wrapper-accordion .accordion.no-menus:hover,
+section.mypage .cols .left-col .wrapper-accordion .accordion.no-menus.active {
   color: #fe1e53;
 }
 
-section.mypage .cols .left-col .wrapper-accordion button.accordion:last-child {}
+section.mypage .cols .left-col .wrapper-accordion .accordion:last-child {}
 
-section.mypage .cols .left-col .wrapper-accordion button.accordion.active {
+section.mypage .cols .left-col .wrapper-accordion .accordion.active {
   font-weight: 500;
 }
 
-section.mypage .cols .left-col .wrapper-accordion button.accordion:focus {
+section.mypage .cols .left-col .wrapper-accordion .accordion:focus {
   outline: none;
 }
 

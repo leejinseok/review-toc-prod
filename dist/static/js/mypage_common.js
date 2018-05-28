@@ -15,6 +15,7 @@ function handleAccordion (accordionIndex, itemIndex) {
     'unselected': './static/images/mypage/my_profile_down.png'
   };
 
+
   accordions.click(function () {
     var panel = $(this).next('.panel');
     var downArrow = $(this).find('img');
@@ -48,5 +49,6 @@ function handleAccordion (accordionIndex, itemIndex) {
   });
 
   items.eq(itemIndex).click();
-  parentParagraph.eq(itemIndex).addClass('active');
+  // parentParagraph.eq(itemIndex).addClass('active');
+  accordions.eq(accordionIndex).next().find('p').eq(itemIndex).addClass('active');
 }

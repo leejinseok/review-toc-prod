@@ -130,7 +130,9 @@ section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button:hov
   background: #444;
 }
 
-section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button:first-child {
+section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button.apply,
+section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button.reg-review {
+  display: none;
   margin-right: 10px;
 }
 
@@ -1216,6 +1218,363 @@ section.detail .sub .inner .item .card .content .dDay-and-recruitment .recruitme
 
 .wrapper-campaign.mobile {
   display: none;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.detail .main .wrapper-apply-form {
+  background: #fff;
+  padding: 30px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+  padding-bottom: 0;
+  display: none;
+}
+
+section.detail .main .wrapper-apply-form.active {
+  display: block;
+}
+
+section.detail .main .wrapper-apply-form > h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+section.detail .main .wrapper-apply-form form {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+section.detail .main .wrapper-apply-form form table {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table td {
+  vertical-align: middle;
+  height: 48px;
+  padding-bottom: 15px;
+}
+
+section.detail .main .wrapper-apply-form form table td input {
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+section.detail .main .wrapper-apply-form form table tr {
+}
+
+section.detail .main .wrapper-apply-form form table tr.name td input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth {
+
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth input {
+  width: 100px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options {
+  width: auto;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options .items .selected button {
+  padding-right: 30px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options .items .selected button img {
+  width: 20px;
+  height: 20px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.birth .options.year ul,
+section.detail .main .wrapper-apply-form form table tr.birth .options.day ul  {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.wrapper-radios {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-radios label {
+  cursor: pointer;
+}
+
+.wrapper-radios input[type=radio] {
+  height: auto !important;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address input {
+  float: left;
+  width: calc(100% - 150px);
+  height: 48px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address input:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button {
+  float: left;
+  width: 150px;
+  height: 48px;
+  background: #333;
+  color: #fff;
+  border: 0;
+  display: block;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button:hover {
+  background-color: #444;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.address-detail input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.tel .options {
+  height: 48px;
+}
+
+section.detail .main .wrapper-apply-form form table tr.tel input {
+  width: 100px;
+  height: 48px;
+  background: #eeeeee;
+  color: #818181;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input {
+  width: calc(100% - 150px);
+  height: 48px;
+  float: left;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button {
+  width: 150px;
+  height: 48px;
+  background: #333;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button:hover {
+  background: #444;
+}
+
+section.detail .main .wrapper-apply-form form table tr.facebook input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.instagram input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.word input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form form table tr.gift-option input {
+  width: 100%;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree p.title {
+  color: #fe1e53;
+  font-size: 14px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table {
+  margin-top: 15px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table tr td {
+  vertical-align: top;
+  padding: initial;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #555;
+  height: auto !important;
+  padding-bottom: 5px;
+}
+
+section.detail .main .wrapper-apply-form .wrapper-agree table tr td input[type=checkbox] {
+  height: auto !important;
+}
+
+section.detail .main .wrapper-apply-form form button.apply-btn {
+  margin-top: 26px;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: #fe1e53;
+  color: #fff;
+  font-size: 20px;
+  padding: 22px;
+  border: 0;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-reg-review-form {
+  display: none;
+  background: #fff;
+  padding: 30px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+  padding-bottom: 0;
+}
+
+section.detail .main .wrapper-reg-review-form.active {
+  display: block;
+}
+
+section.detail .main .wrapper-reg-review-form > h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+section.detail .main .wrapper-reg-review-form form {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+section.detail .main .wrapper-reg-review-form form table {
+  width: 100%;
+}
+
+section.detail .main .wrapper-reg-review-form form table td {
+  vertical-align: middle;
+  height: 48px;
+  padding-bottom: 15px;
+}
+
+section.detail .main .wrapper-reg-review-form form table td:first-child {
+  width: 126px;
+}
+
+section.detail .main .wrapper-reg-review-form form table td input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner {
+  border-top: 1px solid #e0e0e0;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner > p.title {
+  padding: 20px 0;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner > p.title span {
+  color: #fe1e53;
+  font-size: 12px;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #e0e0e0;
+  min-height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button p {
+  font-size: 13px;
+  float: left;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 96px;
+  font-size: 12px;
+  padding: 7px 0;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button button:hover {
+  background-color: #444;
+}
+
+section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button button:focus {
+  outline: none;
+}
+
+section.detail .main .wrapper-reg-review-form form .naver-editor-banner {
+  margin-top: 40px;
+}
+
+section.detail .main .wrapper-reg-review-form form .byreivew {
+  font-size: 10px;
+  border: 1px solid #e0e0e0;  
+  display: inline-block;
+  padding: 8px;
+  margin-top: 18px;
+}
+
+section.detail .main .wrapper-reg-review-form form .copy-guide {
+  color: #707070;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 7px;
+}
+
+section.detail .main .wrapper-reg-review-form form button.apply-btn {
+  margin-top: 26px;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: #fe1e53;
+  color: #fff;
+  font-size: 20px;
+  padding: 22px;
+  border: 0;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

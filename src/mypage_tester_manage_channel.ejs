@@ -1,0 +1,70 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/mypage_tester_manage_channel.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix mypage">
+  <h2 class="main-h">마이페이지</h2>
+  <div class="cols">
+    <% include ./partials/mypage_cpa_mycampaign/left_col.ejs %>
+    <div class="col-9 right-col">
+      <h2>마이채널관리</h2>
+
+      <div class="inner">
+        <div class="wrapper-input blog">
+          <table>
+            <tr>
+              <td>블로그 주소</td>
+              <td>
+                <input type="text" placeholder="예) http://blog.naver.com/reviewtoc">
+              </td>
+              <td>
+                <button>등록하기</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="caution">
+            <h3>
+              <img src="./static/images/exclamation-mark.png">
+              세금계산서 관련 주의 사항
+            </h3>
+            <p>
+              - 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.
+            </p>
+            <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+            <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
+          </div>
+          <div class="wrapper-input fb">
+            <table>
+              <tr>
+                <td>페이스북 주소</td>
+                <td>
+                  <input type="text" placeholder="예) facebook.com/reviewtoc">
+                </td>
+                <td>
+                  <button>등록하기</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="wrapper-input instagram">
+            <table>
+              <tr>
+                <td>인스타그램 주소</td>
+                <td>
+                  <input type="text" placeholder="예) www.Instagram.com/reviewtoc">
+                </td>
+                <td>
+                  <button>등록하기</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% include ./partials/footer.ejs %>

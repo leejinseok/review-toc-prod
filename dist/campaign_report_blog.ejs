@@ -1,0 +1,21 @@
+<% include ./variables/common.ejs %>
+  <% include ./variables/campaign_report_blog.ejs %>
+    <% include ./partials/header.ejs %>
+
+      <h3>00캠페인보고서</h3>
+
+      <div class="search">
+        <div class="datepicker from">
+          <input type="text" id="datepicker-from" class="hasDatepicker">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <span class="wave">~</span>
+        <div class="datepicker to">
+          <input type="text" id="datepicker-to" class="hasDatepicker">
+          <img src="./static/images/mypage/mypage_calendar.png">
+        </div>
+        <button class="period today">오늘</button>
+        <button class="period cur-month">이번달</button>
+        <button class="period prev-month">지난달</button>
+        <button class="inquiry">조회</button>
+      </div>

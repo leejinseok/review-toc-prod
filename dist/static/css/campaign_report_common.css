@@ -1,0 +1,149 @@
+body {
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  padding-top: 20px;
+}
+
+.search .options {
+  width: 106px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.search .options .items .selected button {
+  background: #fbfbfb;
+}
+
+.search .options .items ul {
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.search .datepicker {
+  height: 34px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.search .datepicker.from {
+  margin-right: 5px !important;
+}
+
+.search .datepicker img {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  width: 11px;
+}
+
+.search .datepicker input {
+  text-align: left;
+  padding-left: 7px !important;
+  border: 0;
+  padding: 0;
+  height: 100%;
+  width: 100px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  background: #fbfbfb;
+  color: #333333;
+}
+
+.search .wave {
+  margin-right: 5px;
+  color: #333;
+}
+
+.search .period,
+.search .inquiry {
+  width: 74px;
+  height: 34px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search .period:focus,
+.search .inquiry:focus {
+  outline: none;
+}
+
+.search .period:hover,
+.search .inquiry:hover {
+  background-color: #444;
+}
+
+.dashboard {
+  margin-top: 19px;
+  height: 90px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  background: #fff;
+  border-top: 2px solid #333;
+  border-left: 0;
+  border-right: 0;
+}
+
+.dashboard .col {
+  float: left;
+  height: 100%;
+  min-height: 20px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.dashboard .col:not(:last-child):after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 52px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.dashboard .col p.title {
+  font-size: 13px;
+  color: #818181;
+  font-weight: 400;
+}
+
+.dashboard .col span {
+  font-size: 25px;
+  color: #333333;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.dashboard .col span small {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+
+.wrapper-chart {
+  margin-top: 30px;
+}
+
+.wrapper-chart > h3 {
+  margin-bottom: 20px;
+}
