@@ -22,18 +22,19 @@ section.promotion .container {
   margin-right: auto;
 }
 
-section.promotion .container .col.menu {
+
+section.promotion .col.menu {
   width: 280px;
   float: left;
 }
 
-section.promotion .container .col.menu ul.main {
+section.promotion .col.menu ul.main {
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
 }
 
-section.promotion .container .col.menu ul.main li {
+section.promotion .col.menu ul.main li {
   width: 100%;
   height: 54px;
   padding-left: 20px;
@@ -45,20 +46,20 @@ section.promotion .container .col.menu ul.main li {
   border-bottom: 1px solid #e0e0e0;
 }
 
-section.promotion .container .col.menu ul.main li a {
+section.promotion .col.menu ul.main li a {
   font-size: 15px;
 }
 
-section.promotion .container .col.menu ul.main li a.active,
-section.promotion .container .col.menu ul.main li a:hover {
+section.promotion .col.menu ul.main li a.active,
+section.promotion .col.menu ul.main li a:hover {
   color: #fe1e53;
 }
 
-section.promotion .container .col.menu ul.extension {
+section.promotion .col.menu ul.extension {
   margin-top: 10px;
 }
 
-section.promotion .container .col.menu ul.extension .col {
+section.promotion .col.menu ul.extension .col {
   background: #fff;
   float: left;
   height: 120px;
@@ -74,53 +75,53 @@ section.promotion .container .col.menu ul.extension .col {
   overflow: hidden;
 }
 
-section.promotion .container .col.menu ul.extension .col .on {
+section.promotion .col.menu ul.extension .col .on {
   display: none;
 }
 
-section.promotion .container .col.menu ul.extension .col:hover .on {
+section.promotion .col.menu ul.extension .col:hover .on {
   display: block;
 }
 
-section.promotion .container .col.menu ul.extension .col:hover .off {
+section.promotion .col.menu ul.extension .col:hover .off {
   display: none;
 }
 
-section.promotion .container .col.menu ul.extension .col:hover span {
+section.promotion .col.menu ul.extension .col:hover span {
   color: #333;
 }
 
-section.promotion .container .col.menu ul.extension .col span {
+section.promotion .col.menu ul.extension .col span {
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 15px;
 }
 
-section.promotion .container .col.menu ul.extension .col:nth-child(1) {
+section.promotion .col.menu ul.extension .col:nth-child(1) {
   border-right: 0;
 }
 
-section.promotion .container .col.menu ul.extension .col:nth-child(1) img {
+section.promotion .col.menu ul.extension .col:nth-child(1) img {
   width: 28px;
   height: 36px;
 }
 
-section.promotion .container .col.menu ul.extension .col:nth-child(2) img {
+section.promotion .col.menu ul.extension .col:nth-child(2) img {
   width: 36px;
   height: 30px;
 }
 
-section.promotion .container .col.menu ul.extension .col:nth-child(3) {
+section.promotion .col.menu ul.extension .col:nth-child(3) {
   border-top: 0;
   width: calc(50% + 1px);
 }
 
-section.promotion .container .col.menu ul.extension .col:nth-child(3) img {
+section.promotion .col.menu ul.extension .col:nth-child(3) img {
   width: 30px;
   height: 35px;
 }
 
-section.promotion .container .col.menu ul.extension .col:last-child {
+section.promotion .col.menu ul.extension .col:last-child {
   width: calc(50% - 1px);
   border-top: 0;
   border-left: 0;
@@ -189,6 +190,10 @@ section.promotion .container .col.content .wrapper-table table tbody tr td.term 
 }
 
 @media only screen and (max-width: 768px) {
+  footer {
+    margin-top: 0;
+  }
+
   section.promotion .container {
     width: 100%;
     padding: 10px;
@@ -199,7 +204,7 @@ section.promotion .container .col.content .wrapper-table table tbody tr td.term 
     width: 100%;
   }
 
-  section.promotion .container .col.menu {
+  section.promotion .col.menu {
     width: 100%;
   }
 

@@ -405,4 +405,8 @@ section.customerCenter .container .pagination .col:hover {
   section.customerCenter .container .col.content .search .wrapper-search-input .icon-search {
     display: none;
   }
+
+  footer {
+    margin-top: 0;
+  }
 }
