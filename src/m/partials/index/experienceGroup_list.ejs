@@ -82,14 +82,14 @@
     <% for (i = 0; i < cardsExperienceGroup.length; i++) { %>
       <div class="col-3">
         <article>
-          <div class="header" style="background-image:url(<%= cardsExperienceGroup[i]['backgroundImg'] %>)">
+          <div class="header" style="background-image:url(<%= cardsExperienceGroup[i]['backgroundImg'] %>)" onclick="location.href='./tester_detail.html'">
             <img src="<%= cardsExperienceGroup[i]['backgroundImg'] %>">
             <div class="label">
               <p>추천</p>
               <p>인기</p>
             </div>
           </div>
-          <div class="content">
+          <div class="content" onclick="location.href='./tester_detail.html'">
             <p class="title"><%= cardsExperienceGroup[i]['title'] %></p>
             <p class="detail"><%= cardsExperienceGroup[i]['detail'] %></p>
             <div class="bottom">

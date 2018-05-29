@@ -1,0 +1,1013 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/tester_detail.ejs %>
+<% include ./partials/header.ejs %>
+<% include ./partials/nav.ejs %>
+
+<section class="container full-width clearfix detail">
+  <div class="col-9 main">
+    <div class="wrapper-pic-and-info clearfix">
+      <div class="pic">
+        <img src="/static/images/cpa_detail/product.png">
+      </div>
+      <div class="info">
+        <div class="title-and-category">
+          <h2>아침 모닝죽세트</h2>
+          <span class="category">어린이/키성장</span>
+        </div>
+
+        <div class="detail">
+          <ul class="clearfix">
+            <li class="subject">· 체험상품</li>
+            <li class="content">
+              아침 모닝죽세트
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 체험단 유형</li>
+            <li class="content">
+              블로그
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 신청/모집인원 </li>
+            <li class="content">
+              30/10명
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 추가수익금</li>
+            <li class="content">
+              11,200P
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="subject">· 캠페인기간</li>
+            <li class="content">
+              2018.04.01 ~ 2018.04.28
+            </li>
+          </ul>
+        </div>
+
+        <div class="wrapper-buttons clearfix">
+          <button class="apply">신청하기</button>
+          <button class="reg-review">리뷰등록</button>
+          <button>1:1문의</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-reg-review-form">
+      <h3>
+        리뷰 등록하기
+      </h3>
+
+      <form>
+        <table>
+          <tr>
+            <td>리뷰제목</td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>리뷰URL</td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+        </table>
+
+        <div class="wrapper-sponsor-banner">
+          <p class="title">
+            스폰서배너 <span>(※리뷰에는 반드시 필수 이미지태크(스폰서배너)가 포함되어 있어야 합니다.)</span>
+          </p>
+          <textarea id="copy">
+          </textarea>
+          <div class="wrapper-guide-and-button clearfix">
+            <p>
+              코드를 복사하셔서 html모드로 본문에 붙여 넣어주세요.
+            </p>            
+            <button>
+              복사하기
+            </button>
+          </div>
+
+          <p class="naver-editor-banner">
+            네이버 스마트에디터 3.0전용 스폰서배너
+          </p>
+
+          <p class="byreivew">
+            이 글은 바이리뷰를 통해 본 업체에서 이용권을 작성된 리뷰입니다.
+          </p>
+
+          <p class="copy-guide">
+            마우스로 이미지를 드래그 하신후 복사 Ctrl + C 하고 작성하신 본문에 붙여넣기 Ctrl + V 해주세요. 
+          </p>
+        </div>
+
+        <button class="apply-btn">
+          신청하기
+        </button>
+      </form>
+    </div>
+
+    <div class="wrapper-apply-form">
+      <h3>
+        리뷰어 신청하기
+      </h3>
+  
+      <form>
+        <table>
+          <tr class="name">
+            <td>이름</td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          <tr class="birth">
+            <td>생년월일</td>
+            <td>
+              <div class="options year">
+                <div class="items">
+                  <div class="selected">
+                    <button type="button" class="selected-button">
+                      <span class="value">1990</span>
+                      <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
+                  </div>
+                  <ul>
+                    <% for (i = 2018; i > 1930; i--) { %>
+                      <li class="list-item"><%= i %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </div> 
+              ~
+              <div class="options month">
+                <div class="items">
+                  <div class="selected">
+                    <button type="button" class="selected-button">
+                      <span class="value">1</span>
+                      <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
+                  </div>
+                  <ul>
+                    <% for (i = 1; i < 13; i++) { %>
+                      <li class="list-item"><%= i %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </div> 
+              ~
+              <div class="options day">
+                <div class="items">
+                  <div class="selected">
+                    <button type="button" class="selected-button">
+                      <span class="value">1</span>
+                      <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                    </button>
+                  </div>
+                  <ul>
+                    <% for (i = 1; i < 32; i++) { %>
+                      <li class="list-item"><%= i %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </div> 
+              <!-- <input type="number" maxlength="4"> 
+              &nbsp;&nbsp;-&nbsp; 
+              <input type="number" maxlength="2">
+              &nbsp;&nbsp;-&nbsp;
+              <input type="number" maxlength="2"> -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              성별
+            </td>
+            <td>
+              <div class="wrapper-radios">
+                <label for="male">남자</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">여자</label>
+                <input type="radio" name="gender" id="female">
+              </div>
+            </td>
+          </tr>
+          <tr class="address">
+            <td>
+              주소
+            </td>
+            <td>
+              <div class="wrapper-address clearfix">
+                <input type="text" placeholder="주소">
+                <button>
+                  회원주소 <br>
+                  가져오기
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="address-detail">
+            <td></td>
+            <td>
+              <input type="text" placeholder="나머지주소">
+            </td>
+          </tr>
+          <tr class="tel">
+            <td>
+              연락처
+            </td>
+            <td>
+              <div class="wrapper">
+                <!-- 
+                <div class="options">
+                  <div class="items">
+                    <div class="selected">
+                      <button type="button" class="selected-button">
+                        <span class="value">010</span>
+                        <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                      </button>
+                    </div>
+                    <ul>
+                      <li class="list-item">010</li>
+                      <li class="list-item">011</li>
+                    </ul>
+                  </div>
+                </div> 
+                -->
+                <input type="number" value="010" readonly>
+                &nbsp;&nbsp;-&nbsp; 
+                <input type="number" value="1234" readonly>
+                &nbsp;&nbsp;-&nbsp;
+                <input type="number" value="5678" readonly>
+              </div>
+            </td>
+          </tr>
+          <tr class="blog">
+            <td>
+              블로그
+            </td>
+            <td>
+              <div class="wrapepr-input-blog-address clearfix">
+                <input type="text" value="https://blog.naver.com/test123">
+                <button>
+                  수정
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="facebook">
+            <td>
+              페이스북
+            </td>
+            <td>
+              <input type="text" placeholder="페이스북 주소를 입력해주세요.">
+            </td>
+          </tr>
+          <tr class="instagram">
+            <td>
+              인스타그램
+            </td>
+            <td>
+              <input type="text" placeholder="인스타그램 주소를 입력해주세요.">
+            </td>
+          </tr>
+          <tr class="word">
+            <td>신청한마디</td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          <tr class="gift-option">
+            <td>선물옵션</td>
+            <td>
+              <input type="text" placeholder="- 타 체험단에서 넷기어 포스팅 참여이력이 있으시면 기재해주세요.(작성예시 : 포스팅 이력 있습니다.)">
+            </td>
+          </tr>
+        </table>
+
+        <div class="wrapper-agree">
+          <p class="title">
+            ※캠페인 참여 주의 사항을 확인 후 체크 바랍니다.
+          </p>
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                리뷰 등록기간, 체험일정에 관한 진행일정 이탈 시 주어지는 페널티에 동의 합니다. <br>
+                (패널티: 이후 진행되는 캠페인 선정에 제한을 받을 수 있습니다)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                체험 후 리뷰등록을 하지 않을 경우 제공상품 또는 서비스 금액을 100% 환급하는 데 동의합니다. <br>
+                (형법 제 347조에 따른 법적 처벌 대상이 될 수 있습니다.)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                캠페인 참여 후 작성된 리뷰의 유지기간은 최소 6개월입니다.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                작성해주신 리뷰(내용 및 이미지)는 바이리뷰와 광고주의 마케팅 자료에 활용될 수 있습니다. <br>
+                캠페인 선정 및 체험 진행(본인확인,물품배송 등)시 수집되는 개인정보 이용에 동의 합니다.
+                (이름,휴대전화번호,주소 등) 
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <button class="apply-btn">
+          신청하기
+        </button>
+      </form>
+    </div>
+
+    <div class="steps clearfix">
+      <div class="step arrow_box">
+        <div class="header">
+          <span class="no-and-title">01 리뷰어선정</span>
+          <span class="status">마감</span>
+        </div>
+        <div class="date">
+          2018-04-01 ~ 2018-04-31
+        </div>
+        <div class="point">
+          지급포인트 : 100P	
+        </div>
+      </div>
+      <div class="step active arrow_box">
+        <div class="header">
+          <span class="no-and-title">02 리뷰어발표</span>
+          <span class="status">마감</span>
+        </div>
+        <div class="date">
+          2018-04-01 ~ 2018-04-31
+        </div>
+        <div class="point">
+          지급포인트 : 100P	
+        </div>
+      </div>
+      <div class="step arrow_box">
+        <div class="header">
+          <span class="no-and-title">03 리뷰등록</span>
+          <span class="status">마감</span>
+        </div>
+        <div class="date">
+          2018-04-01 ~ 2018-04-31
+        </div>
+        <div class="point">
+          지급포인트 : 100P	
+        </div>
+      </div>
+      <div class="step">
+        <div class="header">
+          <span class="no-and-title">04 베스트발표</span>
+          <span class="status">마감</span>
+        </div>
+        <div class="date">
+          2018-04-01 ~ 2018-04-31
+        </div>
+        <div class="point">
+          지급포인트 : 100P	
+        </div>
+      </div>
+    </div>
+
+    <!-- 캠페인정보 -->
+    <div class="wrapper-detail-info with-tab">
+      <nav class="tab" id="tab-detail-info">
+        <ul class="clearfix">
+          <li class="active">
+            <a href="#" data-to="tab-detail-info">캠페인정보</a>
+          </li>
+          <li>
+            <a href="#" data-to="tab-applied-reviewer">신청한리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-reg-review">리뷰등록</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-best-reviewer">베스트리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="body">
+        <img src="/static/images/campaign-image.png" style="width: 100%;">
+        <div class="item">
+          <span>제공상품</span>
+          <p>
+            상품1 + 상품2 
+          </p>
+        </div>
+        <div class="item">
+          <span>베스트리뷰어</span>
+          <p>
+            선정시 1,000포인트 즉시 지급!
+          </p>
+        </div>
+        <div class="item">
+          <span>캠페인안내</span>
+          <p>
+            선정시 1,000포인트 즉시 지급!
+          </p>
+        </div>
+        <div class="item">
+          <span>리뷰미션</span>
+          <p>
+            포스팅에 “00”을 소개해주세요
+          </p>
+        </div>
+        <div class="item">
+          <span>키워드</span>
+          <p>
+            000/봄/힐링
+          </p>
+        </div>
+        <div class="item">
+          <span>추가안내사항</span>
+          <p>
+            방문일정은 취소 및 변경이 불가능하오니 방문가능한 날짜를 확인후 체크해주세요!
+          </p>
+        </div>
+        <button class="apply-btn">
+          신청하기
+        </button>
+      </div>
+    </div>
+
+    <!-- 신청한 리뷰어 -->
+    <div class="wrapper-applied-reviewer with-tab">
+      <nav class="tab" id="tab-applied-reviewer">
+        <ul class="clearfix">
+          <li>
+            <a href="#" data-to="tab-detail-info">캠페인정보</a>
+          </li>
+          <li class="active">
+            <a href="#" data-to="tab-applied-reviewer">신청한리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-reg-review">리뷰등록</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-best-reviewer">베스트리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="body">
+        <div class="header clearfix">
+          <span>블로그체험단</span>
+          <span>
+            신청인원 <span>4명</span>
+          </span>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+                <button class="update-reviewer-info">리뷰어정보수정</button>
+                <button class="detail">상세정보</button>
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr class="wrapper-detail-table hide">
+            <td colspan="3">
+              <table class="detail">
+                <tr>
+                  <td>
+                    블로그<br> 
+                    URL
+                  </td>
+                  <td>
+                    http://www.naver.com
+                  </td>
+                </tr>
+                <tr class="tr-comment">
+                  <td>신청 한마디</td>
+                  <td>
+                    <p>Dream1 <span>(또로롱)</span></p>
+                    <p>파워블로거 입니다. 열심히 리뷰 쓸게요.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>연락처</td>
+                  <td>
+                    010-1234-5678
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrapper-ad-banner with-tab">
+      <nav class="tab" id="tab-chosen-reviewer">
+        <ul class="clearfix">
+          <li>
+            <a href="#" data-to="tab-detail-info">캠페인정보</a>
+          </li>
+          <li>
+            <a href="#" data-to="tab-applied-reviewer">신청한리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li  class="active">
+            <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-reg-review">리뷰등록</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-best-reviewer">베스트리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="body">
+        <table>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+                <button class="detail">상세정보</button>
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr class="wrapper-detail-table hide">
+            <td colspan="3">
+              <table class="detail">
+                <tr>
+                  <td>
+                    블로그<br> 
+                    URL
+                  </td>
+                  <td>
+                    http://www.naver.com
+                  </td>
+                </tr>
+                <tr class="tr-comment">
+                  <td>신청 한마디</td>
+                  <td>
+                    <p>Dream1 <span>(또로롱)</span></p>
+                    <p>파워블로거 입니다. 열심히 리뷰 쓸게요.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>연락처</td>
+                  <td>
+                    010-1234-5678
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrapper-marketingSource with-tab">
+      <nav class="tab" id="tab-reg-review">
+        <ul class="clearfix">
+          <li>
+            <a href="#" data-to="tab-detail-info">캠페인정보</a>
+          </li>
+          <li>
+            <a href="#" data-to="tab-applied-reviewer">신청한리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li class="active">
+            <a href="#" data-to="tab-reg-review">리뷰등록</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-best-reviewer">베스트리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="body">
+        <table>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrapper-marketingSource with-tab">
+      <nav class="tab" id="tab-best-reviewer">
+        <ul class="clearfix">
+          <li>
+            <a href="#" data-to="tab-detail-info">캠페인정보</a>
+          </li>
+          <li>
+            <a href="#" data-to="tab-applied-reviewer">신청한리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-chosen-reviewer"> 선정된리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li>
+            <a href="#" data-to="tab-reg-review">리뷰등록</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+          <li class="active">
+            <a href="#" data-to="tab-best-reviewer">베스트리뷰어</a>
+            <span class="number">
+              22
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="body">
+        <table>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="thumbnail">
+              </div>
+            </td>
+            <td>
+              <div class="header">
+                  Dream1 <span>(또로롱)</span>
+              </div>
+              <p class="text">
+                꼭 참여하고 싶어요~
+              </p>
+              <div class="wrapper-buttons">
+              </div>
+            </td>
+            <td>
+              2018.04.31
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-3 sub">
+    <div class="inner cpa">
+      <div class="item">
+        <h2>연관 CPA</h2>
+        <div class="card">
+          <div class="wrapper-thumbnail">
+            <div class="wrapper-img" style="background:url('/static/images/main/8.png')">
+            </div>
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="category">
+              렌터/리스
+              <div class="icons">
+                <div class="icon">
+                  <img src="/static/images/monitor.svg">
+                </div>
+                <div class="icon">
+                  <img src="/static/images/smart_phone.svg">
+                </div>
+              </div>
+            </div>
+            <p class="title">De'Longhi ICONA VINTAGE</p>
+            <p class="detail">승인률 : 72.16% / 신청률 : 10%</p>
+            <p class="price">
+              승인시 : 30,000원
+              <span>+3,000원</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item ">
+          <div class="card">
+            <div class="wrapper-thumbnail">
+              <div class="wrapper-img" style="background:url('/static/images/main/8.png')">
+              </div>
+              <div class="label">
+                <p>추천</p>
+                <p>인기</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="category">
+                렌터/리스
+                <div class="icons">
+                  <div class="icon">
+                    <img src="/static/images/monitor.svg">
+                  </div>
+                  <div class="icon">
+                    <img src="/static/images/smart_phone.svg">
+                  </div>
+                </div>
+              </div>
+              <p class="title">De'Longhi ICONA VINTAGE</p>
+              <p class="detail">승인률 : 72.16% / 신청률 : 10%</p>
+              <p class="price">
+                승인시 : 30,000원
+                <span>+3,000원</span>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="inner tester">
+      <div class="item">
+        <h2>체험단 <span>List</span></h2>
+        <div class="card">
+          <div class="wrapper-thumbnail">
+            <div class="wrapper-img" style="background:url('/static/images/cpa_detail/right2.png')">
+            </div>
+            <div class="label">
+              <p>추천</p>
+              <p>인기</p>
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">옻칠 티스푼포크</p>
+            <p class="detail">
+              나뭇결이 돋보이는 스푼포크시리즈입니다
+              아담한 사이즈의 스푼, 포크로 구성되어...
+            </p>
+
+            <div class="dDay-and-recruitment">
+              <div class="dDay">
+                <span class="d">D</span> - &nbsp;<span class="day"> 7일 </span>
+              </div>
+              <div class="recruitment">
+                <span><span class="apply">61명 신청</span> / 10명 모집</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ./partials/footer.ejs %>
