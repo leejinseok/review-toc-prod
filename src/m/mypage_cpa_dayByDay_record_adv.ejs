@@ -64,46 +64,6 @@
       </div>
 
       <div class="wrapper-table">
-        <table class="table pc" border="1">
-          <thead>
-            <tr>
-              <th>일자</th>
-              <th>광고명</th>
-              <th width="90">대기</th>
-              <th width="90">보류</th>
-              <th width="90">거절</th>
-              <th width="90">승인</th>
-              <th width="95">실적확인</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% for (i = 0; i < 10; i++) { %>
-              <tr>
-                <td>2018.01.01</td>
-                <td>
-                  네이버블로그
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td class="btn">
-                  <button type="button">
-                    확인
-                  </button>
-                </td>
-              </tr>
-            <% } %>
-          </tbody>
-        </table>
         <table class="table mobile" border="1">
           <thead>
             <tr>
@@ -163,6 +123,7 @@
           <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
         </div>
       </div>
+      <% include ./partials/mypage_adv/submenu.ejs %>
     </div>
   </div>
 </section>
