@@ -999,3 +999,47 @@ section.container .cols .point-charge .pay-price ul.select-price-wrapper li.sele
   color: #fe1e53;
   font-size: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+  .caution {
+    padding: 20px;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper li.select-price-list {
+    width: 50%;
+  }
+
+  section.container .cols .point-charge .pay-price {
+    padding: 20px;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper li.select-price-list.direct-input {
+    width: 100%;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper li.select-price-list span {
+    font-size: 14px;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper li.select-price-list .wrapper .wrapper-input {
+    font-size: 14px;
+  }
+
+  section.container .cols .point-charge .pay-price ul.select-price-wrapper li.select-price-list .wrapper .wrapper-input input {
+    width: 50%;
+  }
+
+  .payment {
+    margin-top: 0;
+  }
+
+  .modal.modal-charge-point-successfully .modal-content {
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
+}
