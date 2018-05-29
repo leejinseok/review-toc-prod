@@ -1628,8 +1628,8 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   section.detail .main .wrapper-detail-info .body .apply-btn {
     width: 100%;
     margin-left: auto;
-    font-size: 16px;
-    padding: 16px 0;
+    font-size: 12px;
+    padding: 12px 0;
   }
 
   section.detail .main .wrapper-apply-form {
@@ -1820,6 +1820,8 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   section.detail .main .wrapper-reg-review-form form button.apply-btn {
     width: 100%;
     margin-left: auto;
+    padding: 12px;
+    font-size: 12px;
   }
 
   section.detail .main .wrapper-reg-review-form > h3 {
