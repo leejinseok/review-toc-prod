@@ -26,30 +26,6 @@
       </div>
 
       <div class="wrapper-table">
-        <table class="table pc">
-          <thead>
-            <tr>
-              <th>일자</th>
-              <th>노출</th>
-              <th>신청</th>
-              <th>승인</th>
-              <th>거절</th>
-              <th>수수료</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% for (i = 0; i < 10; i++) { %>
-              <tr>
-                <td>2018.01.01</td>
-                <td class="exposure">0</td>
-                <td class="apply">0</td>
-                <td class="defer">0</td>
-                <td class="deny">0</td>
-                <td class="deny">0</td>
-              </tr>
-            <% } %>
-          </tbody>
-        </table>
         <table class="table mobile">
           <thead>
             <tr>
@@ -102,6 +78,8 @@
             <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
           </div>
         </div>
+        
+        <% include ./partials/mypage_cpa_mycampaign/submenu.ejs %>
       </div>
     </div>
   </section>

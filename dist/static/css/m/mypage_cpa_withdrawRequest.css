@@ -159,11 +159,11 @@ section.mypage .cols .left-col .wrapper-accordion .panel p a {
   font-size: 13px;
 }
 
-section.mypage .cols .left-col .extension {
+section.mypage .cols .extension {
   margin-top: 10px;
 }
 
-section.mypage .cols .left-col .extension .col {
+section.mypage .cols .extension .col {
   overflow: hidden;
   float: left;
   height: 120px;
@@ -178,62 +178,62 @@ section.mypage .cols .left-col .extension .col {
   background-color: #fff;
 }
 
-section.mypage .cols .left-col .extension .col:hover span {
+section.mypage .cols .extension .col:hover span {
   color: #333;
 }
 
-section.mypage .cols .left-col .extension .col:hover .on {
+section.mypage .cols .extension .col:hover .on {
   display: block;
 }
 
-section.mypage .cols .left-col .extension .col:hover .off {
+section.mypage .cols .extension .col:hover .off {
   display: none;
 }
 
-section.mypage .cols .left-col .extension .col .off {
+section.mypage .cols .extension .col .off {
   display: block;
 }
 
-section.mypage .cols .left-col .extension .col .on {
+section.mypage .cols .extension .col .on {
   display: none;
 }
 
-section.mypage .cols .left-col .extension .col span {
+section.mypage .cols .extension .col span {
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 15px;
 }
 
-section.mypage .cols .left-col .extension .col:nth-child(1) img {
+section.mypage .cols .extension .col:nth-child(1) img {
   width: 28px;
   height: 36px;
 }
 
-section.mypage .cols .left-col .extension .col:nth-child(2) {
+section.mypage .cols .extension .col:nth-child(2) {
   border-left: 0;
 }
 
-section.mypage .cols .left-col .extension .col:nth-child(2) img {
+section.mypage .cols .extension .col:nth-child(2) img {
   width: 36px;
   height: 30px;
 }
 
-section.mypage .cols .left-col .extension .col:nth-child(3) {
+section.mypage .cols .extension .col:nth-child(3) {
   border-top: 0;
 }
 
-section.mypage .cols .left-col .extension .col:nth-child(3) img {
+section.mypage .cols .extension .col:nth-child(3) img {
   width: 30px;
   height: 35px;
 }
 
-section.mypage .cols .left-col .extension .col:last-child {
+section.mypage .cols .extension .col:last-child {
   border-top: 0;
   border-left: 0;
   cursor: default;
 }
 
-section.mypage .cols .left-col .extension .col:last-child img {
+section.mypage .cols .extension .col:last-child img {
   margin-right: 5px;
 }
 

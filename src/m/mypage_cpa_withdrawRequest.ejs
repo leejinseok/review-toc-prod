@@ -120,90 +120,7 @@
             </div>
           </div>
         </div>
-        <table class="table pc">
-          <thead>
-            <tr>
-              <th>NO</th>
-              <th>신청일자</th>
-              <th>신청금액</th>
-              <th>입금정보</th>
-              <th>지급일</th>
-              <th>처리상태</th>
-              <th>처리사유</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% for (i = 0; i < 10; i++) { %>
-              <tr class="<% if (i % 4 === 2) { %> tr-deny <% } %>">
-                <td>
-                  <%= i + 1 %>
-                </td>
-                <td>
-                  2018.01.01 <br>
-                  21:50:51
-                </td>
-                <td class="request-amount">
-                  80,000원
-                </td>
-                <td class="receipt-info">
-                  장길산(우리은행 111-222-333-44)
-                </td>
-                <td class="payday">
-                  <% if (i % 4 === 3) { %>
-                    2018.3.10
-                  <% } else { %>
-                    -
-                  <% }%>
-                </td>
-                <td class="status">
-                  <div class="inner-col">
-                    <% if (i % 4 === 3) { %>
-                      <span class="approve">완료</span>
-                    <% } %>
-                    <% if (i % 4 === 2) { %>
-                      <span class="deny">거절</span>
-                    <% } %>
-                    <% if (i % 4 === 1) { %>
-                      <span class="standby">대기</span>
-                    <% } %>
-                    <% if (i % 4 === 0) { %>
-                      <span class="defer">보류</span>
-                    <% } %>
-                  </div>
-                </td>
-                <td class="reason">
-                  <% if (i % 4 === 2) { %>
-                    <div class="wrapper-reason">
-                      <span>사유</span>
-                      <div class="pop-reason">
-                        <div class="header">
-                          거절사유
-                        </div>
-                        <div class="body">
-                          광고주가 입력한 취소 or 보류사유
-                        </div>
-                      </div>
-                    </div>
-                  <% } %>
         
-                  <% if (i % 4 === 0) { %>
-                    <div class="wrapper-reason">
-                      <span>사유</span>
-                      <div class="pop-reason">
-                        <div class="header">
-                          거절사유
-                        </div>
-                        <div class="body">
-                          광고주가 입력한 취소 or 보류사유
-                        </div>
-                      </div>
-                    </div>
-                  <% } %>
-                </td>
-              </tr>
-            <% } %>
-          </tbody>
-        </table>
         <table class="table mobile">
           <thead>
             <tr>
@@ -319,6 +236,9 @@
           <img src="/static/images/mypage/my_page_numbering_right_end.png" alt="끝페이지">
         </div>
       </div>
+
+      <% include ./partials/mypage_cpa_mycampaign/submenu.ejs %>
+      
     </div>
   </div>
 </section>

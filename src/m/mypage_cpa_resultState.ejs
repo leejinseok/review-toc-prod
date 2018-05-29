@@ -134,99 +134,7 @@
             </div>
           </div>
         </div>
-
-        <table class="table pc">
-          <thead>
-            <tr>
-              <th>NO</th>
-              <th>광고명</th>
-              <th>캠페인명</th>
-              <th>신청일자</th>
-              <th>수익금</th>
-              <th>프로모션</th>
-              <th>처리상태</th>
-              <th>상세보기</th>
-              <th width="80">처리사유</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% for (i = 0; i < 20; i++) { %>
-              <tr class="<% if (i % 4 === 2) { %> deny <% } %>">
-                <td><%= i + 1 %></td>
-                <td class="advertising-name">
-                  <span>
-                    네이버블로그
-                  </span>
-                </td>
-                <td class="campaign-name">
-                  <span>
-                    슬피우는 두견새야
-                  </span>
-                </td>
-                <td class="apply-date">
-                  2017.03.28
-                  21:50:51
-                </td>
-                <td class="benefit">
-                  30,000원
-                </td>
-                <td class="promotion">
-                  2,000
-                </td>
-                <td class="status">
-                  <div class="inner-col">
-                    <% if (i % 4 === 3) { %>
-                      <span class="approve">승인</span>
-                    <% } %>
-                    <% if (i % 4 === 2) { %>
-                      <span class="deny">거절</span>
-                    <% } %>
-                    <% if (i % 4 === 1) { %>
-                      <span class="standby">대기</span>
-                    <% } %>
-                    <% if (i % 4 === 0) { %>
-                      <span class="defer">보류</span>
-                    <% } %>
-                  </div>
-                </td>
-                <td class="detail">
-                  <div class="inner-col">
-                    <span onclick="showDetail();">상세보기</span>
-                  </div>
-                </td>
-                <td class="reason">
-                  <div class="inner-col">
-        
-                      <% if (i % 4 === 2) { %>
-                        <span>사유</span>
-                        <div class="pop-reason">
-                          <div class="header">
-                            거절사유
-                          </div>
-                          <div class="body">
-                            광고주가 입력한 취소 or 보류사유
-                          </div>
-                        </div>
-                      <% } %>
-           
-                      <% if (i % 4 === 0) { %>
-                        <span>사유</span>
-                        <div class="pop-reason">
-                          <div class="header">
-                            거절사유
-                          </div>
-                          <div class="body">
-                            광고주가 입력한 취소 or 보류사유
-                          </div>
-                        </div>
-                      <% } %>
-                    
-                  </div>
-                </td>
-              </tr>
-            <% } %>
-          </tbody>
-        </table>
+       
         <table class="table mobile">
           <thead>
             <tr>
@@ -366,6 +274,9 @@
         <p>- 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
         <p>- 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.</p>
       </div>
+
+      <% include ./partials/mypage_cpa_mycampaign/submenu.ejs %>
+      
     </div>
   </div>
 </section>
