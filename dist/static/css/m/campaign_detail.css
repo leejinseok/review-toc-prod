@@ -2,6 +2,75 @@ body {
   background: #f9f8fa;
 }
 
+.modal {
+  z-index: 10;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .modal-content table {
+  min-width: 300px;
+}
+
+.modal .modal-content table tr td {
+  border-top: 1px solid #e0e0e0;
+  border-collapse: collapse;
+  font-size: 12px;
+  padding: 12px 0;
+  vertical-align: middle;
+}
+
+.modal .modal-content table input,  
+.modal .modal-content table textarea{
+  border: 1px solid #e0e0e0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.modal .modal-content table textarea {
+  width: 100%;
+  font-size: 11px;
+  min-height: 100px;
+  resize: none;
+  resize: vertical;
+}
+
+.modal .modal-content table tr:first-child td {
+  border-top: 1px solid #333;
+}
+
+.modal .modal-content table tr td:first-child {
+  padding-right: 10px;
+}
+
+.modal .modal-content table tr.url input {
+  width: 100%;
+}
+
+.modal .modal-content table tr td p {
+  line-height: 1.5;
+}
+
+.modal .modal-content table tr.url td p,
+.modal .modal-content table tr.comment td p,
+.modal .modal-content table tr.tel td p {
+  font-size: 11px;
+  color: #a0a0a0;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.modal .modal-content .submit {
+  display: block;
+  margin-right: auto;
+}
+
+
 section.detail {
   margin: 0 auto;
   padding-top: 78px;
@@ -276,7 +345,6 @@ section.detail .main .wrapper-pic-and-info>div.info .price ul li.content .price-
 }
 
 section.detail .main .steps {
-  height: 100px;
   margin-top: 16px;
 }
 
@@ -296,6 +364,7 @@ section.detail .main .steps .step {
 section.detail .main .steps .step:first-child {
   border-top: 1px solid #e6e6e6;
 }
+
 
 section.detail .main .steps .step .header {
   color: #818181;
@@ -337,6 +406,7 @@ section.detail .main .steps .step:last-child {
 
 .arrow_box {
 	position: relative;
+
 }
 
 .arrow_box:after, .arrow_box:before {
@@ -639,14 +709,13 @@ section.detail .main .wrapper-detail-info .body .item > p {
 
 section.detail .main .wrapper-detail-info .body .apply-btn {
   margin-top: 38px;
-  width: calc(100% + 54px);
+  width: 100%;
   background-color: #333;
   color: #fff;
   border: 0;
-  margin-left: -27px;
-  padding: 22px 0;
-  font-size: 20px;
   cursor: pointer;
+  font-size: 12px;
+  padding: 12px 0;
 }
 
 section.detail .main .wrapper-detail-info .body .apply-btn:hover {
@@ -842,7 +911,6 @@ section.detail .main .wrapper-ad-banner .body {
   background: #fff;
   padding: 64px 27px;
   padding-bottom: 90px;
-  padding-top: 0;
   border: 1px solid #e6e6e6;
 }
 
@@ -1579,259 +1647,33 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   cursor: pointer;
 }
 
+section.detail .main .complete-choice-reviewer,
+section.detail .main .defer-choice-reviewer,
+section.detail .main .complete-choice-best,
+section.detail .main .defer-choice-best {
+  width: auto;
+  display: block;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section.detail .main .complete-choice-reviewer.hide,
+section.detail .main .defer-choice-reviewer.hide,
+section.detail .main .complete-choice-best.hide,
+section.detail .main .defer-choice-best.hide {
+  display: none;
+}
+
+section.detail .main .complete-choice-reviewer:hover,
+section.detail .main .defer-choice-reviewer:hover,
+section.detail .main .complete-choice-best:hover,
+section.detail .main .defer-choice-best:hover {
+  background: #444;
+}
+
 @media only screen and (max-width: 768px) {
-  /* 모바일페이지 */
-  section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons {
-    padding-bottom: 20px;
-  }
-
-  section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button {
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  section.detail .main .steps .step {
-    width: 100%;
-  }
-
-  .arrow_box:after, .arrow_box:before {
-    top: calc(100% + 10px);
-    left: 50%;
-  }
-
-  .arrow_box:after {
-    border-color: rgba(136, 183, 213, 0);
-    border-top-color: #e6e6e6;
-    border-width: 3px;
-    margin-left: -3px;
-  }
-  
-  .arrow_box:before {
-    border-color: rgba(194, 225, 245, 0);
-    border-top-color: #e6e6e6;
-    border-width: 9px;
-    margin-left: -9px;
-  }
-
-  section.detail .main .steps {
-    height: auto;
-  }
-
-  section.detail .main .with-tab nav.tab ul li {
-    width: 100% !important;
-  }
-
-  section.detail .main .with-tab nav.tab ul li span.number {
-    right: 10px;
-    top: 12px;
-    left: initial;
-  }
-
-  section.detail .main .wrapper-detail-info .body .apply-btn {
-    width: 100%;
-    margin-left: auto;
-    font-size: 12px;
-    padding: 12px 0;
-  }
-
-  section.detail .main .wrapper-apply-form {
-    padding: 10px;
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.tel input {
-    width: 28.9%;
-    height: auto;
-  }
-
-  section.detail .main .wrapper-apply-form form table td input {
-    height: auto;
-  }
-
-  section.detail .main .wrapper-apply-form form button.apply-btn {
-    width: 100%;
-    margin-left: auto;
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input {
-    width: calc(100% - 50px);
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address button {
-    width: 50px;
-    height: 34px;
-  }
-
-  section.detail .main .wrapper-apply-form form table td:first-child {
-    white-space: nowrap;
-  }
-
-  section.detail .main .wrapper-apply-form form table td {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-apply-form form table td input {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.blog .wrapepr-input-blog-address input {
-    height: auto;
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.address .wrapper-address input {
-    height: auto;
-    width: calc(100% - 60px);
-  }
-
-  section.detail .main .wrapper-apply-form form table tr.address .wrapper-address button {
-    height: 34px;
-    font-size: 11px;
-    width: 60px;
-  }
-
-  section.detail .main .wrapper-apply-form .wrapper-agree table tr td {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-apply-form .wrapper-agree p.title {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-apply-form > h3 {
-    font-size: 16px;
-  }
-
-  section.detail .main .body table tr td {
-    font-size: 11px !important;
-  }
-
-  section.detail .main .wrapper-ad-banner .body {
-    padding: 0;
-  }
-
-  section.detail .main .body table tr td:first-child {
-    width: 50px;
-  }
-
-  section.detail .main .body table tr td .thumbnail {
-    width: 30px;
-    height: 30px;
-  }
-
-  section.detail .main .body table tr td:nth-child(2) .header {
-    font-size: 12px;
-  }
-
-  section.detail .main .body table tr td:nth-child(2) .text {
-    font-size: 11px;
-  }
-
-  section.detail .main .body table table.detail tr td:first-child {
-    width: 50px;
-  }
-
-  section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
-    font-size: 11px;
-  }
-
-  section.detail .main .body table table.detail tr.tr-comment td:last-child p:first-child {
-    font-size: 11px;
-    margin-top: 0;
-  }
-
-  section.detail .main .body table table.detail tr.tr-comment td:last-child p:last-child {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-marketingSource .body {
-    padding: 0;
-  }
-
-  section.detail .main .body table {
-    margin-top: 0;
-  }
-
-  section.detail .main .body {
-    padding: 0;
-  }
-
-  section.detail .main .with-tab.wrapper-applied-reviewer .body > .header {
-    padding: 10px;    
-  }
-
-  section.detail .main .body > .header span:nth-child(2) {
-    font-size: 12px;
-  }
-
-  section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
-    width: 100%;
-    margin-top: 6px;
-  }
-
-  section.detail .main .with-tab nav.tab ul li {
-    border-bottom: 0 !important;
-  }
-
-  section.detail .main .wrapper-reg-review-form {
-    padding: 10px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form table td {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form table td:first-child {
-    width: 60px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner > p.title {
-    font-size: 11px;
-    line-height: 1.5;
-  }
-  
-  section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner > p.title span {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner textarea {
-    height: 170px;
-    padding: 10px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form table td input {
-    height: auto;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button p {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button button {
-    position: static;
-    margin-top: 12px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .naver-editor-banner {
-    font-size: 11px;
-  }
-
-  section.detail .main .wrapper-reg-review-form form .copy-guide {
-    font-size: 11px;
-    line-height: 1.5;
-  }
-
-  section.detail .main .wrapper-reg-review-form form button.apply-btn {
-    width: 100%;
-    margin-left: auto;
-    padding: 12px;
-    font-size: 12px;
-  }
-
-  section.detail .main .wrapper-reg-review-form > h3 {
-    font-size: 16px;
-  }
-
-  /* end */
-  
   .wrapper-campaign.pc {
     display: none;
   }
@@ -2101,13 +1943,6 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
     border-top: 1px solid #e6e6e6;
   }
 
-  section.detail .main .with-tab nav.tab ul li {
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-    width: 25%;
-    padding: 14px 8px;
-  }
-
   nav.tab {
     margin-bottom: 10px;
   }
@@ -2120,6 +1955,11 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
 
   section.detail .main .wrapper-detail-info .body {
     padding: 20px;
+  }
+
+  section.detail .main .wrapper-detail-info .body .header {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 
   section.detail .main .wrapper-keyword .body {
@@ -2175,4 +2015,54 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   section.detail .sub .inner .item {
     width: 100%;
   }
+
+  /* 모바일 페이지 */
+  section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons {
+    padding-bottom: 20px;
+  }
+
+  section.detail .main .steps .step {
+    width: 100%;
+  }
+
+  .arrow_box:after, .arrow_box:before {
+    top: calc(100% + 10px);
+    left: 50%;
+  }
+
+  .arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #e6e6e6;
+    border-width: 3px;
+    margin-left: -3px;
+  }
+  
+  .arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #e6e6e6;
+    border-width: 9px;
+    margin-left: -9px;
+  }
+
+  section.detail .main .with-tab nav.tab ul li.active {
+    width: 100%;
+  }
+
+  section.detail .main .with-tab nav.tab ul li {
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    padding: 14px 8px;
+  }
+
+  section.detail .main .with-tab nav.tab ul li span.number {
+    right: 10px;
+    top: 12px;
+    left: initial;
+  }
 }
+
