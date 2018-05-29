@@ -48,5 +48,6 @@ function handleAccordion (accordionIndex, itemIndex) {
   });
 
   items.eq(itemIndex).click();
-  parentParagraph.eq(itemIndex).addClass('active');
+  // parentParagraph.eq(itemIndex).addClass('active');
+  accordions.eq(accordionIndex).next().find('p').eq(itemIndex).addClass('active');
 }

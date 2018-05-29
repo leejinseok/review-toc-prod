@@ -27,8 +27,8 @@ function handleAccordionSlideMenu (accordionIndex, itemIndex) {
   var parentParagraph = $('.wrapper-sidemenu .panel p');
   var items = $('.wrapper-sidemenu .panel p a');
   var downArrowSrc = {
-    'selected': './static/images/mypage/my_profile_up_black.png',
-    'unselected': './static/images/mypage/my_profile_down.png'
+    'selected': '/static/images/mypage/my_profile_up_black.png',
+    'unselected': '/static/images/mypage/my_profile_down.png'
   };
 
   accordions.click(function (e) {
@@ -350,8 +350,8 @@ function handleAccordionLogined (accordionIndex, itemIndex) {
   var parentParagraph = $('nav.main.logined .panel p');
   var items = $('nav.main.logined .panel p a');
   var downArrowSrc = {
-    'selected': './static/images/mypage/my_profile_up_selected.png',
-    'unselected': './static/images/mypage/my_profile_down.png'
+    'selected': '/static/images/mypage/my_profile_up_selected.png',
+    'unselected': '/static/images/mypage/my_profile_down.png'
   };
 
   accordions.click(function () {
