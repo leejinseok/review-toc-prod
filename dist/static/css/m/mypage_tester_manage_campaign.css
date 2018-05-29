@@ -1,5 +1,4 @@
 section.mypage .cols .right-col .search .options {
-  width: auto !important;
 }
 
 section.mypage .cols .right-col .search .options .items button {
@@ -232,4 +231,71 @@ section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-det
   font-weight: 300;
 }
 
+@media only screen and (max-width: 768px) {
 
+  section.mypage .cols .right-col .search .options {
+    width: 100%;
+  }
+
+  .search .wrapper-search-input {
+    width: 100%;
+  }
+
+  section.mypage .cols .right-col .search .period, 
+  section.mypage .cols .right-col .search .inquiry {
+    width: 100% !important;
+  }
+
+
+  .search .wrapper-search-input .search-input {
+    width: 100%;
+  }
+
+  .right-col>.dashboard {
+    height: auto;
+  }
+
+  .right-col>.dashboard .col  {
+    width: 50%;
+    min-height: 90px;
+  }
+
+  .right-col>.dashboard .col:nth-child(2):after {
+    display: none;
+  }
+
+  section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit {
+    padding: 10px;
+    line-height: initial;
+  }
+
+  section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .totalBenefit {
+    width: auto;
+    line-height: 1.5;
+  }
+
+  section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons {
+    width: auto;
+    padding: 10px 0;
+  }
+
+  section.container .cols .ad-container .ad-container-inner .wrapper-ad-img-box {
+    width: 100%;
+  }
+
+  section.container .cols .ad-container .ad-container-inner {
+    height: auto;
+    padding: 20px;
+  }
+
+  section.container .cols .ad-container .ad-container-inner .ad-detail-box {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  section.container .cols .ad-container .ad-container-inner .ad-detail-box .ad-detail-inner .ad-detail-top div.right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
