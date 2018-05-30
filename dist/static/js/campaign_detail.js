@@ -21,7 +21,7 @@ function showReport () {
   }
 
   if (type === 'sns') {
-    window.open('./campaign_report_sns.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=426,height=430');
+    window.open('./campaign_report_sns.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=768,height=430');
   }
 }
 
