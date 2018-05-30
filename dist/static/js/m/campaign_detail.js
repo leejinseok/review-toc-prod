@@ -14,11 +14,11 @@ $(document).ready(function () {
 
 function showReport (type) {
   if (type === 'blog') {
-    window.open('/campaign_report_blog.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=768,height=430');
+    window.open('./campaign_report_blog.html', '_blank');
   }
 
   if (type === 'sns') {
-    window.open('/campaing_report_blog.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=426,height=430');
+    window.open('./campaing_report_blog.html', '_blank');
   }
 }
 

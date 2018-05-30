@@ -665,9 +665,9 @@ section.detail .main .wrapper-detail-info .body {
 }
 
 section.detail .main .body {
-  padding: 40px 27px;
   background-color: #fff;
   border: 1px solid #e6e6e6;
+  padding-bottom: 20px;
 }
 
 section.detail .main .wrapper-detail-info img {
@@ -726,8 +726,8 @@ section.detail .main .wrapper-applied-reviewer .body {
 
 }
 
-section.detail .main .wrapper-applied-reviewer .body .header {
-
+section.detail .main .wrapper-applied-reviewer .body > .header {
+  padding: 10px;
 }
 
 /* header에 text */
@@ -749,7 +749,6 @@ section.detail .main .body > .header span:nth-child(2) > span {
 
 section.detail .main .body table {
   width: 100%;
-  margin-top: 24px;
 }
 
 section.detail .main .body table tr td {
@@ -757,23 +756,24 @@ section.detail .main .body table tr td {
   vertical-align: middle;
   background: #f6f6f6;
   text-align: center;
+  font-size: 11px;
 }
 
 section.detail .main .body table tr td:first-child {
-  width: 110px;
+  width: 50px;
   text-align: center;
 }
 
 section.detail .main .body table tr td:nth-child(2) {
   text-align: left;
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
   vertical-align: top;
 }
 
 section.detail .main .body table tr td:nth-child(2) .header {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 section.detail .main .body table tr td:nth-child(2) .header span {
@@ -782,7 +782,7 @@ section.detail .main .body table tr td:nth-child(2) .header span {
 
 section.detail .main .body table tr td:nth-child(2) .text {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 11px;
   color: #707070;
 }
 
@@ -799,6 +799,8 @@ section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
   border-radius: 3px;
   margin-right: 2px;
   cursor: pointer;
+  width: 100%;
+  margin-top: 3px;
 }
 
 section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button:hover {
@@ -806,7 +808,6 @@ section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button:hove
 }
 
 section.detail .main .body table tr td:nth-child(3) {
-  font-size: 14px;
   color: #707070;
 }
 
@@ -815,8 +816,8 @@ section.detail .main .body table tr td .thumbnail {
   background-size: 35px 42px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 56px;
-  height: 56px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #e0e0e0;
   display: inline-block;
@@ -909,11 +910,13 @@ section.detail .main .wrapper-ad-banner nav.tab ul li:nth-child(2) {
 section.detail .main .wrapper-ad-banner .body {
   min-height: 50px;
   background: #fff;
-  padding: 64px 27px;
-  padding-bottom: 90px;
   border: 1px solid #e6e6e6;
+  padding-bottom: 0;
 }
 
+section.detail .main .wrapper-ad-banner .body > .header  {
+  padding: 10px;
+}
 section.detail .main .wrapper-ad-banner .body h3 {
   color: #333;
 }
@@ -1010,6 +1013,11 @@ section.detail .main .wrapper-marketingSource .body {
   min-height: 50px;
   background: #fff;
   border: 1px solid #e6e6e6;
+  padding-bottom: 0;
+}
+
+section.detail .main .wrapper-marketingSource .body > .header {
+  padding: 10px;
 }
 
 section.detail .main .wrapper-marketingSource .body ul.row {
