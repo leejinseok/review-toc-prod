@@ -1,0 +1,78 @@
+<% include ./variables/common.ejs %>
+<% include ./variables/campaign_report_sns.ejs %>
+<% include ./partials/header.ejs %>
+
+<h3>00캠페인보고서</h3>
+
+<div class="wrapper-table">
+  <h3>
+    등록콘텐츠
+  </h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>닉네임</th>
+        <th>내용</th>
+        <th>등록일</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <% for (i = 0; i < 5; i++) { %>
+        <tr>
+          <td>
+            Dream1(또르르)
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+              https://blog.naver.com/cjip202
+            </a>
+          </td>
+          <td>
+            2018.04.02
+          </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<div class="wrapper-chart clearfix">
+  <h3>
+    신청자 통계
+  </h3>
+  <div class="col-12">
+    <div class="wrapper-chart-inner">
+      <canvas id="canvasApplicationTotal_gender"></canvas>
+    </div>
+    <p>
+      성별
+    </p>
+  </div>
+  <div class="col-12">
+    <div class="wrapper-chart-inner">
+      <canvas id="canvasApplicationTotal_age"></canvas>
+    </div>
+    <p>
+      연령별
+    </p>
+  </div>
+  <div class="col-12">
+    <div class="wrapper-chart-inner">
+      <canvas id="canvasApplicationTotal_region"></canvas>
+    </div>
+    <p>
+      지역별
+    </p>
+  </div>
+  <div class="col-12">
+    <div class="wrapper-chart-inner">
+      <canvas id="canvasApplicationTotal_blog"></canvas>
+    </div>
+    <p>
+      SNS
+    </p>
+  </div>
+</div>
