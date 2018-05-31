@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html ng-app="reviewTocApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>리뷰톡</title>
+  <link rel="stylesheet" href="/static/css/base.css">
+
+  <link rel="stylesheet" href="/static/css/m/campaign_report_common.css">
+
+  <link rel="stylesheet" href="/static/css/m/campaign_report_blog.css">
+
+  <link rel="stylesheet" href="/static/css/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/static/js/angular.min.js"></script>
+  <script src="/static/js/prefixfree.min.js"></script>
+  <script src="/static/js/common.js"></script>
+
+  <script src="/static/js/m/campaign_report_common.js"></script>
+
+  <script src="/static/js/m/campaign_report_blog.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <h3>00캠페인보고서</h3>
+
+  <div class="search">
+    <div class="datepicker from">
+      <input type="text" id="datepicker-from">
+      <img src="/static/images/mypage/mypage_calendar.png">
+    </div>
+    <span class="wave">~</span>
+    <div class="datepicker to">
+      <input type="text" id="datepicker-to">
+      <img src="/static/images/mypage/mypage_calendar.png">
+    </div>
+
+  </div>
+
+  <div class="search">
+    <button class="period today">오늘</button>
+    <button class="period cur-month">이번달</button>
+    <button class="period prev-month">지난달</button>
+    <button class="inquiry">조회</button>
+  </div>
+
+  <div class="dashboard clearfix">
+    <div class="col">
+      <p class="title">총조회수</p>
+      <span>
+
+
+
+    250<small>건</small>
+
+
+
+  </span>
+    </div>
+    <div class="col">
+      <p class="title">PC</p>
+      <span>
+
+
+
+    500<small>건</small>
+
+
+
+  </span>
+    </div>
+    <div class="col">
+      <p class="title">Mobile</p>
+      <span>
+
+
+
+    1022<small>건</small>
+
+
+
+  </span>
+    </div>
+    <div class="col">
+      <p class="title">일일평균조회수</p>
+      <span>
+
+
+
+    163<small>회</small>
+
+
+
+  </span>
+    </div>
+  </div>
+
+  <div class="wrapper-chart chart-views-in-oneday" style="height: 300px">
+    <h3>
+
+    일별 콘텐츠 조회수
+
+  </h3>
+    <canvas id="canvas" width="400" height="200"></canvas>
+  </div>
+
+  <div class="wrapper-chart chart-inflow-keyword pc">
+    <h3>
+
+    PC 유입키워드 TOP 10
+
+  </h3>
+    <canvas id="canvasInflowKeywordsPc"></canvas>
+  </div>
+
+  <div class="wrapper-chart chart-inflow-keyword">
+    <h3>
+
+    Mobile 유입키워드 TOP 10
+
+  </h3>
+    <canvas id="canvasInflowKeywordsMobile"></canvas>
+  </div>
+
+  <div class="wrapper-table">
+    <h3>
+
+    등록콘텐츠
+
+  </h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>닉네임</th>
+          <th>내용</th>
+          <th>등록일</th>
+          <th>방문자</th>
+          <th>좋아요</th>
+          <th>댓글수</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>
+            Dream1
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+
+              https://blog.naver.com/cjip202
+
+            </a>
+          </td>
+          <td>
+            04.02
+          </td>
+          <td>
+            <p>100</p>
+            <p>(PC:50 / M:50)</p>
+          </td>
+          <td>
+            35
+          </td>
+          <td>
+            15
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Dream1
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+
+              https://blog.naver.com/cjip202
+
+            </a>
+          </td>
+          <td>
+            04.02
+          </td>
+          <td>
+            <p>100</p>
+            <p>(PC:50 / M:50)</p>
+          </td>
+          <td>
+            35
+          </td>
+          <td>
+            15
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Dream1
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+
+              https://blog.naver.com/cjip202
+
+            </a>
+          </td>
+          <td>
+            04.02
+          </td>
+          <td>
+            <p>100</p>
+            <p>(PC:50 / M:50)</p>
+          </td>
+          <td>
+            35
+          </td>
+          <td>
+            15
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Dream1
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+
+              https://blog.naver.com/cjip202
+
+            </a>
+          </td>
+          <td>
+            04.02
+          </td>
+          <td>
+            <p>100</p>
+            <p>(PC:50 / M:50)</p>
+          </td>
+          <td>
+            35
+          </td>
+          <td>
+            15
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Dream1
+          </td>
+          <td class="content">
+            <p>
+              꼭 참여하고싶어요~
+            </p>
+            <a href="https://blog.naver.com/cjip202" target="_blank">
+
+              https://blog.naver.com/cjip202
+
+            </a>
+          </td>
+          <td>
+            04.02
+          </td>
+          <td>
+            <p>100</p>
+            <p>(PC:50 / M:50)</p>
+          </td>
+          <td>
+            35
+          </td>
+          <td>
+            15
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="wrapper-chart clearfix">
+    <h3>
+
+    신청자 통계
+
+  </h3>
+    <div class="col-12">
+      <div class="wrapper-chart-inner">
+        <canvas id="canvasApplicationTotal_gender"></canvas>
+      </div>
+      <p>
+        성별
+      </p>
+    </div>
+    <div class="col-12">
+      <div class="wrapper-chart-inner">
+        <canvas id="canvasApplicationTotal_age"></canvas>
+      </div>
+      <p>
+        연령별
+      </p>
+    </div>
+    <div class="col-12">
+      <div class="wrapper-chart-inner">
+        <canvas id="canvasApplicationTotal_region"></canvas>
+      </div>
+      <p>
+        지역별
+      </p>
+    </div>
+    <div class="col-12">
+      <div class="wrapper-chart-inner">
+        <canvas id="canvasApplicationTotal_blog"></canvas>
+      </div>
+      <p>
+        블로그
+      </p>
+    </div>
+  </div>

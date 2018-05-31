@@ -12,13 +12,16 @@ $(document).ready(function () {
   handleBodyClickForHideModal();
 });
 
-function showReport (type) {
-  if (type === 'blog') {
-    window.open('./campaign_report_blog.html', '_blank');
+function showReport () {
+  var url = new URL(window.location.href);
+  var type = url.searchParams.get('type');
+
+  if (type === 'blog' || type === null) {
+    window.open('./campaign_report_blog.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=768,height=430');
   }
 
   if (type === 'sns') {
-    window.open('./campaing_report_blog.html', '_blank');
+    window.open('./campaign_report_sns.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0,width=768,height=430');
   }
 }
 
@@ -48,14 +51,7 @@ function handleTextareaText () {
 
 function handleButtonShow () {
   var wrapperButtons = $('section.detail .main .wrapper-pic-and-info >div.info .wrapper-buttons');
-  var search = window.location.search.substr(1);
-  if (!search.length) {
-    wrapperButtons.find('.apply').show();
-  }
-
-  if (search === 'reg-review') {
-    wrapperButtons.find('.reg-review').show();
-  }
+  wrapperButtons.find('.apply').show();
 }
 
 function handleRegReviewFormShow () {
