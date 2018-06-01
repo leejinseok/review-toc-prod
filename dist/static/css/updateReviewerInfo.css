@@ -38,6 +38,12 @@ table tr td {
   vertical-align: middle;
 }
 
+table tr td p {
+  font-size: 12px;
+  color: #a0a0a0;
+  font-weight: 200;
+}
+
 table tr td:first-child {
   font-weight: 400;
 }
@@ -67,3 +73,11 @@ table tr td textarea {
   font-size: 10px;
 }
 
+button.update {
+  height: 21px;
+  width: 40px;
+}
+
+button.update:hover {
+  background-color: #444;
+}
