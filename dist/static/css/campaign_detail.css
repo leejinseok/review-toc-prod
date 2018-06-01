@@ -657,7 +657,7 @@ section.detail .main .wrapper-detail-info {
 section.detail .main .wrapper-detail-info .body {
   min-height: 50px;
   background: #fff;
-  padding-bottom: 0;
+  padding-bottom: 40px;
   border: 1px solid #e6e6e6;
 }
 
