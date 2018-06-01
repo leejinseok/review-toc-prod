@@ -10,7 +10,21 @@ $(document).ready(function () {
   handleButtonShow();
   handleTextareaText();
   handleBodyClickForHideModal();
+  handleCampaignType();
 });
+
+function handleCampaignType () {
+  var url = new URL(window.location.href);
+  var type = url.searchParams.get('type');
+
+  if (type === 'blog') {
+    $('li.content span.sns').addClass('hide');
+  }
+
+  if (type === 'sns') {
+    $('li.content span.blog').addClass('hide');
+  }
+}
 
 function showReport () {
   var url = new URL(window.location.href);
@@ -41,6 +55,8 @@ function handleBodyClickForHideModal () {
 }
 
 function updateReviewerInfo () {
+  window.open('./updateReviewerInfo.html', '_blank', 'toolbar=yes, scrollbars=yes, resizable=no,top=100,left=0,width=460,height=620');
+  return;
   var modal = $('.modal.modal-update-reviewer-info');
   modal.show();
 }
@@ -196,6 +212,8 @@ function handleRelativeCpa () {
     img.eq(index).removeClass('active');
   });
 }
+
+
 
 /**
  * 탭 클릭하였을때 스크롤 핸들
