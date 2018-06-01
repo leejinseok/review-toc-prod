@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./static/css/base.css">
+  <link rel="stylesheet" href="./static/css/updateReviewerInfo.css">
+  <title>리뷰톡 - 리뷰어정보수정</title>
+</head>
+<body>  
+  <h3>
+    리뷰어 정보수정
+  </h3>
+  <table cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr class="url">
+        <td>블로그 URL</td>
+        <td>
+          <input type="text" value="http://blog.daum.net/cgimall">
+          <p>
+            예시) http://blog.naver.com/test
+            <br>리뷰에 사용할 블로그 URL을 입력해주세요.
+            <br>(리뷰어 선정시 변경불가)
+          </p>
+        </td>
+      </tr>
+      <tr class="comment">
+        <td>신청한마디</td>
+        <td>
+          <textarea>안녕하세요. 이 분야에서 5년째 활동중인 블로거입니다. 유입수 높은 블로거들과 연계 활동중이구요. 열심히 하겠습니다.
+          </textarea>
+          <p>
+            신청한마디를 남겨주세요.
+          </p>
+        </td>
+      </tr>
+      <tr class="tel">
+        <td>연락처</td>
+        <td>
+          <input type="tel" maxlength="11">
+          <p>
+            번호만 입력해주세요.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="black-btn center submit" onclick="submitUpdateReviewerInfo()">
+    신청완료
+  </button>
+
+  <script>
+  function submitUpdateReviewerInfo () {
+    // @TODO
+    window.close();
+  }
+  </script>
+</body>
+</html>

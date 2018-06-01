@@ -31,11 +31,11 @@ function showReport () {
   var type = url.searchParams.get('type');
 
   if (type === 'blog' || type === null) {
-    window.open('./campaign_report_blog.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0');
+    window.open('./campaign_report_blog.html', '_blank', 'width=880, height=800, toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0');
   }
 
   if (type === 'sns') {
-    window.open('./campaign_report_sns.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0');
+    window.open('./campaign_report_sns.html', '_blank', 'width=880,height=800,toolbar=yes,scrollbars=yes,resizable=no,top=100,left=0');
   }
 }
 
@@ -55,6 +55,8 @@ function handleBodyClickForHideModal () {
 }
 
 function updateReviewerInfo () {
+  window.open('./updateReviewerInfo.html', '_blank', 'toolbar=yes, scrollbars=yes, resizable=no,top=100,left=0,width=460,height=620');
+  return;
   var modal = $('.modal.modal-update-reviewer-info');
   modal.show();
 }
