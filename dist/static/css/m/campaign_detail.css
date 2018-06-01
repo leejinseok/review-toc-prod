@@ -749,31 +749,41 @@ section.detail .main .body > .header span:nth-child(2) > span {
 
 section.detail .main .body table {
   width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
 }
 
 section.detail .main .body table tr td {
   height: 110px;
   vertical-align: middle;
-  background: #f6f6f6;
   text-align: center;
-  font-size: 11px;
+}
+
+section.detail .main .body table tr > td {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 section.detail .main .body table tr td:first-child {
-  width: 50px;
+  width: 80px;
   text-align: center;
+  vertical-align: top;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
 
 section.detail .main .body table tr td:nth-child(2) {
   text-align: left;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 10px;
   box-sizing: border-box;
   vertical-align: top;
+  position: relative;
 }
 
 section.detail .main .body table tr td:nth-child(2) .header {
-  font-size: 12px;
+  font-size: 14px;
+  color: #ed8303;
 }
 
 section.detail .main .body table tr td:nth-child(2) .header span {
@@ -782,18 +792,23 @@ section.detail .main .body table tr td:nth-child(2) .header span {
 
 section.detail .main .body table tr td:nth-child(2) .text {
   margin-top: 10px;
-  font-size: 11px;
+  font-size: 14px;
   color: #707070;
 }
 
+section.detail .main .body table tr td:nth-child(2) .regdate {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
 section.detail .main .body table tr td:nth-child(2) .wrapper-buttons {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
-  background-color: #333;
-  color: #fff;
-  border: 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #a0a0a0;
   font-size: 11px;
   padding: 5px 8px;
   border-radius: 3px;
@@ -803,12 +818,21 @@ section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
   margin-top: 3px;
 }
 
-section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button:hover {
-  background-color: #444;
+section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button {
+  /* background-color: #444; */
+}
+
+section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button.delete {
+  color: #ea6900;
 }
 
 section.detail .main .body table tr td:nth-child(3) {
+  font-size: 11px;
   color: #707070;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-top: 23px;
+  font-weight: 300;
 }
 
 section.detail .main .body table tr td .thumbnail {
@@ -816,9 +840,8 @@ section.detail .main .body table tr td .thumbnail {
   background-size: 35px 42px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
   border: 1px solid #e0e0e0;
   display: inline-block;
   background-color: #fff;
@@ -830,6 +853,7 @@ section.detail .main .body table .wrapper-detail-table {
 
 section.detail .main .body table tr.wrapper-detail-table > td {
   background-color: transparent;
+  padding-top: 0;
 }
 
 section.detail .main .body table table.detail {
@@ -837,6 +861,8 @@ section.detail .main .body table table.detail {
   width: calc(100% + 4px);
   margin-left: -2px;
   margin-top: -1px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
 }
 
 section.detail .main .body table table.detail tr td {
@@ -844,11 +870,21 @@ section.detail .main .body table table.detail tr td {
   vertical-align: middle;
   height: auto;
   padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+section.detail .main .body table table.detail tr:last-child td {
+  border-bottom: 1px solid #dbdbdb;
 }
 
 section.detail .main .body table table.detail tr td:first-child {
   width: 110px;
   box-sizing: border-box;
+  background-color: #f1f1f1;
+}
+
+section.detail .main .body table table.detail tr:first-child td {
+  border-top: 0;
 }
 
 section.detail .main .body table table.detail tr.tr-comment td {
@@ -1967,7 +2003,6 @@ section.detail .main .defer-choice-best:hover {
 
   section.detail .main .wrapper-detail-info .body .header {
     padding-top: 0;
-    padding-bottom: 20px;
   }
 
   section.detail .main .wrapper-keyword .body {

@@ -202,10 +202,13 @@ function handleRelativeCpa () {
  */
 function handleScrollToEachTab () {
   var a = $('section.detail .main .with-tab nav.tab ul li a');
+  var li = $('section.detail .main .with-tab nav.tab ul li');
+  var body = $('section.detail .main .wrapper-detail-info .body');
   a.click(function () {
-    var to = $(this).data('to');
-    var of = $('#' + to).offset();
-    var top = of.top - 93 - 10;
-    $(window).scrollTop(top);
+    var index = a.index(this);
+    li.removeClass('active');
+    li.eq(index).addClass('active');
+    body.addClass('hide')
+    body.eq(index).removeClass('hide');
   });
 }
