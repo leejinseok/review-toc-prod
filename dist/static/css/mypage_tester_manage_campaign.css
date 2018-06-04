@@ -62,6 +62,8 @@ section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons butto
   font-size: 10px;
   height: auto;
   display: inline-block;
+  height: 21px;
+  line-height: 13px;
 }
 
 section.mypage .cols .right-col .wrapper-buttons-and-totalBenefit .buttons button:hover {

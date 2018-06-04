@@ -703,8 +703,7 @@ section.detail .main .body table tr > td {
 section.detail .main .body table tr td:first-child {
   width: 80px;
   text-align: center;
-  vertical-align: top;
-  padding-top: 20px;
+  vertical-align: middle;
   box-sizing: border-box;
 }
 
@@ -713,7 +712,7 @@ section.detail .main .body table tr td:nth-child(2) {
   padding: 20px;
   padding-bottom: 10px;
   box-sizing: border-box;
-  vertical-align: top;
+  vertical-align: middle;
   position: relative;
 }
 
@@ -766,10 +765,9 @@ section.detail .main .body table tr td:nth-child(2) .wrapper-buttons button.dele
 section.detail .main .body table tr td:nth-child(3) {
   font-size: 11px;
   color: #707070;
-  vertical-align: top;
   box-sizing: border-box;
-  padding-top: 23px;
   font-weight: 300;
+  text-align: right;
 }
 
 section.detail .main .body table tr td .thumbnail {
@@ -782,6 +780,7 @@ section.detail .main .body table tr td .thumbnail {
   border: 1px solid #e0e0e0;
   display: inline-block;
   background-color: #fff;
+  border-radius: 50%;
 }
 
 section.detail .main .body table .wrapper-detail-table {
@@ -1581,6 +1580,8 @@ section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrap
   color: #fff;
   border: 0;
   cursor: pointer;
+  height: 30px;
+  line-height: 18px;
 }
 
 section.detail .main .wrapper-reg-review-form form .wrapper-sponsor-banner .wrapper-guide-and-button button:hover {
