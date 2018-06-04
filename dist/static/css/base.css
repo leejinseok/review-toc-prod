@@ -69,6 +69,33 @@
 }
 
 
+@font-face { 
+font-family: 'Noto Sans KR'; 
+font-style: normal; 
+font-weight: 300; 
+src: url('/static/fonts/NotoSans-subset-master/NotoSans-Light.woff2') format('woff2'), 
+url('/static/fonts/NotoSans-subset-master/NotoSans-Light.woff') format('woff'), 
+url('/static/fonts/NotoSans-subset-master/NotoSans-Light.otf') format('opentype'); 
+} 
+
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 400; 
+  src: url('/static/fonts/NotoSans-subset-master/NotoSans-Regular.woff2') format('woff2'), 
+  url('/static/fonts/NotoSans-subset-master/NotoSans-Regular.woff') format('woff'), 
+  url('/static/fonts/NotoSans-subset-master/NotoSans-Regular.otf') format('opentype'); 
+} 
+
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 500; 
+  src: url('/static/fonts/NotoSans-subset-master/NotoSans-Medium.woff2') format('woff2'), 
+  url('/static/fonts/NotoSans-subset-master/NotoSans-Medium.woff') format('woff'), 
+  url('/static/fonts/NotoSans-subset-master/NotoSans-Medium.otf') format('opentype'); 
+} 
+
 html,
 body {
   margin: 0 auto;

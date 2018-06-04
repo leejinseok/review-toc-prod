@@ -2076,18 +2076,16 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   section.detail .main .body table tr td:first-child {
     width: 80px;
     text-align: center;
-    vertical-align: top;
-    padding-top: 20px;
+    vertical-align: middle;
     box-sizing: border-box;
   }
   
   section.detail .main .body table tr td:nth-child(2) {
     text-align: left;
-    padding: 20px;
-    padding-bottom: 10px;
+    padding: 20px 0;
     box-sizing: border-box;
-    vertical-align: top;
     position: relative;
+    vertical-align: middle;
   }
   
   section.detail .main .body table tr td:nth-child(2) .header {
@@ -2101,8 +2099,9 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
   
   section.detail .main .body table tr td:nth-child(2) .text {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: #707070;
+    word-break: break-all;
   }
   
   section.detail .main .body table tr td:nth-child(2) .regdate {
@@ -2147,11 +2146,12 @@ section.detail .main .wrapper-reg-review-form form button.apply-btn {
     background-size: 35px 42px;
     background-repeat: no-repeat;
     background-position: center;
-    width: 56px;
-    height: 56px;
+    width: 46px;
+    height: 46px;
     border: 1px solid #e0e0e0;
     display: inline-block;
     background-color: #fff;
+    border-radius: 50%;
   }
   
   section.detail .main .body table .wrapper-detail-table {
