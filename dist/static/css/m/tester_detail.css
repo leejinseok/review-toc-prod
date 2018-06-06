@@ -881,6 +881,7 @@ section.detail .sub .inner .item:first-child {
 
 section.detail .sub .inner .item h2 {
   margin-bottom: 24px;
+  font-weight: normal;
 }
 
 section.detail .sub .inner .item h2 span {
@@ -975,9 +976,16 @@ section.detail .sub .inner .item .card .content .category .icons .icon img {
   display: inline-block;
 }
 
+section.detail .sub .inner .item .card .content .type {
+  font-size: 14px;
+  font-weight: normal;
+  color: #707070;
+  letter-spacing: 0;
+}
+
 section.detail .sub .inner .item .card .content .title {
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 section.detail .sub .inner .item .card .content .detail {
@@ -985,7 +993,7 @@ section.detail .sub .inner .item .card .content .detail {
   color: #888;
   font-weight: 400;
   margin-top: 6px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 section.detail .sub .inner .item .card .content .price {
@@ -995,7 +1003,7 @@ section.detail .sub .inner .item .card .content .price {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 section.detail .sub .inner .item .card .content .price.active {

@@ -1,0 +1,55 @@
+<% include ./variables/common.ejs %>
+  <% include ./variables/index.ejs %>
+    <% include ./partials/header.ejs %>
+
+      <!-- top banner rolling -->
+      <div class="swiper-container top-banners small-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./static/images/top_banner.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/top_banner.png">
+          </div>
+        </div>
+
+        <div class="wrapper-swiper-pagination">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="wrapper-swiper-button">
+          <div class="swiper-button-next">
+            <% include ./partials/icons/angleUp.html %>
+          </div>
+          <div class="swiper-button-prev">
+            <% include ./partials/icons/angleDown.html %>
+          </div>
+        </div>
+      </div>
+      <% include ./partials/nav.ejs %>
+        <% include ./partials/index/rolling_banner.ejs %>
+          <% include ./partials/index/cpa_list.ejs %>
+
+            <!-- small banner rolling -->
+            <div class="swiper-container middle-banner small-banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./static/images/banner/middle_banner.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/images/banner/middle_banner.png">
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="wrapper-swiper-button">
+                <div class="swiper-button-next">
+                  <% include ./partials/icons/angleUp.html %>
+                </div>
+                <div class="swiper-button-prev">
+                  <% include ./partials/icons/angleDown.html %>
+                </div>
+              </div>
+            </div>
+            <% include ./partials/index/experienceGroup_list.ejs %>
+              <% include ./partials/index/aside_bottom.ejs %>
+                <% include ./partials/footer.ejs %>

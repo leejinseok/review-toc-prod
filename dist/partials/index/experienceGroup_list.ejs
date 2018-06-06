@@ -5,7 +5,7 @@
         <b>체험단</b> LIST
       </a>
     </p>
-    <div class="line"> </div>
+    <div class="line"></div>
   </div>
 
   <div class="wrapper-sub-menu">
@@ -16,7 +16,8 @@
             <div class="selected">
               <button type="button" class="selected-button">
                 <span class="value">추천캠페인</span>
-                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E" alt="Angle Down" />
+                <img class="arrow-down" src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%235c5c5c' stroke-miterlimit='10' stroke-width='1' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+                alt="Angle Down" />
               </button>
             </div>
             <ul>
@@ -29,33 +30,33 @@
       <li class="menus">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-              <div class="swiper-slide active">
-                <a href="#">전체보기</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">생활</a>
-              </div>
-              <div class="swiper-slide">
-                  <a href="#">유아</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">디지털</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">뷰티</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">패션</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">맛집</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">여행</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">기타</a>
-              </div>
+            <div class="swiper-slide active">
+              <a href="#">전체보기</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">생활</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">유아</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">디지털</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">뷰티</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">패션</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">맛집</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">여행</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">기타</a>
+            </div>
           </div>
         </div>
       </li>
@@ -79,7 +80,7 @@
   </div>
 
   <div class="wrapper-article clearfix">
-    <% for (i = 0; i < cardsExperienceGroup.length; i++) { %>
+    <% for (i=0 ; i < cardsExperienceGroup.length; i++) { %>
       <div class="col-3">
         <article>
           <div class="header" style="background-image:url(<%= cardsExperienceGroup[i]['backgroundImg'] %>)" onclick="location.href='./tester_detail.html'">
@@ -91,34 +92,43 @@
           </div>
           <div class="content" onclick="location.href='./tester_detail.html'">
             <p class="type">
-              <% if (i % 2 === 0) { %>
+              <% if (i % 2===0 ) { %>
                 블로그 체험단
-              <% } else { %> 
-                SNS 체험단
-              <% } %>
+                <% } else { %>
+
+
+
             </p>
-            <p class="title"><%= cardsExperienceGroup[i]['title'] %></p>
-            <p class="detail"><%= cardsExperienceGroup[i]['detail'] %></p>
+            <p class="title">
+              <%=c ardsExperienceGroup[i][ 'title'] %>
+            </p>
+            <p class="detail">
+              <%=c ardsExperienceGroup[i][ 'detail'] %>
+            </p>
             <div class="bottom">
               <span class="d-day">
-                <span class="d">D</span>
-                -
-                <%= cardsExperienceGroup[i]['dDay'] %>
-              </span>
-              <span class="apply-status">
+
+                <span class="d">D</span>-
+              <%=c ardsExperienceGroup[i][ 'dDay'] %>
+                </span>
+                <span class="apply-status">
+
                 <font class="yellow">61명 신청</font>
+
                 /
+
                 <%= cardsExperienceGroup[i]['applyStatus'] %>
+
               </span>
             </div>
           </div>
         </article>
       </div>
       <% } %>
-    </div>
+  </div>
 
-    <div class="view-more">
-      더보기 +
-    </div>
+  <div class="view-more">
+    더보기 +
+  </div>
 
-  </section>
+</section>

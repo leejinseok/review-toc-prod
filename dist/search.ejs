@@ -1,0 +1,37 @@
+<% include ./variables/common.ejs %>
+  <% include ./variables/search.ejs %>
+    <% include ./partials/header.ejs %>
+
+      <!-- top banner rolling -->
+      <div class="swiper-container top-banners small-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./static/images/top_banner.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/top_banner.png">
+          </div>
+        </div>
+
+        <div class="wrapper-swiper-pagination">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="wrapper-swiper-button">
+          <div class="swiper-button-next">
+            <% include ./partials/icons/angleUp.html %>
+          </div>
+          <div class="swiper-button-prev">
+            <% include ./partials/icons/angleDown.html %>
+          </div>
+        </div>
+      </div>
+
+      <% include ./partials/nav.ejs %>
+
+        <!-- 검색결과가 없을때 -->
+        <h2 class="no-data">검색결과가 없습니다.</h2>
+
+        <% include ./partials/index/cpa_list.ejs %>
+          <% include ./partials/index/experienceGroup_list.ejs %>
+
+            <% include ./partials/footer.ejs %>

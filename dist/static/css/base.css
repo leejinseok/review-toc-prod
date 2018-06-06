@@ -1440,6 +1440,26 @@ section.mypage .cols .right-col .wrapper-table table.mobile {
   text-align: center;
 }
 
+/* detail page */
+section.detail .sub .inner .item h2 {
+  font-weight: normal !important;
+}
+
+section.detail .sub .inner .item .card .content .type {
+  font-size: 14px;
+  font-weight: normal;
+  color: #707070;
+  letter-spacing: 0;
+}
+
+section.detail .sub .inner .item .card .content .price {
+  font-weight: normal !important;
+}
+
+section.detail .sub .inner .item .card .content .title {
+  margin-top: 14px !important;
+}
+
 @media only screen and (max-width: 768px) {
 
 

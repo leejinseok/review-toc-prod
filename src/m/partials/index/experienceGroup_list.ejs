@@ -90,6 +90,13 @@
             </div>
           </div>
           <div class="content" onclick="location.href='./tester_detail.html'">
+            <p class="type">
+              <% if (i % 2 === 0) { %>
+                블로그 체험단
+              <% } else { %> 
+                SNS 체험단
+              <% } %>
+            </p>
             <p class="title"><%= cardsExperienceGroup[i]['title'] %></p>
             <p class="detail"><%= cardsExperienceGroup[i]['detail'] %></p>
             <div class="bottom">
