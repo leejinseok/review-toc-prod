@@ -581,9 +581,16 @@
 }
 
 .section.experienceGroup-list .wrapper-article article .content {
-  height: 163px;
+  height: 176px;
   padding: 18px;
   box-sizing: border-box;
+}
+
+.section.experienceGroup-list .wrapper-article article .content .type {
+  font-size: 14px;
+  font-weight: normal;
+  color: #707070;
+  letter-spacing: 0;
 }
 
 .section.experienceGroup-list .wrapper-article article .content .title {
@@ -596,8 +603,8 @@
 
 .section.experienceGroup-list .wrapper-article article .content .detail {
   color: #a0a0a0;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   margin-top: 10px;
   line-height: 1.6;
   display: -webkit-box;
