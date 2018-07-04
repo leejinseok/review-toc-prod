@@ -212,11 +212,15 @@
 }
 
 .rolling-banner .wrapper-banner .wrapper-banner-item .banner-item.item-04 {
-  background-image: url("../images/banner/tester.png");
+  background-image: url("../images/banner/main_banner_01.png");
 }
 
 .rolling-banner .wrapper-banner .wrapper-banner-item .banner-item.item-05 {
-  background-image: url("../images/banner/cpa.png");
+  background-image: url("../images/banner/main_banner_02.png");
+}
+
+.rolling-banner .wrapper-banner .wrapper-banner-item .banner-item.item-06 {
+  background-image: url("../images/banner/main_banner_03.png");
 }
 
 .rolling-banner .navigation {

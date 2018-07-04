@@ -506,7 +506,7 @@ function RollingBanner () {
      */
     this.move = function () {
         this.dots.removeClass('active');
-        if (this.idx === 5) {
+        if (this.idx === this.bannerItems.length) {
             this.dots.eq(0).addClass('active');
         } else {
             this.dots.eq(this.idx).addClass('active');
@@ -548,7 +548,7 @@ function RollingBanner () {
         this.isIndexAddElements();
 
         if (this.idx === 0) {
-            this.idx = 5;
+            this.idx = this.bannerItems.length;
             this.x = -2400;
             this.wrapperBannerItem.css('transform', 'translateX(' + this.x + 'px)');
             this.direct = true;
@@ -566,7 +566,7 @@ function RollingBanner () {
         this.wrapperBannerItem.removeClass('transition');
         this.isIndexAddElements();
 
-        if (this.idx === 5) {
+        if (this.idx === this.bannerItems.length) {
             this.idx = 0;
             this.x = 0;
             this.wrapperBannerItem.css('transform', 'translateX(' + this.x + 'px)');
