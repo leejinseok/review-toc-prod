@@ -603,7 +603,7 @@ function RollingBanner () {
      * @return {void}
      */
     this.isIndexAddElements = function () {
-        var addItemOnce = Math.abs(this.idx) % 5 === 0 ? true : false;
+        var addItemOnce = Math.abs(this.idx) % this.bannerItems.length === 0 ? true : false;
         if (addItemOnce && !this.page) {
             this.addElements();
         }
